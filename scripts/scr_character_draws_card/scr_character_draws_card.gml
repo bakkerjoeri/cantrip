@@ -1,5 +1,10 @@
-///scr_draw_card(character <Character>);
+/// scr_character_draws_card(character);
 var character = argument[0];
+
+// Check if there's room in the hand to draw a card.
+if (ds_list_size(character.hand) >= max_hand_size) {
+	exit;
+}
 
 // Before drawing, check if the graveyard needs to be reshuffled into the draw pile.
 if (ds_list_size(character.draw_pile) <= 0 && ds_list_size(character.graveyard) > 0) {

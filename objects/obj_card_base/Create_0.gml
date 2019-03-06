@@ -2,7 +2,7 @@
 name = "";
 cost = 0;
 text = "";
-effects = ds_stack_create();
+effects = ds_list_create();
 
 // card state
 owner = noone;

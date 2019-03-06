@@ -1,8 +1,8 @@
 {
-    "id": "6bf36824-6774-49dd-8316-808b018e6726",
+    "id": "ceb61b7a-ad5c-44f6-9bab-8bd466170727",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_battle_turn_resolve_action",
+    "name": "scr_card_effect_combust",
     "IsCompatibility": false,
     "IsDnD": false
 }

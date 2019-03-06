@@ -5,6 +5,6 @@ if (
 ) {	
 	with (obj_battle_manager) {
 		selected_card = other;
-		state_switch("turnResolveAction");
+		state_switch("turnResolveCard");
 	}
 }
