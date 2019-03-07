@@ -8,7 +8,7 @@ if (ds_list_size(character.hand) >= max_hand_size) {
 
 // Before drawing, check if the graveyard needs to be reshuffled into the draw pile.
 if (ds_list_size(character.draw_pile) <= 0 && ds_list_size(character.graveyard) > 0) {
-	for (c = 0; c <= ds_list_size(character.graveyard) - 1; c += 1) {
+	for (var c = 0; c <= ds_list_size(character.graveyard) - 1; c += 1) {
 		var cardToMove = ds_list_find_value(character.graveyard, c);
 		
 		cardToMove.is_face_up = false;

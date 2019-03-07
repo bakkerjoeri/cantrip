@@ -1,3 +1,5 @@
+state_execute();
+
 if (
 	obj_battle_manager.state_name == "turnDecideAction"
 	&& obj_battle_manager.turn_of_character == owner

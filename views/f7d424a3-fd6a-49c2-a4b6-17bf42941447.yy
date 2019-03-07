@@ -4,9 +4,11 @@
     "mvc": "1.1",
     "name": "f7d424a3-fd6a-49c2-a4b6-17bf42941447",
     "children": [
-        "bf2fd57a-9370-49f1-b0fc-6bb19d398fd9",
-        "6fe0add7-eb91-4fb3-a2ed-09d7c9466784",
-        "57fa20ef-5999-414c-8efa-e364eae07be3"
+        "94f1dd15-65ea-48ee-8de3-d3284f9e8312",
+        "23194893-f5c8-4325-b6a4-127a478bc83c",
+        "a23c8694-d39f-427d-832d-d8d935b3a6a1",
+        "a6d6e63f-2391-4183-8571-c3e06f8ccf8b",
+        "8a8c085c-7c80-4a1b-8f3a-aedcd5348963"
     ],
     "filterType": "GMScript",
     "folderName": "Animation",

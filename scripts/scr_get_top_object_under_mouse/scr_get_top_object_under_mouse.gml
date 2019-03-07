@@ -9,7 +9,7 @@ with (type) {
 	}
 }
 
-for (c = 0; c <= ds_list_size(objects_under_mouse) - 1; c += 1) {
+for (var c = 0; c <= ds_list_size(objects_under_mouse) - 1; c += 1) {
 	var object_to_inspect = ds_list_find_value(objects_under_mouse, c);
 	
 	if (

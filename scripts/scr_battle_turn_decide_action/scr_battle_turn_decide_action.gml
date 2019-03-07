@@ -10,7 +10,7 @@ if (turn_of_character == opponent) {
 		// Find all playable cards.
 		var playable_cards = ds_list_create();
 		
-		for (c = 0; c <= ds_list_size(turn_of_character.hand) - 1; c += 1) {
+		for (var c = 0; c <= ds_list_size(turn_of_character.hand) - 1; c += 1) {
 			var card_to_check = ds_list_find_value(turn_of_character.hand, c);
 			
 			if (turn_of_character.ability_points >= card_to_check.cost) {

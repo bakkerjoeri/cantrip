@@ -1,3 +1,5 @@
+animation_execute();
+
 if (obj_battle_manager.turn_of_character == obj_battle_manager.player) {
 	label = "end turn";
 } else {

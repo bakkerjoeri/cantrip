@@ -59,7 +59,7 @@ if (
 	
 	scr_character_loses_ap(turn_of_character, selected_card.cost);
 
-	for (e = 0; e <= ds_list_size(selected_card.effects) - 1; e += 1) {
+	for (var e = 0; e <= ds_list_size(selected_card.effects) - 1; e += 1) {
 		var effect = ds_list_find_value(selected_card.effects, e);
 		
 		script_execute(effect, target, turn_of_character);

@@ -2,6 +2,14 @@ var amount_of_cards = argument[0];
 var owner = argument[1];
 var deck = ds_list_create();
 
+var other_deck = ds_map_create();
+
+ds_map_add(other_deck, "attack", 3);
+ds_map_add(other_deck, "fireblast", 1);
+ds_map_add(other_deck, "rest", 2);
+ds_map_add(other_deck, "combust", 2);
+
+
 repeat(amount_of_cards) {
 	var card_type = choose(
 		obj_card_attack,

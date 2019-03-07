@@ -4,7 +4,7 @@ var graveyard_size = ds_list_size(graveyard);
 var hand_width = 196;
 
 // Position the draw pile.
-for (c = 0; c <= draw_pile_size - 1; c += 1) {
+for (var c = 0; c <= draw_pile_size - 1; c += 1) {
 	var current_card = ds_list_find_value(draw_pile, c);
 	
 	current_card.y = 2;
@@ -12,7 +12,7 @@ for (c = 0; c <= draw_pile_size - 1; c += 1) {
 }
 
 // Position the hand.
-for (c = 0; c <= hand_size - 1; c += 1) {
+for (var c = 0; c <= hand_size - 1; c += 1) {
 	var current_card = ds_list_find_value(hand, c);
 	
 	current_card.depth = hand_size - c;
@@ -21,7 +21,7 @@ for (c = 0; c <= hand_size - 1; c += 1) {
 }
 
 // Position the graveyard
-for (c = 0; c <= graveyard_size - 1; c += 1) {
+for (var c = 0; c <= graveyard_size - 1; c += 1) {
 	var current_card = ds_list_find_value(graveyard, c);
 	
 	current_card.y = 2;

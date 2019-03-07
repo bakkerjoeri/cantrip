@@ -1,7 +1,6 @@
 #macro max_hand_size 8
 #macro max_ability_points 3
 
-state_machine_init();
 state_create("battleStart", scr_battle_start);
 state_create("turnStart", scr_battle_turn_start);
 state_create("turnDrawPhase", scr_battle_turn_draw_phase);

@@ -7,7 +7,7 @@ if (damage > 0) {
 	
 	character.defence = max(0, character.defence - damage);
 	
-	for (c = 1; c <= undefended_damage; c += 1) {
+	for (var c = 1; c <= undefended_damage; c += 1) {
 		var hand_size = ds_list_size(character.hand);
 		
 		if (hand_size > 0) {
