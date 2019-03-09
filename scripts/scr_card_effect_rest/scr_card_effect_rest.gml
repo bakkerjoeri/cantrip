@@ -2,7 +2,11 @@
 var source = argument[1];
 
 scr_character_gains_ap(source, 1);
-scr_character_draws_card(source);
+
+with (source) {
+	amount_of_cards_to_draw += 1;
+	state_switch("drawingCards");
+}
 
 with (obj_battle_manager) {
 	state_switch("turnEnd");

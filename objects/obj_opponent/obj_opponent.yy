@@ -5,16 +5,6 @@
     "name": "obj_opponent",
     "eventList": [
         {
-            "id": "ecf31054-3caa-46eb-b6ec-40a55a135238",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "60d7dbbc-1e16-470a-a00b-f923b8fc1c4c"
-        },
-        {
             "id": "06c4f31d-e567-4032-8aa4-fd06b07a147d",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
+            "m_owner": "60d7dbbc-1e16-470a-a00b-f923b8fc1c4c"
+        },
+        {
+            "id": "c5ed5fb9-434d-4f81-9b9c-ee36a884b1af",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "60d7dbbc-1e16-470a-a00b-f923b8fc1c4c"
         }
     ],

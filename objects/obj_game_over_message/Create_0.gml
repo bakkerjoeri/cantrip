@@ -1,0 +1,1 @@
+random_message = random(4);

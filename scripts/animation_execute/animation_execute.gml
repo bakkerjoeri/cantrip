@@ -1,8 +1,10 @@
-if (animation_current == noone) {
-	if (ds_queue_size(animation_queue) == 0) {
+if (!animation_current) {
+	if (ds_queue_empty(animation_queue)) {
+		animation_is_finished = true;
 		exit;
 	}
 	
+	animation_is_finished = false;
 	animation_current = ds_queue_dequeue(animation_queue);
 	animation_current[? "start_x"] = x;
 	animation_current[? "start_y"] = y;

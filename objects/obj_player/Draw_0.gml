@@ -1,3 +1,5 @@
+event_inherited();
+
 draw_set_halign(fa_left);
 
 if (obj_battle_manager.turn_of_character == self) {
@@ -10,6 +12,11 @@ draw_text(448, room_height - 90, "Hand");
 draw_text(448, room_height - 82, "AP");
 
 draw_set_halign(fa_right);
+
+if (debug_mode) {
+	draw_text(496, room_height - 114, state_name);
+}
+
 draw_text(496, room_height - 106, "You");
 draw_set_color(global.palette_5);
 draw_text(496, room_height - 90, string(ds_list_size(hand)) + "/" + string(max_hand_size));

@@ -1,8 +1,11 @@
 if (state_new) {
 	if (character_that_lost == player) {
-		show_message("Game over...");
-		game_restart();
+		with(obj_game_manager) {
+			state_switch("gameOver");
+		}
 	} else {
 		show_message("Battle won!");
+		obj_game_manager.battles_won += 1;
+		game_restart();
 	}
 }

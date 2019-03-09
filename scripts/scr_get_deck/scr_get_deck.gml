@@ -2,33 +2,27 @@ var amount_of_cards = argument[0];
 var owner = argument[1];
 var deck = ds_list_create();
 
-var other_deck = ds_map_create();
+var deck_map = ds_map_create();
 
-ds_map_add(other_deck, "attack", 3);
-ds_map_add(other_deck, "fireblast", 1);
-ds_map_add(other_deck, "rest", 2);
-ds_map_add(other_deck, "combust", 2);
+deck_map[? "attack"] = 3;
+deck_map[? "combust"] = 2;
+deck_map[? "leech"] = 2;
+deck_map[? "rest"] = 2;
+deck_map[? "meditate"] = 1;
+deck_map[? "fireblast"] = 1;
+deck_map[? "healing_potion"] = 1;
 
+var card_name = ds_map_find_first(deck_map);
 
-repeat(amount_of_cards) {
-	var card_type = choose(
-		obj_card_attack,
-		//obj_card_roll_the_bones,
-		//obj_card_meditate,
-		//obj_card_mindswap,
-		obj_card_fireblast,
-		obj_card_combust,
-		obj_card_rest,
-		//obj_card_leech,
-		//obj_card_healing_potion
-	);
+for (var i = 0; i < ds_map_size(deck_map); i += 1) {
+	repeat(deck_map[? card_name]) {
+		var card = instance_create_layer(0, 0, "Instances_default", asset_get_index("obj_card_" + card_name));
+		
+		card.owner = owner;
+		ds_list_add(deck, card);
+	}
 	
-	var card = instance_create_layer(0, 0, "Instances_default", card_type);
-	
-	card.is_face_up = false;
-	card.owner = owner;
-
-	ds_list_add(deck, card);
+	var card_name = ds_map_find_next(deck_map, card_name);
 }
 
 return deck;

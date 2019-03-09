@@ -4,7 +4,11 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 
 if (is_active) {
-	draw_set_color(global.palette_1);
+	if (has_focus) {
+		draw_set_color(global.palette_4);
+	} else {
+		draw_set_color(global.palette_1);
+	}
 } else {
 	draw_set_color(global.palette_7);
 }

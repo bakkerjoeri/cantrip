@@ -1,5 +1,6 @@
 event_inherited();
 
 name = "healing potion";
-cost = 1;
+cost = 2;
 text = "Draw 3 cards.";
+ds_list_add(effects, scr_card_effect_healing_potion);

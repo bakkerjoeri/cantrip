@@ -5,16 +5,6 @@
     "name": "obj_player",
     "eventList": [
         {
-            "id": "f2100f65-e28c-4efc-b756-09b227c00a18",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "916f4b19-560d-4e6b-b5f2-c2718c564d18"
-        },
-        {
             "id": "76c72410-5f41-4e2a-a1fa-2ae9a99bade8",
             "modelName": "GMEvent",
             "mvc": "1.0",
