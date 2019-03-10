@@ -8,6 +8,10 @@ for (var c = 0; c <= ds_list_size(deck_list) - 1; c += 1) {
 	var card = instance_create_layer(0, 0, "Instances", asset_get_index("obj_card_" + card_name));
 	ds_list_add(cards, card);
 	card.owner = owner;
+	
+	with (card) {
+		state_switch("inDrawPile");
+	}
 }
 
 return cards;

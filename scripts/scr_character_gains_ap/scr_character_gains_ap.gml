@@ -2,4 +2,4 @@
 var character = argument[0];
 var amount = argument[1];
 
-character.ability_points = min(character.ability_points + amount, max_ability_points);
+character.ability_points = min(character.ability_points + amount, character.max_ability_points);

@@ -11,7 +11,9 @@
         "05438395-edbf-4df5-afdd-7031ed4198fe",
         "6a366d42-1b94-48bd-9e87-17de6d1037c2",
         "4c38ec11-8d92-4273-bb14-8777652e77fb",
-        "7bc29fdd-d040-4148-a60f-c3c301a86a13"
+        "7bc29fdd-d040-4148-a60f-c3c301a86a13",
+        "48567106-b35a-4a63-ace6-0cd8bffd019c",
+        "db169673-31d8-4b6f-81eb-7cc9926032e5"
     ],
     "filterType": "GMScript",
     "folderName": "State",

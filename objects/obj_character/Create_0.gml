@@ -8,11 +8,12 @@ state_create("discardingCards", scr_character_discarding_cards);
 state_create("takingDamage", scr_character_taking_damage);
 state_init("waiting");
 
+name = "";
 is_player = false;
+max_hand_size = 0;
+max_ability_points = 0;
 ability_points = 0;
-defence = 0;
 
-deck = ds_list_create();
 draw_pile = ds_list_create();
 hand = ds_list_create();
 graveyard = ds_list_create();

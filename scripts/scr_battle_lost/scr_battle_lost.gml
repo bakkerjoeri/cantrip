@@ -1,0 +1,5 @@
+if (state_new) {
+	with(obj_game_manager) {
+		state_switch("gameOver");
+	}
+}
