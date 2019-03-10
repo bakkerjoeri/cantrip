@@ -10,7 +10,7 @@ if (is_face_up) {
 	}
 	
 	draw_set_color(global.palette_0);
-	draw_text_ext(x + padding, y + padding, name, 8, sprite_width - 18);
+	draw_text_ext(x + padding, y + padding, title, 8, sprite_width - 18);
 
 	if (!is_unplayable) {
 		draw_set_color(global.palette_3);

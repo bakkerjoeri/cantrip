@@ -16,7 +16,7 @@ var card_name = ds_map_find_first(deck_map);
 
 for (var i = 0; i < ds_map_size(deck_map); i += 1) {
 	repeat(deck_map[? card_name]) {
-		var card = instance_create_layer(0, 0, "Instances_default", asset_get_index("obj_card_" + card_name));
+		var card = instance_create_layer(0, 0, "Instances", asset_get_index("obj_card_" + card_name));
 		
 		card.owner = owner;
 		ds_list_add(deck, card);

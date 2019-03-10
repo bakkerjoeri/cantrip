@@ -1,6 +1,7 @@
 event_inherited();
 
 name = "fireblast";
+title = "fireblast";
 cost = 2;
 text = "Do 3 damage.";
 

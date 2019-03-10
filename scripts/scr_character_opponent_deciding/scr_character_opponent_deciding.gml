@@ -67,7 +67,7 @@ if (obj_battle_manager.state_name == "turnPlayPhase") {
 		}
 	
 		var card_to_play = scr_choose_from_list(playable_cards);
-		show_debug_message("Gonna play card: " + card_to_play.name);
+		show_debug_message("Gonna play " + card_to_play.title);
 		ds_queue_enqueue(cards_to_play, card_to_play);
 		state_switch("playingCards");
 	

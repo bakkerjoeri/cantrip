@@ -1,8 +1,8 @@
 if (state_new) {	
-	if (room != room_combat) {
-		room_goto(room_combat);
-	}
+	current_floor_number = 1;
+	player_deck_list = scr_get_deck_list_starter();
 	
-	current_room = 1;
-	current_floor = 1;
+	with (obj_battle_manager) {
+		state_switch("battleStart");
+	}
 }

@@ -13,7 +13,8 @@ state_create("beingReshuffled", scr_card_being_reshuffled);
 state_init("inDrawPile");
 
 // card stats
-name = "";
+name = "base";
+title = "";
 cost = 0;
 is_unplayable = false;
 discard_priority = 1;

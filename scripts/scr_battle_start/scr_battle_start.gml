@@ -1,8 +1,8 @@
 if (state_new) {
-	ds_list_copy(player.draw_pile, player.deck);
+	player.draw_pile = scr_init_cards_from_deck_list(obj_game_manager.player_deck_list, player);
 	ds_list_shuffle(player.draw_pile);
-
-	ds_list_copy(opponent.draw_pile, opponent.deck);
+	
+	opponent.draw_pile = scr_init_cards_from_deck_list(scr_get_deck_list_flexible(), opponent);
 	ds_list_shuffle(opponent.draw_pile);
 	
 	with (player) {

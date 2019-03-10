@@ -2,6 +2,7 @@
 ///Initilize the variables required for the state engine.
 state=noone;
 state_next=state;
+state_executed_previously = noone;
 state_name="Unknown";
 state_timer=0;
 state_map=ds_map_create();
