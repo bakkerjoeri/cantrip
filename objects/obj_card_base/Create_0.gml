@@ -11,6 +11,10 @@ state_create("beingDiscarded", scr_card_being_discarded);
 state_create("damaged", scr_card_damaged);
 state_create("inGraveyard", scr_card_in_graveyard);
 state_create("beingReshuffled", scr_card_being_reshuffled);
+state_create("draftReveal", scr_card_draft_reveal);
+state_create("draftable", scr_card_draftable);
+state_create("draftPicked", scr_card_draft_picked);
+state_create("draftNotPicked", scr_card_draft_not_picked);
 state_init("undealt");
 
 // card stats

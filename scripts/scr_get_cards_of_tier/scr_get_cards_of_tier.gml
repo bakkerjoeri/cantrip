@@ -11,7 +11,7 @@ if (tier == 0) {
 if (tier == 1) {
 	ds_list_add(cards, "fireblast");
 	ds_list_add(cards, "meditate");
-	ds_list_add(cards, "health_potion");
+	ds_list_add(cards, "healing_potion");
 }
 
 if (tier == 2) {

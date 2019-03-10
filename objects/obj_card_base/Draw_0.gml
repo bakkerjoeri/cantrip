@@ -35,4 +35,16 @@ if (is_face_up) {
 		draw_rectangle(x - 2, y - 2, x + sprite_width + 1, y + sprite_height + 1, true);
 		draw_set_alpha(1);
 	}
+	
+	if (
+		state_name == "draftable"
+		&& obj_draft_manager.state_name == "awaitPick"
+		&& obj_draft_manager.card_with_focus == self
+	) {
+		draw_set_color(global.palette_4);
+		draw_rectangle(x - 1, y - 1, x + sprite_width, y + sprite_height, true);
+		draw_set_alpha(0.6);
+		draw_rectangle(x - 2, y - 2, x + sprite_width + 1, y + sprite_height + 1, true);
+		draw_set_alpha(1);
+	}
 }

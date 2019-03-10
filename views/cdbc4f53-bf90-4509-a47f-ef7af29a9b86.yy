@@ -14,7 +14,11 @@
         "ddaa95fc-88e4-4db0-8249-4122a984a4a6",
         "19b42229-7769-46e4-9f17-4c2a35a22c69",
         "996ef06d-9a6b-4365-8e10-49ea61ea661a",
-        "a56bd059-a558-4689-a79b-c2ebea58147e"
+        "a56bd059-a558-4689-a79b-c2ebea58147e",
+        "807a9549-4b95-4c70-a35f-63dfd2d170ed",
+        "e793e21a-b062-4820-83b8-983358f1cc74",
+        "98fd586d-af9e-423d-9f16-f1660177e0d7",
+        "34860611-14dd-4f78-9e40-1e4e11fd9e8d"
     ],
     "filterType": "GMScript",
     "folderName": "State",

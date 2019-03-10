@@ -8,8 +8,8 @@
         "1cfb9a60-634d-445e-95b5-0ec1ddb9a774",
         "916f4b19-560d-4e6b-b5f2-c2718c564d18",
         "60d7dbbc-1e16-470a-a00b-f923b8fc1c4c",
-        "4d2a7c6c-ed28-45d7-93e7-14c120e7ff77",
-        "4ddcb3d2-54a2-4b39-9585-193c97953547"
+        "4ddcb3d2-54a2-4b39-9585-193c97953547",
+        "4d2a7c6c-ed28-45d7-93e7-14c120e7ff77"
     ],
     "filterType": "GMObject",
     "folderName": "Battle",
