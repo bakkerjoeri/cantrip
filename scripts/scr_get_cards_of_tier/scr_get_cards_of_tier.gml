@@ -3,6 +3,7 @@ var tier = argument[0];
 var cards = ds_list_create();
 
 if (tier == 0) {
+	ds_list_add(cards, "shield");
 	ds_list_add(cards, "attack");
 	ds_list_add(cards, "leech");
 	ds_list_add(cards, "combust");

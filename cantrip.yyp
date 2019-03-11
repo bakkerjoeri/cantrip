@@ -96,6 +96,44 @@
             }
         },
         {
+            "Key": "04a5d311-51bc-4f9d-b58f-3a243df8304a",
+            "Value": {
+                "id": "294e8658-a894-458f-bb4b-a670ce0f0cb9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_warrior\/scr_get_deck_list_warrior.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "04f00089-c99a-40a5-b091-600b3e3b80a0",
+            "Value": {
+                "id": "603a52df-e9af-4fd4-b5b9-1e08a8434277",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_kobold\/scr_get_deck_list_kobold.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05438395-edbf-4df5-afdd-7031ed4198fe",
             "Value": {
                 "id": "7b023ab3-3d5c-4fe7-a51d-5132e73f070d",
@@ -134,6 +172,25 @@
             }
         },
         {
+            "Key": "079d868a-d6b7-4925-af0f-5fa32726c506",
+            "Value": {
+                "id": "73165f98-0c90-4ad4-a0a6-39bdbff19055",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_enemy_kobold\/scr_get_enemy_kobold.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f2b968e-e974-4dde-8125-f27dd2dcc2ab",
             "Value": {
                 "id": "63be44c8-41b1-4ea6-a960-828b89fd9cb2",
@@ -168,6 +225,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_card_effect_fireblast\/scr_card_effect_fireblast.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1139c0a5-a2b9-4456-9927-05d2f5f659fc",
+            "Value": {
+                "id": "b648bf0f-6a8e-41e2-8a45-d34765fa70d2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_enigma\/scr_get_deck_list_enigma.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -742,6 +818,44 @@
             }
         },
         {
+            "Key": "32971651-a17c-459b-a1b0-9e3d21dee47e",
+            "Value": {
+                "id": "86d02678-8472-4370-96de-58289cbe102b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_boss_necromancer\/scr_get_boss_necromancer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "32f2a015-b0c8-4532-88e6-e88b171ff300",
+            "Value": {
+                "id": "8fb32d5d-07d4-4d40-ac49-c42b357b8e8b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_mind_flayer\/scr_get_deck_list_mind_flayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "33e587f6-24ce-4e3a-bba8-973ffdb4cbcc",
             "Value": {
                 "id": "2d306fbb-95b9-4b2c-a910-e3435737b418",
@@ -1179,6 +1293,25 @@
             }
         },
         {
+            "Key": "46c75576-a9a1-420c-9db9-969fc5d0b594",
+            "Value": {
+                "id": "6e6629f9-4e51-4119-a402-5c062a42fd6c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_warlock\/scr_get_deck_list_warlock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "473ccf78-b41e-4dc4-9b21-3bebe80e21aa",
             "Value": {
                 "id": "962714ce-8ab8-4514-9ef7-380371ae8da2",
@@ -1422,6 +1555,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/ease_out_quint\/ease_out_quint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "59e40707-cdef-46e1-8180-48eae300dd74",
+            "Value": {
+                "id": "720f5eb3-cc40-4bd8-ac05-c5ff854ee7e7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_boss_ancient_wizard\/scr_get_boss_ancient_wizard.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2870,6 +3022,25 @@
             }
         },
         {
+            "Key": "a3783b6a-2d51-4bac-a141-38162ffab926",
+            "Value": {
+                "id": "7dca1bf6-9a6c-4f2d-b609-a1ae6a07fb87",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_enemy_warrior\/scr_get_enemy_warrior.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a3ef8379-6714-44b0-b5fa-d9bcdd59dd1f",
             "Value": {
                 "id": "b0ff56c1-f1c4-4c73-83fa-eec6f88b8c29",
@@ -3117,6 +3288,25 @@
             }
         },
         {
+            "Key": "ad016820-5c29-4605-9364-1df1ffa89e45",
+            "Value": {
+                "id": "45e4bba1-f732-40d6-b235-7206ce14bc17",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_boss_enigma\/scr_get_boss_enigma.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad20e86c-5c14-42a9-9c33-23bb06a7d6c7",
             "Value": {
                 "id": "019b1aa2-e075-4a30-b9c1-b8167f26d438",
@@ -3231,6 +3421,25 @@
             }
         },
         {
+            "Key": "b63712a4-0b83-47e4-ac8f-8c8d5fb868aa",
+            "Value": {
+                "id": "c67305e5-d47e-4059-b2a2-195f09071c27",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_enemy_warlock\/scr_get_enemy_warlock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b6563fbc-098c-4cf8-815e-b229175ab4ad",
             "Value": {
                 "id": "441e5934-e21f-4d84-a3d1-bddf15d3a6e8",
@@ -3265,6 +3474,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_get_deck_list_wyvern\/scr_get_deck_list_wyvern.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b8518e82-730b-4a1b-8d92-afd26d121d47",
+            "Value": {
+                "id": "3532792f-b341-45e8-8cf2-1c3aa02ca24a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_the_blacksmith\/scr_get_deck_list_the_blacksmith.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3361,6 +3589,25 @@
                 ],
                 "resourcePath": "views\/be5b857b-0ff3-4427-9077-3624fed829f3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bea34d20-80a3-4d31-84fc-2e5a49c293cf",
+            "Value": {
+                "id": "4fc3e5ff-6233-47b8-a533-d7ffcd534d24",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_ancient_wizard\/scr_get_deck_list_ancient_wizard.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3494,6 +3741,25 @@
                 ],
                 "resourcePath": "views\/c951163d-8898-4969-b807-bc5bb3cc5b4d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cbbd02a8-2802-4ac3-ab96-9b75f3b89350",
+            "Value": {
+                "id": "586a3122-f798-40ea-95bc-8210bb952e1e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_deck_list_necromancer\/scr_get_deck_list_necromancer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3740,6 +4006,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_character_playing_cards\/scr_character_playing_cards.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d489703b-6415-4b18-9734-7f1c64c48159",
+            "Value": {
+                "id": "71225bd6-0e9e-4283-9ef7-0a75e4e30a6c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_boss_the_blacksmith\/scr_get_boss_the_blacksmith.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4276,6 +4561,25 @@
             }
         },
         {
+            "Key": "fe1043cd-292e-48bd-918b-9974f6140558",
+            "Value": {
+                "id": "7ff16e7d-de0f-4ffe-a700-4cae79803f6e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_get_boss_mind_flayer\/scr_get_boss_mind_flayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fedc8cc4-acbc-413a-801d-6a1f32ac163a",
             "Value": {
                 "id": "f5256101-03e5-4548-af05-8472628ca658",
@@ -4364,11 +4668,19 @@
         "988c6d1b-b401-4979-ba5b-4dddb7793ec8",
         "40bb132f-77be-4f5a-8911-ccb5a202a8dc",
         "36532a9b-864a-4f42-8135-a6b1b2abb6e0",
-        "6309e1af-930d-4f22-8c07-5d07a9fe5de6",
         "75936a3b-1740-4450-b40b-7e7d3a9d5408",
+        "6309e1af-930d-4f22-8c07-5d07a9fe5de6",
         "b8ee48ac-623f-4945-ab5d-e1468d85f0c2",
+        "04f00089-c99a-40a5-b091-600b3e3b80a0",
         "f76e7f32-6003-49bd-8dad-4bf664f0a09b",
         "b7f5644f-547c-4415-b71a-7ddc1fa5a532",
+        "32f2a015-b0c8-4532-88e6-e88b171ff300",
+        "b8518e82-730b-4a1b-8d92-afd26d121d47",
+        "46c75576-a9a1-420c-9db9-969fc5d0b594",
+        "bea34d20-80a3-4d31-84fc-2e5a49c293cf",
+        "cbbd02a8-2802-4ac3-ab96-9b75f3b89350",
+        "04a5d311-51bc-4f9d-b58f-3a243df8304a",
+        "1139c0a5-a2b9-4456-9927-05d2f5f659fc",
         "35000f78-cb53-404d-9934-4aaf1e1daa56",
         "d0ccf462-c0f3-4532-9e60-ebf8556a4d63",
         "bfbdf8e4-618e-4cac-9ae3-51da68257b09",
@@ -4379,10 +4691,18 @@
         "2f731693-da0a-48c6-9534-e42e85097d34",
         "3d250a11-cec7-47c8-b5c0-5571a9e795b8",
         "8612bc10-6352-4955-8ab4-a2a8e6cb4025",
+        "079d868a-d6b7-4925-af0f-5fa32726c506",
         "115c048c-2eda-4a01-b52d-07fc7cb01882",
+        "a3783b6a-2d51-4bac-a141-38162ffab926",
         "4488e7b9-2080-4f23-95ea-8a6a8e01bd65",
         "e5c477a2-1d99-4452-afee-7d4d8cbfc910",
+        "b63712a4-0b83-47e4-ac8f-8c8d5fb868aa",
         "a56e1e63-1e89-4eb8-9fca-b646eb5ab2ed",
+        "fe1043cd-292e-48bd-918b-9974f6140558",
+        "d489703b-6415-4b18-9734-7f1c64c48159",
+        "32971651-a17c-459b-a1b0-9e3d21dee47e",
+        "59e40707-cdef-46e1-8180-48eae300dd74",
+        "ad016820-5c29-4605-9364-1df1ffa89e45",
         "5ba83d65-4780-4b6d-8fa3-696201823dba",
         "99e71e0f-4b8d-415b-a5f0-5b356262527c",
         "3c8a5519-1df4-40b0-806b-611d73e1516f",
