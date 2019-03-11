@@ -1,6 +1,6 @@
 event_inherited();
 
-name = "raise_the_dead";
+name = "read_mind";
 title = "read mind";
 cost = 2;
 text = "Copy 2 random cards from your opponent's hand.";

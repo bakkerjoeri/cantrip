@@ -4124,25 +4124,6 @@
             }
         },
         {
-            "Key": "dea593fd-3df8-4fc6-8065-bd2367fd5fd3",
-            "Value": {
-                "id": "689b9af7-f239-4405-852c-d7c0026c5507",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/obj_card_roll_the_bones\/obj_card_roll_the_bones.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "e320dc2f-57a6-4039-b6ad-f0ada1168b64",
             "Value": {
                 "id": "26a49601-9de9-4b3a-975c-6661a0366222",
