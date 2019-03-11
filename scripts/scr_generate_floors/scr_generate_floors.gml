@@ -1,15 +1,18 @@
 var floors = ds_list_create();
 
-for (var floor_number = 0; floor_number <= 2; floor_number += 1) {
+var number_of_floors = 3;
+var number_of_rooms = 3;
+
+for (var floor_number = 0; floor_number <= number_of_floors - 1; floor_number += 1) {
 	var new_floor = ds_map_create();
 	var rooms = ds_list_create();
 	
-	for (var room_number = 0; room_number <= 3; room_number += 1) {
+	for (var room_number = 0; room_number <= number_of_rooms - 1; room_number += 1) {
 		var new_room = ds_map_create();
 		var room_tier = floor_number;
 		
-		if (room_number < 3) {
-			// Set a room tier. Sometimes it's a bit higher. On floor 3 it's a bit lower.
+		if (room_number < number_of_rooms - 1) {
+			// Set a room tier. Sometimes it's a bit higher, while on floor the last floor it's a bit lower.
 			if (irandom(3) = 0) {
 				if (floor_number <= 1) {
 					room_tier += 1;

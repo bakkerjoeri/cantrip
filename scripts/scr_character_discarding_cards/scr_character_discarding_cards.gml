@@ -9,7 +9,10 @@ if (_card_discard_delay <= 0 && ds_queue_empty(cards_to_discard)) {
 
 if (_card_discard_delay <= 0 && !ds_queue_empty(cards_to_discard)) {
 	var card_to_discard = ds_queue_dequeue(cards_to_discard);
-
+	
+	ds_list_add(graveyard, card_to_discard);
+	ds_list_delete(hand, ds_list_find_index(hand, card_to_discard));
+		
 	with (card_to_discard) {
 		state_switch("beingDiscarded");
 	}

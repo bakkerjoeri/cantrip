@@ -15,7 +15,7 @@ if (_card_damage_delay <= 0 && damage_to_take > 0) {
 		
 		with (obj_battle_manager) {
 			character_that_lost = other;
-			state_switch("battleEnd");
+			state_switch("end");
 		}
 		
 		exit;

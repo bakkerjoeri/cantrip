@@ -18,14 +18,17 @@ if (!announcement_started) {
 }
 
 if (announcement_started && !announcement_seen && animation_is_finished) {
-	animation_add_wait(0.75 * room_speed);
+	if (should_leave) {
+		animation_add_wait(0.75 * room_speed);
 	
-	animation_add_next(
-		0 - (text_width / 2),
-		room_height / 2,
-		.5 * room_speed,
-		ease_in_quint,
-	);
+		animation_add_next(
+			0 - (text_width / 2),
+			room_height / 2,
+			.5 * room_speed,
+			ease_in_quint,
+		);
+	}
+	
 	
 	announcement_seen = true;
 	exit;

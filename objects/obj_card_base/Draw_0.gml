@@ -2,6 +2,8 @@ draw_self();
 
 if (is_face_up) {
 	var padding = 5;
+	var text_offset = 38;
+	
 	draw_set_halign(fa_left);
 	
 	if (debug_mode) {
@@ -9,18 +11,26 @@ if (is_face_up) {
 		draw_text(x, y - 12, state_name + " (" + string(depth) + ")");
 	}
 	
+	draw_set_halign(fa_center);
 	draw_set_color(global.palette_0);
-	draw_text_ext(x + padding, y + padding, title, 8, sprite_width - 18);
+	draw_text_ext(x + sprite_width / 2, y + padding, title, 8, sprite_width - (2 * padding) - 12);
 
 	if (!is_unplayable) {
 		draw_set_color(global.palette_3);
-		draw_set_halign(fa_right);
-		draw_text(x + sprite_width - padding, y + padding, string(cost));
+		draw_set_halign(fa_left);
+		draw_text(x + padding, y + padding, string(cost));
+	}
+	
+	if (is_unplayable) {
+		draw_set_color(global.palette_2);
+		draw_set_halign(fa_left);
+		draw_text_ext(x + padding, y + 38, "Unplayable", 8, sprite_width - (2 * padding));
+		text_offset += 8;
 	}
 
 	draw_set_color(global.palette_0);
 	draw_set_halign(fa_left);
-	draw_text_ext(x + padding, y + 46, text, 8, sprite_width - (2 * padding));
+	draw_text_ext(x + padding, y + text_offset, text, 8, sprite_width - (2 * padding));
 	
 	if (
 		state_name == "inHand"

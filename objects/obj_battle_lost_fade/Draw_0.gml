@@ -1,0 +1,1 @@
+draw_sprite_tiled(spr_overlay_fade_out, overlay_index, 0, 0);
