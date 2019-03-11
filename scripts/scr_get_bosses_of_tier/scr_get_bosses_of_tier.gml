@@ -11,11 +11,10 @@ if (tier == 0) {
 
 if (tier == 1) {
 	enemies[| index++] = scr_get_boss_mind_flayer();
-	enemies[| index++] = scr_get_boss_the_blacksmith();
+	enemies[| index++] = scr_get_boss_blacksmith();
 }
 
 if (tier == 2) {
-	enemies[| index++] = scr_get_boss_wyvern();
 	enemies[| index++] = scr_get_boss_ancient_wizard();
 	enemies[| index++] = scr_get_boss_enigma();
 }

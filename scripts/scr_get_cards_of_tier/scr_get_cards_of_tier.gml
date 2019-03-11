@@ -5,7 +5,6 @@ var cards = ds_list_create();
 if (tier == 0) {
 	ds_list_add(cards, "shield");
 	ds_list_add(cards, "attack");
-	ds_list_add(cards, "leech");
 	ds_list_add(cards, "combust");
 	ds_list_add(cards, "rest");
 	ds_list_add(cards, "transmute_shields");
@@ -15,6 +14,7 @@ if (tier == 0) {
 }
 
 if (tier == 1) {
+	ds_list_add(cards, "leech");
 	ds_list_add(cards, "meditate");
 	ds_list_add(cards, "healing_potion");
 	ds_list_add(cards, "shield_bash");

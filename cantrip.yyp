@@ -3112,7 +3112,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_get_boss_wyvern\/scr_get_boss_wyvern.yy",
+                "resourcePath": "scripts\/scr_get_enemy_wyvern\/scr_get_enemy_wyvern.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3492,7 +3492,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_get_deck_list_the_blacksmith\/scr_get_deck_list_the_blacksmith.yy",
+                "resourcePath": "scripts\/scr_get_deck_list_blacksmith\/scr_get_deck_list_blacksmith.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4024,7 +4024,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/scr_get_boss_the_blacksmith\/scr_get_boss_the_blacksmith.yy",
+                "resourcePath": "scripts\/scr_get_boss_blacksmith\/scr_get_boss_blacksmith.yy",
                 "resourceType": "GMScript"
             }
         },

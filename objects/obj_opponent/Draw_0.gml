@@ -4,7 +4,7 @@ draw_set_halign(fa_left);
 
 if (obj_battle_manager.turn_of_character == self) {
 	draw_set_color(global.palette_4);
-	draw_text(448, 106, "@");	
+	draw_text(min(448, 496 - string_width(name) - 16), 106, "@");	
 }
 
 draw_set_color(global.palette_1);
@@ -14,7 +14,7 @@ draw_text(448, 82, "AP");
 draw_set_halign(fa_right);
 
 if (debug_mode) {
-	draw_text(496, 114, state_name);
+	draw_text(496, 98, state_name);
 }
 
 draw_text(496, 106, name);

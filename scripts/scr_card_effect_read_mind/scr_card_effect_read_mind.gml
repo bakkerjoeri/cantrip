@@ -2,7 +2,7 @@
 var target = argument[0];
 var source = argument[1];
 
-repeat(ds_list_size(target.hand)) {
+repeat(min(2, ds_list_size(target.hand), source.max_hand_size - ds_list_size(source.hand))) {
 	var card_to_copy = scr_choose_from_list(target.hand);
 	
 	if (card_to_copy) {	

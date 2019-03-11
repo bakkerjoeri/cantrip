@@ -14,5 +14,6 @@ if (state_name != "end") {
 	draw_sprite(spr_card_backside, 0, deck_x, deck_y);
 } else {
 	draw_set_halign(fa_center);
-	draw_text(room_width / 2, 136, "Drafting finished.");
+	draw_set_color(global.palette_1);
+	draw_text(room_width / 2, 136, "Draft finished.");
 }

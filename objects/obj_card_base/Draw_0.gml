@@ -17,8 +17,8 @@ if (is_face_up) {
 
 	if (!is_unplayable) {
 		draw_set_color(global.palette_3);
-		draw_set_halign(fa_left);
-		draw_text(x + padding, y + padding, string(cost));
+		draw_set_halign(fa_center);
+		draw_text(x + padding + 2, y + padding, string(cost));
 	}
 	
 	if (is_unplayable) {

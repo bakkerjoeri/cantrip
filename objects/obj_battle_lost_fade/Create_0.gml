@@ -1,2 +1,2 @@
-_next_frame_delay = 1 * room_speed;
+_next_frame_delay = 0.75 * room_speed;
 overlay_index = 0;

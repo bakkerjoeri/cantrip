@@ -18,6 +18,7 @@ if (tier == 1) {
 
 if (tier == 2) {
 	ds_list_add(enemies, scr_get_enemy_adventurer());
+	ds_list_add(enemies, scr_get_enemy_wyvern());
 	ds_list_add(enemies, scr_get_boss_mind_flayer());
 }
 

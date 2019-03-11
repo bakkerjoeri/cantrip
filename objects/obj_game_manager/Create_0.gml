@@ -14,6 +14,8 @@ floors = ds_list_create();
 
 current_floor = undefined;
 current_room = undefined;
+current_room_number = 0;
+current_floor_number = 0;
 
 battles_won = 0;
 runs_won = 0;

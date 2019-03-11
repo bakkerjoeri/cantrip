@@ -14,7 +14,7 @@ draw_text(448, room_height - 82, "AP");
 draw_set_halign(fa_right);
 
 if (debug_mode) {
-	draw_text(496, room_height - 114, state_name);
+	draw_text(496, room_height - 98, state_name);
 }
 
 draw_text(496, room_height - 106, "You");
