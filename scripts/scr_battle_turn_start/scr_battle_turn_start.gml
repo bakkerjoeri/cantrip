@@ -31,8 +31,17 @@ if (!instance_exists(turn_start_announcement) || turn_start_announcement.announc
 		var effect_to_execute = ds_queue_dequeue(start_of_turn_effects_to_execute);
 	
 		show_debug_message("Now executing effect " + effect_to_execute[? "name"]);
-	
-		script_execute(effect_to_execute[? "effect"], turn_of_character);
+		
+		var target = noone;
+		var source = obj_battle_manager.turn_of_character;
+
+		if (source == obj_battle_manager.player) {
+			target = obj_battle_manager.opponent;
+		} else {
+			target = obj_battle_manager.player;
+		}
+		
+		script_execute(effect_to_execute[? "effect"], target, source);
 		effect_to_execute[? "duration"] -= 1;
 	
 		show_debug_message("Turns left after executing: " + string(effect_to_execute[? "duration"]));

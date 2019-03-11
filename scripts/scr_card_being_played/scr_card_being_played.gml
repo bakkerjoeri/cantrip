@@ -5,7 +5,7 @@ if (state_new) {
 }
 
 if (animation_is_finished) {
-	var target;
+	var target = noone;
 	var source = obj_battle_manager.turn_of_character;
 
 	if (source == obj_battle_manager.player) {

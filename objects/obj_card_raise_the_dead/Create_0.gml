@@ -1,6 +1,6 @@
 event_inherited();
 
-name = "raise the dead";
+name = "raise_the_dead";
 title = "raise the dead";
 cost = 1;
 text = "Draw the top card from your graveyard.";

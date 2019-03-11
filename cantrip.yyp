@@ -1825,6 +1825,25 @@
             }
         },
         {
+            "Key": "745f9d53-ccae-4988-937f-c8d7cfda360d",
+            "Value": {
+                "id": "ea165cc3-ce7a-445c-9b81-518965ead475",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_card_effect_mindswap\/scr_card_effect_mindswap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "750f9bc2-027c-4ff6-9c3f-043ce3896f0c",
             "Value": {
                 "id": "e5055221-8ae5-4bb5-b288-3dc6f28c055e",
@@ -2088,6 +2107,25 @@
                 ],
                 "resourcePath": "objects\/obj_card_shields_up\/obj_card_shields_up.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "804b053a-5577-4d87-a97c-230c3b6980c2",
+            "Value": {
+                "id": "cca4628b-b99e-423e-934b-ad0b7ade6348",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_card_effect_swap_hands\/scr_card_effect_swap_hands.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2642,6 +2680,25 @@
             }
         },
         {
+            "Key": "9b3d6efd-48f6-4887-9b43-0a9a9e5d6bb1",
+            "Value": {
+                "id": "465d1d04-932c-4c5d-b021-0e5c7de4baf2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_card_read_mind\/obj_card_read_mind.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9b53c908-155e-4dbf-a143-25ad3bbc47f8",
             "Value": {
                 "id": "e7256f2e-2535-4a0b-9d2b-0e796b96ba76",
@@ -3037,6 +3094,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/scr_init_cards_from_deck_list\/scr_init_cards_from_deck_list.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "abdd737c-d0fc-4da7-9d16-d1d6ae37a8b9",
+            "Value": {
+                "id": "9605c727-29c3-49c3-b69d-35ff897c0ce9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_card_effect_read_mind\/scr_card_effect_read_mind.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4262,7 +4338,9 @@
         "a9a1bb89-6113-404c-b79b-edefb848cf47",
         "33e587f6-24ce-4e3a-bba8-973ffdb4cbcc",
         "2988e7c8-e35e-49e6-809a-5874467becb2",
+        "745f9d53-ccae-4988-937f-c8d7cfda360d",
         "68b90e12-4f61-41b0-84a3-64fb9b3fc56a",
+        "abdd737c-d0fc-4da7-9d16-d1d6ae37a8b9",
         "4e6ed24b-b94b-4a9c-ada7-92789e2296ce",
         "84f98b21-b334-4e69-b4de-2667b0ad4631",
         "830a152a-886a-4633-9d72-d04be3a5e8cd",
@@ -4270,6 +4348,7 @@
         "0318ed4a-69e1-4143-89a0-da52f19ecab2",
         "a758b477-8cee-4073-b47f-47ed89746bba",
         "b3c05708-932e-49d4-84ee-d76431ef0a15",
+        "804b053a-5577-4d87-a97c-230c3b6980c2",
         "ad20e86c-5c14-42a9-9c33-23bb06a7d6c7",
         "6314c3e1-cf03-4c14-bc64-7fba67f05f46",
         "fbbd48f0-4b8a-4505-818c-2d8489317972",
