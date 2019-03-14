@@ -2,9 +2,9 @@ if (state_new) {
 	previous_draw_pile_size = 0;
 	previous_draw_pile_position = -1;
 	
-	is_face_up = false;
 	x = owner.draw_pile_x;
 	y = owner.draw_pile_y;
+	is_face_up = false;
 }
 
 var current_draw_pile_size = ds_list_size(owner.draw_pile);
@@ -20,10 +20,17 @@ if (
 ) {
 	depth = ds_list_size(owner.draw_pile) - 1 - ds_list_find_index(owner.draw_pile, self);
 	
-	if (current_draw_pile_position > current_draw_pile_size - 4) {
+	if (current_draw_pile_position >= current_draw_pile_size - 3) {
 		animation_add_next(
-			owner.draw_pile_x + (current_draw_pile_size - 1 - current_draw_pile_position),
-			owner.draw_pile_y - (current_draw_pile_size - 1 - current_draw_pile_position) * 2,
+			owner.draw_pile_x + (2 * (current_draw_pile_position - current_draw_pile_size + 3)),
+			owner.draw_pile_y,
+			.1 * room_speed,
+			ease_linear,
+		);
+	} else {
+		animation_add_next(
+			owner.draw_pile_x,
+			owner.draw_pile_y,
 			.1 * room_speed,
 			ease_linear,
 		);
