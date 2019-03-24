@@ -8,11 +8,7 @@ if (
 	}
 	
 	// Switch turns to the other character.
-	if (turn_of_character == player) {
-		turn_of_character = opponent;
-	} else {
-		turn_of_character = player;
-	}
+	turn_of_character = scr_get_opponent_of_character(turn_of_character);
 
 	state_switch("turnStart");
 }

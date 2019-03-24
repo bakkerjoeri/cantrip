@@ -24,7 +24,8 @@ cost = 0;
 is_unplayable = false;
 discard_priority = 1;
 text = "";
-effects = ds_list_create();
+effect = undefined;
+condition = undefined;
 
 // card state
 owner = noone;

@@ -7,6 +7,13 @@ if (_card_damage_delay <= 0 && damage_to_take == 0) {
 	exit;
 }
 
+if (obj_battle_manager.character_that_lost != noone) {
+	_card_damage_delay = 0;
+	damage_to_take = 0;
+	state_switch_previous();
+	exit;
+}
+
 if (_card_damage_delay <= 0 && damage_to_take > 0) {
 	// Game over if there's nothing left in the hand.
 	if (ds_list_size(hand) == 0) {

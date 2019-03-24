@@ -4,5 +4,5 @@ name = "desecrate";
 title = "desecrate";
 cost = 0;
 text = "Steal the top card from your opponent's graveyard.";
-
-ds_list_add(effects, scr_card_effect_desecrate);
+effect = scr_card_effect_desecrate;
+condition = scr_can_play_card_desecrate;

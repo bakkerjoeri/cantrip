@@ -27,7 +27,7 @@
         "ad20e86c-5c14-42a9-9c33-23bb06a7d6c7"
     ],
     "filterType": "GMScript",
-    "folderName": "Card effects",
+    "folderName": "Effects",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

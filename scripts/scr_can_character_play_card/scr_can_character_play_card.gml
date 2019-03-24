@@ -1,6 +1,12 @@
 /// scr_can_character_play_card(character, card)
 var character = argument[0];
 var card = argument[1];
+var opponent = scr_get_opponent_of_character(character);
 
-return card.cost <= character.ability_points &&
-	!card.is_unplayable;
+if (!is_undefined(card.condition)) {
+	return !card.is_unplayable &&
+		card.cost <= character.ability_points &&
+		script_execute(card.condition, opponent, character)
+}
+
+return !card.is_unplayable && card.cost <= character.ability_points;

@@ -13,6 +13,7 @@ state_init("init");
 
 turn_of_character = noone;
 card_with_focus = noone;
+character_that_lost = noone;
 
 player = instance_create_layer(0, 0, "Controllers", obj_player);
 opponent = instance_create_layer(0, 0, "Controllers", obj_opponent);

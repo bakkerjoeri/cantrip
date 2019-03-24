@@ -2,12 +2,11 @@
 var tier = argument[0];
 
 var enemies = ds_list_create();
-var index = -1;
 
 if (tier == 0) {
-	ds_list_add(enemies, scr_get_enemy_gerblin());
 	ds_list_add(enemies, scr_get_enemy_kobold());
-	ds_list_add(enemies, scr_get_enemy_warrior());
+	ds_list_add(enemies, scr_get_enemy_kobold());
+	ds_list_add(enemies, scr_get_enemy_kobold());
 }
 
 if (tier == 1) {
