@@ -7,5 +7,9 @@ if (state_new) {
 	current_room = undefined;
 	current_floor = undefined;
 	
+	with (obj_pause_controller) {
+		state_switch("unpaused");
+	}
+	
 	state_switch("gotoBattle");
 }
