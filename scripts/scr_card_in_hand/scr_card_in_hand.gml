@@ -71,9 +71,8 @@ if (
 	&& obj_battle_manager.turn_of_character == owner
 	&& obj_battle_manager.turn_of_character == obj_battle_manager.player
 	&& obj_battle_manager.turn_of_character.state_name == "deciding"
+	&& obj_battle_manager.card_with_focus == self
 	&& mouse_check_button_released(mb_left)
-	&& instance_position(mouse_x, mouse_y, self)
-	&& scr_get_top_object_under_mouse(obj_card_base) == self
 	&& scr_can_character_play_card(owner, self)
 ) {
 	ds_queue_enqueue(owner.cards_to_play, self);
