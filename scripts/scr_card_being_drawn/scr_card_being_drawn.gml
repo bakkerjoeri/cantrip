@@ -3,7 +3,12 @@ if (state_new) {
 	
 	is_face_up = owner.is_hand_visible;
 	animation_add_next(
-		owner.hand_x + (ds_list_find_index(owner.hand, self) * (owner.hand_width / ds_list_size(owner.hand))),
+		scr_calculate_position_x_in_hand(
+			ds_list_find_index(owner.hand, self),
+			ds_list_size(owner.hand),
+			owner.hand_x,
+			owner.hand_width
+		),
 		owner.hand_y,
 		.25 * room_speed,
 		ease_out_quint,

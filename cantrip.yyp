@@ -4865,6 +4865,25 @@
             }
         },
         {
+            "Key": "ec50384e-7ca6-4e2d-99e2-f71c4025f35b",
+            "Value": {
+                "id": "e6525df8-23ef-4b5e-817b-649a53bae6d3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_calculate_position_x_in_hand\/scr_calculate_position_x_in_hand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ee11b692-0667-4297-85c2-75be9ac8e7d3",
             "Value": {
                 "id": "d67071d4-2458-41d1-b6c4-276483e3fecb",
@@ -5188,6 +5207,7 @@
         "2eb953a2-a1ba-430d-81fb-0b581ec030fa",
         "cfb5093d-9255-435b-9861-787652e620fe",
         "1227cbf9-7a24-4c0c-8734-ec250e0db661",
+        "ec50384e-7ca6-4e2d-99e2-f71c4025f35b",
         "39a15cc4-503e-42c3-8485-3c1044bea712",
         "e9a09f7f-36a3-4daf-8161-0f26506b8b4e",
         "2aeca3cf-ea12-46dc-90df-5e1a517aad60",

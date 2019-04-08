@@ -15,7 +15,12 @@ if (
 	)
 ) {
 	animation_add_next(
-		owner.hand_x + (current_hand_position * (owner.hand_width / current_hand_size)),
+		scr_calculate_position_x_in_hand(
+			current_hand_position,
+			current_hand_size,
+			owner.hand_x,
+			owner.hand_width
+		),
 		owner.hand_y,
 		.25 * room_speed,
 		ease_out_quint,
