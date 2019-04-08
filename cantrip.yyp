@@ -685,6 +685,25 @@
             }
         },
         {
+            "Key": "2bd736fc-9ef6-4c88-a04e-e171b5ac08d0",
+            "Value": {
+                "id": "845f514f-1040-43c4-a214-19dddac0f461",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_is_character_hand_unplayable\/scr_is_character_hand_unplayable.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d048b0e-1660-4049-8040-4fd57d6b2354",
             "Value": {
                 "id": "7d9e4951-df4e-4e47-bf8b-cb9b5429433c",
@@ -5257,6 +5276,7 @@
         "9d752161-8c3f-41a9-809e-70162c1b370b",
         "48f6d83f-ede3-4f2d-aec5-c56a4e16dddc",
         "72c65653-d4f0-46da-bc2b-2a2e9f666d1a",
+        "2bd736fc-9ef6-4c88-a04e-e171b5ac08d0",
         "6314c3e1-cf03-4c14-bc64-7fba67f05f46",
         "fbbd48f0-4b8a-4505-818c-2d8489317972",
         "99f71e04-7a1e-45e0-a972-222273289c45",
