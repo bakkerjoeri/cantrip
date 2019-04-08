@@ -1,5 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-label = "pause";
-is_paused = false;
+pause_icon_sprite_index = 0;
+pause_icon_sprite = spr_button_icon_pause;
