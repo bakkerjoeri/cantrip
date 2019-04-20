@@ -13,12 +13,12 @@ if (state_new) {
 	ds_list_shuffle(opponent.draw_pile);
 	
 	with (player) {
-		amount_of_cards_to_draw += 3;
+		amount_of_cards_to_draw += max_hand_size;
 		state_switch("drawingCards");
 	}
 	
 	with (opponent) {
-		amount_of_cards_to_draw += 3;
+		amount_of_cards_to_draw += max_hand_size;
 		state_switch("drawingCards");
 	}
 	

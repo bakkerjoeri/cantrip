@@ -2262,25 +2262,6 @@
             }
         },
         {
-            "Key": "75936a3b-1740-4450-b40b-7e7d3a9d5408",
-            "Value": {
-                "id": "337ecf1d-e1ad-4ba9-b1cd-d82f838999f5",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scr_get_deck_list_flexible\/scr_get_deck_list_flexible.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "75ebcd0c-8af8-4c7c-971d-a513eb212a85",
             "Value": {
                 "id": "be4f461f-6881-4d3e-8773-4b250ba8f0cf",
@@ -5293,7 +5274,6 @@
         "40bb132f-77be-4f5a-8911-ccb5a202a8dc",
         "36532a9b-864a-4f42-8135-a6b1b2abb6e0",
         "981ae840-5f6a-49c4-8ad7-b9e43cf99645",
-        "75936a3b-1740-4450-b40b-7e7d3a9d5408",
         "6309e1af-930d-4f22-8c07-5d07a9fe5de6",
         "b8ee48ac-623f-4945-ab5d-e1468d85f0c2",
         "04f00089-c99a-40a5-b091-600b3e3b80a0",
