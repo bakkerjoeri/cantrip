@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "099907cb-9038-45cb-a8d0-2c4d5d2a60b0",
+            "Value": {
+                "id": "35fdc84d-003e-4454-a4e5-4558d7323d49",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_load_map_from_file\/scr_load_map_from_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f2b968e-e974-4dde-8125-f27dd2dcc2ab",
             "Value": {
                 "id": "63be44c8-41b1-4ea6-a960-828b89fd9cb2",
@@ -1347,6 +1366,25 @@
                 ],
                 "resourcePath": "views\/422b76ef-9e25-4622-b188-4555c7b281d0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "42c3f101-e430-460c-bd4f-234e30464ca9",
+            "Value": {
+                "id": "dd637d32-4598-4230-9a04-56319279bb01",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_load_game\/scr_load_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3003,6 +3041,25 @@
             }
         },
         {
+            "Key": "92fabf40-9da5-477d-8b7b-780d5d5e5641",
+            "Value": {
+                "id": "952d3361-4ffc-4d9a-93c5-c4c05b035f3b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_save_map_to_file\/scr_save_map_to_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "94f1dd15-65ea-48ee-8de3-d3284f9e8312",
             "Value": {
                 "id": "2bb15b70-e736-4025-923b-dced84f03ab0",
@@ -4102,6 +4159,25 @@
                 ],
                 "resourcePath": "views\/be5b857b-0ff3-4427-9077-3624fed829f3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "be65bb4e-27ec-40b5-83b4-cc05503c32b8",
+            "Value": {
+                "id": "bc3e05ed-dac5-461b-b576-bf029638ad46",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_save_game\/scr_save_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5312,6 +5388,8 @@
         "99e71e0f-4b8d-415b-a5f0-5b356262527c",
         "3c8a5519-1df4-40b0-806b-611d73e1516f",
         "866ec48f-c2be-4162-91c9-b3fb9926e09a",
+        "be65bb4e-27ec-40b5-83b4-cc05503c32b8",
+        "42c3f101-e430-460c-bd4f-234e30464ca9",
         "6202532c-f7df-4b7a-b596-6c3c303a25c4",
         "d376144a-8697-4564-96c2-59be5ef3705b",
         "1a3f0fef-b541-4f3c-a9e7-118e1f295d0f",
@@ -5323,6 +5401,8 @@
         "d4515a47-af51-4eab-944a-6d88cb149143",
         "bd50909b-8c13-4f0c-8d8d-081b99c8c011",
         "75ebcd0c-8af8-4c7c-971d-a513eb212a85",
+        "92fabf40-9da5-477d-8b7b-780d5d5e5641",
+        "099907cb-9038-45cb-a8d0-2c4d5d2a60b0",
         "67536d72-e3e8-4b32-8f45-216ff05c9f04",
         "9b53c908-155e-4dbf-a143-25ad3bbc47f8",
         "268bdadc-f9ec-42f4-9f78-c3385f821b13",

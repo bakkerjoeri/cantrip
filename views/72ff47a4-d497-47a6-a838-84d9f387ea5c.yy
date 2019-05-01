@@ -14,7 +14,7 @@
         "fcfb646b-48ac-4eca-ab33-886c878fcdb7"
     ],
     "filterType": "GMScript",
-    "folderName": "State",
+    "folderName": "State machine",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
