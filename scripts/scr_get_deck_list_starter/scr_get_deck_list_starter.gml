@@ -1,6 +1,6 @@
 var deck_map = ds_map_create();
 
-deck_map[? "attack"] = 3;
+deck_map[? "attack"] = 4;
 deck_map[? "combust"] = 1;
 deck_map[? "shield"] = 3;
 deck_map[? "rest"] = 2;

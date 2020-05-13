@@ -13,7 +13,7 @@ for (var floor_number = 0; floor_number <= number_of_floors - 1; floor_number +=
 		
 		if (room_number < number_of_rooms - 1) {
 			if (floor_number <= 1 && room_number >= 1) {
-				if (irandom(3) = 0) {
+				if (irandom(3) == 0) {
 					room_tier += 1;
 				}
 			}
