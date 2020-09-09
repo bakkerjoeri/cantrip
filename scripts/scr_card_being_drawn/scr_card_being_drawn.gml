@@ -5,7 +5,7 @@ function scr_card_being_drawn() {
 		is_face_up = owner.is_hand_visible;
 		animation_add_next(
 			scr_calculate_position_x_in_hand(
-				ds_list_find_index(owner.hand, self),
+				ds_list_find_index(owner.hand, self.id),
 				ds_list_size(owner.hand),
 				owner.hand_x,
 				owner.hand_width

@@ -6,7 +6,7 @@ function scr_card_in_graveyard() {
 	}
 
 	var current_graveyard_size = ds_list_size(owner.graveyard);
-	var current_graveyard_position = ds_list_find_index(owner.graveyard, self);
+	var current_graveyard_position = ds_list_find_index(owner.graveyard, self.id);
 
 	// Animate to new position if graveyard composition has changed
 	if (
@@ -16,7 +16,7 @@ function scr_card_in_graveyard() {
 			state_new
 		)
 	) {
-		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self);
+		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self.id);
 	
 		if (current_graveyard_position >= current_graveyard_size - 3) {
 			animation_add_next(

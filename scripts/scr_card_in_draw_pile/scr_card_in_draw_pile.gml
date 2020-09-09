@@ -9,7 +9,7 @@ function scr_card_in_draw_pile() {
 	}
 
 	var current_draw_pile_size = ds_list_size(owner.draw_pile);
-	var current_draw_pile_position = ds_list_find_index(owner.draw_pile, self);
+	var current_draw_pile_position = ds_list_find_index(owner.draw_pile, self.id);
 
 	// Animate to new position if hand composition has changed
 	if (
@@ -19,7 +19,7 @@ function scr_card_in_draw_pile() {
 			state_new
 		)
 	) {
-		depth = ds_list_size(owner.draw_pile) - 1 - ds_list_find_index(owner.draw_pile, self);
+		depth = ds_list_size(owner.draw_pile) - 1 - ds_list_find_index(owner.draw_pile, self.id);
 	
 		if (current_draw_pile_position >= current_draw_pile_size - 3) {
 			animation_add_next(

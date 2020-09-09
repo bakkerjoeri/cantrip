@@ -1,14 +1,14 @@
 function scr_card_being_discarded() {
 	if (state_new) {
-		if (ds_list_find_index(owner.graveyard, self) == -1) {
-			ds_list_add(owner.graveyard, self);
+		if (ds_list_find_index(owner.graveyard, self.id) == -1) {
+			ds_list_add(owner.graveyard, self.id);
 		}
 	
-		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self);
+		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self.id);
 		is_face_up = true;
 	
 		var current_graveyard_size = ds_list_size(owner.graveyard);
-		var current_graveyard_position = ds_list_find_index(owner.graveyard, self);
+		var current_graveyard_position = ds_list_find_index(owner.graveyard, self.id);
 	
 		animation_add_next(
 			owner.graveyard_x + (2 * (current_graveyard_position - current_graveyard_size + min(3, current_graveyard_size))),

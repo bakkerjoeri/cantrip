@@ -5,7 +5,7 @@ function scr_draft_handle_pick() {
 		for (var c = 0; c <= ds_list_size(draft_list) - 1; c += 1) {
 			var card = ds_list_find_value(draft_list, c);
 	
-			if (card == picked_card) {
+			if (card.id == picked_card.id) {
 				ds_list_add(obj_game_manager.player_deck_list, card.name);
 			
 				with (card) {

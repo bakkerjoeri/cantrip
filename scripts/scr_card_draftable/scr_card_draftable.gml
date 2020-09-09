@@ -1,6 +1,6 @@
 function scr_card_draftable() {
 	// Change depth and position based on focus
-	if (obj_draft_manager.card_with_focus == self) {
+	if (obj_draft_manager.card_with_focus == self.id) {
 		if (!has_focus) {
 			has_focus = true;
 			animation_cancel();
@@ -27,7 +27,7 @@ function scr_card_draftable() {
 	if (
 		mouse_check_button_released(mb_left)
 		&& instance_position(mouse_x, mouse_y, self)
-		&& scr_get_top_object_under_mouse(obj_card_base) == self
+		&& scr_get_top_object_under_mouse(obj_card_base) == self.id
 	) {
 		with (obj_draft_manager) {
 			picked_card = other;

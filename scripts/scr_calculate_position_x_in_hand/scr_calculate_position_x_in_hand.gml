@@ -1,10 +1,9 @@
-/// scr_calculate_position_x_in_hand(index_of_card_in_hand, amount_of_cards_in_hand, hand_position_x, hand_width);
-function scr_calculate_position_x_in_hand() {
-	var index_of_card_in_hand = argument[0];
-	var amount_of_cards_in_hand = argument[1];
-	var hand_position_x = argument[2];
-	var hand_width = argument[3];
-
+function scr_calculate_position_x_in_hand(
+	index_of_card_in_hand,
+	amount_of_cards_in_hand,
+	hand_position_x,
+	hand_width
+) {
 	var card_width = 64;
 
 	if ((amount_of_cards_in_hand * card_width) <= hand_width) {
@@ -12,6 +11,4 @@ function scr_calculate_position_x_in_hand() {
 	}
 
 	return 	hand_position_x + (index_of_card_in_hand * (hand_width / amount_of_cards_in_hand));
-
-
 }

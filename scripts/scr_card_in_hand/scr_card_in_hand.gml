@@ -5,7 +5,7 @@ function scr_card_in_hand() {
 	}
 
 	var current_hand_size = ds_list_size(owner.hand);
-	var current_hand_position = ds_list_find_index(owner.hand, self);
+	var current_hand_position = ds_list_find_index(owner.hand, self.id);
 
 	// Animate to new position if hand composition has changed
 	if (
@@ -29,7 +29,7 @@ function scr_card_in_hand() {
 	}
 
 	// Change depth and position based on focus
-	if (obj_battle_manager.card_with_focus == self) {
+	if (obj_battle_manager.card_with_focus == self.id) {
 		depth = 0;
 	
 		if (!has_focus) {
@@ -72,7 +72,7 @@ function scr_card_in_hand() {
 		&& obj_battle_manager.turn_of_character == owner
 		&& obj_battle_manager.turn_of_character == obj_battle_manager.player
 		&& obj_battle_manager.turn_of_character.state_name == "deciding"
-		&& obj_battle_manager.card_with_focus == self
+		&& obj_battle_manager.card_with_focus == self.id
 		&& mouse_check_button_released(mb_left)
 		&& scr_can_character_play_card(owner, self)
 	) {

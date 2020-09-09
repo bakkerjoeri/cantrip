@@ -2,7 +2,7 @@ event_inherited();
 
 draw_set_halign(fa_left);
 
-if (obj_battle_manager.turn_of_character == self) {
+if (obj_battle_manager.turn_of_character == self.id) {
 	draw_set_color(global.palette_4);
 	draw_text(448, room_height - 106, "@");	
 }
