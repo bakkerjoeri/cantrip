@@ -1,8 +1,12 @@
 {
-    "id": "b7f5644f-547c-4415-b71a-7ddc1fa5a532",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_get_deck_list_wyvern",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Types",
+    "path": "folders/Scripts/Decks/Types.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_get_deck_list_wyvern",
+  "tags": [],
+  "resourceType": "GMScript",
 }

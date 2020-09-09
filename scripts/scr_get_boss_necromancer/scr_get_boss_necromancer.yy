@@ -1,8 +1,12 @@
 {
-    "id": "32971651-a17c-459b-a1b0-9e3d21dee47e",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_get_boss_necromancer",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Boss types",
+    "path": "folders/Scripts/Enemies/Boss types.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_get_boss_necromancer",
+  "tags": [],
+  "resourceType": "GMScript",
 }

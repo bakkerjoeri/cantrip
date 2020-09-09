@@ -1,10 +1,14 @@
 /// ease_in(time, start_value, change, duration)
+function ease_in() {
 
-var time = argument[0];
-var start_value = argument[1];
-var change = argument[2];
-var duration = argument[3];
+	var time = argument[0];
+	var start_value = argument[1];
+	var change = argument[2];
+	var duration = argument[3];
 
-time /= duration;
+	time /= duration;
 
-return change * time * time * time + start_value;
+	return change * time * time * time + start_value;
+
+
+}

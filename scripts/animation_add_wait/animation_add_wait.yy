@@ -1,8 +1,12 @@
 {
-    "id": "8a8c085c-7c80-4a1b-8f3a-aedcd5348963",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "animation_add_wait",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Animation",
+    "path": "folders/Scripts/Utilities/Animation.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "animation_add_wait",
+  "tags": [],
+  "resourceType": "GMScript",
 }

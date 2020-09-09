@@ -1,9 +1,13 @@
 ///scr_choose_from_list(list);
-var list = argument[0];
+function scr_choose_from_list() {
+	var list = argument[0];
 
-if (ds_list_size(list) == 0) {
-	return undefined;
+	if (ds_list_size(list) == 0) {
+		return undefined;
+	}
+
+	ds_list_shuffle(list);
+	return list[| 0];
+
+
 }
-
-ds_list_shuffle(list);
-return list[| 0];

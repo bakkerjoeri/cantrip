@@ -1,8 +1,12 @@
 {
-    "id": "473ccf78-b41e-4dc4-9b21-3bebe80e21aa",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_character_taking_damage",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "State",
+    "path": "folders/Scripts/Character/State.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_character_taking_damage",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "a9a1bb89-6113-404c-b79b-edefb848cf47",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_card_effect_mana_burst",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Cards/Effects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_card_effect_mana_burst",
+  "tags": [],
+  "resourceType": "GMScript",
 }

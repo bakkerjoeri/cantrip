@@ -1,8 +1,12 @@
 {
-    "id": "8bf0e708-ad28-4963-abed-55a7e10de7be",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_can_play_card_revenge_from_beyond",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Conditions",
+    "path": "folders/Scripts/Cards/Conditions.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_can_play_card_revenge_from_beyond",
+  "tags": [],
+  "resourceType": "GMScript",
 }

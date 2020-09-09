@@ -1,8 +1,12 @@
 {
-    "id": "35000f78-cb53-404d-9934-4aaf1e1daa56",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_generate_draft_rounds_of_tier",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Draft",
+    "path": "folders/Scripts/Draft.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_generate_draft_rounds_of_tier",
+  "tags": [],
+  "resourceType": "GMScript",
 }

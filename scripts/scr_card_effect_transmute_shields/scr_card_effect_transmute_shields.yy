@@ -1,8 +1,12 @@
 {
-    "id": "ad20e86c-5c14-42a9-9c33-23bb06a7d6c7",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_card_effect_transmute_shields",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Cards/Effects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_card_effect_transmute_shields",
+  "tags": [],
+  "resourceType": "GMScript",
 }

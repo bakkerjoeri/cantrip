@@ -1,8 +1,12 @@
 {
-    "id": "988c6d1b-b401-4979-ba5b-4dddb7793ec8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_character_player_deciding",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Player",
+    "path": "folders/Scripts/Character/State/Player.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_character_player_deciding",
+  "tags": [],
+  "resourceType": "GMScript",
 }

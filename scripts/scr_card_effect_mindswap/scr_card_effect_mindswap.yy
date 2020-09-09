@@ -1,8 +1,12 @@
 {
-    "id": "745f9d53-ccae-4988-937f-c8d7cfda360d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_card_effect_mindswap",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Effects",
+    "path": "folders/Scripts/Cards/Effects.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_card_effect_mindswap",
+  "tags": [],
+  "resourceType": "GMScript",
 }

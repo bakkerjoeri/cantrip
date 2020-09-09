@@ -1,8 +1,12 @@
 {
-    "id": "a3783b6a-2d51-4bac-a141-38162ffab926",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_get_enemy_warrior",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Enemy types",
+    "path": "folders/Scripts/Enemies/Enemy types.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_get_enemy_warrior",
+  "tags": [],
+  "resourceType": "GMScript",
 }
