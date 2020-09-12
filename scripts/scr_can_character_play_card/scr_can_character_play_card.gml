@@ -1,16 +1,12 @@
 /// scr_can_character_play_card(character, card)
-function scr_can_character_play_card() {
-	var character = argument[0];
-	var card = argument[1];
-	var opponent = scr_get_opponent_of_character(character);
+function scr_can_character_play_card(source, card) {
+	var opponent = scr_get_opponent_of_character(source);
 
 	if (!is_undefined(card.condition)) {
 		return !card.is_unplayable &&
-			card.cost <= character.ability_points &&
-			script_execute(card.condition, opponent, character)
+			card.cost <= source.ability_points &&
+			script_execute(card.condition, opponent, source)
 	}
 
-	return !card.is_unplayable && card.cost <= character.ability_points;
-
-
+	return !card.is_unplayable && card.cost <= source.ability_points;
 }

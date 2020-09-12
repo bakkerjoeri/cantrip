@@ -8,12 +8,9 @@ function scr_draft_start_round() {
 
 		for (var c = 0; c <= amount_of_cards_to_draft - 1; c += 1) {
 			var card_name = ds_list_find_value(card_list_to_draft, c);
-			var card = instance_create_layer(
-				(room_width / 2) - (((64 * amount_of_cards_to_draft) / 2) + (((amount_of_cards_to_draft - 1) * 6) / 2)) + (c * (64 + 6)),
-				-96,
-				"Instances",
-				asset_get_index("obj_card_" + card_name)
-			);
+			var card = scr_create_card(card_name);
+			card.x = (room_width / 2) - (((64 * amount_of_cards_to_draft) / 2) + (((amount_of_cards_to_draft - 1) * 6) / 2)) + (c * (64 + 6));
+			card.y = -96;
 		
 			with (card) {
 				animation_add_wait(c * 0.1 * room_speed);

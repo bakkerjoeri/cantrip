@@ -1,5 +1,5 @@
-function scr_card_definition_combust(){
-	var card_definition = {
+function scr_card_definition_combust() {
+	var definition = {
 		name: "combust",
 		title: "combust",
 		cost: 1,
@@ -8,7 +8,7 @@ function scr_card_definition_combust(){
 		condition: can_play_combust,
 	}
 	
-	return card_definition;
+	return definition;
 }
 
 function do_combust_effect(target, source) {
@@ -16,7 +16,7 @@ function do_combust_effect(target, source) {
 	scr_take_damage(target, 2, source);
 }
 
-function can_play_combust(source) {
+function can_play_combust(target, source) {
 	if (source == obj_battle_manager.player) {
 		return true;
 	}
