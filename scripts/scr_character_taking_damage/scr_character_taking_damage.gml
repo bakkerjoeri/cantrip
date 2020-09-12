@@ -22,7 +22,7 @@ function scr_character_taking_damage() {
 			state_switch_previous();
 		
 			with (obj_battle_manager) {
-				character_that_lost = other;
+				character_that_lost = other.id;
 				state_switch("end");
 			}
 		
@@ -48,6 +48,4 @@ function scr_character_taking_damage() {
 	}
 
 	_card_damage_delay -= 1;
-
-
 }

@@ -37,7 +37,7 @@ if (is_face_up) {
 		&& owner.state_name == "deciding"
 		&& obj_battle_manager.state_name == "turnPlayPhase"
 		&& obj_battle_manager.turn_of_character == owner
-		&& scr_can_character_play_card(owner, self)
+		&& scr_can_character_play_card(owner, self.id)
 	) {
 		draw_set_color(global.palette_4);
 		draw_rectangle(x - 1, y - 1, x + sprite_width, y + sprite_height, true);

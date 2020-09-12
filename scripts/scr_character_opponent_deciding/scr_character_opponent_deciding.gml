@@ -34,7 +34,7 @@ function scr_character_opponent_deciding() {
 			for (var c = 0; c <= ds_list_size(hand) - 1; c += 1) {
 				var card_to_check = ds_list_find_value(hand, c);
 			
-				if (scr_can_character_play_card(self, card_to_check)) {
+				if (scr_can_character_play_card(self.id, card_to_check)) {
 					ds_list_add(playable_cards, card_to_check);
 				}
 			}

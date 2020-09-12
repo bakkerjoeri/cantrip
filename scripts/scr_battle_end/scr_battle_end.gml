@@ -6,6 +6,4 @@ function scr_battle_end() {
 			state_switch("won");
 		}
 	}
-
-
 }

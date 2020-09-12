@@ -35,7 +35,7 @@ function scr_card_in_hand() {
 		if (!has_focus) {
 			var offset = 3;
 		
-			if (scr_can_character_play_card(owner, self)) {
+			if (scr_can_character_play_card(owner, self.id)) {
 				offset = 12;
 			}
 		
@@ -74,9 +74,9 @@ function scr_card_in_hand() {
 		&& obj_battle_manager.turn_of_character.state_name == "deciding"
 		&& obj_battle_manager.card_with_focus == self.id
 		&& mouse_check_button_released(mb_left)
-		&& scr_can_character_play_card(owner, self)
+		&& scr_can_character_play_card(owner, self.id)
 	) {
-		ds_queue_enqueue(owner.cards_to_play, self);
+		ds_queue_enqueue(owner.cards_to_play, self.id);
 	}
 
 	previous_hand_position = current_hand_position;

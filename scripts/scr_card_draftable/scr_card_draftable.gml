@@ -26,11 +26,11 @@ function scr_card_draftable() {
 
 	if (
 		mouse_check_button_released(mb_left)
-		&& instance_position(mouse_x, mouse_y, self)
+		&& instance_position(mouse_x, mouse_y, self.id)
 		&& scr_get_top_object_under_mouse(obj_card_base) == self.id
 	) {
 		with (obj_draft_manager) {
-			picked_card = other;
+			picked_card = other.id;
 		}
 	}
 
