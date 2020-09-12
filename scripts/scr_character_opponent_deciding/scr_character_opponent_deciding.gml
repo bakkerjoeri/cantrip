@@ -51,22 +51,7 @@ function scr_character_opponent_deciding() {
 		
 				exit;
 			}
-		
-			// End turn if there is only one card left and it is "Combust".
-			if (ds_list_size(playable_cards) == 1) {
-				var only_playable_card = ds_list_find_value(playable_cards, 0);
-			
-				if (only_playable_card.name == "combust") {
-					show_debug_message("The last card is Combust, which would kill me. Skipping this turn!");
-				
-					with (obj_battle_manager) {
-						state_switch("turnEnd");
-					}
-		
-					exit;
-				}
-			}
-		
+
 			// Sometimes skip turn to save up on points and cards.
 			if (
 				ability_points <= 1

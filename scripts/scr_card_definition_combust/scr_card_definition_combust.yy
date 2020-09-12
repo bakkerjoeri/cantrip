@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Effects",
-    "path": "folders/Scripts/Cards/Effects.yy",
+    "name": "Definitions",
+    "path": "folders/Scripts/Cards/Definitions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_card_effect_combust",
+  "name": "scr_card_definition_combust",
   "tags": [],
   "resourceType": "GMScript",
 }

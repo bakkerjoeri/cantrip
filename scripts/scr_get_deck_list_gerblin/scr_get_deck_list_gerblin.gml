@@ -6,6 +6,4 @@ function scr_get_deck_list_gerblin() {
 	deck_map[? "rest"] = 2;
 
 	return scr_create_deck_list_from_deck(deck_map);
-
-
 }
