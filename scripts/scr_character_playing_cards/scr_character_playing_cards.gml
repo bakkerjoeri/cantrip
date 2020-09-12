@@ -10,10 +10,14 @@ function scr_character_playing_cards() {
 		}
 	
 		card_being_played = ds_queue_dequeue(cards_to_play);
-		scr_character_loses_ap(self, card_being_played.cost);
+		scr_character_loses_ap(self.id, card_being_played.cost);
 	
 		with (card_being_played) {
 			state_switch("startPlay");
+		}
+		
+		if (ds_list_find_index(active_effects, "catalyst") >= 0) {
+			amount_of_cards_to_draw += 1;
 		}
 	
 		exit;

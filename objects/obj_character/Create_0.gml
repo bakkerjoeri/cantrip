@@ -19,8 +19,11 @@ hand = ds_list_create();
 graveyard = ds_list_create();
 
 amount_of_cards_to_draw = 0;
-start_of_turn_effects = ds_list_create();
 card_being_played = noone;
 cards_to_play = ds_queue_create();
 cards_to_discard = ds_queue_create();
 damage_to_take = 0;
+
+start_of_turn_effects = ds_list_create();
+end_of_turn_effects = ds_list_create();
+active_effects = ds_list_create();

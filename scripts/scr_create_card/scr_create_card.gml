@@ -34,6 +34,10 @@ function create_card_from_definition(card_definition) {
 		card.effect = card_definition.effect;
 	}
 	
+	if (variable_struct_exists(card_definition, "counter")) {
+		card.counter = card_definition.counter;
+	}
+	
 	if (variable_struct_exists(card_definition, "condition")) {
 		card.condition = card_definition.condition;
 	}

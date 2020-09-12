@@ -20,7 +20,7 @@ function scr_character_taking_damage() {
 		if (ds_list_size(hand) == 0) {
 			damage_to_take = 0;
 			state_switch_previous();
-		
+
 			with (obj_battle_manager) {
 				character_that_lost = other.id;
 				state_switch("end");
@@ -38,6 +38,13 @@ function scr_character_taking_damage() {
 	
 			with (damaged_card) {
 				state_switch("damaged");
+			}
+			
+			if (variable_instance_exists(damaged_card, "counter")) {
+				damaged_card.counter(
+					scr_get_opponent_of_character(damaged_card.owner),
+					damaged_card.owner,
+				);
 			}
 	
 			damage_to_take -= 1;

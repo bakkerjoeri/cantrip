@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Character",
-    "path": "folders/Scripts/Character.yy",
+    "name": "Definitions",
+    "path": "folders/Scripts/Cards/Definitions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_take_damage",
+  "name": "scr_card_definition_mindswap",
   "tags": [],
   "resourceType": "GMScript",
 }

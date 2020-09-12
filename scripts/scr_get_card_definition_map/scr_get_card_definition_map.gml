@@ -2,8 +2,10 @@ function scr_get_card_definition_map(){
 	var card_definition_map = ds_map_create();
 	
 	card_definition_map[? "attack"] = scr_card_definition_attack();
+	card_definition_map[? "catalyst"] = scr_card_definition_catalyst();
 	card_definition_map[? "combust"] = scr_card_definition_combust();
 	card_definition_map[? "desecrate"] = scr_card_definition_desecrate();
+	card_definition_map[? "embed_spikes"] = scr_card_definition_embed_spikes();
 	card_definition_map[? "fireblast"] = scr_card_definition_fireblast();
 	card_definition_map[? "healing_potion"] = scr_card_definition_healing_potion();
 	card_definition_map[? "leech"] = scr_card_definition_leech();

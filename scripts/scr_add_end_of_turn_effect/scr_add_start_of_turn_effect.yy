@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Character",
-    "path": "folders/Scripts/Character.yy",
+    "name": "Battle",
+    "path": "folders/Scripts/Battle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_take_damage",
+  "name": "scr_add_start_of_turn_effect",
   "tags": [],
   "resourceType": "GMScript",
 }

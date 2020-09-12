@@ -33,9 +33,9 @@ function scr_battle_turn_start() {
 	
 			show_debug_message("Now executing effect " + effect_to_execute[? "name"]);
 				
-			var target = scr_get_opponent_of_character(obj_battle_manager.turn_of_character);
-			var source = obj_battle_manager.turn_of_character;
-		
+			var source = effect_to_execute[? "source"];
+			var target = scr_get_opponent_of_character(source);
+			
 			script_execute(effect_to_execute[? "effect"], target, source);
 			effect_to_execute[? "duration"] -= 1;
 	

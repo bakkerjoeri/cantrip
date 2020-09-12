@@ -3,7 +3,7 @@ function scr_card_definition_shields_up() {
 		name: "shields_up",
 		title: "shields up",
 		cost: 1,
-		text: "Add 2 \"Shield\" cards to your hand.",
+		text: "Add 2 \"shield\" cards to your hand.",
 		effect: do_shields_up_effect,
 	};
 	

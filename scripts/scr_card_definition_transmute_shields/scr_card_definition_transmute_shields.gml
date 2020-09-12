@@ -3,7 +3,7 @@ function scr_card_definition_transmute_shields() {
 		name: "transmute_shields",
 		title: "transmute shields",
 		cost: 0,
-		text: "Discard all \"Shield\" cards, draw that amount of cards.",
+		text: "Discard all \"shield\" cards, draw that amount of cards.",
 		effect: do_transmute_shields_effect,
 		condition: can_play_transmute_shields,
 	}
