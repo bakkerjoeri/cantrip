@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Effects",
-    "path": "folders/Scripts/Cards/Effects.yy",
+    "name": "Cards",
+    "path": "folders/Scripts/Cards.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_card_effect_attack",
+  "name": "scr_create_card_from_definition",
   "tags": [],
   "resourceType": "GMScript",
 }

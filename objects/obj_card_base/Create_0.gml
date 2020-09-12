@@ -31,4 +31,3 @@ condition = undefined;
 owner = noone;
 is_face_up = true;
 has_focus = false;
-is_drawing = false;

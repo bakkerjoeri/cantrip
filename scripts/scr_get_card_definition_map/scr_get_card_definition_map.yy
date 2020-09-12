@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Types",
-    "path": "folders/Scripts/Cards/Types.yy",
+    "name": "Cards",
+    "path": "folders/Scripts/Cards.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_card_attack",
+  "name": "scr_get_card_definition_map",
   "tags": [],
   "resourceType": "GMScript",
 }
