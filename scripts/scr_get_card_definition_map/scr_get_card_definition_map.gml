@@ -13,6 +13,7 @@ function scr_get_card_definition_map(){
 	card_definition_map[? "mana_burst"] = scr_card_definition_mana_burst();
 	card_definition_map[? "meditate"] = scr_card_definition_meditate();
 	card_definition_map[? "mindswap"] = scr_card_definition_mindswap();
+	card_definition_map[? "necrotic_blast"] = scr_card_definition_necrotic_blast();
 	card_definition_map[? "raise_the_dead"] = scr_card_definition_raise_the_dead();
 	card_definition_map[? "read_mind"] = scr_card_definition_read_mind();
 	card_definition_map[? "rest"] = scr_card_definition_rest();

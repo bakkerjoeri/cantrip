@@ -12,8 +12,10 @@ function scr_card_definition_siphon() {
 }
 
 function do_siphon_effect(target, source) {
-	scr_take_damage(source, 1, source);
-	scr_take_damage(target, 2, source);
+	var stolen_ap = min(target.ability_points, 2);
+
+	scr_character_loses_ap(target, stolen_ap)
+	scr_character_gains_ap(source, stolen_ap);
 }
 
 function can_play_siphon(target, source) {

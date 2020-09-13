@@ -78,7 +78,7 @@ function do_damage_effect() {
 	instance_create_layer(0, 0, "Overlays", obj_damage_flash);
 
 	with (obj_screen_manager) {
-		shake += 8;
+		shake = 8;
 	}
 }
 

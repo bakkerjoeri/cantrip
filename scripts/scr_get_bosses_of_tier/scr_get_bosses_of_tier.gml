@@ -11,7 +11,7 @@ function scr_get_bosses_of_tier() {
 	}
 
 	if (tier == 1) {
-		enemies[| index++] = scr_get_boss_mind_flayer();
+		enemies[| index++] = scr_get_boss_necromancer();
 		enemies[| index++] = scr_get_boss_blacksmith();
 	}
 
