@@ -10,10 +10,8 @@ function scr_character_waiting() {
 		exit;
 	}
 
-	if (damage_to_take > 0) {
+	if (!ds_queue_empty(damage_events)) {
 		state_switch("takingDamage");
 		exit;
 	}
-
-
 }

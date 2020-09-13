@@ -3,7 +3,7 @@ function scr_card_definition_embed_spikes() {
 		name: "embed_spikes",
 		title: "embed spikes",
 		cost: 1,
-		text: "\"shield\" cards in your hand get \"when hit, deal 1 damage\".",
+		text: "\"shield\" cards in your hand get \"when hit, do 1 damage\".",
 		effect: do_embed_spikes_effect,
 		condition: can_play_embed_spikes,
 	};
@@ -19,7 +19,7 @@ function do_embed_spikes_effect(target, source) {
 			card.name == "shield"
 			&& (!variable_instance_exists(card, "spiked") || card.spiked == false)
 		) {
-			card.text += " When hit, deal 1 damage.";
+			card.text += " When hit, do 1 damage.";
 			card.counter = spiked_shield_counter;
 			card.spiked = true;
 		}

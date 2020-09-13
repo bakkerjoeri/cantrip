@@ -7,6 +7,7 @@ function scr_get_card_definition_map(){
 	card_definition_map[? "desecrate"] = scr_card_definition_desecrate();
 	card_definition_map[? "embed_spikes"] = scr_card_definition_embed_spikes();
 	card_definition_map[? "fireblast"] = scr_card_definition_fireblast();
+	card_definition_map[? "forge"] = scr_card_definition_forge();
 	card_definition_map[? "healing_potion"] = scr_card_definition_healing_potion();
 	card_definition_map[? "leech"] = scr_card_definition_leech();
 	card_definition_map[? "mana_burst"] = scr_card_definition_mana_burst();

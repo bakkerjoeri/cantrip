@@ -8,15 +8,10 @@ function scr_card_being_played() {
 	if (animation_is_finished) {
 		if (!is_undefined(effect)) {
 			var target = noone;
-			var source = obj_battle_manager.turn_of_character;
-
-			if (source == obj_battle_manager.player) {
-				target = obj_battle_manager.opponent;
-			} else {
-				target = obj_battle_manager.player;
-			}
+			var source = owner;
+			var target = scr_get_opponent_of_character(owner);
 		
-			script_execute(effect, target, source);
+			script_execute(effect, target, source, self.id);
 		}
 	
 		state_switch("isResolved");

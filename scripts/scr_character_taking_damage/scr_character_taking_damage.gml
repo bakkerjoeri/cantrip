@@ -1,24 +1,32 @@
 function scr_character_taking_damage() {
 	if (state_new) {
 		_card_damage_delay = 0;
+		_amount_left_for_event = 0;
+		_current_damage_event = noone;
 	}
 
-	if (_card_damage_delay <= 0 && damage_to_take == 0) {
+	if (
+		_card_damage_delay <= 0 &&
+		_amount_left_for_event <= 0 &&
+		ds_queue_empty(damage_events)
+	) {
+		show_debug_message("no more damage events left...");
 		state_switch_previous();
 		exit;
 	}
 
 	if (obj_battle_manager.character_that_lost != noone) {
 		_card_damage_delay = 0;
-		damage_to_take = 0;
+		ds_queue_clear(damage_events);
 		state_switch_previous();
 		exit;
 	}
 
-	if (_card_damage_delay <= 0 && damage_to_take > 0) {
+	if (_card_damage_delay <= 0 && (!ds_queue_empty(damage_events) || _amount_left_for_event > 0)) {
 		// Game over if there's nothing left in the hand.
 		if (ds_list_size(hand) == 0) {
-			damage_to_take = 0;
+			do_death_effect();
+			ds_queue_clear(damage_events);
 			state_switch_previous();
 
 			with (obj_battle_manager) {
@@ -30,7 +38,14 @@ function scr_character_taking_damage() {
 		}
 	
 		// Damage all cards.
-		while (damage_to_take > 0 && ds_list_size(hand) > 0) {
+		if (_amount_left_for_event == 0 && !ds_queue_empty(damage_events)) {
+			_current_damage_event = ds_queue_dequeue(damage_events);
+			_amount_left_for_event = _current_damage_event[? "amount"];
+		}
+		
+		if (_amount_left_for_event > 0) {
+			do_damage_effect();
+
 			var damaged_card = scr_find_card_to_discard(hand);
 	
 			ds_list_add(graveyard, damaged_card);
@@ -42,12 +57,14 @@ function scr_character_taking_damage() {
 			
 			if (variable_instance_exists(damaged_card, "counter")) {
 				damaged_card.counter(
-					scr_get_opponent_of_character(damaged_card.owner),
-					damaged_card.owner,
+					_current_damage_event[? "source"],
+					_current_damage_event[? "target"]
 				);
 			}
-	
-			damage_to_take -= 1;
+			
+			_amount_left_for_event -= 1;
+			_card_damage_delay = 0.1 * room_speed;
+			exit;
 		}
 	
 		_card_damage_delay = 1 * room_speed;
@@ -55,4 +72,20 @@ function scr_character_taking_damage() {
 	}
 
 	_card_damage_delay -= 1;
+}
+
+function do_damage_effect() {
+	instance_create_layer(0, 0, "Overlays", obj_damage_flash);
+
+	with (obj_screen_manager) {
+		shake += 8;
+	}
+}
+
+function do_death_effect() {
+	instance_create_layer(0, 0, "Overlays", obj_damage_flash);
+
+	with (obj_screen_manager) {
+		shake += 16;
+	}
 }

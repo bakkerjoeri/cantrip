@@ -19,3 +19,5 @@ current_floor_number = 0;
 
 battles_won = 0;
 runs_won = 0;
+
+shake = 0;

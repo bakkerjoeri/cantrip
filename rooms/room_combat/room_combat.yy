@@ -3,7 +3,7 @@
   "volume": 1.0,
   "parentRoom": null,
   "views": [
-    {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
+    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":512,"hview":320,"xport":0,"yport":0,"wport":512,"hport":320,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -17,6 +17,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_battle_manager","path":"objects/obj_battle_manager/obj_battle_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_2C8056C1","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_pause_controller","path":"objects/obj_pause_controller/obj_pause_controller.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_54099CAB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_screen_manager","path":"objects/obj_screen_manager/obj_screen_manager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":48.0,"resourceVersion":"1.0","name":"inst_2663578B","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":-100,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Controllers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_button_end_turn","path":"objects/obj_button_end_turn/obj_button_end_turn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":432.0,"y":160.0,"resourceVersion":"1.0","name":"inst_5196BACA","tags":[],"resourceType":"GMRInstance",},
@@ -36,6 +37,7 @@
     {"name":"inst_5B4695E1","path":"rooms/room_combat/room_combat.yy",},
     {"name":"inst_53727BE5","path":"rooms/room_combat/room_combat.yy",},
     {"name":"inst_54099CAB","path":"rooms/room_combat/room_combat.yy",},
+    {"name":"inst_2663578B","path":"rooms/room_combat/room_combat.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -47,7 +49,7 @@
   },
   "viewSettings": {
     "inheritViewSettings": false,
-    "enableViews": false,
+    "enableViews": true,
     "clearViewBackground": false,
     "clearDisplayBuffer": true,
   },
