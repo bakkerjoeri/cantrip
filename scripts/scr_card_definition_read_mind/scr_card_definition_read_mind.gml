@@ -16,7 +16,11 @@ function do_read_mind_effect(target, source) {
 		var card_to_copy = scr_choose_from_list(target.hand);
 
 		if (card_to_copy) {
-			var copied_card = instance_create_layer(card_to_copy.x, card_to_copy.y, "Instances", card_to_copy.object_index);
+			var copied_card;
+			
+			with (card_to_copy) {
+				copied_card = instance_copy(false);
+			}
 	
 			ds_list_add(source.hand, copied_card);
 	

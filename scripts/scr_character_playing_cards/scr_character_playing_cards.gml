@@ -13,6 +13,7 @@ function scr_character_playing_cards() {
 		scr_character_loses_ap(self.id, card_being_played.cost);
 	
 		with (card_being_played) {
+			played_by = other.id;
 			state_switch("startPlay");
 		}
 		

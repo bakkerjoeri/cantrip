@@ -18,6 +18,7 @@ function do_revenge_from_beyond_effect(target, source) {
 		ds_list_delete(target.graveyard, ds_list_find_index(target.graveyard, card_to_play));
 	
 		with (card_to_play) {
+			played_by = source;
 			state_switch("startPlay");
 		}
 	}
