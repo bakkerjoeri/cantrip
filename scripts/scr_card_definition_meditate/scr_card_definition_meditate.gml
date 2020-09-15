@@ -2,7 +2,7 @@ function scr_card_definition_meditate() {
 	var definition = {
 		name: "meditate",
 		title: "meditate",
-		cost: 1,
+		cost: 0,
 		text: "Start your next turn with full AP.",
 		effect: do_meditate_effect,
 	};

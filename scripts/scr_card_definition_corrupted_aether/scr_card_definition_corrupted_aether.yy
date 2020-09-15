@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Cards/Definitions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_card_definition_transmute_shields",
+  "name": "scr_card_definition_corrupted_aether",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -7,21 +7,22 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "shield");
 		ds_list_add(cards, "attack");
 		ds_list_add(cards, "combust");
+		ds_list_add(cards, "corrupted_aether");
 		ds_list_add(cards, "rest");
 		ds_list_add(cards, "meditate");
-		ds_list_add(cards, "transmute_shields");
-		ds_list_add(cards, "raise_the_dead");
+		ds_list_add(cards, "transmute");
 		ds_list_add(cards, "revenge_from_beyond");
-		ds_list_add(cards, "read_mind");
+		ds_list_add(cards, "desecrate");
+		ds_list_add(cards, "stamina_potion");
 	}
 
 	if (tier == 1) {
 		ds_list_add(cards, "leech");
+		ds_list_add(cards, "read_mind");
 		ds_list_add(cards, "healing_potion");
 		ds_list_add(cards, "shield_bash");
 		ds_list_add(cards, "shields_up");
-		ds_list_add(cards, "stamina_potion");
-		ds_list_add(cards, "desecrate");
+		ds_list_add(cards, "raise_the_dead");
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "necrotic_blast");

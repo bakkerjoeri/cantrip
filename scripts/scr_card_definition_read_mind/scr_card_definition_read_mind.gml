@@ -2,16 +2,16 @@ function scr_card_definition_read_mind() {
 	var definition = {
 		name: "read_mind",
 		title: "read mind",
-		cost: 2,
+		cost: 1,
 		text: "Copy 2 random cards from your opponent's hand.",
-		effect: do_healing_read_mind,
+		effect: do_read_mind_effect,
 		condition: can_play_read_mind,
 	}
 	
 	return definition;
 }
 
-function do_healing_read_mind(target, source) {
+function do_read_mind_effect(target, source) {
 	repeat(min(2, ds_list_size(target.hand), source.max_hand_size - ds_list_size(source.hand))) {
 		var card_to_copy = scr_choose_from_list(target.hand);
 

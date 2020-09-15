@@ -4,6 +4,7 @@ function scr_get_card_definition_map(){
 	card_definition_map[? "attack"] = scr_card_definition_attack();
 	card_definition_map[? "catalyst"] = scr_card_definition_catalyst();
 	card_definition_map[? "combust"] = scr_card_definition_combust();
+	card_definition_map[? "corrupted_aether"] = scr_card_definition_corrupted_aether();
 	card_definition_map[? "desecrate"] = scr_card_definition_desecrate();
 	card_definition_map[? "embed_spikes"] = scr_card_definition_embed_spikes();
 	card_definition_map[? "fireblast"] = scr_card_definition_fireblast();
@@ -24,7 +25,7 @@ function scr_get_card_definition_map(){
 	card_definition_map[? "shields_up"] = scr_card_definition_shields_up();
 	card_definition_map[? "siphon"] = scr_card_definition_siphon();
 	card_definition_map[? "stamina_potion"] = scr_card_definition_stamina_potion();
-	card_definition_map[? "transmute_shields"] = scr_card_definition_transmute_shields();
+	card_definition_map[? "transmute"] = scr_card_definition_transmute();
 
 	return card_definition_map;
 }

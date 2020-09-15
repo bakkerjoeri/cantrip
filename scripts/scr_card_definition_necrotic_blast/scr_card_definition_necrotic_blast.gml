@@ -3,7 +3,7 @@ function scr_card_definition_necrotic_blast() {
 		name: "necrotic_blast",
 		title: "necrotic blast",
 		cost: 1,
-		text: "Do damage equal to your graveyard's top card's cost + 1.",
+		text: "Do 1 damage plus the cost of your graveyard's top card.",
 		effect: do_necrotic_blast_effect,
 		condition: can_play_necrotic_blast,
 	}

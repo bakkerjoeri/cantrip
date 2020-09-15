@@ -6,7 +6,6 @@ function scr_get_deck_list_blacksmith() {
 	deck_map[? "shield"] = 2;
 	deck_map[? "stamina_potion"] = 1;
 	deck_map[? "shields_up"] = 1;
-	deck_map[? "transmute_shields"] = 1;
 	deck_map[? "shield_bash"] = 1;
 	deck_map[? "forge"] = 1;
 
