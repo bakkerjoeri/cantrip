@@ -2,9 +2,9 @@ event_inherited();
 
 state_create("deciding", scr_character_player_deciding);
 
-is_player = true;
-
+is_controlled_by_player = true;
 is_hand_visible = true;
+
 hand_width = 192;
 hand_x = (room_width / 2) - (hand_width / 2);
 hand_y = room_height - 98;

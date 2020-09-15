@@ -1,9 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
-state_create("deciding", scr_character_opponent_deciding);
+state_create("deciding", scr_character_player_deciding);
 
+is_controlled_by_player = false;
 is_hand_visible = false;
+
 hand_width = 192;
 hand_x = (room_width / 2) - (hand_width / 2);
 hand_y = 2;

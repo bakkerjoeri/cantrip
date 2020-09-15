@@ -19,5 +19,9 @@ function scr_character_deciding() {
 		exit;
 	}
 
-
+	if (is_controlled_by_player) {
+		scr_character_player_deciding();
+	} else {
+		scr_character_opponent_deciding();
+	}
 }

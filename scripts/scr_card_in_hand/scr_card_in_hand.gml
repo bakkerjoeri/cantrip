@@ -70,7 +70,7 @@ function scr_card_in_hand() {
 	if (
 		obj_battle_manager.state_name == "turnPlayPhase"
 		&& obj_battle_manager.turn_of_character == owner
-		&& obj_battle_manager.turn_of_character == obj_battle_manager.player
+		&& obj_battle_manager.turn_of_character.is_controlled_by_player
 		&& obj_battle_manager.turn_of_character.state_name == "deciding"
 		&& obj_battle_manager.card_with_focus == self.id
 		&& mouse_check_button_released(mb_left)
