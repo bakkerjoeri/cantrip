@@ -22,13 +22,14 @@ function scr_battle_turn_end() {
 		
 		var source = effect_to_execute[? "source"];
 		var target = scr_get_opponent_of_character(source);
+		var turnsLeft = effect_to_execute[? "duration"] - 1;
 		
-		script_execute(effect_to_execute[? "effect"], target, source);
-		effect_to_execute[? "duration"] -= 1;
+		script_execute(effect_to_execute[? "effect"], target, source, turnsLeft);
+		effect_to_execute[? "duration"] = turnsLeft;
 	
-		show_debug_message("Turns left after executing: " + string(effect_to_execute[? "duration"]));
+		show_debug_message("Turns left after executing: " + string(turnsLeft));
 	
-		if (effect_to_execute[? "duration"] == 0) {
+		if (turnsLeft == 0) {
 			ds_list_delete(
 				turn_of_character.end_of_turn_effects,
 				ds_list_find_index(turn_of_character.end_of_turn_effects, effect_to_execute)

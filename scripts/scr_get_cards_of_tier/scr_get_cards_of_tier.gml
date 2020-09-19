@@ -14,6 +14,8 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "revenge_from_beyond");
 		ds_list_add(cards, "desecrate");
 		ds_list_add(cards, "stamina_potion");
+		ds_list_add(cards, "barter_for_power");
+		ds_list_add(cards, "third_eye_opens");
 	}
 
 	if (tier == 1) {

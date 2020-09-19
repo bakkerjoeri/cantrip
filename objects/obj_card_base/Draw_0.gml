@@ -2,7 +2,7 @@ draw_self();
 
 if (is_face_up) {
 	var padding = 5;
-	var text_offset = 38;
+	var text_offset = 30;
 	
 	draw_set_halign(fa_left);
 	
@@ -24,7 +24,7 @@ if (is_face_up) {
 	if (is_unplayable) {
 		draw_set_color(global.palette_2);
 		draw_set_halign(fa_left);
-		draw_text_ext(x + padding, y + 38, "Unplayable", 8, sprite_width - (2 * padding));
+		draw_text_ext(x + padding, y + text_offset, "Unplayable", 8, sprite_width - (2 * padding));
 		text_offset += 8;
 	}
 
@@ -35,6 +35,7 @@ if (is_face_up) {
 	if (
 		state_name == "inHand"
 		&& owner.state_name == "deciding"
+		&& owner.is_controlled_by_player
 		&& obj_battle_manager.state_name == "turnPlayPhase"
 		&& obj_battle_manager.turn_of_character == owner
 		&& scr_can_character_play_card(owner, self.id)

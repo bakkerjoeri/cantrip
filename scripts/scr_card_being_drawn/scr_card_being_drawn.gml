@@ -21,7 +21,4 @@ function scr_card_being_drawn() {
 	if (animation_is_finished) {
 		state_switch("inHand");
 	}
-
-
-
 }

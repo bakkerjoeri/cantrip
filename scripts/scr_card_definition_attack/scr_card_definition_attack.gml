@@ -11,6 +11,5 @@ function scr_card_definition_attack() {
 }
 
 function do_attack_effect(target, source) {
-	show_debug_message("Joehooooeee");
 	scr_take_damage(target, 1, source);
 }

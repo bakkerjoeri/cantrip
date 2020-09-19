@@ -1,7 +1,5 @@
 event_inherited();
 
-state_create("deciding", scr_character_player_deciding);
-
 is_controlled_by_player = true;
 is_hand_visible = true;
 

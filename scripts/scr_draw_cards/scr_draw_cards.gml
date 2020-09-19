@@ -7,7 +7,4 @@ function scr_draw_cards() {
 		amount_of_cards_to_draw += amount_of_cards;
 		state_switch("drawingCards");
 	}
-
-
-
 }

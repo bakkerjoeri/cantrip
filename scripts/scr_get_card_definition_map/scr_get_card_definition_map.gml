@@ -2,6 +2,7 @@ function scr_get_card_definition_map(){
 	var card_definition_map = ds_map_create();
 	
 	card_definition_map[? "attack"] = scr_card_definition_attack();
+	card_definition_map[? "barter_for_power"] = scr_card_definition_barter_for_power();
 	card_definition_map[? "catalyst"] = scr_card_definition_catalyst();
 	card_definition_map[? "combust"] = scr_card_definition_combust();
 	card_definition_map[? "corrupted_aether"] = scr_card_definition_corrupted_aether();
@@ -25,6 +26,7 @@ function scr_get_card_definition_map(){
 	card_definition_map[? "shields_up"] = scr_card_definition_shields_up();
 	card_definition_map[? "siphon"] = scr_card_definition_siphon();
 	card_definition_map[? "stamina_potion"] = scr_card_definition_stamina_potion();
+	card_definition_map[? "third_eye_opens"] = scr_card_definition_third_eye_opens();
 	card_definition_map[? "transmute"] = scr_card_definition_transmute();
 
 	return card_definition_map;

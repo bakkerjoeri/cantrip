@@ -9,7 +9,6 @@ state_create("takingDamage", scr_character_taking_damage);
 state_init("waiting");
 
 name = "";
-is_player = false;
 max_hand_size = 0;
 max_ability_points = 0;
 ability_points = 0;
