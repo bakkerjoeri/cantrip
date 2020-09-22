@@ -28,6 +28,7 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "necrotic_blast");
+		ds_list_add(cards, "volatile_mixture");
 	}
 
 	if (tier == 2) {

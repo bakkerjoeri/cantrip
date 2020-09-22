@@ -1,20 +1,12 @@
 function scr_create_card(card_name) {
-	var card_definition_map = scr_get_card_definition_map();
-	var card;
-		
-	if (ds_map_exists(card_definition_map, card_name)) {
-		var card_definition = ds_map_find_value(card_definition_map, card_name);
-		card = create_card_from_definition(card_definition);
-	} else {
-		card = create_card_with_instance(card_name);
-	}
+	var card_definition_script = asset_get_index("scr_card_definition_" + card_name);
 	
-	return card;
-}
+	if (!script_exists(card_definition_script)) {
+		throw "Card definition for " + card_name + "doesn't exist";
+	}
 
-function create_card_with_instance(card_name) {
-	var card
-	var card = instance_create_layer(0, 0, "Instances", asset_get_index("obj_card_" + card_name));
+	var card_definition = card_definition_script();
+	var card = create_card_from_definition(card_definition);
 	
 	return card;
 }
