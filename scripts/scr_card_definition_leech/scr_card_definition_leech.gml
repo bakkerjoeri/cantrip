@@ -11,9 +11,9 @@ function do_leech_effect(target, source) {
 	var card_to_steal = scr_choose_from_list(target.hand);
 
 	if (card_to_steal) {
+		scr_move_item_between_lists(card_to_steal, target.hand, source.hand);
+		
 		with (card_to_steal) {
-			ds_list_delete(target.hand, ds_list_find_index(target.hand, card_to_steal));
-			ds_list_add(source.hand, card_to_steal);
 			owner = source;
 			state_switch("beingDrawn");
 		}

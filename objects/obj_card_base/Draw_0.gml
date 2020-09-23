@@ -1,7 +1,8 @@
 draw_self();
 
 if (is_face_up) {
-	var padding = 5;
+	var padding = 4;
+	var line_height = 8;
 	var text_offset = 30;
 	
 	draw_set_halign(fa_left);
@@ -24,13 +25,13 @@ if (is_face_up) {
 	if (is_unplayable) {
 		draw_set_color(global.palette_2);
 		draw_set_halign(fa_left);
-		draw_text_ext(x + padding, y + text_offset, "Unplayable", 8, sprite_width - (2 * padding));
-		text_offset += 8;
+		draw_text_ext(x + padding, y + text_offset, "Unplayable", line_height, sprite_width - (2 * padding));
+		text_offset += line_height;
 	}
 
 	draw_set_color(global.palette_0);
 	draw_set_halign(fa_left);
-	draw_text_ext(x + padding, y + text_offset, text, 8, sprite_width - (2 * padding));
+	draw_text_ext(x + padding, y + text_offset, text, line_height, sprite_width - (2 * padding));
 	
 	if (
 		state_name == "inHand"

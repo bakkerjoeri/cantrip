@@ -16,6 +16,7 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "stamina_potion");
 		ds_list_add(cards, "barter_for_power");
 		ds_list_add(cards, "third_eye_opens");
+		ds_list_add(cards, "radiant_burst");
 	}
 
 	if (tier == 1) {
@@ -39,6 +40,7 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "mana_burst");
 		ds_list_add(cards, "catalyst");
+		ds_list_add(cards, "lunar_surge");
 	}
 
 	return cards;

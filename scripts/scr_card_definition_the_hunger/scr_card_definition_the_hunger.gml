@@ -24,5 +24,5 @@ function the_hunger_on_discard(target, source, card) {
 }
 
 function get_the_hunger_text(damage) {
-	return  "Do " + string(damage) + " damage.\n\nAt the end of your turn, damage increases by 1.";
+	return  "Do " + string(damage) + " damage. Damage increases by 1 at the end of your turn.";
 }

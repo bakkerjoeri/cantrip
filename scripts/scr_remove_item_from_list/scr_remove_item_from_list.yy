@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Definitions",
-    "path": "folders/Scripts/Cards/Definitions.yy",
+    "name": "Utilities",
+    "path": "folders/Scripts/Utilities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_card_strength_potion",
+  "name": "scr_remove_item_from_list",
   "tags": [],
   "resourceType": "GMScript",
 }

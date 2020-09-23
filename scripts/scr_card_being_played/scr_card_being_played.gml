@@ -10,6 +10,9 @@ function scr_card_being_played() {
 	}
 
 	if (animation_is_finished) {
+		// Switch states before running the effect, so the effect might be able to affect state as well.
+		state_switch("isResolved");
+		
 		if (!is_undefined(effect)) {
 			var source = played_by;
 			var target = scr_get_opponent_of_character(played_by);
@@ -18,8 +21,5 @@ function scr_card_being_played() {
 		}
 	
 		played_by = noone;
-		state_switch("isResolved");
 	}
-
-
 }

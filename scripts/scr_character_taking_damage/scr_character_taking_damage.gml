@@ -36,7 +36,7 @@ function scr_character_taking_damage() {
 		
 			exit;
 		}
-	
+
 		// Damage all cards.
 		if (_amount_left_for_event == 0 && !ds_queue_empty(damage_events)) {
 			_current_damage_event = ds_queue_dequeue(damage_events);
@@ -46,7 +46,7 @@ function scr_character_taking_damage() {
 		if (_amount_left_for_event > 0) {
 			do_damage_effect();
 
-			var damaged_card = scr_find_card_to_discard(hand);
+			var damaged_card = scr_find_card_to_discard(hand, _current_damage_event[? "invert_discard_order"]);
 	
 			ds_list_add(graveyard, damaged_card);
 			ds_list_delete(hand, ds_list_find_index(hand, damaged_card));
