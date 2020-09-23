@@ -1,14 +1,10 @@
-function scr_card_definition_volatile_mixture() {
-	var definition = {
-		name: "volatile_mixture",
-		title: "volatile mixture",
-		cost: 1,
-		text: "Do 2 damage. When hit, take 1 damage.",
-		effect: do_volatile_mixture_effect,
-		counter: do_volatile_mixture_counter,
-	};
-	
-	return definition;
+function scr_card_definition_volatile_mixture(card) {
+	card.name = "volatile_mixture";
+	card.title = "volatile mixture";
+	card.cost = 1;
+	card.text = "Do 2 damage. When hit, take 1 damage.";
+	card.effect = do_volatile_mixture_effect;
+	card.counter = do_volatile_mixture_counter;
 }
 
 function do_volatile_mixture_effect(target, source) {

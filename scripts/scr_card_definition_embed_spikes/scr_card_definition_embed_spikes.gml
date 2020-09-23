@@ -1,14 +1,10 @@
-function scr_card_definition_embed_spikes() {
-	var definition = {
-		name: "embed_spikes",
-		title: "embed spikes",
-		cost: 1,
-		text: "\"shield\" cards in your hand get \"when hit, do 1 damage\".",
-		effect: do_embed_spikes_effect,
-		condition: can_play_embed_spikes,
-	};
-	
-	return definition;
+function scr_card_definition_embed_spikes(card) {
+	card.name = "embed_spikes";
+	card.title = "embed spikes";
+	card.cost = 1;
+	card.text = "\"shield\" cards in your hand get \"when hit, do 1 damage\".";
+	card.effect = do_embed_spikes_effect;
+	card.condition = can_play_embed_spikes;
 }
 
 function do_embed_spikes_effect(target, source) {

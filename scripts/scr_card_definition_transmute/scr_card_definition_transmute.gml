@@ -1,14 +1,10 @@
-function scr_card_definition_transmute() {
-	var definition = {
-		name: "transmute",
-		title: "transmute",
-		cost: 0,
-		text: "Discard all your cards, draw that many cards.",
-		effect: do_transmute_effect,
-		condition: can_play_transmute,
-	}
-	
-	return definition;
+function scr_card_definition_transmute(card) {
+	card.name = "transmute";
+	card.title = "transmute";
+	card.cost = 0;
+	card.text = "Discard all your cards, draw that many cards.";
+	card.effect = do_transmute_effect;
+	card.condition = can_play_transmute;
 }
 
 function do_transmute_effect(target, source) {

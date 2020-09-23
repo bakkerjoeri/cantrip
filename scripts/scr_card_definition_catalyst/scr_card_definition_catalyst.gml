@@ -1,13 +1,9 @@
-function scr_card_definition_catalyst() {
-	var definition = {
-		name: "catalyst",
-		title: "catalyst",
-		cost: 1,
-		text: "This turn, when you play a card, draw a card.",
-		effect: do_catalyst_effect,
-	};
-	
-	return definition;
+function scr_card_definition_catalyst(card) {
+	card.name = "catalyst";
+	card.title = "catalyst";
+	card.cost = 1;
+	card.text = "This turn, when you play a card, draw a card.";
+	card.effect = do_catalyst_effect;
 }
 
 function do_catalyst_effect(target, source) {

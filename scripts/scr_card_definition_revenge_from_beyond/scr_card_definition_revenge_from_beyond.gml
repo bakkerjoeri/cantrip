@@ -1,14 +1,10 @@
-function scr_card_definition_revenge_from_beyond() {
-	var definition = {
-		name: "revenge_from_beyond",
-		title: "revenge from beyond",
-		cost: 1,
-		text: "Play the top card from your opponent's graveyard.",
-		effect: do_revenge_from_beyond_effect,
-		condition: can_play_revenge_from_beyond,
-	}
-	
-	return definition;
+function scr_card_definition_revenge_from_beyond(card) {
+	card.name = "revenge_from_beyond";
+	card.title = "revenge from beyond";
+	card.cost = 1;
+	card.text = "Play the top card from your opponent's graveyard.";
+	card.effect = do_revenge_from_beyond_effect;
+	card.condition = can_play_revenge_from_beyond;
 }
 
 function do_revenge_from_beyond_effect(target, source) {

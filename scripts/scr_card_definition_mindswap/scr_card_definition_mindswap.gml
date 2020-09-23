@@ -1,13 +1,9 @@
-function scr_card_definition_mindswap() {
-	var definition = {
-		name: "mindswap",
-		title: "mindswap",
-		cost: 1,
-		text: "Switch hands with your opponent until your next turn.",
-		effect: do_mindswap_effect,
-	};
-	
-	return definition;
+function scr_card_definition_mindswap(card) {
+		card.name = "mindswap";
+		card.title = "mindswap";
+		card.cost = 1;
+		card.text = "Switch hands with your opponent until your next turn.";
+		card.effect = do_mindswap_effect;
 }
 
 function do_mindswap_effect(target, source) {

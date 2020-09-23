@@ -1,14 +1,10 @@
-function scr_card_definition_stamina_potion() {
-	var definition = {
-		name: "stamina_potion",
-		title: "stamina potion",
-		cost: 0,
-		text: "Gain 1 AP.",
-		effect: do_stamina_potion_effect,
-		condition: can_play_stamina_potion,
-	}
-	
-	return definition;
+function scr_card_definition_stamina_potion(card) {
+	card.name = "stamina_potion";
+	card.title = "stamina potion";
+	card.cost = 0;
+	card.text = "Gain 1 AP.";
+	card.effect = do_stamina_potion_effect;
+	card.condition = can_play_stamina_potion;
 }
 
 function do_stamina_potion_effect(target, source) {

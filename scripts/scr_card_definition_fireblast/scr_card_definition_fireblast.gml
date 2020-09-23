@@ -1,13 +1,9 @@
-function scr_card_definition_fireblast() {
-	var definition = {
-		name: "fireblast",
-		title: "fireblast",
-		cost: 2,
-		text: "Do 3 damage.",
-		effect: do_fireblast_effect,
-	};
-	
-	return definition;
+function scr_card_definition_fireblast(card) {
+	card.name = "fireblast";
+	card.title = "fireblast";
+	card.cost = 2;
+	card.text = "Do 3 damage.";
+	card.effect = do_fireblast_effect;
 }
 
 function do_fireblast_effect(target, source) {

@@ -1,11 +1,7 @@
-function scr_card_definition_shield() {
-	var definition = {
-		name: "shield",
-		title: "shield",
-		is_unplayable: true,
-		discard_priority: 2,
-		text: "Always discarded first.",
-	};
-	
-	return definition;
+function scr_card_definition_shield(card) {
+	card.name = "shield";
+	card.title = "shield";
+	card.is_unplayable = true;
+	card.discard_priority = 2;
+	card.text = "Always discarded first.";
 }

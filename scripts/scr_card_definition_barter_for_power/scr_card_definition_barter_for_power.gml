@@ -1,14 +1,10 @@
-function scr_card_definition_barter_for_power() {
-	var definition = {
-		name: "barter_for_power",
-		title: "barter for power",
-		cost: 0,
-		text: "Give away as much AP as possible. Draw as many cards plus 1.",
-		effect: do_barter_for_power_effect,
-		condition: can_play_barter_for_power,
-	}
-	
-	return definition;
+function scr_card_definition_barter_for_power(card) {
+	card.name = "barter_for_power";
+	card.title = "barter for power";
+	card.cost = 0;
+	card.text = "Give away as much AP as possible. Draw as many cards plus 1.";
+	card.effect = do_barter_for_power_effect;
+	card.condition = can_play_barter_for_power;
 }
 
 function do_barter_for_power_effect(target, source) {

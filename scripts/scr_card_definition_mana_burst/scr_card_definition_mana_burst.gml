@@ -1,14 +1,10 @@
-function scr_card_definition_mana_burst() {
-	var definition = {
-		name: "mana_burst",
-		title: "mana burst",
-		cost: 0,
-		text: "Do damage equal to your AP.",
-		effect: do_mana_burst_effect,
-		condition: can_play_mana_burst,
-	}
-	
-	return definition;
+function scr_card_definition_mana_burst(card) {
+	card.name = "mana_burst";
+	card.title = "mana burst";
+	card.cost = 0;
+	card.text = "Do damage equal to your AP.";
+	card.effect = do_mana_burst_effect;
+	card.condition = can_play_mana_burst;
 }
 
 function do_mana_burst_effect(target, source) {

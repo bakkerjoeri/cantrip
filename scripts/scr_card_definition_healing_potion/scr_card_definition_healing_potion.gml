@@ -1,14 +1,10 @@
-function scr_card_definition_healing_potion() {
-	var definition = {
-		name: "healing_potion",
-		title: "healing potion",
-		cost: 2,
-		text: "Draw 3 cards.",
-		effect: do_healing_potion_effect,
-		condition: can_play_healing_potion,
-	}
-	
-	return definition;
+function scr_card_definition_healing_potion(card) {
+	card.name = "healing_potion";
+	card.title = "healing potion";
+	card.cost = 2;
+	card.text = "Draw 3 cards.";
+	card.effect = do_healing_potion_effect;
+	card.condition = can_play_healing_potion;
 }
 
 function do_healing_potion_effect(target, source) {

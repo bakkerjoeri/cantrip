@@ -1,14 +1,10 @@
-function scr_card_definition_desecrate() {
-	var definition = {
-		name: "desecrate",
-		title: "desecrate",
-		cost: 0,
-		text: "Steal the top card from your opponent's graveyard.",
-		effect: do_desecrate_effect,
-		condition: can_play_desecrate,
-	};
-	
-	return definition
+function scr_card_definition_desecrate(card) {
+	card.name = "desecrate";
+	card.title = "desecrate";
+	card.cost = 0;
+	card.text = "Steal the top card from your opponent's graveyard.";
+	card.effect = do_desecrate_effect;
+	card.condition = can_play_desecrate;
 }
 
 function do_desecrate_effect(target, source) {

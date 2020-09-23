@@ -1,14 +1,10 @@
-function scr_card_definition_leech() {
-	var definition = {
-		name: "leech",
-		title: "leech",
-		cost: 1,
-		text: "Steal 1 card from your opponent.",
-		effect: do_leech_effect,
-		condition: can_play_leech,
-	}
-	
-	return definition;
+function scr_card_definition_leech(card) {
+	card.name = "leech";
+	card.title = "leech";
+	card.cost = 1;
+	card.text = "Steal 1 card from your opponent.";
+	card.effect = do_leech_effect;
+	card.condition = can_play_leech;
 }
 
 function do_leech_effect(target, source) {

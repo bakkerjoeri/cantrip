@@ -1,14 +1,10 @@
-function scr_card_definition_necrotic_blast() {
-	var definition = {
-		name: "necrotic_blast",
-		title: "necrotic blast",
-		cost: 1,
-		text: "Do 1 damage plus the cost of your graveyard's top card.",
-		effect: do_necrotic_blast_effect,
-		condition: can_play_necrotic_blast,
-	}
-	
-	return definition;
+function scr_card_definition_necrotic_blast(card) {
+	card.name = "necrotic_blast";
+	card.title = "necrotic blast";
+	card.cost = 1;
+	card.text = "Do 1 damage plus the cost of your graveyard's top card.";
+	card.effect = do_necrotic_blast_effect;
+	card.condition = can_play_necrotic_blast;
 }
 
 function do_necrotic_blast_effect(target, source) {

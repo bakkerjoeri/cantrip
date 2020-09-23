@@ -1,13 +1,9 @@
-function scr_card_definition_rest() {
-	var definition = {
-		name: "rest",
-		title: "rest",
-		cost: 0,
-		text: "Draw 1 card, Gain 1 AP, end your turn.",
-		effect: do_rest_effect,
-	};
-	
-	return definition;
+function scr_card_definition_rest(card) {
+	card.name = "rest";
+	card.title = "rest";
+	card.cost = 0;
+	card.text = "Draw 1 card, Gain 1 AP, end your turn.";
+	card.effect = do_rest_effect;
 }
 
 function do_rest_effect(target, source) {

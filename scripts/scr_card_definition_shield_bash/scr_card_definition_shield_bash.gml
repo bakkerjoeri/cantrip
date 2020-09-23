@@ -1,14 +1,10 @@
-function scr_card_definition_shield_bash() {
-	var definition = {
-		name: "shield_bash",
-		title: "shield bash",
-		cost: 2,
-		text: "Do damage equal to the \"shield\" cards in your hand.",
-		effect: do_shield_bash_effect,
-		condition: can_play_shield_bash,
-	}
-	
-	return definition;
+function scr_card_definition_shield_bash(card) {
+		card.name = "shield_bash";
+		card.title = "shield bash";
+		card.cost = 2;
+		card.text = "Do damage equal to the \"shield\" cards in your hand.";
+		card.effect = do_shield_bash_effect;
+		card.condition = can_play_shield_bash;
 }
 
 function do_shield_bash_effect(target, source) {

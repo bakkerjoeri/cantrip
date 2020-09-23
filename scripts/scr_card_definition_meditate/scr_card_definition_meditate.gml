@@ -1,13 +1,9 @@
-function scr_card_definition_meditate() {
-	var definition = {
-		name: "meditate",
-		title: "meditate",
-		cost: 0,
-		text: "Start your next turn with full AP.",
-		effect: do_meditate_effect,
-	};
-	
-	return definition;
+function scr_card_definition_meditate(card) {
+	card.name = "meditate";
+	card.title = "meditate";
+	card.cost = 0;
+	card.text = "Start your next turn with full AP.";
+	card.effect = do_meditate_effect;
 }
 
 function do_meditate_effect(target, source) {

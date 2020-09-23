@@ -1,14 +1,10 @@
-function scr_card_definition_seance() {
-	var definition = {
-		name: "seance",
-		title: "seance",
-		cost: 1,
-		text: "Play the top card from your graveyard.",
-		effect: do_seance_effect,
-		condition: can_play_seance,
-	}
-	
-	return definition;
+function scr_card_definition_seance(card) {
+	card.name = "seance";
+	card.title = "seance";
+	card.cost = 1;
+	card.text = "Play the top card from your graveyard.";
+	card.effect = do_seance_effect;
+	card.condition = can_play_seance;
 }
 
 function do_seance_effect(target, source) {

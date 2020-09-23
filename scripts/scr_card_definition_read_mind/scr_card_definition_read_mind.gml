@@ -1,14 +1,10 @@
-function scr_card_definition_read_mind() {
-	var definition = {
-		name: "read_mind",
-		title: "read mind",
-		cost: 1,
-		text: "Copy 2 random cards from your opponent's hand.",
-		effect: do_read_mind_effect,
-		condition: can_play_read_mind,
-	}
-	
-	return definition;
+function scr_card_definition_read_mind(card) {
+	card.name = "read_mind";
+	card.title = "read mind";
+	card.cost = 1;
+	card.text = "Copy 2 random cards from your opponent's hand.";
+	card.effect = do_read_mind_effect;
+	card.condition = can_play_read_mind;
 }
 
 function do_read_mind_effect(target, source) {

@@ -1,13 +1,9 @@
-function scr_card_definition_shields_up() {
-	var definition = {
-		name: "shields_up",
-		title: "shields up",
-		cost: 1,
-		text: "Add 2 \"shield\" cards to your hand.",
-		effect: do_shields_up_effect,
-	};
-	
-	return definition;
+function scr_card_definition_shields_up(card) {
+	card.name = "shields_up";
+	card.title = "shields up";
+	card.cost = 1;
+	card.text = "Add 2 \"shield\" cards to your hand.";
+	card.effect = do_shields_up_effect;
 }
 
 function do_shields_up_effect(target, source) {

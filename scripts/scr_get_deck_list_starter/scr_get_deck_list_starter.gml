@@ -5,7 +5,6 @@ function scr_get_deck_list_starter() {
 	deck_map[? "combust"] = 1;
 	deck_map[? "shield"] = 3;
 	deck_map[? "rest"] = 2;
-	deck_map[? "volatile_mixture"] = 10;
 
 	return scr_create_deck_list_from_deck(deck_map);
 }

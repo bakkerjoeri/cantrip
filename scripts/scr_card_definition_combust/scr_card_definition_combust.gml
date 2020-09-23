@@ -1,14 +1,10 @@
-function scr_card_definition_combust() {
-	var definition = {
-		name: "combust",
-		title: "combust",
-		cost: 1,
-		text: "Take 1 damage, do 2 damage.",
-		effect: do_combust_effect,
-		condition: can_play_combust,
-	}
-	
-	return definition;
+function scr_card_definition_combust(card) {
+	card.name = "combust";
+	card.title = "combust";
+	card.cost = 1;
+	card.text = "Take 1 damage, do 2 damage.";
+	card.effect = do_combust_effect;
+	card.condition = can_play_combust;
 }
 
 function do_combust_effect(target, source) {

@@ -1,15 +1,12 @@
-function scr_card_definition_attack() {
-	var definition = {
-		name: "attack",
-		title: "attack",
-		cost: 1,
-		text: "Do 1 damage.",
-		effect: do_attack_effect,
-	};
-	
-	return definition;
+function scr_card_definition_attack(card) {
+	card.name = "attack";
+	card.title = "attack";
+	card.cost = 1;
+	card.text = "Do 1 damage.";
+	card.effect = do_attack_effect;
+	card.damage = 1;
 }
 
-function do_attack_effect(target, source) {
-	scr_take_damage(target, 1, source);
+function do_attack_effect(target, source, card) {
+	scr_take_damage(target, card.damage, source);
 }
