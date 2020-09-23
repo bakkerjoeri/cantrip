@@ -20,7 +20,6 @@ state_init("undealt");
 // card stats
 name = "base";
 title = "";
-cost = 0;
 is_unplayable = false;
 discard_priority = 1;
 text = "";
