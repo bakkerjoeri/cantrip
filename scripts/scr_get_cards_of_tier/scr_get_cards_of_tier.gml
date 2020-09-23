@@ -29,6 +29,7 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "necrotic_blast");
 		ds_list_add(cards, "volatile_mixture");
+		ds_list_add(cards, "the_hunger");
 	}
 
 	if (tier == 2) {

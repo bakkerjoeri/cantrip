@@ -6,47 +6,26 @@ function scr_generate_draft_rounds_of_tier() {
 	var draft_rounds_queue = ds_queue_create();
 	
 	if (tier == 0) {
-		var first_set = scr_get_unique_cards_of_tier(6, 0);
-		var second_set = scr_get_unique_cards_of_tier(3, 1);
-		
-		for (var c = 0; c < 6; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(first_set, c));
-		}
-		
-		for (var c = 0; c < 3; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(second_set, c));
-		}
+		cards_to_draft = scr_concat_lists(
+			scr_get_unique_cards_of_tier(6, 0),
+			scr_get_unique_cards_of_tier(3, 1)
+		);
 	}
 
 	if (tier == 1) {
-		var first_set = scr_get_unique_cards_of_tier(3, 0);
-		var second_set = scr_get_unique_cards_of_tier(6, 1);
-		
-		for (var c = 0; c < 3; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(first_set, c));
-		}
-		
-		for (var c = 0; c < 6; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(second_set, c));
-		}
+		cards_to_draft = scr_concat_lists(
+			scr_get_unique_cards_of_tier(3, 0),
+			scr_get_unique_cards_of_tier(5, 1),
+			scr_get_unique_cards_of_tier(1, 2),
+		);
 	}
 
 	if (tier == 2) {
-		var first_set = scr_get_unique_cards_of_tier(3, 0);
-		var second_set = scr_get_unique_cards_of_tier(3, 1);
-		var third_set = scr_get_unique_cards_of_tier(3, 2);
-		
-		for (var c = 0; c < 3; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(first_set, c));
-		}
-		
-		for (var c = 0; c < 3; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(second_set, c));
-		}
-		
-		for (var c = 0; c < 3; c += 1) {
-			ds_list_add(cards_to_draft, ds_list_find_value(third_set, c));
-		}
+		cards_to_draft = scr_concat_lists(
+			scr_get_unique_cards_of_tier(3, 0),
+			scr_get_unique_cards_of_tier(3, 1),
+			scr_get_unique_cards_of_tier(3, 2),
+		);
 	}
 	
 	ds_list_shuffle(cards_to_draft);

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Draft",
-    "path": "folders/Scripts/Draft.yy",
+    "name": "Utilities",
+    "path": "folders/Scripts/Utilities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_generate_draft_round_of_tier",
+  "name": "scr_concat_lists",
   "tags": [],
   "resourceType": "GMScript",
 }
