@@ -6,6 +6,10 @@ function scr_card_being_discarded() {
 	
 		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self.id);
 		is_face_up = true;
+		
+		if (variable_instance_exists(self.id, "on_discard")) {
+			do_on_discard_effect(self.id, self.on_discard);
+		}
 	
 		var current_graveyard_size = ds_list_size(owner.graveyard);
 		var current_graveyard_position = ds_list_find_index(owner.graveyard, self.id);
@@ -23,7 +27,11 @@ function scr_card_being_discarded() {
 	if (animation_is_finished) {
 		state_switch("inGraveyard");
 	}
+}
 
+function do_on_discard_effect(card, effect) {
+	var source = card.owner;
+	var target = scr_get_opponent_of_character(source);
 
-
+	effect(target, source, card);
 }
