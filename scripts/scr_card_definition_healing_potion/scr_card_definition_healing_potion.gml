@@ -5,6 +5,7 @@ function scr_card_definition_healing_potion(card) {
 	card.text = "Draw 3 cards.";
 	card.effect = do_healing_potion_effect;
 	card.condition = can_play_healing_potion;
+	card.rarity = 1;
 }
 
 function do_healing_potion_effect(target, source) {

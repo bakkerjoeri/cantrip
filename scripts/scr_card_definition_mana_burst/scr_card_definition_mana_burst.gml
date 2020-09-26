@@ -5,6 +5,7 @@ function scr_card_definition_mana_burst(card) {
 	card.text = "Do damage equal to your AP.";
 	card.effect = do_mana_burst_effect;
 	card.condition = can_play_mana_burst;
+	card.rarity = 2;
 }
 
 function do_mana_burst_effect(target, source) {

@@ -1,6 +1,6 @@
 function scr_card_start_play() {
 	if (state_new) {
-		ds_list_delete(owner.hand, ds_list_find_index(owner.hand, self.id));
+		scr_remove_item_from_list(owner.hand, self.id);
 		is_face_up = true;
 	
 		animation_add_next(

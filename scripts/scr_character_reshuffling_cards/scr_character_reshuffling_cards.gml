@@ -11,10 +11,8 @@ function scr_character_reshuffling_cards() {
 
 	if (_card_reshuffle_delay <= 0 && !ds_list_empty(graveyard)) {
 		var card_to_reshuffle = ds_list_find_value(graveyard, 0);
-	
-		ds_list_delete(graveyard, 0);
-		ds_list_add(draw_pile, card_to_reshuffle);
-	
+		scr_move_item_between_lists(card_to_reshuffle, graveyard, draw_pile);
+
 		with (card_to_reshuffle) {
 			state_switch("beingReshuffled");
 		}

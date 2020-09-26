@@ -4,4 +4,5 @@ function scr_card_definition_shield(card) {
 	card.is_unplayable = true;
 	card.discard_priority = 2;
 	card.text = "Always discarded first.";
+	card.rarity = 0;
 }

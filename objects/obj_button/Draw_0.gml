@@ -13,7 +13,8 @@ if (is_active) {
 	draw_set_color(global.palette_7);
 }
 
-draw_text_ext(x + (sprite_width / 2), y + (sprite_height / 2), label, 8, sprite_width - 4);
+draw_text_ext(
+	floor(x + (sprite_width / 2)), floor(y + (sprite_height / 2)), label, 8, sprite_width - 4);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

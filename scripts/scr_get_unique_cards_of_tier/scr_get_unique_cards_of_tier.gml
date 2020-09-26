@@ -13,9 +13,7 @@ function scr_get_unique_cards_of_tier() {
 		}
 	
 		var chosen_card = scr_choose_from_list(cards_of_tier_left);
-	
-		ds_list_add(selected_cards, chosen_card);
-		ds_list_delete(cards_of_tier_left, ds_list_find_index(cards_of_tier_left, chosen_card));
+		scr_move_item_between_lists(chosen_card, cards_of_tier_left, selected_cards);
 	}
 
 	return selected_cards;

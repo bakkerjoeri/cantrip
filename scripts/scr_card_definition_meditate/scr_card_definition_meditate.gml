@@ -4,6 +4,7 @@ function scr_card_definition_meditate(card) {
 	card.cost = 0;
 	card.text = "Start your next turn with full AP.";
 	card.effect = do_meditate_effect;
+	card.rarity = 0;
 }
 
 function do_meditate_effect(target, source) {

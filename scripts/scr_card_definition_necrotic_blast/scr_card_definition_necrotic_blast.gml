@@ -5,6 +5,7 @@ function scr_card_definition_necrotic_blast(card) {
 	card.text = "Do 1 damage plus the cost of your graveyard's top card.";
 	card.effect = do_necrotic_blast_effect;
 	card.condition = can_play_necrotic_blast;
+	card.rarity = 1;
 }
 
 function do_necrotic_blast_effect(target, source) {
@@ -16,9 +17,9 @@ function do_necrotic_blast_effect(target, source) {
 	
 	if (!variable_instance_exists(card, "cost")) {
 		scr_take_damage(target, 1, source);
+	} else {
+		scr_take_damage(target, card.cost + 1, source);
 	}
-
-	scr_take_damage(target, card.cost + 1, source);
 }
 
 function can_play_necrotic_blast(target, source) {
@@ -28,3 +29,4 @@ function can_play_necrotic_blast(target, source) {
 	
 	return true;
 }
+

@@ -5,6 +5,7 @@ function scr_card_definition_shield_bash(card) {
 		card.text = "Do damage equal to the \"shield\" cards in your hand.";
 		card.effect = do_shield_bash_effect;
 		card.condition = can_play_shield_bash;
+		card.rarity = 1;
 }
 
 function do_shield_bash_effect(target, source) {

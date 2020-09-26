@@ -47,9 +47,7 @@ function scr_character_taking_damage() {
 			do_damage_effect();
 
 			var damaged_card = scr_find_card_to_discard(hand, _current_damage_event[? "invert_discard_order"]);
-	
-			ds_list_add(graveyard, damaged_card);
-			ds_list_delete(hand, ds_list_find_index(hand, damaged_card));
+			scr_move_item_between_lists(damaged_card, hand, graveyard);
 	
 			with (damaged_card) {
 				state_switch("damaged");

@@ -16,22 +16,23 @@ function execute_phase_effect(effect) {
 
 function get_start_of_turn_effects(character) {
 	var start_of_turn_effects_to_execute = ds_queue_create();
-
+	
 	if (!ds_list_empty(character.start_of_turn_effects)) {
-		for (var e = 0; e <= ds_list_size(character.start_of_turn_effects) - 1; e += 1) {
-			var effect = ds_list_find_value(character.start_of_turn_effects, e);
+		var cloned_list = scr_clone_list(character.start_of_turn_effects);
+
+		for (var e = 0; e <= ds_list_size(cloned_list) - 1; e += 1) {
+			var effect = ds_list_find_value(cloned_list, e);
 			
 			if (effect[? "duration"] <= 0) {
-				ds_list_delete(
-					character.start_of_turn_effects,
-					ds_list_find_index(character.start_of_turn_effects, effect)
-				);
+				scr_remove_item_from_list(character.start_of_turn_effects, effect);
 			} else {
 				effect[? "duration"] -= 1;
 				
 				ds_queue_enqueue(start_of_turn_effects_to_execute, effect);
 			}
 		}
+		
+		ds_list_destroy(cloned_list);
 	}
 	
 	for (var c = 0; c <= ds_list_size(character.hand) - 1; c += 1) {
@@ -55,14 +56,13 @@ function get_end_of_turn_effects(character) {
 	var end_of_turn_effects_to_execute = ds_queue_create();
 
 	if (!ds_list_empty(character.end_of_turn_effects)) {
-		for (var e = 0; e <= ds_list_size(character.end_of_turn_effects) - 1; e += 1) {
-			var effect = ds_list_find_value(character.end_of_turn_effects, e);
+		var cloned_list = scr_clone_list(character.end_of_turn_effects);
+		
+		for (var e = 0; e <= ds_list_size(cloned_list) - 1; e += 1) {
+			var effect = ds_list_find_value(cloned_list, e);
 			
 			if (effect[? "duration"] <= 0) {
-				ds_list_delete(
-					character.end_of_turn_effects,
-					ds_list_find_index(character.end_of_turn_effects, effect)
-				);
+				scr_remove_item_from_list(character.end_of_turn_effects, effect);
 			} else {
 				effect[? "duration"] -= 1;
 				

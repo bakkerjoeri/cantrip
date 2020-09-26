@@ -1,7 +1,7 @@
 draw_self();
 
 if (is_face_up) {
-	var padding = 4;
+	var padding = 5;
 	var line_height = 8;
 	var text_offset = 30;
 	
@@ -16,7 +16,7 @@ if (is_face_up) {
 	draw_set_color(global.palette_0);
 	draw_text_ext(x + sprite_width / 2, y + padding, title, 8, sprite_width - (2 * padding) - 12);
 
-	if (!is_unplayable) {
+	if (!is_unplayable && variable_instance_exists(self.id, "cost")) {
 		draw_set_color(global.palette_3);
 		draw_set_halign(fa_center);
 		draw_text(x + padding + 2, y + padding, string(cost));

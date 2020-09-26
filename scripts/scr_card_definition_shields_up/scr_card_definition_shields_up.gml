@@ -4,6 +4,7 @@ function scr_card_definition_shields_up(card) {
 	card.cost = 1;
 	card.text = "Add 2 \"shield\" cards to your hand.";
 	card.effect = do_shields_up_effect;
+	card.rarity = 1;
 }
 
 function do_shields_up_effect(target, source) {

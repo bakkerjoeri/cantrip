@@ -5,6 +5,7 @@ function scr_card_definition_transmute(card) {
 	card.text = "Discard all your cards, draw that many cards.";
 	card.effect = do_transmute_effect;
 	card.condition = can_play_transmute;
+	card.rarity = 0;
 }
 
 function do_transmute_effect(target, source) {

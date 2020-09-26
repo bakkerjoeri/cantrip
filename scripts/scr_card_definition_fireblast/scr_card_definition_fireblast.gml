@@ -4,6 +4,7 @@ function scr_card_definition_fireblast(card) {
 	card.cost = 2;
 	card.text = "Do 3 damage.";
 	card.effect = do_fireblast_effect;
+	card.rarity = 2;
 }
 
 function do_fireblast_effect(target, source) {

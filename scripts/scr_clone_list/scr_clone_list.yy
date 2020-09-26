@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Types",
-    "path": "folders/Scripts/Decks/Types.yy",
+    "name": "Utilities",
+    "path": "folders/Scripts/Utilities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_get_deck_list_rogue",
+  "name": "scr_clone_list",
   "tags": [],
   "resourceType": "GMScript",
 }

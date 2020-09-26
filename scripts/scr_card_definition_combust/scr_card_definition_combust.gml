@@ -5,6 +5,7 @@ function scr_card_definition_combust(card) {
 	card.text = "Take 1 damage, do 2 damage.";
 	card.effect = do_combust_effect;
 	card.condition = can_play_combust;
+	card.rarity = 0;
 }
 
 function do_combust_effect(target, source) {

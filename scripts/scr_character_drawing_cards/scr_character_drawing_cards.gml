@@ -30,9 +30,7 @@ function scr_character_drawing_cards() {
 		}
 	
 		var card_to_draw = ds_list_find_value(draw_pile, ds_list_size(draw_pile) - 1);
-	
-		ds_list_delete(draw_pile, ds_list_size(draw_pile) - 1);
-		ds_list_add(hand, card_to_draw);
+		scr_move_item_between_lists(card_to_draw, draw_pile, hand);
 	
 		with (card_to_draw) {
 			state_switch("beingDrawn");

@@ -4,6 +4,7 @@ function scr_card_definition_rest(card) {
 	card.cost = 0;
 	card.text = "Draw 1 card, Gain 1 AP, end your turn.";
 	card.effect = do_rest_effect;
+	card.rarity = 0;
 }
 
 function do_rest_effect(target, source) {

@@ -5,6 +5,7 @@ function scr_card_definition_volatile_mixture(card) {
 	card.text = "Do 2 damage. When hit, take 1 damage.";
 	card.effect = do_volatile_mixture_effect;
 	card.counter = do_volatile_mixture_counter;
+	card.rarity = 1;
 }
 
 function do_volatile_mixture_effect(target, source) {

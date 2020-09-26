@@ -5,6 +5,7 @@ function scr_card_definition_siphon(card) {
 	card.text = "Steal up to 2 AP from your opponent.";
 	card.effect = do_siphon_effect;
 	card.condition = can_play_siphon;
+	card.rarity = 1;
 }
 
 function do_siphon_effect(target, source) {

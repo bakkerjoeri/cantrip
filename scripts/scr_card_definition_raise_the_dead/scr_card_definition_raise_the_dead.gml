@@ -5,6 +5,7 @@ function scr_card_definition_raise_the_dead(card) {
 	card.text = "Draw the top card from your graveyard.";
 	card.effect = do_raise_the_dead_effect;
 	card.condition = can_play_raise_the_dead;
+	card.rarity = 1;
 }
 
 function do_raise_the_dead_effect(target, source) {
@@ -12,8 +13,7 @@ function do_raise_the_dead_effect(target, source) {
 
 	if (card_to_retrieve) {	
 		with (card_to_retrieve) {
-			ds_list_delete(source.graveyard, ds_list_find_index(source.graveyard, card_to_retrieve));
-			ds_list_add(source.hand, card_to_retrieve);
+			scr_move_item_between_lists(card_to_retrieve, source.graveyard, source.hand);
 			state_switch("beingDrawn");
 		}
 	}

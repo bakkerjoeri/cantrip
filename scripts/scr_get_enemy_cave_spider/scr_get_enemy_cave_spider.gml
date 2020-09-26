@@ -5,6 +5,7 @@ function scr_get_enemy_cave_spider() {
 	enemy[? "deck_list"] = get_deck_list_for_cave_spider();
 	enemy[? "max_hand_size"] = 5;
 	enemy[? "max_ability_points"] = 2;
+	enemy[? "loot"] = "venomous_bite";
 
 	return enemy;
 }

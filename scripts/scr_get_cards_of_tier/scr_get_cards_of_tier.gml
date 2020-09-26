@@ -6,6 +6,7 @@ function scr_get_cards_of_tier() {
 	if (tier == 0) {
 		ds_list_add(cards, "shield");
 		ds_list_add(cards, "attack");
+		ds_list_add(cards, "riposte");
 		ds_list_add(cards, "combust");
 		ds_list_add(cards, "corrupted_aether");
 		ds_list_add(cards, "rest");
@@ -31,12 +32,12 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "necrotic_blast");
 		ds_list_add(cards, "volatile_mixture");
 		ds_list_add(cards, "the_hunger");
+		ds_list_add(cards, "siphon");
 	}
 
 	if (tier == 2) {
 		ds_list_add(cards, "mindswap");
 		ds_list_add(cards, "seance");
-		ds_list_add(cards, "siphon");
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "mana_burst");
 		ds_list_add(cards, "catalyst");

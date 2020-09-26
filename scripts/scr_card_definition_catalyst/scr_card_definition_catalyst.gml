@@ -4,6 +4,7 @@ function scr_card_definition_catalyst(card) {
 	card.cost = 1;
 	card.text = "This turn, when you play a card, draw a card.";
 	card.effect = do_catalyst_effect;
+	card.rarity = 2;
 }
 
 function do_catalyst_effect(target, source) {

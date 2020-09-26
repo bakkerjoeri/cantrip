@@ -5,6 +5,7 @@ function scr_card_definition_forge(card) {
 	card.text = "increase damage of \"attack\" cards in your hand by 1.";
 	card.effect = do_forge_effect;
 	card.condition = can_play_forge;
+	card.rarity = 1;
 }
 
 function do_forge_effect(target, source) {

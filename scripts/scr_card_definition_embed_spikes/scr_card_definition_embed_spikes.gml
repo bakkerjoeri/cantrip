@@ -5,6 +5,7 @@ function scr_card_definition_embed_spikes(card) {
 	card.text = "\"shield\" cards in your hand get \"when hit, do 1 damage\".";
 	card.effect = do_embed_spikes_effect;
 	card.condition = can_play_embed_spikes;
+	card.rarity = 1;
 }
 
 function do_embed_spikes_effect(target, source) {

@@ -8,12 +8,12 @@ function scr_card_definition_plague_bomb(card) {
 	card.counter = plague_bomb_explodes;
 	card.on_turn_end = plague_bomb_on_end_of_turn;
 	card.on_discard = plague_bomb_on_discard;
+	card.rarity = 3;
 }
 
 function do_plague_bomb_effect(target, source, card) {
-	scr_move_item_between_lists(card, source.hand, target.hand);
-		
 	with (card) {
+		scr_move_item_between_lists(card, source.hand, target.hand);
 		owner = target;
 		state_switch("beingDrawn");
 	}

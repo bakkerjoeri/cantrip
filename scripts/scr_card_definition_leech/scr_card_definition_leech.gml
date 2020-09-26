@@ -5,6 +5,7 @@ function scr_card_definition_leech(card) {
 	card.text = "Steal 1 card from your opponent.";
 	card.effect = do_leech_effect;
 	card.condition = can_play_leech;
+	card.rarity = 1;
 }
 
 function do_leech_effect(target, source) {

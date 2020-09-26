@@ -1,6 +1,10 @@
-/// scr_generate_draft_rounds_of_tier(tier);
-function scr_generate_draft_rounds_of_tier() {
-	var tier = argument[0];
+function scr_generate_draft_rounds_of_tier(tier) {
+	var loot_card_name = noone;
+
+	if (argument_count >= 2) {
+		loot_card_name = argument[1];
+	}
+	
 	var cards_to_draft = ds_list_create();
 	var draft_rounds_list = ds_list_create();
 	var draft_rounds_queue = ds_queue_create();
@@ -28,6 +32,10 @@ function scr_generate_draft_rounds_of_tier() {
 		);
 	}
 	
+	if (loot_card_name != noone) {
+		ds_list_replace(cards_to_draft, 0, loot_card_name);
+	}
+	
 	ds_list_shuffle(cards_to_draft);
 		
 	for (var r = 0; r < 3; r += 1) {
@@ -53,6 +61,4 @@ function scr_generate_draft_rounds_of_tier() {
 	ds_list_destroy(draft_rounds_list);
 
 	return draft_rounds_queue;
-
-
 }

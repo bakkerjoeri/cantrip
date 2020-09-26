@@ -5,6 +5,7 @@ function scr_card_definition_sneak_attack(card) {
 	card.text = "Do 2 damage, bypassing \"shield\" cards.";
 	card.effect = do_sneak_attack_effect;
 	card.damage = 2;
+	card.rarity = 3;
 }
 
 function do_sneak_attack_effect(target, source, card) {

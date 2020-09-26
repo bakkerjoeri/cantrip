@@ -29,6 +29,10 @@ function scr_generate_floors() {
 				new_room[? "reward_tier"] = min(room_tier + 1, 2);
 				new_room[? "enemy"] = scr_choose_from_list(scr_get_bosses_of_tier(room_tier));
 			}
+			
+			if (ds_map_exists(new_room[? "enemy"], "loot")) {
+				new_room[? "loot"] = new_room[? "enemy"][? "loot"];
+			}
 		
 			ds_list_add(rooms, new_room);
 		}

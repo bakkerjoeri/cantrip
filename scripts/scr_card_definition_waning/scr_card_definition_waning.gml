@@ -4,6 +4,7 @@ function scr_card_definition_waning(card) {
 	card.cost = 1;
 	card.text = "Until next turn, your opponent's cards cost 1 more."
 	card.effect = do_waning_effect;
+	card.rarity = 1;
 }
 
 function do_waning_effect(target, source, card) {

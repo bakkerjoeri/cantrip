@@ -25,6 +25,7 @@ discard_priority = 1;
 text = "";
 effect = undefined;
 condition = undefined;
+rarity = 0;
 
 // card state
 owner = noone;

@@ -4,6 +4,7 @@ function scr_card_definition_mindswap(card) {
 		card.cost = 1;
 		card.text = "Switch hands with your opponent until your next turn.";
 		card.effect = do_mindswap_effect;
+		card.rarity = 2;
 }
 
 function do_mindswap_effect(target, source) {
@@ -27,8 +28,7 @@ function swap_hands(target, source) {
 		var card_to_swap = ds_list_find_value(target_hand, c);
 	
 		with (card_to_swap) {
-			ds_list_delete(target.hand, ds_list_find_index(target.hand, card_to_swap));
-			ds_list_add(source.hand, card_to_swap);
+			scr_move_item_between_lists(card_to_swap, target.hand, source.hand);
 			owner = source;
 			state_switch("beingDrawn");
 		}
@@ -38,8 +38,7 @@ function swap_hands(target, source) {
 		var card_to_swap = ds_list_find_value(source_hand, c);
 	
 		with (card_to_swap) {
-			ds_list_delete(source.hand, ds_list_find_index(source.hand, card_to_swap));
-			ds_list_add(target.hand, card_to_swap);
+			scr_move_item_between_lists(card_to_swap, source.hand, target.hand);
 			owner = target;
 			state_switch("beingDrawn");
 		}
