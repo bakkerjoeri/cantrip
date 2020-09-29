@@ -33,7 +33,8 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "volatile_mixture");
 		ds_list_add(cards, "the_hunger");
 		ds_list_add(cards, "siphon");
-		ds_list_add(cards, "unending_rage");
+		ds_list_add(cards, "rage");
+		ds_list_add(cards, "waning");
 	}
 
 	if (tier == 2) {
