@@ -26,7 +26,7 @@ function do_lunar_surge_effect(target, source, card) {
 		}
 	}
 	
-	scr_add_start_of_turn_effect(source, "lunar_surge", end_lunar_surge, 1);
+	scr_add_start_of_turn_effect(source, "lunar_surge", end_lunar_surge, 1, true);
 }
 
 function end_lunar_surge(target, source) {
