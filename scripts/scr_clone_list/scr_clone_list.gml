@@ -3,5 +3,5 @@ function scr_clone_list(list) {
 
 	ds_list_copy(cloned_list, list);
 
-	return list;
+	return cloned_list;
 }
