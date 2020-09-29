@@ -15,6 +15,7 @@ function do_mindswap_effect(target, source) {
 		"mindswap",
 		swap_hands,
 		1,
+		false,
 	);
 }
 

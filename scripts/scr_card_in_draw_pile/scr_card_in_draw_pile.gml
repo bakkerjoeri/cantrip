@@ -36,10 +36,8 @@ function scr_card_in_draw_pile() {
 				ease_linear,
 			);
 		}
+		
+		previous_draw_pile_size = current_draw_pile_size;
+		previous_draw_pile_position = current_draw_pile_position;
 	}
-
-	previous_draw_pile_size = current_draw_pile_size;
-	previous_draw_pile_position = current_draw_pile_position;
-
-
 }

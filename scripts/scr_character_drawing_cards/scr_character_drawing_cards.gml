@@ -40,7 +40,7 @@ function scr_character_drawing_cards() {
 	
 		// If there's other cards left to draw, set a short timer
 		if (!amount_of_cards_to_draw == 0) {
-			_card_draw_delay = 0.25 * room_speed;
+			_card_draw_delay = 0.30 * room_speed;
 			exit;
 		}
 	
@@ -50,6 +50,4 @@ function scr_character_drawing_cards() {
 	}
 
 	_card_draw_delay -= 1;
-
-
 }

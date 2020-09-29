@@ -27,6 +27,9 @@ function scr_card_in_hand() {
 			.25 * room_speed,
 			ease_out_quint,
 		);
+		
+		previous_hand_position = current_hand_position;
+		previous_hand_size = current_hand_size;
 	}
 
 	// Change depth and position based on focus
@@ -39,6 +42,7 @@ function scr_card_in_hand() {
 			!has_focus
 			&& owner.state_name == "deciding"
 			&& owner.is_controlled_by_player
+			&& animation_is_finished
 		) {
 			var offset = 3;
 		
@@ -47,7 +51,6 @@ function scr_card_in_hand() {
 			}
 		
 			has_focus = true;
-			animation_cancel();
 			animation_add_next(
 				x,
 				owner.hand_y - offset,
@@ -56,9 +59,8 @@ function scr_card_in_hand() {
 			);
 		}
 	} else {
-		if (has_focus) {
+		if (has_focus && animation_is_finished) {
 			has_focus = false;
-			animation_cancel();
 			animation_add_next(
 				x,
 				owner.hand_y,
@@ -89,9 +91,4 @@ function scr_card_in_hand() {
 	) {
 		ds_queue_enqueue(owner.cards_to_play, self.id);
 	}
-
-	previous_hand_position = current_hand_position;
-	previous_hand_size = current_hand_size;
-
-
 }

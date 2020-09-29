@@ -17,11 +17,14 @@ function scr_character_reshuffling_cards() {
 			state_switch("beingReshuffled");
 		}
 	
-		_card_reshuffle_delay = 0.1 * room_speed;
+		if (ds_list_empty(graveyard)) {
+			_card_reshuffle_delay = 0.2 * room_speed;
+		} else {
+			_card_reshuffle_delay = 0.1 * room_speed;
+		}
+		
 		exit;
 	}
 
 	_card_reshuffle_delay -= 1;
-
-
 }

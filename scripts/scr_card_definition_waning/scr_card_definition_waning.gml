@@ -10,7 +10,7 @@ function scr_card_definition_waning(card) {
 function do_waning_effect(target, source, card) {
 	var cards = scr_concat_lists(target.hand, target.graveyard, target.draw_pile);
 	
-	if (!variable_instance_exists(target, "lunar_surged_cards")) {
+	if (!variable_instance_exists(target, "waned_cards")) {
 		target.waned_cards = ds_list_create();
 	}
 	
@@ -23,7 +23,7 @@ function do_waning_effect(target, source, card) {
 		}
 	}
 	
-	scr_add_start_of_turn_effect(source, "lunar_surge", end_waning, 1);
+	scr_add_start_of_turn_effect(source, "waning", end_waning, 1, true);
 }
 
 function end_waning(target, source) {

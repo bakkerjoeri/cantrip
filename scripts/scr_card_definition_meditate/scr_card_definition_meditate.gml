@@ -13,6 +13,7 @@ function do_meditate_effect(target, source) {
 		"meditate",
 		meditate_start_of_turn_effect,
 		1,
+		false,
 	);
 }
 

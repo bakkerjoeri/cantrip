@@ -1,10 +1,10 @@
 function animation_execute() {
-	if (!animation_current) {
-		if (ds_queue_empty(animation_queue)) {
-			animation_is_finished = true;
-			exit;
-		}
+	if (!animation_current && ds_queue_empty(animation_queue)) {
+		animation_is_finished = true;
+		exit;
+	}
 	
+	if (!animation_current) {
 		animation_is_finished = false;
 		animation_current = ds_queue_dequeue(animation_queue);
 		animation_current[? "start_x"] = x;
@@ -32,6 +32,4 @@ function animation_execute() {
 	} else {
 		animation_current = noone;
 	}
-
-
 }

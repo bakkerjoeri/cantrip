@@ -17,7 +17,7 @@ function scr_character_playing_cards() {
 			state_switch("startPlay");
 		}
 		
-		if (ds_list_find_index(active_effects, "catalyst") >= 0) {
+		if (scr_does_list_contain_item(active_effects, "catalyst")) {
 			amount_of_cards_to_draw += 1;
 		}
 	

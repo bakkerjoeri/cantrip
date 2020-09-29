@@ -1,5 +1,5 @@
 if (instance_exists(obj_player)) {
-	draw_set_color(global.palette_8);
+	draw_set_color(global.palette_2);
 
 	draw_set_halign(fa_left);
 	draw_text(obj_player.draw_pile_x + 4, obj_player.draw_pile_y - 14, "draw pile");
@@ -11,7 +11,7 @@ if (instance_exists(obj_player)) {
 }
 
 if (instance_exists(obj_opponent)) {
-	draw_set_color(global.palette_8);
+	draw_set_color(global.palette_2);
 
 	draw_set_halign(fa_left);
 	draw_text(obj_opponent.draw_pile_x + 4, obj_opponent.draw_pile_y + 96 + 6, "draw pile");

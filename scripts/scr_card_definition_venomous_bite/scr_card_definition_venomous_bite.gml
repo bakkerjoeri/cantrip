@@ -13,6 +13,7 @@ function do_venomous_bite_effect(target, source) {
 		"venomous_bite",
 		venomous_bite_start_of_turn_effect,
 		3,
+		false,
 	);
 }
 

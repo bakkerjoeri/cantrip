@@ -15,13 +15,10 @@ function do_catalyst_effect(target, source) {
 		"catalyst",
 		remove_catalyst_effect,
 		1,
+		true,
 	);
 }
 
 function remove_catalyst_effect(target, source) {
-	var index_of_effect = ds_list_find_index(source.active_effects,  "catalyst");
-			
-	if (index_of_effect >= 0) {
-		ds_list_delete(source.active_effects, index_of_effect);
-	}
+	scr_remove_item_from_list(source.active_effects, "catalyst");
 }

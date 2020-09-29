@@ -8,7 +8,7 @@ function scr_card_being_reshuffled() {
 		animation_add_next(
 			owner.draw_pile_x + (2 * (current_draw_pile_position - current_draw_pile_size + 3)),
 			owner.draw_pile_y,
-			.25 * room_speed,
+			.1 * room_speed,
 			ease_out_quint,
 		);
 	
@@ -18,7 +18,4 @@ function scr_card_being_reshuffled() {
 	if (animation_is_finished) {
 		state_switch("inDrawPile");
 	}
-
-
-
 }
