@@ -14,7 +14,11 @@ if (obj_game_manager.battles_won == 1) {
 
 draw_set_colour(global.palette_1);
 if (random_message == 0) {
-	draw_text(room_width / 2, 124, "Maybe it just wasn't in the cards for you...");
+	draw_text(room_width / 2, 124, "It just wasn't in the cards for you...");
+} else if (random_message == 1) {
+	draw_text(room_width / 2, 124, "Bad luck of the draw, eh?");
+} else if (random_message == 2) {
+	draw_text(room_width / 2, 124, "Seems like the deck was stacked against you.");
 } else {
-	draw_text(room_width / 2, 124, "May you be avenged!");
+	draw_text(room_width / 2, 124, "Better luck next life!");
 }
