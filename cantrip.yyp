@@ -215,6 +215,7 @@
     {"id":{"name":"room_draft","path":"rooms/room_draft/room_draft.yy",},"order":2,},
     {"id":{"name":"room_game_over","path":"rooms/room_game_over/room_game_over.yy",},"order":3,},
     {"id":{"name":"obj_screen_manager","path":"objects/obj_screen_manager/obj_screen_manager.yy",},"order":11,},
+    {"id":{"name":"scr_card_definition_unending_rage","path":"scripts/scr_card_definition_unending_rage/scr_card_definition_unending_rage.yy",},"order":37,},
     {"id":{"name":"scr_card_definition_mana_burst","path":"scripts/scr_card_definition_mana_burst/scr_card_definition_mana_burst.yy",},"order":7,},
     {"id":{"name":"room_victory","path":"rooms/room_victory/room_victory.yy",},"order":4,},
   ],
