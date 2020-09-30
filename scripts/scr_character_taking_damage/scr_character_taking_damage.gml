@@ -57,6 +57,13 @@ function scr_character_taking_damage() {
 			} else {
 				deflected_by_shields = false;
 			}
+			
+			var is_piercing;
+			if (variable_struct_exists(_current_damage_event[? "damage_options"], "is_piercing")) {
+				is_piercing = _current_damage_event[? "damage_options"].is_piercing;
+			} else {
+				is_piercing = false;
+			}
 
 			var damaged_card = scr_find_card_to_discard(hand, should_invert_discard_order);
 			var is_damaged_deflected = deflected_by_shields && damaged_card.name == "shield";
@@ -73,6 +80,10 @@ function scr_character_taking_damage() {
 	
 				with (damaged_card) {
 					state_switch("damaged");
+				}
+				
+				if (damaged_card.name == "shield" && is_piercing) {
+					scr_take_damage(_current_damage_event[? "target"], 1, _current_damage_event[? "source"]);
 				}
 			
 				if (variable_instance_exists(damaged_card, "counter")) {
