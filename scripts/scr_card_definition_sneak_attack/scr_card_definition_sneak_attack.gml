@@ -9,5 +9,7 @@ function scr_card_definition_sneak_attack(card) {
 }
 
 function do_sneak_attack_effect(target, source, card) {
-	scr_take_damage(target, card.damage, source, true);
+	scr_take_damage(target, card.damage, source, {
+		invert_discard_order: true,
+	});
 }

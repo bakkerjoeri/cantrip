@@ -1,5 +1,6 @@
 function scr_card_start_play() {
 	if (state_new) {
+		depth = -1;
 		scr_remove_item_from_list(owner.hand, self.id);
 		is_face_up = true;
 	
@@ -9,8 +10,6 @@ function scr_card_start_play() {
 			0.5 * room_speed,
 			ease_out_quint,
 		);
-	
-		animation_add_wait(.5 * room_speed);
 	
 		exit;
 	}

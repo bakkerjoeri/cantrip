@@ -3,21 +3,21 @@ draw_self();
 if (debug_mode) {
 	draw_set_halign(fa_left);
 	draw_set_color(global.palette_1);
-	var offset;
+	var offset = -12;
 	var debug_text = state_name;
-		
-	if (owner == obj_battle_manager.player) {
-		offset = -12;
-	} else {
-		offset = sprite_height + 4;
-	}
+	
+	if (instance_exists(obj_battle_manager)) {
+		if (owner == obj_battle_manager.opponent) {
+			offset = sprite_height + 4;
+		}
 
-	if (scr_does_list_contain_item(owner.hand, self.id)) {
-		var hand_position = ds_list_find_index(owner.hand, self.id);
-		debug_text += " " + string(hand_position);
+		if (scr_does_list_contain_item(owner.hand, self.id)) {
+			var hand_position = ds_list_find_index(owner.hand, self.id);
+			debug_text += " " + string(hand_position);
 		
-		if (variable_instance_exists(self.id, "previous_hand_position") && self.previous_hand_position != hand_position) {
-			debug_text += "/" + string(previous_hand_position);
+			if (variable_instance_exists(self.id, "previous_hand_position") && self.previous_hand_position != hand_position) {
+				debug_text += "/" + string(previous_hand_position);
+			}
 		}
 	}
 		

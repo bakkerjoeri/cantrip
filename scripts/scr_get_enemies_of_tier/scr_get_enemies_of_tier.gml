@@ -9,6 +9,7 @@ function scr_get_enemies_of_tier() {
 		ds_list_add(enemies, scr_get_enemy_kobold());
 		ds_list_add(enemies, scr_get_enemy_warrior());
 		ds_list_add(enemies, scr_get_enemy_cave_spider());
+		ds_list_add(enemies, scr_get_enemy_hunter());
 	}
 
 	if (tier == 1) {

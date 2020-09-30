@@ -13,9 +13,10 @@ function scr_get_enemy_rogue() {
 function get_deck_list_for_rogue() {
 	var deck_map = ds_map_create();
 
-	deck_map[? "attack"] = 3;
+	deck_map[? "attack"] = 2;
+	deck_map[? "sneak_attack"] = 1;
 	deck_map[? "leech"] = 3;
-	deck_map[? "shield"] = 1;
+	deck_map[? "riposte"] = 1;
 	deck_map[? "siphon"] = 1;
 
 	return scr_create_deck_list_from_deck(deck_map);

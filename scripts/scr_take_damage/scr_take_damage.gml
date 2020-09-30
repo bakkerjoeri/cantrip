@@ -1,8 +1,8 @@
 function scr_take_damage(target, damage, source) {
 	if (argument_count >= 4) {
-		var invert_discard_order = argument[3];
+		var damage_options = argument[3];
 	} else {
-		var invert_discard_order = false;
+		var damage_options = {};
 	}
 	
 	if (damage > 0) {
@@ -11,7 +11,7 @@ function scr_take_damage(target, damage, source) {
 			damage_event[? "target"] = target;
 			damage_event[? "source"] = source;
 			damage_event[? "amount"] = damage;
-			damage_event[? "invert_discard_order"] = invert_discard_order;
+			damage_event[? "damage_options"] = damage_options;
 			ds_queue_enqueue(damage_events, damage_event);
 
 			state_switch("takingDamage");

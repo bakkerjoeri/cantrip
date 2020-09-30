@@ -35,6 +35,8 @@ function scr_get_cards_of_tier() {
 		ds_list_add(cards, "siphon");
 		ds_list_add(cards, "rage");
 		ds_list_add(cards, "waning");
+		ds_list_add(cards, "poison_the_well");
+
 	}
 
 	if (tier == 2) {

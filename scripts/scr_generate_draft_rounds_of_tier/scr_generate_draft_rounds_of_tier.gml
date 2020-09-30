@@ -1,8 +1,12 @@
 function scr_generate_draft_rounds_of_tier(tier) {
-	var loot_card_name = noone;
+	var loot = noone;
 
 	if (argument_count >= 2) {
-		loot_card_name = argument[1];
+		loot = argument[1];
+		
+		if (is_array(loot)) {
+			loot = scr_choose_from_array(loot);	
+		}
 	}
 	
 	var cards_to_draft = ds_list_create();
@@ -32,8 +36,8 @@ function scr_generate_draft_rounds_of_tier(tier) {
 		);
 	}
 	
-	if (loot_card_name != noone) {
-		ds_list_replace(cards_to_draft, 0, loot_card_name);
+	if (loot != noone) {
+		ds_list_replace(cards_to_draft, 0, loot);
 	}
 	
 	ds_list_shuffle(cards_to_draft);

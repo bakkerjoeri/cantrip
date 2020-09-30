@@ -4,7 +4,9 @@ function scr_card_being_played() {
 			played_by = owner;
 		}
 		
-		animation_add_wait(.5 * room_speed);
+		if (!owner.is_controlled_by_player) {
+			animation_add_wait(.5 * room_speed);
+		}
 
 		exit;
 	}

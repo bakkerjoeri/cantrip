@@ -9,6 +9,7 @@ state_create("beingPlayed", scr_card_being_played);
 state_create("isResolved", scr_card_is_resolved);
 state_create("beingDiscarded", scr_card_being_discarded);
 state_create("damaged", scr_card_damaged);
+state_create("hasDeflected", scr_card_has_deflected);
 state_create("inGraveyard", scr_card_in_graveyard);
 state_create("beingReshuffled", scr_card_being_reshuffled);
 state_create("draftReveal", scr_card_draft_reveal);

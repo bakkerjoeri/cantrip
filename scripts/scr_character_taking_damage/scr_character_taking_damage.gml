@@ -44,20 +44,43 @@ function scr_character_taking_damage() {
 		}
 		
 		if (_amount_left_for_event > 0) {
-			do_damage_effect();
-
-			var damaged_card = scr_find_card_to_discard(hand, _current_damage_event[? "invert_discard_order"]);
-			scr_move_item_between_lists(damaged_card, hand, graveyard);
-	
-			with (damaged_card) {
-				state_switch("damaged");
+			var should_invert_discard_order;
+			if (variable_struct_exists(_current_damage_event[? "damage_options"], "invert_discard_order")) {
+				should_invert_discard_order = _current_damage_event[? "damage_options"].invert_discard_order;
+			} else {
+				should_invert_discard_order = false;
 			}
 			
-			if (variable_instance_exists(damaged_card, "counter")) {
-				damaged_card.counter(
-					_current_damage_event[? "source"],
-					_current_damage_event[? "target"]
-				);
+			var deflected_by_shields;
+			if (variable_struct_exists(_current_damage_event[? "damage_options"], "deflected_by_shields")) {
+				deflected_by_shields = _current_damage_event[? "damage_options"].deflected_by_shields;
+			} else {
+				deflected_by_shields = false;
+			}
+
+			var damaged_card = scr_find_card_to_discard(hand, should_invert_discard_order);
+			var is_damaged_deflected = deflected_by_shields && damaged_card.name == "shield";
+			
+			if (is_damaged_deflected) {
+				do_deflect_effect();
+				
+				with (damaged_card) {
+					state_switch("hasDeflected");
+				}
+			} else {
+				do_damage_effect();
+				scr_move_item_between_lists(damaged_card, hand, graveyard);
+	
+				with (damaged_card) {
+					state_switch("damaged");
+				}
+			
+				if (variable_instance_exists(damaged_card, "counter")) {
+					damaged_card.counter(
+						_current_damage_event[? "source"],
+						_current_damage_event[? "target"]
+					);
+				}
 			}
 			
 			_amount_left_for_event -= 1;
@@ -77,6 +100,14 @@ function do_damage_effect() {
 
 	with (obj_screen_manager) {
 		shake = 8;
+	}
+}
+
+function do_deflect_effect() {
+	instance_create_layer(0, 0, "Overlays", obj_deflect_flash);
+
+	with (obj_screen_manager) {
+		shake = 4;
 	}
 }
 
