@@ -2,7 +2,7 @@ function scr_card_definition_revenge_from_beyond(card) {
 	card.name = "revenge_from_beyond";
 	card.title = "revenge from beyond";
 	card.cost = 1;
-	card.text = "Play the top card from your opponent's graveyard.";
+	card.text = "Play the top card from your foe's graveyard.";
 	card.effect = do_revenge_from_beyond_effect;
 	card.condition = can_play_revenge_from_beyond;
 	card.rarity = 0;

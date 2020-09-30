@@ -2,7 +2,7 @@ function scr_card_definition_read_mind(card) {
 	card.name = "read_mind";
 	card.title = "read mind";
 	card.cost = 1;
-	card.text = "Copy 2 random cards from your opponent's hand.";
+	card.text = "Copy 2 random cards from your foe's hand.";
 	card.effect = do_read_mind_effect;
 	card.condition = can_play_read_mind;
 	card.rarity = 0;

@@ -2,7 +2,7 @@ function scr_card_definition_poison_the_well(card) {
 	card.name = "poison_the_well";
 	card.title = "poison the well";
 	card.cost = 2;
-	card.text = "For 3 turns, when your opponent gains AP, do that much damage.";
+	card.text = "For 3 turns, when your foe gains AP, do that much damage.";
 	card.effect = do_poison_the_well_effect;
 	card.rarity = 1;
 }

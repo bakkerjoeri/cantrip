@@ -2,7 +2,7 @@ function scr_card_definition_desecrate(card) {
 	card.name = "desecrate";
 	card.title = "desecrate";
 	card.cost = 0;
-	card.text = "Steal the top card from your opponent's graveyard.";
+	card.text = "Steal the top card from your foe's graveyard.";
 	card.effect = do_desecrate_effect;
 	card.condition = can_play_desecrate;
 	card.rarity = 0;

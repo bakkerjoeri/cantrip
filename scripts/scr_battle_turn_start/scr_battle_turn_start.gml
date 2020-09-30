@@ -12,7 +12,7 @@ function scr_battle_turn_start() {
 	
 		if (turn_of_character == opponent) {
 			turn_start_announcement.text_color = global.palette_5;
-			turn_start_announcement.text = "Opponent's turn";
+			turn_start_announcement.text = "Foe's turn";
 		}
 	
 		exit;

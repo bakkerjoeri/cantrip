@@ -2,7 +2,7 @@ function scr_card_definition_third_eye_opens(card) {
 	card.name = "third_eye_opens";
 	card.title = "third eye opens";
 	card.cost = 0;
-	card.text = "For 3 turns, your opponent's hand is visible to you.";
+	card.text = "For 3 turns, your foe's hand is visible to you.";
 	card.effect = do_third_eye_opens_effect;
 	card.rarity = 0;
 }

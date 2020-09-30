@@ -34,5 +34,5 @@ function plague_bomb_on_discard(target, source, card) {
 }
 
 function get_plague_bomb_text(damage) {
-	return  "Give to your opponent. When hit, take " + string(damage) + " damage. Each turn, increase damage by 1.";
+	return  "Give to your foe. When hit, take " + string(damage) + " damage. Each turn, increase damage by 1.";
 }

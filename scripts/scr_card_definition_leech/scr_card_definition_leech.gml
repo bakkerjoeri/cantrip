@@ -2,7 +2,7 @@ function scr_card_definition_leech(card) {
 	card.name = "leech";
 	card.title = "leech";
 	card.cost = 1;
-	card.text = "Steal 1 card from your opponent.";
+	card.text = "Steal 1 card from your foe.";
 	card.effect = do_leech_effect;
 	card.condition = can_play_leech;
 	card.rarity = 1;

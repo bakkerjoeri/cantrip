@@ -2,7 +2,7 @@ function scr_card_definition_venomous_bite(card) {
 	card.name = "venomous_bite";
 	card.title = "venomous bite";
 	card.cost = 1;
-	card.text = "For 3 turns, your opponent takes 1 damage at the start of their turn.";
+	card.text = "For 3 turns, your foe takes 1 damage at the start of their turn.";
 	card.effect = do_venomous_bite_effect;
 	card.rarity = 3;
 }

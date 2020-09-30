@@ -28,6 +28,7 @@
     {"id":{"name":"scr_battle_turn_play_phase","path":"scripts/scr_battle_turn_play_phase/scr_battle_turn_play_phase.yy",},"order":5,},
     {"id":{"name":"scr_battle_turn_end","path":"scripts/scr_battle_turn_end/scr_battle_turn_end.yy",},"order":6,},
     {"id":{"name":"scr_battle_end","path":"scripts/scr_battle_end/scr_battle_end.yy",},"order":7,},
+    {"id":{"name":"scr_card_definition_piercing_strike","path":"scripts/scr_card_definition_piercing_strike/scr_card_definition_piercing_strike.yy",},"order":41,},
     {"id":{"name":"scr_card_definition_leech","path":"scripts/scr_card_definition_leech/scr_card_definition_leech.yy",},"order":6,},
     {"id":{"name":"scr_battle_won","path":"scripts/scr_battle_won/scr_battle_won.yy",},"order":8,},
     {"id":{"name":"scr_battle_lost","path":"scripts/scr_battle_lost/scr_battle_lost.yy",},"order":9,},

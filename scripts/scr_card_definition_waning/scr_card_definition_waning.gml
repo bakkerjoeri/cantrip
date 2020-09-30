@@ -2,7 +2,7 @@ function scr_card_definition_waning(card) {
 	card.name = "waning";
 	card.title = "waning";
 	card.cost = 1;
-	card.text = "Until next turn, your opponent's cards cost 1 more."
+	card.text = "Until next turn, your foe's cards cost 1 more."
 	card.effect = do_waning_effect;
 	card.rarity = 1;
 }

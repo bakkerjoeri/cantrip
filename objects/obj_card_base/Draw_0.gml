@@ -25,31 +25,64 @@ if (debug_mode) {
 }
 
 if (is_face_up) {
-	var padding = 5;
 	var line_height = 8;
-	var text_offset = 30;
+	var cost_padding_top = 4;
+	var cost_padding_left = 6;
+	var title_padding_left = cost_padding_left + 5;
+	var title_padding_right = title_padding_left;
+	var title_padding_top = cost_padding_top;
+	var text_padding_left = 4;
+	var text_padding_right = text_padding_left;
+	var text_start = title_padding_top + (3 * line_height);
 	
-	draw_set_halign(fa_center);
-	draw_set_color(global.palette_0);
-	draw_text_ext(x + sprite_width / 2, y + padding, title, 8, sprite_width - (2 * padding) - 12);
-
+	// Render cost
 	if (!is_unplayable && variable_instance_exists(self.id, "cost")) {
 		draw_set_color(global.palette_3);
 		draw_set_halign(fa_center);
-		draw_text(x + padding + 2, y + padding, string(cost));
+		draw_text(
+			x + cost_padding_left,
+			y + cost_padding_top,
+			string(cost)
+		);
 	}
 	
+	// Render title
+	draw_set_halign(fa_center);
+	draw_set_color(global.palette_0);
+	draw_text_ext(
+		round(x + (sprite_width / 2)),
+		y + title_padding_top,
+		title,
+		line_height,
+		sprite_width - title_padding_left - title_padding_right
+	);
+	
+	// Render keywords
 	if (is_unplayable) {
 		draw_set_color(global.palette_2);
 		draw_set_halign(fa_left);
-		draw_text_ext(x + padding, y + text_offset, "Unplayable", line_height, sprite_width - (2 * padding));
-		text_offset += line_height;
+		draw_text_ext(
+			x + text_padding_left,
+			y + text_start,
+			"Unplayable",
+			line_height,
+			sprite_width - text_padding_left - text_padding_right
+		);
+		text_start += line_height;
 	}
 
+	// Render card text
 	draw_set_color(global.palette_0);
 	draw_set_halign(fa_left);
-	draw_text_ext(x + padding, y + text_offset, text, line_height, sprite_width - (2 * padding));
+	draw_text_ext(
+		x + text_padding_left,
+		y + text_start,
+		text,
+		line_height,
+		sprite_width - text_padding_left - text_padding_right
+	);
 	
+	// Render playability
 	if (
 		state_name == "inHand"
 		&& owner.state_name == "deciding"
@@ -65,6 +98,7 @@ if (is_face_up) {
 		draw_set_alpha(1);
 	}
 	
+	// Render pickability
 	if (
 		state_name == "draftable"
 		&& obj_draft_manager.state_name == "awaitPick"
