@@ -22,12 +22,12 @@ function scr_generate_floors() {
 				new_room[? "type"] = "battle";
 				new_room[? "room_tier"] = room_tier;
 				new_room[? "reward_tier"] = room_tier;
-				new_room[? "enemy"] = scr_choose_from_list(scr_get_enemies_of_tier(room_tier));
+				new_room[? "enemy"] = scr_choose_from_list(scr_get_enemies_of_tier(room_tier, "enemy"));
 			} else {
 				new_room[? "type"] = "boss";
 				new_room[? "room_tier"] = room_tier;
 				new_room[? "reward_tier"] = min(room_tier + 1, 2);
-				new_room[? "enemy"] = scr_choose_from_list(scr_get_bosses_of_tier(room_tier));
+				new_room[? "enemy"] = scr_choose_from_list(scr_get_enemies_of_tier(room_tier, "boss"));
 			}
 			
 			if (ds_map_exists(new_room[? "enemy"], "loot")) {
