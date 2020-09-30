@@ -4,6 +4,7 @@ state_create("toNextRound", scr_draft_to_next_round);
 state_create("startRound", scr_draft_start_round);
 state_create("awaitPick", scr_draft_await_pick);
 state_create("handlePick", scr_draft_handle_pick);
+state_create("handleSkipRound", scr_draft_skip_round);
 state_create("end", scr_draft_end);
 state_init("start");
 

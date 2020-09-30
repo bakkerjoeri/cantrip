@@ -6,4 +6,4 @@ text = "";
 text_color = global.palette_1;
 text_width = 0;
 visible = false;
-depth = -1;
+depth = -2;
