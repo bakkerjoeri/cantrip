@@ -5,6 +5,7 @@ function scr_get_enemy_warrior() {
 	enemy[? "deck_list"] = scr_get_deck_list_warrior();
 	enemy[? "max_ability_points"] = 2;
 	enemy[? "max_hand_size"] = 5;
+	enemy[? "loot"] = "piercing_strike";
 
 	return enemy;
 
