@@ -1,4 +1,4 @@
-function scr_get_boss_ancient_wizard() {
+function scr_get_enemy_ancient_wizard() {
 	var boss = ds_map_create();
 
 	boss[? "name"] = "Lord of the Flame";

@@ -1,4 +1,4 @@
-function scr_get_boss_blacksmith() {
+function scr_get_enemy_blacksmith() {
 	var boss = ds_map_create();
 
 	boss[? "name"] = "Blacksmith";

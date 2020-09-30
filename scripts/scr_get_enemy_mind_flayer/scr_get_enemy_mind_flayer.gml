@@ -1,4 +1,4 @@
-function scr_get_boss_mind_flayer() {
+function scr_get_enemy_mind_flayer() {
 	var boss = ds_map_create();
 
 	boss[? "name"] = "Mind Flayer";
