@@ -4,7 +4,7 @@ function scr_card_definition_lightning_bolt(card) {
 	card.cost = 2;
 	card.text = "Damage a random card and all cards with the same cost in your foe's hand.";
 	card.effect = do_lightning_bolt_effect;
-	card.rarity = 3;
+	card.rarity = 2;
 	card.condition = can_play_lightning_bolt;
 }
 

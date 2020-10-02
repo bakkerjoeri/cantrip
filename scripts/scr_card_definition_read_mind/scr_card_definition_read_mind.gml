@@ -5,7 +5,7 @@ function scr_card_definition_read_mind(card) {
 	card.text = "Copy 2 random cards from your foe's hand.";
 	card.effect = do_read_mind_effect;
 	card.condition = can_play_read_mind;
-	card.rarity = 0;
+	card.rarity = 1;
 }
 
 function do_read_mind_effect(target, source) {

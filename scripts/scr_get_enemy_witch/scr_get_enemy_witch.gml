@@ -5,6 +5,7 @@ function scr_get_enemy_witch() {
 	enemy[? "deck_list"] = get_deck_list_for_witch();
 	enemy[? "max_ability_points"] = 4;
 	enemy[? "max_hand_size"] = 6;
+	enemy[? "loot"] = "full_moon";
 
 	return enemy;
 }

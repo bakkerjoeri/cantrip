@@ -7,7 +7,7 @@ function scr_card_definition_the_hunger(card) {
 	card.effect = do_the_hunger_effect;
 	card.on_turn_end = the_hunger_on_end_of_turn;
 	card.on_discard = the_hunger_on_discard;
-	card.rarity = 1;
+	card.rarity = 2;
 }
 
 function do_the_hunger_effect(target, source, card) {

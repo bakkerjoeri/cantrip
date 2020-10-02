@@ -21,7 +21,9 @@ function do_call_of_the_void_effect(target, source, card) {
 	for (var c = 0; c <= ds_list_size(cards_to_destroy) - 1; c += 1) {
 		var card_to_destroy = ds_list_find_value(cards_to_destroy, c);
 
-		instance_destroy(card_to_destroy, true);
+		with (card_to_destroy) {
+			state_switch("destroyed");
+		}	
 	}
 	
 	scr_make_list_empty(target.graveyard);

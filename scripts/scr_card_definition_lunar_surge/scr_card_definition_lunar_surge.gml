@@ -4,7 +4,7 @@ function scr_card_definition_lunar_surge(card) {
 	card.cost = 1;
 	card.text = "Until next turn, your cards cost 1 less."
 	card.effect = do_lunar_surge_effect;
-	card.rarity = 1;
+	card.rarity = 2;
 }
 
 function do_lunar_surge_effect(target, source, card) {

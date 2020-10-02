@@ -4,7 +4,7 @@ function scr_card_definition_fishy_chest(card) {
 	card.is_unplayable = true;
 	card.text = "When hit, do 2 damage. Permanently give your foe a random card.";
 	card.counter = do_fishy_chest_counter;
-	card.rarity = 1;
+	card.rarity = 3;
 }
 
 function do_fishy_chest_counter(target, source, card) {

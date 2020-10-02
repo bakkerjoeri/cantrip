@@ -5,6 +5,7 @@ function scr_card_definition_barter_for_power(card) {
 	card.text = "Give away as much AP as possible. Draw as many cards plus 1.";
 	card.effect = do_barter_for_power_effect;
 	card.condition = can_play_barter_for_power;
+	card.rarity = 0;
 }
 
 function do_barter_for_power_effect(target, source) {

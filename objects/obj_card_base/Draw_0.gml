@@ -1,4 +1,6 @@
 draw_self();
+draw_set_alpha(alpha);
+image_alpha = alpha;
 
 if (debug_mode) {
 	draw_set_halign(fa_left);
@@ -124,3 +126,4 @@ if (is_face_up) {
 		draw_set_alpha(1);
 	}
 }
+draw_set_alpha(1);

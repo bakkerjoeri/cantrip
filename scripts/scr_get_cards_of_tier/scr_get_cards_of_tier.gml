@@ -5,8 +5,8 @@ function scr_get_cards_of_tier(tier) {
 	if (tier == 0) {
 		ds_list_add(cards, "attack");
 		ds_list_add(cards, "barter_for_power");
-		ds_list_add(cards, "corrupted_aether");
 		ds_list_add(cards, "combust");
+		ds_list_add(cards, "corrupted_aether");
 		ds_list_add(cards, "desecrate");
 		ds_list_add(cards, "meditate");
 		ds_list_add(cards, "radiant_burst");
@@ -24,10 +24,10 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "healing_potion");
 		ds_list_add(cards, "leech");
+		ds_list_add(cards, "life_link");
 		ds_list_add(cards, "necrotic_blast");
 		ds_list_add(cards, "poison_the_well");
 		ds_list_add(cards, "quickshot");
-		ds_list_add(cards, "rage");
 		ds_list_add(cards, "raise_the_dead");
 		ds_list_add(cards, "read_mind");
 		ds_list_add(cards, "shield_bash");
@@ -38,10 +38,12 @@ function scr_get_cards_of_tier(tier) {
 	}
 
 	if (tier == 2) {
-		ds_list_add(cards, "catalyst");
 		ds_list_add(cards, "call_of_the_void");
+		ds_list_add(cards, "catalyst");
 		ds_list_add(cards, "dark_pact");
 		ds_list_add(cards, "fireblast");
+		ds_list_add(cards, "full_moon");
+		ds_list_add(cards, "lightning_bolt");
 		ds_list_add(cards, "lunar_surge");
 		ds_list_add(cards, "mana_burst");
 		ds_list_add(cards, "mindswap");
@@ -51,10 +53,10 @@ function scr_get_cards_of_tier(tier) {
 	if (tier == 3) {
 		ds_list_add(cards, "blaze");
 		ds_list_add(cards, "eldritch_blast");
-		ds_list_add(cards, "lightning_bolt");
 		ds_list_add(cards, "piercing_strike");
 		ds_list_add(cards, "plague_bomb");
 		ds_list_add(cards, "possess");
+		ds_list_add(cards, "rage");
 		ds_list_add(cards, "seance");
 		ds_list_add(cards, "sneak_attack");
 		ds_list_add(cards, "venomous_bite");

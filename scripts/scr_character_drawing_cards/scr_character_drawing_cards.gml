@@ -41,7 +41,15 @@ function scr_character_drawing_cards() {
 		// Apply dark pact effect
 		if (scr_does_list_contain_item(active_effects, "dark_pact")) {
 			scr_take_damage(scr_get_opponent_of_character(self.id), 1, self.id);
-		}	
+		}
+		
+		// Apply life link effect
+		if (scr_does_list_contain_item(
+			scr_get_opponent_of_character(self.id).active_effects,
+			"life_link")
+		) {
+			scr_draw_cards(scr_get_opponent_of_character(self.id), 1);
+		}
 	
 		// If there's other cards left to draw, set a short timer
 		if (!amount_of_cards_to_draw == 0) {
