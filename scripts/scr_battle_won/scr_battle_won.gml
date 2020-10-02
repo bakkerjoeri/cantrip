@@ -2,7 +2,7 @@ function scr_battle_won() {
 	if (state_new) {
 		obj_game_manager.battles_won += 1;
 	
-		var battle_won_announcement = instance_create_layer(0, 0, "Overlays", obj_announcement);
+		var battle_won_announcement = instance_create_layer(0, 0, "Messages", obj_announcement);
 		battle_won_announcement.text = "Victory!";
 		battle_won_announcement.text_color = global.palette_4;
 	}

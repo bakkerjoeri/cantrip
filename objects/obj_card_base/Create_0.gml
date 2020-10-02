@@ -22,6 +22,7 @@ state_init("undealt");
 name = "base";
 title = "";
 is_unplayable = false;
+is_burning = false;
 discard_priority = 1;
 text = "";
 effect = undefined;

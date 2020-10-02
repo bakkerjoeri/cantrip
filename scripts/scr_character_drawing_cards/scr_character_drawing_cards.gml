@@ -37,6 +37,11 @@ function scr_character_drawing_cards() {
 		}
 	
 		amount_of_cards_to_draw -= 1;
+		
+		// Apply dark pact effect
+		if (scr_does_list_contain_item(active_effects, "dark_pact")) {
+			scr_take_damage(scr_get_opponent_of_character(self.id), 1, self.id);
+		}	
 	
 		// If there's other cards left to draw, set a short timer
 		if (!amount_of_cards_to_draw == 0) {

@@ -5,7 +5,7 @@ function scr_get_enemy_hunter() {
 	enemy[? "deck_list"] = get_deck_list_for_hunter();
 	enemy[? "max_ability_points"] = 3;
 	enemy[? "max_hand_size"] = 7;
-	enemy[? "loot"] = ["volley", "quickshot"];
+	enemy[? "loot"] = "volley";
 
 	return enemy;
 }
@@ -16,6 +16,7 @@ function get_deck_list_for_hunter() {
 	deck_map[? "attack"] = 2;
 	deck_map[? "volley"] = 2;
 	deck_map[? "quickshot"] = 3;
+	deck_map[? "riposte"] = 1;
 	deck_map[? "rest"] = 2;
 	deck_map[? "stamina_potion"] = 1;
 

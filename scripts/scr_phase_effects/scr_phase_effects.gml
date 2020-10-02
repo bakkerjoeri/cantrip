@@ -85,5 +85,19 @@ function get_end_of_turn_effects(character) {
 		}
 	}
 	
+	for (var c = 0; c <= ds_list_size(character.hand) - 1; c += 1) {
+		var card = ds_list_find_value(character.hand, c);
+		
+		if (card.is_burning) {
+			var effect_map = ds_map_create();
+			effect_map[? "card"] = card;
+			effect_map[? "source"] = card.owner;
+			effect_map[? "name"] = "burning";
+			effect_map[? "effect"] = resolve_burning;
+
+			ds_queue_enqueue(end_of_turn_effects_to_execute, effect_map);
+		}
+	}
+	
 	return end_of_turn_effects_to_execute;
 }

@@ -57,6 +57,19 @@ if (is_face_up) {
 		sprite_width - title_padding_left - title_padding_right
 	);
 	
+	if (is_burning) {
+		draw_set_color(global.palette_6);
+		draw_set_halign(fa_left);
+		draw_text_ext(
+			x + text_padding_left,
+			y + text_start,
+			"Burning",
+			line_height,
+			sprite_width - text_padding_left - text_padding_right
+		);
+		text_start += line_height;
+	}
+	
 	// Render keywords
 	if (is_unplayable) {
 		draw_set_color(global.palette_2);

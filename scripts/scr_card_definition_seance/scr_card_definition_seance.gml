@@ -16,6 +16,7 @@ function do_seance_effect(target, source) {
 		with (card_to_play) {
 			played_by = source;
 			state_switch("startPlay");
+			play_depth = card.depth - 1;
 		}
 	}
 }

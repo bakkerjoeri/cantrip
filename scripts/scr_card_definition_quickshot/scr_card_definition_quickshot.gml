@@ -5,7 +5,7 @@ function scr_card_definition_quickshot(card) {
 	card.text = "Do 1 damage. Ineffective against \"shield\" cards.";
 	card.effect = do_quickshot_effect;
 	card.damage = 1;
-	card.rarity = 3;
+	card.rarity = 1;
 }
 
 function do_quickshot_effect(target, source, card) {

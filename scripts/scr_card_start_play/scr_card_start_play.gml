@@ -1,6 +1,11 @@
 function scr_card_start_play() {
 	if (state_new) {
-		depth = -1;
+		if (variable_instance_exists(self.id, "play_depth")) {
+			depth = play_depth;
+		} else {
+			depth = -1;
+		}
+
 		scr_remove_item_from_list(owner.hand, self.id);
 		is_face_up = true;
 	

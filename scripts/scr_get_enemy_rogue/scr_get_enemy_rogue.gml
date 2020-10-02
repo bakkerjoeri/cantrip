@@ -14,7 +14,7 @@ function get_deck_list_for_rogue() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "attack"] = 2;
-	deck_map[? "sneak_attack"] = 1;
+	deck_map[? "sneak_attack"] = 2;
 	deck_map[? "leech"] = 3;
 	deck_map[? "riposte"] = 1;
 	deck_map[? "siphon"] = 1;

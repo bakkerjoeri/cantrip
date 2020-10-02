@@ -5,7 +5,7 @@ function scr_card_definition_rage(card) {
 	card.damage = 1;
 	card.text = get_rage_text(card.damage);
 	card.effect = do_rage_effect;
-	card.rarity = 1;
+	card.rarity = 3;
 }
 
 function do_rage_effect(target, source, card) {

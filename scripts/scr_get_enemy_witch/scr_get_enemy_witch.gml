@@ -14,7 +14,6 @@ function get_deck_list_for_witch() {
 	
 	deck_map[? "attack"] = 2;
 	deck_map[? "corrupted_aether"] = 4;
-	deck_map[? "leech"] = 1;
 	deck_map[? "full_moon"] = 1;
 	deck_map[? "barter_for_power"] = 2;
 	deck_map[? "poison_the_well"] = 1;

@@ -64,8 +64,26 @@ function scr_character_taking_damage() {
 			} else {
 				is_piercing = false;
 			}
+			
+			var cards;
+			if (variable_struct_exists(_current_damage_event[? "damage_options"], "cards")) {
+				cards = _current_damage_event[? "damage_options"].cards;
+			} else {
+				cards = [];
+			}
 
-			var damaged_card = scr_find_card_to_discard(hand, should_invert_discard_order);
+			var damaged_card;
+			if (array_length(cards) > 0 && scr_does_list_contain_item(hand, array_get(cards, 0))) {
+				damaged_card = array_get(cards, 0);
+				show_debug_message("Forcing a card to take damage: " + damaged_card.title);
+				_current_damage_event[? "damage_options"].cards = scr_get_array_slice(cards, 1, array_length(cards) - 1);
+				
+				show_debug_message("After damage, forced cards left: " + string(array_length(_current_damage_event[? "damage_options"].cards)));
+			} else {
+				damaged_card = scr_find_card_to_discard(hand, should_invert_discard_order);
+			}
+			
+			
 			var is_damaged_deflected = deflected_by_shields && damaged_card.name == "shield";
 			
 			if (is_damaged_deflected) {
@@ -89,7 +107,8 @@ function scr_character_taking_damage() {
 				if (variable_instance_exists(damaged_card, "counter")) {
 					damaged_card.counter(
 						_current_damage_event[? "source"],
-						_current_damage_event[? "target"]
+						_current_damage_event[? "target"],
+						damaged_card
 					);
 				}
 			}

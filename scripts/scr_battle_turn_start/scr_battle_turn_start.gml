@@ -3,7 +3,7 @@ function scr_battle_turn_start() {
 		_effect_delay = 0;
 		start_of_turn_effects_to_execute = get_start_of_turn_effects(turn_of_character);
 
-		turn_start_announcement = instance_create_layer(0, 0, "Instances", obj_announcement);
+		turn_start_announcement = instance_create_layer(0, 0, "Messages", obj_announcement);
 	
 		if (turn_of_character == player) {
 			turn_start_announcement.text_color = global.palette_4;

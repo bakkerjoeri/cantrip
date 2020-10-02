@@ -31,12 +31,23 @@ function scr_character_opponent_deciding() {
 		
 				exit;
 			}
+			
+			// If one of the playable cards is burning, it should get priority
+			var burning_cards = ds_list_create();
+			
+			for (var c = 0; c <= ds_list_size(playable_cards) - 1; c += 1) {
+				var card_to_check = ds_list_find_value(playable_cards, c);
+			
+				if (card_to_check.is_burning) {
+					ds_list_add(burning_cards, card_to_check);
+				}
+			}
 
 			// Sometimes skip turn to save up on points and cards.
 			if (
-				ability_points <= 1
-				&& ds_list_size(playable_cards) <= 1
-				&& irandom(3) == 1
+				ds_list_size(burning_cards) == 0
+				&& (ability_points <= 1 || ds_list_size(playable_cards) <= 1)
+				&& irandom(9) == 1
 			) {
 				show_debug_message("Let's play it safe... skipping turn.");
 		
@@ -47,8 +58,16 @@ function scr_character_opponent_deciding() {
 				exit;
 			}
 	
-			var card_to_play = scr_choose_from_list(playable_cards);
-			show_debug_message("Gonna play " + card_to_play.title);
+			var card_to_play;
+			
+			if (ds_list_size(burning_cards) > 0 && irandom(4) != 1) {
+				card_to_play = scr_choose_from_list(burning_cards);
+				show_debug_message("Found a burning card! Gonna play " + card_to_play.title);
+			} else {
+				card_to_play = scr_choose_from_list(playable_cards);
+				show_debug_message("Gonna play " + card_to_play.title);
+			}
+
 			ds_queue_enqueue(cards_to_play, card_to_play);
 			state_switch("playingCards");
 	

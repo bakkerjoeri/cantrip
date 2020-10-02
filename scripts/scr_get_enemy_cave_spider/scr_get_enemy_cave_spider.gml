@@ -13,7 +13,7 @@ function scr_get_enemy_cave_spider() {
 function get_deck_list_for_cave_spider() {
 	var deck_map = ds_map_create();
 
-	deck_map[? "attack"] = 6;
+	deck_map[? "attack"] = 5;
 	deck_map[? "siphon"] = 2;
 	deck_map[? "venomous_bite"] = 1;
 

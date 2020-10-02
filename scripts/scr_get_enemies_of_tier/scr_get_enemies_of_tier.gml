@@ -13,6 +13,7 @@ function scr_get_enemies_of_tier(tier, type) {
 	}
 
 	if (tier == 1 && type == "enemy") {
+		ds_list_add(enemies, scr_get_enemy_mad_chemist());
 		ds_list_add(enemies, scr_get_enemy_rogue());
 		ds_list_add(enemies, scr_get_enemy_warrior());
 		ds_list_add(enemies, scr_get_enemy_necromancer());

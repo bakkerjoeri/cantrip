@@ -6,6 +6,7 @@ function scr_card_being_discarded() {
 	
 		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self.id);
 		is_face_up = true;
+		is_burning = false;
 		
 		if (variable_instance_exists(self.id, "on_discard")) {
 			do_on_discard_effect(self.id, self.on_discard);
