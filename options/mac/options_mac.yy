@@ -6,7 +6,7 @@
   "option_mac_team_id": "",
   "option_mac_signing_identity": "Developer ID Application:",
   "option_mac_copyright": "(c) 2018 CompanyName",
-  "option_mac_splash_png": "${project_dir}/options/mac/splash\\splash.png",
+  "option_mac_splash_png": "${options_dir}/mac/splash/splash.png",
   "option_mac_icon_png": "${options_dir}/mac/icons/1024.png",
   "option_mac_menu_dock": false,
   "option_mac_display_cursor": true,
