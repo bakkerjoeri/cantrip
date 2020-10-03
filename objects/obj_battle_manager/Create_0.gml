@@ -18,7 +18,8 @@ character_that_lost = noone;
 player = instance_create_layer(0, 0, "Controllers", obj_player);
 opponent = instance_create_layer(0, 0, "Controllers", obj_opponent);
 
+instance_create_layer(432, 136, "Instances", obj_button_win_battle);
+
 if (debug_mode) {
-	instance_create_layer(432, 136, "Instances", obj_button_win_battle);
 	instance_create_layer(432, 184, "Instances", obj_button_lose_battle);
 }

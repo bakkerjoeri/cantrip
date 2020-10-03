@@ -92,6 +92,7 @@
     {"id":{"name":"scr_card_definition_barter_for_power","path":"scripts/scr_card_definition_barter_for_power/scr_card_definition_barter_for_power.yy",},"order":26,},
     {"id":{"name":"scr_card_definition_revenge_from_beyond","path":"scripts/scr_card_definition_revenge_from_beyond/scr_card_definition_revenge_from_beyond.yy",},"order":13,},
     {"id":{"name":"scr_card_definition_sneak_attack","path":"scripts/scr_card_definition_sneak_attack/scr_card_definition_sneak_attack.yy",},"order":34,},
+    {"id":{"name":"obj_deck_overview","path":"objects/obj_deck_overview/obj_deck_overview.yy",},"order":3,},
     {"id":{"name":"scr_card_definition_shields_up","path":"scripts/scr_card_definition_shields_up/scr_card_definition_shields_up.yy",},"order":17,},
     {"id":{"name":"scr_generate_draft_rounds_of_tier","path":"scripts/scr_generate_draft_rounds_of_tier/scr_generate_draft_rounds_of_tier.yy",},"order":0,},
     {"id":{"name":"scr_card_definition_desecrate","path":"scripts/scr_card_definition_desecrate/scr_card_definition_desecrate.yy",},"order":3,},
