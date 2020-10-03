@@ -1,4 +1,4 @@
-function scr_card_definition_eldritch_blast() {
+function scr_card_definition_eldritch_blast(card) {
 	card.name = "eldritch_blast";
 	card.title = "eldritch blast";
 	card.cost = 2;
