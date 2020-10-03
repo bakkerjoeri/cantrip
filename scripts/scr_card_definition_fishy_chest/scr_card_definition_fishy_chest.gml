@@ -10,8 +10,6 @@ function scr_card_definition_fishy_chest(card) {
 function do_fishy_chest_counter(target, source, card) {
 	scr_take_damage(target, 2, source);
 	
-	show_debug_message("Attempt 9");
-	
 	var recipient = scr_get_opponent_of_character(card.owner);
 	
 	if (ds_list_size(recipient.hand) == recipient.max_hand_size) {
@@ -20,7 +18,6 @@ function do_fishy_chest_counter(target, source, card) {
 	
 	var random_card_list = scr_get_cards_of_tier(irandom(3));
 	var random_card_name = scr_choose_from_list(random_card_list);
-	show_debug_message("Gonna make card: " + random_card_name);
 	var random_card = scr_create_card(random_card_name);
 	
 	if (recipient == obj_battle_manager.player) {
