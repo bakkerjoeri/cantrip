@@ -35,6 +35,21 @@ function scr_character_opponent_deciding() {
 				exit;
 			}
 			
+			// If you die playing Combust, do not!
+			if (
+				ds_list_size(hand) == 1
+				&& ds_list_size(playable_cards) == 1
+				&& ds_list_find_value(hand, 0).name == "combust"
+			) {
+				show_debug_message("That would kill me, ending turn.");
+		
+				with (obj_battle_manager) {
+					state_switch("turnEnd");
+				}
+		
+				exit;
+			}
+			
 			// If one of the playable cards is burning, it should get priority
 			var priority_cards = ds_list_create();
 			
