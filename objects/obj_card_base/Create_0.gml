@@ -28,10 +28,13 @@ discard_priority = 1;
 text = "";
 effect = undefined;
 condition = undefined;
+has_priority = undefined;
 rarity = 0;
-alpha = 1;
 
 // card state
 owner = noone;
 is_face_up = true;
 has_focus = false;
+
+// look
+alpha = 1;

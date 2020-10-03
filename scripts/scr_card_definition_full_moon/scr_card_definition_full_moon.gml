@@ -6,6 +6,7 @@ function scr_card_definition_full_moon(card) {
 	card.effect = do_full_moon_effect;
 	card.condition = can_play_full_moon;
 	card.rarity = 2;
+	card.has_priority = check_priority_for_full_moon;
 }
 
 function do_full_moon_effect(target, source) {
@@ -22,4 +23,25 @@ function can_play_full_moon(target, source) {
 	}
 
 	return true;
+}
+
+function check_priority_for_full_moon(target, source, playable_cards, unplayable_cards) {
+	if (scr_does_list_contain_item(target.active_effects, "poison_the_well")) {
+		return true;
+	}
+	
+	var potential_ap = source.ability_points;
+
+	for (var c = 0; c <= ds_list_size(unplayable_cards) - 1; c += 1) {
+		var unplayable_card = ds_list_find_value(unplayable_cards, c);
+		
+		if (
+			variable_instance_exists(unplayable_card, "cost")
+			&& potential_ap >= unplayable_card.cost
+		) {
+			return true;
+		}
+	}
+
+	return false;
 }

@@ -6,6 +6,7 @@ function scr_card_definition_barter_for_power(card) {
 	card.effect = do_barter_for_power_effect;
 	card.condition = can_play_barter_for_power;
 	card.rarity = 0;
+	card.has_priority = check_priority_for_barter_for_power;
 }
 
 function do_barter_for_power_effect(target, source) {
@@ -27,4 +28,19 @@ function can_play_barter_for_power(target, source) {
 	}
 	
 	return true;
+}
+
+function check_priority_for_barter_for_power(target, source, playable_cards, unplayable_cards) {
+	if (scr_does_list_contain_item(target.active_effects, "poison_the_well")) {
+		return true;
+	}
+	
+	var lost_ap = min(target.max_ability_points - target.ability_points, source.ability_points);
+	var space_in_hand = source.max_hand_size - ds_list_size(source.hand);
+	
+	if (space_in_hand >= lost_ap) {
+		return true;
+	}
+	
+	return false;
 }

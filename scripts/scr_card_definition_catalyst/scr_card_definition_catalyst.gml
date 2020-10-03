@@ -5,6 +5,7 @@ function scr_card_definition_catalyst(card) {
 	card.text = "This turn, when you play a card, draw a card.";
 	card.effect = do_catalyst_effect;
 	card.rarity = 2;
+	card.has_priority = check_priority_for_catalyst;
 }
 
 function do_catalyst_effect(target, source) {
@@ -21,4 +22,8 @@ function do_catalyst_effect(target, source) {
 
 function remove_catalyst_effect(target, source) {
 	scr_remove_item_from_list(source.active_effects, "catalyst");
+}
+
+function check_priority_for_catalyst() {
+	return true;
 }

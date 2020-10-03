@@ -5,6 +5,7 @@ function scr_card_definition_rest(card) {
 	card.text = "Draw 1 card, Gain 1 AP, end your turn.";
 	card.effect = do_rest_effect;
 	card.rarity = 0;
+	card.has_priority = check_priority_for_rest;
 }
 
 function do_rest_effect(target, source) {
@@ -20,3 +21,10 @@ function do_rest_effect(target, source) {
 	}
 }
 
+function check_priority_for_rest(target, source, playable_cards) {
+	if (ds_list_size(playable_cards) <= 1) {
+		return true;
+	}
+	
+	return false;
+}

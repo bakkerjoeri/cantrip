@@ -5,6 +5,7 @@ function scr_card_definition_transmute(card) {
 	card.text = "Discard all your cards, draw that many cards plus 1.";
 	card.effect = do_transmute_effect;
 	card.rarity = 0;
+	card.has_priority = check_priority_for_transmute;
 }
 
 function do_transmute_effect(target, source) {
@@ -19,4 +20,16 @@ function do_transmute_effect(target, source) {
 	with (source) {
 		state_switch("discardingCards");
 	}
+}
+
+function check_priority_for_transmute(target, source, playable_cards) {
+	if (scr_does_list_contain_item(source.active_effects, "dark_pact")) {
+		return true;
+	}
+
+	if (ds_list_size(playable_cards) <= 1) {
+		return true;
+	}
+	
+	return false;
 }

@@ -6,9 +6,10 @@ function scr_card_definition_seance(card) {
 	card.effect = do_seance_effect;
 	card.condition = can_play_seance;
 	card.rarity = 3;
+	card.has_priority = check_priority_for_seance;
 }
 
-function do_seance_effect(target, source) {
+function do_seance_effect(target, source, card) {
 	var card_to_play = ds_list_find_value(source.graveyard, ds_list_size(source.graveyard) - 1);
 
 	if (card_to_play) {
@@ -37,4 +38,18 @@ function can_play_seance(target, source) {
 	}
 	
 	return true;
+}
+
+function check_priority_for_seance(target, source, playable_cards, unplayable_cards, card) {
+	var card_to_play = ds_list_find_value(source.graveyard, ds_list_size(source.graveyard) - 1);
+	
+	if (card_to_play.name == "revenge_from_beyond" || card_to_play.name == "seance") {
+		return false;
+	}
+	
+	if (is_undefined(card_to_play.has_priority)) {
+		return false;
+	}
+	
+	return card_to_play.has_priority(target, source, playable_cards, unplayable_cards, card_to_play);
 }

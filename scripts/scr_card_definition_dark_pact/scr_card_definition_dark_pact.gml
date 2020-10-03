@@ -5,6 +5,7 @@ function scr_card_definition_dark_pact(card) {
 	card.text = "Until the end of your next turn, when you draw a card, do 1 damage.";
 	card.effect = do_dark_pact_effect;
 	card.rarity = 2;
+	card.has_priority = check_priority_for_dark_pact;
 }
 
 function do_dark_pact_effect(target, source, card) {
@@ -25,3 +26,6 @@ function remove_dark_pact_effect(target, source, turnsLeft) {
 	}
 }
 
+function check_priority_for_dark_pact() {
+	return true;
+}

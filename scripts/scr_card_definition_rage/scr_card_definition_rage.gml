@@ -6,6 +6,7 @@ function scr_card_definition_rage(card) {
 	card.text = get_rage_text(card.damage);
 	card.effect = do_rage_effect;
 	card.rarity = 3;
+	card.has_priority = check_priority_for_rage;
 }
 
 function do_rage_effect(target, source, card) {
@@ -16,4 +17,8 @@ function do_rage_effect(target, source, card) {
 
 function get_rage_text(damage) {
 	return "Do " + string(damage) + " damage. When played, increase damage by 1.";
+}
+
+function check_priority_for_rage() {
+	return true;
 }

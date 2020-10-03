@@ -5,6 +5,7 @@ function scr_card_definition_shields_up(card) {
 	card.text = "Add 2 \"shield\" cards to your hand.";
 	card.effect = do_shields_up_effect;
 	card.rarity = 1;
+	card.has_priority = check_priority_for_shields_up;
 }
 
 function do_shields_up_effect(target, source) {
@@ -19,4 +20,14 @@ function do_shields_up_effect(target, source) {
 			state_switch("beingDrawn");
 		}	
 	}
+}
+
+function check_priority_for_shields_up(target, source) {
+	var space_in_hand = source.max_hand_size - ds_list_size(source.hand);
+	
+	if (space_in_hand >= 1) {
+		return true;
+	}
+	
+	return false;
 }

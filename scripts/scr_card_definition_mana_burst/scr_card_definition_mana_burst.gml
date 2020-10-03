@@ -6,6 +6,7 @@ function scr_card_definition_mana_burst(card) {
 	card.effect = do_mana_burst_effect;
 	card.condition = can_play_mana_burst;
 	card.rarity = 2;
+	card.has_priority = check_priority_for_mana_burst;
 }
 
 function do_mana_burst_effect(target, source) {
@@ -14,4 +15,8 @@ function do_mana_burst_effect(target, source) {
 
 function can_play_mana_burst(target, source) {
 	return source.ability_points > 0;
+}
+
+function check_priority_for_mana_burst(target, source) {
+	return source.ability_points >= 2;
 }

@@ -5,6 +5,7 @@ function scr_card_definition_waning(card) {
 	card.text = "Until next turn, your foe's cards cost 1 more."
 	card.effect = do_waning_effect;
 	card.rarity = 1;
+	card.has_priority = check_priority_for_waning;
 }
 
 function do_waning_effect(target, source, card) {
@@ -33,4 +34,8 @@ function end_waning(target, source) {
 	}
 	
 	scr_make_list_empty(target.waned_cards);
+}
+
+function check_priority_for_waning() {
+	return true;
 }

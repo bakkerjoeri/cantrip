@@ -5,6 +5,7 @@ function scr_card_definition_volley(card) {
 	card.text = "At the start of your next turn, do 2 damage."
 	card.effect = do_volley_effect;
 	card.rarity = 3;
+	card.has_priority = check_priority_for_volley;
 }
 
 function do_volley_effect(target, source, card) {
@@ -13,4 +14,12 @@ function do_volley_effect(target, source, card) {
 
 function resolve_volley(target, source) {
 	scr_take_damage(target, 2, source);
+}
+
+function check_priority_for_volley(target, source, playable_cards, unplayable_cards, card) {
+	if (ds_list_size(target.hand) <= 2) {
+		return true;
+	}
+	
+	return false;
 }

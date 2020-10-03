@@ -5,6 +5,7 @@ function scr_card_definition_life_link(card) {
 	card.text = "For 3 turns, when your opponent draws a card, you draw a card.";
 	card.effect = do_life_link_effect;
 	card.rarity = 1;
+	card.has_priority = check_priority_for_life_link;
 }
 
 function do_life_link_effect(target, source, card) {
@@ -25,3 +26,6 @@ function remove_life_link_effect(target, source, turnsLeft) {
 	}
 }
 
+function check_priority_for_life_link() {
+	return true;
+}

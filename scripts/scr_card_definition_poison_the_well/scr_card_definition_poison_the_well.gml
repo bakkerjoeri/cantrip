@@ -5,6 +5,7 @@ function scr_card_definition_poison_the_well(card) {
 	card.text = "For 3 turns, when your foe gains AP, do that much damage.";
 	card.effect = do_poison_the_well_effect;
 	card.rarity = 1;
+	card.has_priority = check_priority_for_poison_the_well;
 }
 
 function do_poison_the_well_effect(target, source) {
@@ -23,4 +24,8 @@ function do_poison_the_well_turn_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "poison_the_well");
 	}
+}
+
+function check_priority_for_poison_the_well() {
+	return true;
 }

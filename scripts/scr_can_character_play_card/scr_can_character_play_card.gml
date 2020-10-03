@@ -1,4 +1,3 @@
-/// scr_can_character_play_card(character, card)
 function scr_can_character_play_card(source, card) {
 	var opponent = scr_get_opponent_of_character(source);
 

@@ -6,9 +6,14 @@ function scr_card_definition_lightning_bolt(card) {
 	card.effect = do_lightning_bolt_effect;
 	card.rarity = 2;
 	card.condition = can_play_lightning_bolt;
+	card.has_priority = check_priority_for_lightning_bolt;
 }
 
 function do_lightning_bolt_effect(target, source, card) {
+	if (ds_list_size(target.hand) == 0) {
+		return;
+	}
+
 	var chosen_card = scr_choose_from_list(target.hand);
 	var chosen_card_has_cost = variable_instance_exists(chosen_card, "cost");
 	var damaged_cards = ds_list_create();
@@ -33,4 +38,8 @@ function do_lightning_bolt_effect(target, source, card) {
 
 function can_play_lightning_bolt(target, source) {
 	return ds_list_size(target.hand) > 0;
+}
+
+function check_priority_for_lightning_bolt() {
+	return true;
 }
