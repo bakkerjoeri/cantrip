@@ -2,7 +2,7 @@ function scr_card_definition_fishy_chest(card) {
 	card.name = "fishy_chest";
 	card.title = "fishy chest";
 	card.is_unplayable = true;
-	card.text = "When hit, burn a random card. Your foe earns a random card.";
+	card.text = "When hit, burn a card. Your foe earns a random card.";
 	card.counter = do_fishy_chest_counter;
 	card.rarity = 3;
 }
