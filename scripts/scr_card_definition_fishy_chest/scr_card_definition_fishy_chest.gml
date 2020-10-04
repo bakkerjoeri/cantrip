@@ -16,10 +16,6 @@ function do_fishy_chest_counter(target, source, card) {
 	
 	var recipient = scr_get_opponent_of_character(card.owner);
 	
-	if (ds_list_size(recipient.hand) == recipient.max_hand_size) {
-		return;
-	}
-	
 	var random_card_list = scr_get_cards_of_tier(irandom(3));
 	var random_card_name = scr_choose_from_list(random_card_list);
 	var random_card = scr_create_card(random_card_name);
@@ -27,14 +23,29 @@ function do_fishy_chest_counter(target, source, card) {
 	if (recipient == obj_battle_manager.player) {
 		ds_list_add(obj_game_manager.player_deck_list, random_card_name);
 	}
-
-	ds_list_add(recipient.hand, random_card);
-
+	
 	random_card.x = (room_width / 2) - 32;
 	random_card.y = (room_height / 2) - 48;
 	random_card.owner = recipient;
-	
-	with (random_card) {
-		state_switch("beingDrawn");
+
+	if (ds_list_size(recipient.hand) < recipient.max_hand_size) {
+		ds_list_add(recipient.hand, random_card);
+		
+		with (random_card) {
+			state_switch("beingDrawn");
+		}
+	} else {
+		ds_list_add(recipient.graveyard, random_card);
+		
+		with (random_card) {
+			state_switch("beingDiscarded");
+		}
 	}
+	
+	if (card_to_burn) {
+		scr_add_event_log(recipient.name + " finds " + random_card.title + "! Suddenly a burst of flame shoots out and their " + card_to_burn.title + " starts burning.");
+	} else {
+		scr_add_event_log(recipient.name + " finds " + random_card.title + "!");
+	}
+	
 }

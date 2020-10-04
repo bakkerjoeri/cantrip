@@ -11,14 +11,18 @@ function scr_card_definition_possess(card) {
 function do_possess_effect(target, source, card) {
 	var card_to_play = scr_choose_from_list(target.hand);
 
-	if (card_to_play) {
-		scr_remove_item_from_list(target.hand, card_to_play);
-		with (card_to_play) {
-			played_by = source;
-			state_switch("startPlay");
-			play_depth = card.depth - 1;
-		}
+	if (!card_to_play) {
+		return;
 	}
+	
+	scr_remove_item_from_list(target.hand, card_to_play);
+	with (card_to_play) {
+		played_by = source;
+		state_switch("startPlay");
+		play_depth = card.depth - 1;
+	}
+		
+	scr_add_event_log(source.name + " possesses " + target.name + " and plays " + card_to_play.title);
 }
 
 function can_play_possess(target, source) {

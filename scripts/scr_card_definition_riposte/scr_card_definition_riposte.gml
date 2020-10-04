@@ -21,4 +21,6 @@ function do_riposte(target, source) {
 		state_switch("startPlay");
 		play_depth = -10;
 	}
+	
+	scr_add_event_log("Riposte!" + source.name + " suddenly plays " + card_to_play.title);
 }

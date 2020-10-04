@@ -18,8 +18,13 @@ function do_venomous_bite_effect(target, source) {
 	);
 }
 
-function venomous_bite_start_of_turn_effect(target, source) {
+function venomous_bite_start_of_turn_effect(target, source, turnsLeft) {
+	scr_add_event_log("Venom courses through " + source.name + "!");
 	scr_take_damage(source, 1, source);
+	
+	if (turnsLeft == 0) {
+		scr_add_event_log("The effect of the venomous bite wears off.");
+	}
 }
 
 function check_priority_for_venomous_bite() {

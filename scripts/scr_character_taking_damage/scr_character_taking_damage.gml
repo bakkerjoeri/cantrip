@@ -25,6 +25,7 @@ function scr_character_taking_damage() {
 	if (_card_damage_delay <= 0 && (!ds_queue_empty(damage_events) || _amount_left_for_event > 0)) {
 		// Game over if there's nothing left in the hand.
 		if (ds_list_size(hand) == 0) {
+			scr_add_event_log(name + " perishes!");
 			do_death_effect();
 			ds_queue_clear(damage_events);
 			state_switch_previous();
@@ -91,6 +92,8 @@ function scr_character_taking_damage() {
 				
 				with (damaged_card) {
 					state_switch("hasDeflected");
+					
+					scr_add_event_log(_current_damage_event[? "target"].name + " deflects the hit!");
 				}
 			} else {
 				do_damage_effect();
@@ -98,6 +101,12 @@ function scr_character_taking_damage() {
 	
 				with (damaged_card) {
 					state_switch("damaged");
+				}
+				
+				if (_current_damage_event[? "source"] == _current_damage_event[? "target"]) {
+					scr_add_event_log(_current_damage_event[? "source"].name + " hits their own " + damaged_card.title);
+				} else {
+					scr_add_event_log(_current_damage_event[? "source"].name + " hits " + _current_damage_event[? "target"].name + "'s " + damaged_card.title);
 				}
 				
 				if (damaged_card.name == "shield" && is_piercing) {
