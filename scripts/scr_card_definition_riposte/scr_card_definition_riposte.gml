@@ -22,5 +22,5 @@ function do_riposte(target, source) {
 		play_depth = -10;
 	}
 	
-	scr_add_event_log("Riposte!" + source.name + " suddenly plays " + card_to_play.title);
+	scr_add_event_log("Riposte! " + source.name + " counters by playing " + card_to_play.title);
 }

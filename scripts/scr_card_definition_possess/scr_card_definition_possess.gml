@@ -22,7 +22,7 @@ function do_possess_effect(target, source, card) {
 		play_depth = card.depth - 1;
 	}
 		
-	scr_add_event_log(source.name + " possesses " + target.name + " and plays " + card_to_play.title);
+	scr_add_event_log(source.name + " possesses " + target.name + " and plays their " + card_to_play.title + ".");
 }
 
 function can_play_possess(target, source) {

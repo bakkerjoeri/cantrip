@@ -22,6 +22,8 @@ function do_embed_spikes_effect(target, source) {
 			card.spiked = true;
 		}
 	}
+	
+	scr_add_event_log(source.name + "'s shields now look dangerous.");
 }
 
 function spiked_shield_counter(target, source) {

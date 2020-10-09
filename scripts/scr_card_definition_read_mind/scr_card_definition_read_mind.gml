@@ -18,8 +18,8 @@ function do_read_mind_effect(target, source) {
 			ds_list_add(source.hand, copied_card);
 	
 			with (copied_card) {
-				x = card_to_copy.x;
-				y = card_to_copy.y;
+				x = (room_width / 2) - 32;
+				y = (room_height / 2) - 48;
 				owner = source;
 				state_switch("beingDrawn");
 			}

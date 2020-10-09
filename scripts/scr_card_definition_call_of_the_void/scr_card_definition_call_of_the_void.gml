@@ -28,6 +28,9 @@ function do_call_of_the_void_effect(target, source, card) {
 	
 	scr_make_list_empty(target.graveyard);
 	scr_make_list_empty(target.draw_pile);
+	
+	scr_add_event_log("Infinite darkness unfolds before you. " + target.name + "'s graveyard and draw pile are swallowed into it.");
+	
 	ds_list_destroy(cards_to_destroy);
 }
 

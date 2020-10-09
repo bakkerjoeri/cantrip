@@ -42,10 +42,12 @@ function do_fishy_chest_counter(target, source, card) {
 		}
 	}
 	
-	if (card_to_burn) {
-		scr_add_event_log(recipient.name + " finds " + random_card.title + "! Suddenly a burst of flame shoots out and their " + card_to_burn.title + " starts burning.");
+	if (card_to_burn && card_to_burn.is_face_up) {
+		scr_add_event_log(recipient.name + " opens the chest and finds " + random_card.title + "! Suddenly a burst of flame shoots out and " + target.name + "'s " + card_to_burn.title + " starts burning.");
+	} else if (card_to_burn) {
+		scr_add_event_log(recipient.name + " opens the chest and finds " + random_card.title + "! Suddenly a burst of flame shoots out and one of " + target.name + "'s cards starts burning.");
 	} else {
-		scr_add_event_log(recipient.name + " finds " + random_card.title + "!");
+		scr_add_event_log(recipient.name + " opens the chest and finds " + random_card.title + "!");
 	}
 	
 }

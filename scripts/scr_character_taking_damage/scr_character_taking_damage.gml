@@ -92,9 +92,9 @@ function scr_character_taking_damage() {
 				
 				with (damaged_card) {
 					state_switch("hasDeflected");
-					
-					scr_add_event_log(_current_damage_event[? "target"].name + " deflects the hit!");
 				}
+				
+				scr_add_event_log(_current_damage_event[? "target"].name + " deflects the hit!");
 			} else {
 				do_damage_effect();
 				scr_move_item_between_lists(damaged_card, hand, graveyard);

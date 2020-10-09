@@ -18,6 +18,8 @@ function do_forge_effect(target, source) {
 			card.text = "Do " + string(card.damage) + " damage.";
 		}
 	}
+	
+	scr_add_event_log(source.name + "'s attacks become more powerful.");
 }
 
 function can_play_forge(target, source) {

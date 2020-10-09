@@ -12,8 +12,10 @@ function scr_card_definition_siphon(card) {
 function do_siphon_effect(target, source) {
 	var stolen_ap = min(target.ability_points, 2);
 
-	scr_character_loses_ap(target, stolen_ap)
+	scr_character_loses_ap(target, stolen_ap);
 	scr_character_gains_ap(source, stolen_ap);
+	
+	scr_add_event_log(source.name + " steals " + string(stolen_ap) + " AP from "  + target.name + ".");
 }
 
 function can_play_siphon(target, source) {

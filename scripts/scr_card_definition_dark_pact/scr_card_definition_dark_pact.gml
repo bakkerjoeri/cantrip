@@ -18,11 +18,23 @@ function do_dark_pact_effect(target, source, card) {
 		2,
 		true,
 	);
+	
+	var r = irandom(2);
+	
+	if (r == 0) {
+		scr_add_event_log(source.name + " calls upon the darkness. Whispers echo from all sides...");
+	} else if (r == 1) {
+		scr_add_event_log(source.name + " mumbles a dark prayer. A red mist appears.");
+	} else {
+		scr_add_event_log(source.name + " makes an unspeakable deal. A feeling of dread fills the space.");
+	}
+	
 }
 
 function remove_dark_pact_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "dark_pact");
+		scr_add_event_log("The dark pact dissipates.");
 	}
 }
 

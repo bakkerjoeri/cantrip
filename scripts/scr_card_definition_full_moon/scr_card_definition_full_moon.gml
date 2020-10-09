@@ -12,6 +12,8 @@ function scr_card_definition_full_moon(card) {
 function do_full_moon_effect(target, source) {
 	scr_character_gains_ap(source, source.max_ability_points - source.ability_points);
 	scr_character_gains_ap(target, target.max_ability_points - target.ability_points);
+	
+	scr_add_event_log("The full moon looms, bright and envigorating. All AP is regained.");
 }
 
 function can_play_full_moon(target, source) {

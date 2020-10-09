@@ -13,7 +13,7 @@ function do_eldritch_blast_effect(target, source) {
 	
 	var stolen_ap = min(target.ability_points, 1);
 
-	scr_character_loses_ap(target, stolen_ap)
+	scr_character_loses_ap(target, stolen_ap);
 	scr_character_gains_ap(source, stolen_ap);
 }
 

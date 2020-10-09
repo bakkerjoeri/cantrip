@@ -23,6 +23,7 @@ function do_life_link_effect(target, source, card) {
 function remove_life_link_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "life_link");
+		scr_add_event_log("The life link dissipates.");
 	}
 }
 

@@ -9,6 +9,7 @@ function scr_card_definition_fireblast(card) {
 }
 
 function do_fireblast_effect(target, source) {
+	scr_add_event_log("A massive burst of flames roars towards " + target.name);
 	scr_take_damage(target, 3, source);
 }
 
