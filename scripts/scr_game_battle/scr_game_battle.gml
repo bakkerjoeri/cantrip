@@ -17,6 +17,4 @@ function scr_game_battle() {
 			state_switch("start");
 		}
 	}
-
-
 }
