@@ -25,7 +25,7 @@ function scr_character_taking_damage() {
 	if (_card_damage_delay <= 0 && (!ds_queue_empty(damage_events) || _amount_left_for_event > 0)) {
 		// Game over if there's nothing left in the hand.
 		if (ds_list_size(hand) == 0) {
-			scr_add_event_log(name + " perishes!");
+			scr_add_event_log(name + " is defeated!");
 			do_death_effect();
 			ds_queue_clear(damage_events);
 			state_switch_previous();
