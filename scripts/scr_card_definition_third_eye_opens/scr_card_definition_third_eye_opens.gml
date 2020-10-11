@@ -17,10 +17,20 @@ function do_third_eye_opens_effect(target, source) {
 		3,
 		true,
 	);
+	
+	scr_add_event_log(source.name + " opens their third eye, revealing what was once hidden.");
 }
 
 function do_third_eye_opens_turn_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		target.is_hand_visible = false;
+	}
+	
+	if (turnsLeft == 0) {
+		scr_add_event_log(source.name + "'s third eye shuts once more.");
+	} else if (turnsLeft == 1) {
+		scr_add_event_log(source.name + "'s third eye opens has " + turnsLeft + " turn left.");
+	} else {
+		scr_add_event_log(source.name + "'s third eye opens has " + turnsLeft + " turns left.");
 	}
 }

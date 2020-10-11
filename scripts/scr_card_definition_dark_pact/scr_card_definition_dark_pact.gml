@@ -34,7 +34,15 @@ function do_dark_pact_effect(target, source, card) {
 function remove_dark_pact_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "dark_pact");
-		scr_add_event_log("The dark pact dissipates.");
+		
+	}
+	
+	if (turnsLeft == 0) {
+		scr_add_event_log(source.name + "'s dark pact dissipates.");
+	} else if (turnsLeft == 1) {
+		scr_add_event_log(source.name + "'s dark pact has " + turnsLeft + " turn left.");
+	} else {
+		scr_add_event_log(source.name + "'s dark pact has " + turnsLeft + " turns left.");
 	}
 }
 

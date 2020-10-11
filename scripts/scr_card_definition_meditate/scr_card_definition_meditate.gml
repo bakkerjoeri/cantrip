@@ -15,8 +15,12 @@ function do_meditate_effect(target, source) {
 		1,
 		false,
 	);
+	
+	scr_add_event_log(source.name + " clears their mind.");
 }
 
 function meditate_start_of_turn_effect(target, source) {
 	source.ability_points = source.max_ability_points;
+	
+	scr_add_event_log("In their focus, " + source.name + " finds renewed energy, and now has " + string(source.max_ability_points) + " AP.");
 }

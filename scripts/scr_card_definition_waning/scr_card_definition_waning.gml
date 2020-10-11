@@ -25,6 +25,8 @@ function do_waning_effect(target, source, card) {
 	}
 	
 	scr_add_start_of_turn_effect(source, "waning", end_waning, 1, true);
+	
+	scr_add_event_log("The moon flickers crimson. " + target.name + "'s movements start to feel heavy and slow.");
 }
 
 function end_waning(target, source) {
@@ -34,6 +36,8 @@ function end_waning(target, source) {
 	}
 	
 	scr_make_list_empty(target.waned_cards);
+	
+	scr_add_event_log(source.name + " no longer feels sluggish. The waning fades.");
 }
 
 function check_priority_for_waning() {

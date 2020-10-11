@@ -18,12 +18,21 @@ function do_life_link_effect(target, source, card) {
 		3,
 		true,
 	);
+	
+	scr_add_event_log(source.name + " links their lifeforce with that of " + target.name + ".");
 }
 
 function remove_life_link_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "life_link");
-		scr_add_event_log("The life link dissipates.");
+	}
+	
+	if (turnsLeft == 0) {
+		scr_add_event_log(source.name + "'s life link with " + target.name + " dissipates.");
+	} else if (turnsLeft == 1) {
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + turnsLeft + " turn left.");
+	} else {
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + turnsLeft + " turns left.");
 	}
 }
 

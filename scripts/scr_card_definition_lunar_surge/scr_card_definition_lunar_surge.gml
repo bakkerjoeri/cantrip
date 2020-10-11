@@ -28,6 +28,8 @@ function do_lunar_surge_effect(target, source, card) {
 	}
 	
 	scr_add_start_of_turn_effect(source, "lunar_surge", end_lunar_surge, 1, true);
+	
+	scr_add_event_log(source.name + " calls upon the moon to grant them power. A brilliant shimmer surrounds them, and they start to feel light.");
 }
 
 function end_lunar_surge(target, source) {
@@ -37,6 +39,8 @@ function end_lunar_surge(target, source) {
 	}
 	
 	scr_make_list_empty(source.lunar_surged_cards);
+	
+	scr_add_event_log("The brilliance surrounding " + source.name + " fades. The lunar surge wears off.");
 }
 
 function check_priority_for_lunar_surge(target, source, playable_cards, unplayable_cards, card) {
