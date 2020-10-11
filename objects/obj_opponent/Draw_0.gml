@@ -2,7 +2,8 @@ event_inherited();
 
 if (debug_mode) {
 	draw_set_halign(fa_left);
-	draw_text(4, 0, state_name);
+	draw_set_color(global.palette_1);
+	draw_text(4, 48, state_name);
 }
 
 if (obj_battle_manager.turn_of_character == self.id) {

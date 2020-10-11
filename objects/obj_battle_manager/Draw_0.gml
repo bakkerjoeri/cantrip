@@ -1,7 +1,7 @@
 if (debug_mode) {
 	draw_set_color(global.palette_1);
 	draw_set_halign(fa_left);
-	draw_text(384, 26, "battle state: " + state_name);
+	draw_text(64, 24, "battle state: " + state_name);
 }
 
 if (!is_undefined(obj_game_manager.current_room)) {
