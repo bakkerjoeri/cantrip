@@ -13,6 +13,8 @@ function do_rage_effect(target, source, card) {
 	scr_take_damage(target, card.damage, source);
 	card.damage += 1;
 	card.text = get_rage_text(card.damage);
+	
+	scr_add_event_log(source.name + " attacks " + target.name + " in a fit of ever increasing rage.");
 }
 
 function get_rage_text(damage) {

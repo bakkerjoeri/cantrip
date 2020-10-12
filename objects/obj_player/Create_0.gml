@@ -1,7 +1,8 @@
 event_inherited();
 
 is_controlled_by_player = true;
-is_hand_visible = true;
+base_is_hand_visible = true;
+is_hand_visible = base_is_hand_visible;
 
 hand_width = 224;
 hand_x = (room_width / 2) - (hand_width / 2);

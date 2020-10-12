@@ -23,7 +23,7 @@ function do_embed_spikes_effect(target, source) {
 		}
 	}
 	
-	scr_add_event_log(source.name + "'s shields now look dangerous.");
+	scr_add_event_log(source.name + "'s shields now look sharp to the touch.");
 }
 
 function spiked_shield_counter(target, source) {

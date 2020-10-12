@@ -12,4 +12,6 @@ function do_quickshot_effect(target, source, card) {
 	scr_take_damage(target, card.damage, source, {
 		deflected_by_shields: true,
 	});
+	
+	scr_add_event_log("Suddenly, an arrow flies in " + target.name + "'s direction!");
 }

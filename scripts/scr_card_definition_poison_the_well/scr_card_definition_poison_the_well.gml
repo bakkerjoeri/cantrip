@@ -12,7 +12,7 @@ function do_poison_the_well_effect(target, source) {
 	ds_list_add(target.active_effects, "poison_the_well");
 
 	scr_add_end_of_turn_effect(
-		source,
+		target,
 		"poison_the_well",
 		do_poison_the_well_turn_effect,
 		3,
@@ -30,9 +30,9 @@ function do_poison_the_well_turn_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_add_event_log("The putrid scent surrounding " + target.name + " dissipates.");
 	} else if (turnsLeft == 1) {
-		scr_add_event_log("Poison the well has " + turnsLeft + " turn left.");
+		scr_add_event_log("Poison the well has " + string(turnsLeft) + " turn left.");
 	} else {
-		scr_add_event_log("Poison the well has " + turnsLeft + " turns left.");
+		scr_add_event_log("Poison the well has " + string(turnsLeft) + " turns left.");
 	}
 }
 

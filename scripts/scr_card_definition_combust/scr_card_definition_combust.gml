@@ -9,6 +9,8 @@ function scr_card_definition_combust(card) {
 }
 
 function do_combust_effect(target, source) {
+	scr_add_event_log("A loud bang follows a sudden burst of flame, hitting both " + target.name + " and " + source.name + ".");
+
 	scr_take_damage(source, 1, source);
 	scr_take_damage(target, 2, source);
 }

@@ -11,10 +11,14 @@ function scr_card_definition_volatile_mixture(card) {
 
 function do_volatile_mixture_effect(target, source) {
 	scr_take_damage(target, 2, source);
+	
+	scr_add_event_log(source.name + " chucks a vial of violently swirling crimson towards " + target.name + ", and explodes into a ball of fire on contact.");
 }
 
 function do_volatile_mixture_counter(target, source) {
 	scr_take_damage(source, 1, source);
+	
+	scr_add_event_log("The volatile mixture suddenly explodes!");
 }
 
 function check_priority_for_volatile_mixture() {

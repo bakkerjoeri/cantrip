@@ -32,9 +32,9 @@ function do_blaze_effect(target, source) {
 	chosen_card.is_burning = true;
 	
 	if (chosen_card.is_face_up) {
-		scr_add_event_log(chosen_card.owner.name + "'s " + chosen_card + " starts burning!");
+		scr_add_event_log("Flames burst forth. " + chosen_card.owner.name + "'s " + chosen_card + " starts burning!");
 	} else {
-		scr_add_event_log("One of " + chosen_card.owner.name + "'s cards starts burning!");
+		scr_add_event_log("Flames burst forth. One of " + chosen_card.owner.name + "'s cards starts burning!");
 	}
 	
 	ds_list_destroy(possible_cards);

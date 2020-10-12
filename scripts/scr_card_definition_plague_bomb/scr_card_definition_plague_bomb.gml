@@ -18,10 +18,20 @@ function do_plague_bomb_effect(target, source, card) {
 		owner = target;
 		state_switch("beingDrawn");
 	}
+	
+	scr_add_event_log(source.name + " gives the acrid smelling bomb to " + target.name);
 }
 
 function plague_bomb_explodes(target, source, card) {
 	scr_take_damage(source, card.damage, source);
+	
+	if (card.damage <= 1) {
+		scr_add_event_log("The plague bomb goes off and hits " + source.name + " with a hollow bang.");
+	} else if (card.damage <= 3) {
+		scr_add_event_log(source.name + " is blinded by a flash of green as the plague bomb explodes with a loud bang.");
+	} else {
+		scr_add_event_log("A cascade of green flashes and sparks erupts from the plague bomb, swallowing up " + source.name + " in an ear splitting explosion!");
+	}
 }
 
 function plague_bomb_on_end_of_turn(target, source, card) {

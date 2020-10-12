@@ -14,6 +14,8 @@ function do_healing_potion_effect(target, source) {
 		amount_of_cards_to_draw += 3;
 		state_switch("drawingCards");
 	}
+	
+	scr_add_event_log(source.name + " takes a swig of a verdant, swirling potion. They feel revitalized.");
 }
 
 function can_play_healing_potion(target, source) {

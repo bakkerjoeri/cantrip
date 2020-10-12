@@ -12,15 +12,19 @@ function scr_card_definition_revenge_from_beyond(card) {
 function do_revenge_from_beyond_effect(target, source, card) {
 	var card_to_play = ds_list_find_value(target.graveyard, ds_list_size(target.graveyard) - 1);
 
-	if (card_to_play) {
-		scr_remove_item_from_list(target.graveyard, card_to_play);
-
-		with (card_to_play) {
-			played_by = source;
-			state_switch("startPlay");
-			play_depth = card.depth - 1;
-		}
+	if (!card_to_play) {
+		return;
 	}
+	
+	scr_remove_item_from_list(target.graveyard, card_to_play);
+
+	with (card_to_play) {
+		played_by = source;
+		state_switch("startPlay");
+		play_depth = card.depth - 1;
+	}
+	
+	scr_add_event_log(source.name + " conspires with the spirits against " + target.name + " and plays " + card_to_play.title + " from beyond the veil.");
 }
 
 function can_play_revenge_from_beyond(target, source) {

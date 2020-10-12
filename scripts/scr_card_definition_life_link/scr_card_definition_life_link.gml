@@ -30,9 +30,9 @@ function remove_life_link_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_add_event_log(source.name + "'s life link with " + target.name + " dissipates.");
 	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + turnsLeft + " turn left.");
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turn left.");
 	} else {
-		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + turnsLeft + " turns left.");
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turns left.");
 	}
 }
 

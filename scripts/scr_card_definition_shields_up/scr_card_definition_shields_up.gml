@@ -20,6 +20,8 @@ function do_shields_up_effect(target, source) {
 			state_switch("beingDrawn");
 		}	
 	}
+	
+	scr_add_event_log(source.name + " takes a defensive stance.");
 }
 
 function check_priority_for_shields_up(target, source) {

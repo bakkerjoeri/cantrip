@@ -14,7 +14,13 @@ for (var e = ds_list_size(events) - 1; e >= 0; e -= 1) {
 	}
 	
 	draw_set_halign(fa_left);
-	draw_set_color(global.palette_2);
+	
+	if (event[? "importance"] == 1) {
+		draw_set_color(global.palette_3);
+	} else {
+		draw_set_color(global.palette_2);
+	}
+	
 	draw_text(4, event_log_y + vertical_offset, "> ");
 	draw_set_color(global.palette_1);
 	draw_text_ext(12, event_log_y + vertical_offset, event_message, 8, event_log_width);

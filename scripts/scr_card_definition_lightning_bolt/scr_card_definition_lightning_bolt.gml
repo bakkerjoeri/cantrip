@@ -29,9 +29,19 @@ function do_lightning_bolt_effect(target, source, card) {
 		}
 	}
 	
-	scr_take_damage(target, ds_list_size(damaged_cards), source, {
+	var damage = ds_list_size(damaged_cards);
+	
+	scr_take_damage(target, damage, source, {
 		cards: scr_create_array_from_list(damaged_cards),
 	});
+	
+	if (damage <= 2) {
+		scr_add_event_log(source.name + " shoots a bolt of lightning through " + target.name + ".");
+	} else if (damage <= 4) {
+		scr_add_event_log("Lightning emanates from " + source.name + " and surrounds " + target.name + " before striking into them with a sudden jolt.");
+	} else {
+		scr_add_event_log("The sky darkens, and with a sudden clap of thunder, " + source.name + " unleashes a cascade of lightning onto " + target.name + "!");
+	}
 	
 	ds_list_destroy(damaged_cards);
 }

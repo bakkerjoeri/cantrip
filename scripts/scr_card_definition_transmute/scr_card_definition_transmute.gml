@@ -20,6 +20,8 @@ function do_transmute_effect(target, source) {
 	with (source) {
 		state_switch("discardingCards");
 	}
+	
+	scr_add_event_log(source.name + " draws the alchemical seal, turning matter into yet other matter.");
 }
 
 function check_priority_for_transmute(target, source, playable_cards) {

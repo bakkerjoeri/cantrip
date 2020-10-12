@@ -10,6 +10,8 @@ function scr_card_definition_corrupted_aether(card) {
 }
 
 function do_corrupted_aether_effect(target, source) {
+	scr_add_event_log("Blue sparks cascade as the air around " + target.name + " crackles, their power turning on themselves.");
+	
 	scr_take_damage(target, target.ability_points, source);
 }
 

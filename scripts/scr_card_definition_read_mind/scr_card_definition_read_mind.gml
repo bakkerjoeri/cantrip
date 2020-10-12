@@ -2,7 +2,7 @@ function scr_card_definition_read_mind(card) {
 	card.name = "read_mind";
 	card.title = "read mind";
 	card.cost = 1;
-	card.text = "Copy 2 random cards from your foe's hand.";
+	card.text = "Copy up to 2 random cards from your foe's hand.";
 	card.effect = do_read_mind_effect;
 	card.condition = can_play_read_mind;
 	card.rarity = 1;
@@ -10,20 +10,31 @@ function scr_card_definition_read_mind(card) {
 }
 
 function do_read_mind_effect(target, source) {
-	repeat(min(2, ds_list_size(target.hand), source.max_hand_size - ds_list_size(source.hand))) {
-		var card_to_copy = scr_choose_from_list(target.hand);
-
-		if (card_to_copy) {
-			var copied_card = scr_create_card(card_to_copy.name);
-			ds_list_add(source.hand, copied_card);
+	if (ds_list_size(target.hand) == 0) {
+		return;
+	}
 	
-			with (copied_card) {
-				x = (room_width / 2) - 32;
-				y = (room_height / 2) - 48;
-				owner = source;
-				state_switch("beingDrawn");
-			}
+	var cards_to_copy = ds_list_create();
+	var hand_clone = scr_clone_list(target.hand);
+	
+	while (ds_list_size(hand_clone) > 0 && ds_list_size(cards_to_copy) < 2) {
+		var card_to_copy = scr_choose_from_list(hand_clone);
+		scr_move_item_between_lists(card_to_copy, hand_clone, cards_to_copy);
+	}
+	
+	for (var c = 0; c <= ds_list_size(cards_to_copy) - 1; c += 1) {
+		var card_to_copy = ds_list_find_value(cards_to_copy, c);
+		var copied_card = scr_create_card(card_to_copy.name);
+		ds_list_add(source.hand, copied_card);
+	
+		with (copied_card) {
+			x = (room_width / 2) - 32;
+			y = (room_height / 2) - 48;
+			owner = source;
+			state_switch("beingDrawn");
 		}
+
+		scr_add_event_log(source.name + " learns about " + card_to_copy.title + ".");
 	}
 }
 

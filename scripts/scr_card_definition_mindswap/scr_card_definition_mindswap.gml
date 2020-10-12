@@ -13,10 +13,26 @@ function do_mindswap_effect(target, source) {
 	scr_add_start_of_turn_effect(
 		source,
 		"mindswap",
-		swap_hands,
+		end_mind_swap,
 		1,
 		false,
 	);
+	
+	var r = irandom(2);
+	
+	if (r == 0) {
+		scr_add_event_log(target.name + " is unsure of who they are.");
+	} else if (r == 1) {
+		scr_add_event_log(target.name + " feels like they're not alone in their head.");
+	} else {
+		scr_add_event_log(target.name + " feels like their perspective has suddenly shifted.");
+	}
+}
+
+function end_mind_swap(target, source) {
+	swap_hands(target, source);
+	
+	scr_add_event_log(target.name + " and " + source.name + " return to their own minds. They think.");
 }
 
 function swap_hands(target, source) {

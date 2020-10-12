@@ -21,6 +21,10 @@ function do_shield_bash_effect(target, source) {
 	}
 
 	scr_take_damage(target, shield_cards_in_hand, source);
+	
+	if (shield_cards_in_hand > 0) {
+		scr_add_event_log(source.name + " rushes toward " + target.name + " with their shield held out.");
+	}
 }
 
 function can_play_shield_bash(target, source) {

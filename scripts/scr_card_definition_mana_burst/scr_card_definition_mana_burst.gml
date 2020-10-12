@@ -11,6 +11,8 @@ function scr_card_definition_mana_burst(card) {
 
 function do_mana_burst_effect(target, source) {
 	scr_take_damage(target, source.ability_points, source);
+	
+	scr_add_event_log("A blinding pulse of light soars into " + target.name + ".");
 }
 
 function can_play_mana_burst(target, source) {

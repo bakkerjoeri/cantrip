@@ -7,7 +7,7 @@ function scr_card_definition_third_eye_opens(card) {
 	card.rarity = 0;
 }
 
-function do_third_eye_opens_effect(target, source) {
+function do_third_eye_opens_effect(target, source, card) {
 	target.is_hand_visible = true;
 
 	scr_add_end_of_turn_effect(
@@ -23,14 +23,14 @@ function do_third_eye_opens_effect(target, source) {
 
 function do_third_eye_opens_turn_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
-		target.is_hand_visible = false;
+		target.is_hand_visible = target.base_is_hand_visible;
 	}
 	
 	if (turnsLeft == 0) {
 		scr_add_event_log(source.name + "'s third eye shuts once more.");
 	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "'s third eye opens has " + turnsLeft + " turn left.");
+		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turn left.");
 	} else {
-		scr_add_event_log(source.name + "'s third eye opens has " + turnsLeft + " turns left.");
+		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turns left.");
 	}
 }
