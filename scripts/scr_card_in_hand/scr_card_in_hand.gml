@@ -40,20 +40,23 @@ function scr_card_in_hand() {
 	
 		if (
 			!has_focus
-			&& owner.state_name == "deciding"
-			&& owner.is_controlled_by_player
+			&& owner.is_hand_visible
 			&& animation_is_finished
 		) {
-			var offset = 3;
+			var offset = 3 * owner.offset_direction;
 		
-			if (scr_can_character_play_card(owner, self.id)) {
-				offset = 12;
+			if (
+				scr_can_character_play_card(owner, self.id)
+				&& owner.state_name == "deciding"
+				&& owner.is_controlled_by_player
+			) {
+				offset = 12 * owner.offset_direction;
 			}
 		
 			has_focus = true;
 			animation_add_next(
 				x,
-				owner.hand_y - offset,
+				owner.hand_y + offset,
 				.1 * room_speed,
 				ease_in_out_quint,
 			);
@@ -72,7 +75,8 @@ function scr_card_in_hand() {
 		if (
 			owner.is_hand_visible &&
 			obj_battle_manager.card_with_focus &&
-			obj_battle_manager.card_with_focus.owner == owner
+			obj_battle_manager.card_with_focus.owner == owner &&
+			scr_does_list_contain_item(owner.hand, obj_battle_manager.card_with_focus)
 		) {
 			depth = abs(ds_list_find_index(owner.hand, obj_battle_manager.card_with_focus) - current_hand_position);
 		} else {

@@ -12,5 +12,6 @@ draw_pile_x = hand_right + 4;
 draw_pile_y = room_height - 98;
 graveyard_x = hand_right + 64 + 12;
 graveyard_y = room_height - 98;
+offset_direction = -1;
 
 name = "Player";

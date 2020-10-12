@@ -13,3 +13,4 @@ draw_pile_x = hand_right + 4;
 draw_pile_y = 2;
 graveyard_x = hand_right + 64 + 12;
 graveyard_y = 2;
+offset_direction = 1;
