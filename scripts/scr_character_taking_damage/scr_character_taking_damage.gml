@@ -72,6 +72,13 @@ function scr_character_taking_damage() {
 			} else {
 				cards = [];
 			}
+			
+			var from_burning;
+			if (variable_struct_exists(_current_damage_event[? "damage_options"], "from_burning")) {
+				from_burning = _current_damage_event[? "damage_options"].from_burning;
+			} else {
+				from_burning = false;
+			}
 
 			var damaged_card;
 			if (array_length(cards) > 0 && scr_does_list_contain_item(hand, array_get(cards, 0))) {
@@ -103,10 +110,12 @@ function scr_character_taking_damage() {
 					state_switch("damaged");
 				}
 				
-				if (_current_damage_event[? "source"] == _current_damage_event[? "target"]) {
-					scr_add_event_log(_current_damage_event[? "source"].name + " hits their own " + damaged_card.title);
+				if (from_burning) {
+					scr_add_event_log(_current_damage_event[? "source"].name + "'s " + damaged_card.title + " goes up in flames!");
+				} else if (_current_damage_event[? "source"] == _current_damage_event[? "target"]) {
+					scr_add_event_log(_current_damage_event[? "source"].name + " hits their own " + damaged_card.title + "!");
 				} else {
-					scr_add_event_log(_current_damage_event[? "source"].name + " hits " + _current_damage_event[? "target"].name + "'s " + damaged_card.title);
+					scr_add_event_log(_current_damage_event[? "source"].name + " hits " + _current_damage_event[? "target"].name + "'s " + damaged_card.title + "!");
 				}
 				
 				if (damaged_card.name == "shield" && is_piercing) {
