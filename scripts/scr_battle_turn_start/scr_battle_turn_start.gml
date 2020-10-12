@@ -18,26 +18,24 @@ function scr_battle_turn_start() {
 		exit;
 	}
 
-	if (!instance_exists(turn_start_announcement) || turn_start_announcement.announcement_seen) {
-		if (_effect_delay <= 0 && !ds_queue_empty(start_of_turn_effects_to_execute)) {
-			var effect_to_execute = ds_queue_dequeue(start_of_turn_effects_to_execute);
-			execute_phase_effect(effect_to_execute);
-			_effect_delay = 0.25 * room_speed;
+	if (_effect_delay <= 0 && !ds_queue_empty(start_of_turn_effects_to_execute)) {
+		var effect_to_execute = ds_queue_dequeue(start_of_turn_effects_to_execute);
+		execute_phase_effect(effect_to_execute);
+		_effect_delay = 0.25 * room_speed;
 	
-			exit;
-		}
-
-		if (
-			_effect_delay <= 0 &&
-			ds_queue_empty(start_of_turn_effects_to_execute) &&
-			turn_of_character.state_name == "waiting"
-		) {
-			ds_queue_destroy(start_of_turn_effects_to_execute);
-			state_switch("turnDrawPhase");
-	
-			exit;
-		}
-
-		_effect_delay -= 1;
+		exit;
 	}
+
+	if (
+		_effect_delay <= 0 &&
+		ds_queue_empty(start_of_turn_effects_to_execute) &&
+		turn_of_character.state_name == "waiting"
+	) {
+		ds_queue_destroy(start_of_turn_effects_to_execute);
+		state_switch("turnDrawPhase");
+	
+		exit;
+	}
+
+	_effect_delay -= 1;
 }

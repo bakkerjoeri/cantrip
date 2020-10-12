@@ -1,5 +1,6 @@
 animation_init();
 should_leave = true;
+is_leaving = false;
 announcement_started = false;
 announcement_seen = false;
 text = "";
