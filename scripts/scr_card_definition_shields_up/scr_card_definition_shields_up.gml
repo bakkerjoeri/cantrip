@@ -26,9 +26,10 @@ function do_shields_up_effect(target, source) {
 	}
 	
 	if (shields_gained == 1) {
-		scr_add_event_log(source.name + " takes a defensive stance. They gain 1 shield.");
+		scr_add_event_log(source.name + " takes a defensive stance, and gains 1 shield.");
 	} else {
-		scr_add_event_log(source.name + " takes a defensive stance. They gain " + string(shields_gained) + " shields.");
+		scr_add_event_log(source.name + " takes a defensive stance, and gains " + string(shields_gained) + " shields.");
+	}
 }
 
 function check_priority_for_shields_up(target, source) {
