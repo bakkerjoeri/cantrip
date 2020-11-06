@@ -1,9 +1,18 @@
 draw_set_halign(fa_center);
-draw_set_colour(global.palette_5);
-draw_text(room_width / 2, 84, "You died!");
 
-draw_set_colour(global.palette_1);
-draw_text(room_width / 2, 100, "You've been defeated by the " + last_enemy[? "name"]);
+if (last_enemy) {
+	draw_set_colour(global.palette_5);
+	draw_text(room_width / 2, 84, "You died!");
+
+	draw_set_colour(global.palette_1);
+	draw_text(room_width / 2, 100, "You've been defeated by the " + last_enemy[? "name"]);
+} else {
+	draw_set_colour(global.palette_5);
+	draw_text(room_width / 2, 84, "You gave up!");
+
+	draw_set_colour(global.palette_1);
+	draw_text(room_width / 2, 100, "You decided to leave safely");
+}
 
 if (obj_game_manager.battles_won == 1) {
 	draw_text(room_width / 2, 108, "after " + string(obj_game_manager.battles_won) + " battle.");

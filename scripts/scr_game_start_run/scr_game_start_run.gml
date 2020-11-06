@@ -12,7 +12,7 @@ function scr_game_start_run() {
 			state_switch("unpaused");
 		}
 	
-		state_switch("gotoBattle");
+		state_switch("gotoDraft");
 	}
 
 
