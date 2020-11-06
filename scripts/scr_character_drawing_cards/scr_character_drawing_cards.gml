@@ -51,14 +51,7 @@ function scr_character_drawing_cards() {
 			scr_draw_cards(scr_get_opponent_of_character(self.id), 1);
 		}
 	
-		// If there's other cards left to draw, set a short timer
-		if (!amount_of_cards_to_draw == 0) {
-			_card_draw_delay = 0.30 * room_speed;
-			exit;
-		}
-	
-		// If that was the last card left to draw, set a longer timer
-		_card_draw_delay = 0.5 * room_speed;
+		_card_draw_delay = 0.25 * room_speed;
 		exit;
 	}
 
