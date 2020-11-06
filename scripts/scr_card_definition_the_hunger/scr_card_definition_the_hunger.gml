@@ -24,13 +24,13 @@ function the_hunger_on_end_of_turn(target, source, card) {
 	var r = irandom(3);
 	
 	if (r == 0 && card.is_face_up) {
-		scr_add_event_log("The void begs for sustenance. The hunger's damage increases by 1.");
+		scr_add_event_log("The void begs for sustenance. The hunger's damage increases by 1.", 2);
 	} else if (r == 1 && card.is_face_up) {
-		scr_add_event_log("Voices moan from beyond. The hunger's damage increases by 1.");
+		scr_add_event_log("Voices moan from beyond. The hunger's damage increases by 1.", 2);
 	} else if (r == 2 && card.is_face_up) {
-		scr_add_event_log("Something is approaching... The hunger's damage increases by 1.");
+		scr_add_event_log("Something is approaching... The hunger's damage increases by 1.", 2);
 	} else if (r == 3 && card.is_face_up) {
-		scr_add_event_log("Mouths... So many mouths to feed. The hunger's damage increases by 1.");
+		scr_add_event_log("Mouths... So many mouths to feed. The hunger's damage increases by 1.", 2);
 	}
 }
 

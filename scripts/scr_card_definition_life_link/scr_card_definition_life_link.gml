@@ -28,11 +28,11 @@ function remove_life_link_effect(target, source, turnsLeft) {
 	}
 	
 	if (turnsLeft == 0) {
-		scr_add_event_log(source.name + "'s life link with " + target.name + " dissipates.");
+		scr_add_event_log(source.name + "'s life link with " + target.name + " dissipates.", 2);
 	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turn left.");
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turn left.", 2);
 	} else {
-		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turns left.");
+		scr_add_event_log(source.name + "'s life link with " + target.name + " has " + string(turnsLeft) + " turns left.", 2);
 	}
 }
 
