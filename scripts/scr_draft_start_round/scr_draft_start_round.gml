@@ -23,7 +23,7 @@ function scr_draft_start_round() {
 		exit;
 	}
 	
-	var all_cards_ready = false;
+	var all_cards_ready = true;
 	
 	for (var c = 0; c <= ds_list_size(draft_list) - 1; c += 1) {
 		var card = ds_list_find_value(draft_list, c);
@@ -31,8 +31,6 @@ function scr_draft_start_round() {
 		if (!card.is_face_up) {
 			all_cards_ready = false;
 			break;
-		} else {
-			all_cards_ready = true;
 		}
 	}
 	

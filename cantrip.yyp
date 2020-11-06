@@ -45,6 +45,7 @@
     {"id":{"name":"scr_card_definition_forge","path":"scripts/scr_card_definition_forge/scr_card_definition_forge.yy",},"order":23,},
     {"id":{"name":"scr_card_in_draw_pile","path":"scripts/scr_card_in_draw_pile/scr_card_in_draw_pile.yy",},"order":1,},
     {"id":{"name":"scr_card_being_drawn","path":"scripts/scr_card_being_drawn/scr_card_being_drawn.yy",},"order":2,},
+    {"id":{"name":"scr_move_all_items_between_lists","path":"scripts/scr_move_all_items_between_lists/scr_move_all_items_between_lists.yy",},"order":15,},
     {"id":{"name":"scr_card_in_hand","path":"scripts/scr_card_in_hand/scr_card_in_hand.yy",},"order":3,},
     {"id":{"name":"scr_card_start_play","path":"scripts/scr_card_start_play/scr_card_start_play.yy",},"order":4,},
     {"id":{"name":"scr_card_being_played","path":"scripts/scr_card_being_played/scr_card_being_played.yy",},"order":5,},

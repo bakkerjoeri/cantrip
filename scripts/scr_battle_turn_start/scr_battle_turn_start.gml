@@ -23,6 +23,7 @@ function scr_battle_turn_start() {
 	if (_effect_delay <= 0 && !ds_queue_empty(start_of_turn_effects_to_execute)) {
 		var effect_to_execute = ds_queue_dequeue(start_of_turn_effects_to_execute);
 		execute_phase_effect(effect_to_execute);
+		
 		_effect_delay = 0.25 * room_speed;
 	
 		exit;

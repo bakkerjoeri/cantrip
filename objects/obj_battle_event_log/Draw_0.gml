@@ -16,7 +16,11 @@ for (var e = ds_list_size(events) - 1; e >= 0; e -= 1) {
 		break;
 	}
 	
-	var current_alpha = 1 - (floor(event_index / 3) * 0.1);
+	var current_alpha = 1;
+	
+	if (event_index > 3) {
+		current_alpha = 1 - (((event_index - 3) / 3) * 0.125);
+	}
 	
 	draw_set_halign(fa_left);
 	draw_set_alpha(current_alpha);

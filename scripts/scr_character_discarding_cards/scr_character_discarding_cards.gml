@@ -16,15 +16,8 @@ function scr_character_discarding_cards() {
 		with (card_to_discard) {
 			state_switch("beingDiscarded");
 		}
-	
-		// If there's other cards left to be discarded, set a short timer
-		if (!ds_queue_empty(cards_to_discard)) {
-			_card_discard_delay = 0.1 * room_speed;
-			exit;
-		}
-	
-		// If that was the last card left to discard, set a longer timer
-		_card_discard_delay = 0.5 * room_speed;
+		
+		_card_discard_delay = 0.1 * room_speed;
 		exit;
 	}
 
