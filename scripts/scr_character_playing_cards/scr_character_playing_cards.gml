@@ -17,7 +17,7 @@ function scr_character_playing_cards() {
 			state_switch("startPlay");
 		}
 		
-		scr_add_event_log(name + " plays " + card_being_played.title, 1);
+		scr_add_event_log(name + " plays " + card_being_played.title + ".", 1);
 		
 		if (scr_does_list_contain_item(active_effects, "catalyst")) {
 			amount_of_cards_to_draw += 1;

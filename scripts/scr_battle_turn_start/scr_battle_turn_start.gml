@@ -14,6 +14,8 @@ function scr_battle_turn_start() {
 			turn_start_announcement.text_color = global.palette_5;
 			turn_start_announcement.text = "Foe's turn";
 		}
+		
+		scr_add_event_log(" - " + turn_of_character.name + "'s turn -");
 	
 		exit;
 	}

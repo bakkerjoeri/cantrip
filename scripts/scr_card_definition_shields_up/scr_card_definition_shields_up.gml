@@ -9,6 +9,8 @@ function scr_card_definition_shields_up(card) {
 }
 
 function do_shields_up_effect(target, source) {
+	var shields_gained = 0;
+
 	repeat(min(2, source.max_hand_size - ds_list_size(source.hand))) {
 		var shield_card = scr_create_card("shield");
 		shield_card.x = (room_width / 2) - 32;
@@ -18,10 +20,16 @@ function do_shields_up_effect(target, source) {
 			ds_list_add(source.hand, shield_card);
 			owner = source;
 			state_switch("beingDrawn");
-		}	
+		}
+		
+		shields_gained += 1;
 	}
 	
-	scr_add_event_log(source.name + " takes a defensive stance.");
+	if (shields_gained == 1) {
+		scr_add_event_log(source.name + " takes a defensive stance, and gains 1 shield.");
+	} else {
+		scr_add_event_log(source.name + " takes a defensive stance, and gains " + string(shields_gained) + " shields.");
+	}
 }
 
 function check_priority_for_shields_up(target, source) {

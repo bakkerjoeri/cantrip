@@ -31,11 +31,12 @@ if (previous_deck_size != current_deck_size) {
 				card_cost = card_instance.cost;
 			}
 			
-			var character_weight = ord(string_char_at(card_instance.title, 1)) - ord("a") + 1;
-			var sort_weight = (card_cost * 100) + character_weight;
+			var first_character_weight = ord(string_char_at(card_instance.title, 1)) - ord("a") + 1;
+			var second_character_weight = ord(string_char_at(card_instance.title, 2)) - ord("a") + 1;
+			var sort_weight = (card_cost * 100000) + (first_character_weight * 100) + (second_character_weight);
 			
 			ds_grid_resize(deck_overview_grid, ds_grid_width(deck_overview_grid), ds_grid_height(deck_overview_grid) + 1);
-
+			
 			ds_grid_set(deck_overview_grid, 0, ds_grid_height(deck_overview_grid) - 1, 1);
 			ds_grid_set(deck_overview_grid, 1, ds_grid_height(deck_overview_grid) - 1, card_cost);
 			ds_grid_set(deck_overview_grid, 2, ds_grid_height(deck_overview_grid) - 1, card_name);
