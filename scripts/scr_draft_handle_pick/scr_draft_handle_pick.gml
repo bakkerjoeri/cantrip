@@ -26,6 +26,4 @@ function scr_draft_handle_pick() {
 	}
 
 	_handle_delay -= 1;
-
-
 }

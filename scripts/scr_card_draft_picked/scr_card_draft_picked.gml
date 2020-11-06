@@ -3,7 +3,7 @@ function scr_card_draft_picked() {
 		animation_add_next(
 			obj_draft_manager.deck_x,
 			obj_draft_manager.deck_y,
-			0.75 * room_speed,
+			0.5 * room_speed,
 			ease_in_out_quint,
 		);
 	
