@@ -19,6 +19,4 @@ function scr_draft_await_pick() {
 		card_with_focus = noone;
 		state_switch("handlePick");
 	}
-
-
 }

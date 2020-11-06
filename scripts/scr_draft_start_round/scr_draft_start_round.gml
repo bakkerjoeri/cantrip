@@ -19,15 +19,24 @@ function scr_draft_start_round() {
 	
 			ds_list_add(draft_list, card);
 		}
-	
-		_round_start_delay = 1.5 * room_speed;
+		
+		exit;
 	}
-
-	if (_round_start_delay <= 0) {
+	
+	var all_cards_ready = false;
+	
+	for (var c = 0; c <= ds_list_size(draft_list) - 1; c += 1) {
+		var card = ds_list_find_value(draft_list, c);
+		
+		if (!card.is_face_up) {
+			all_cards_ready = false;
+			break;
+		} else {
+			all_cards_ready = true;
+		}
+	}
+	
+	if (all_cards_ready) {
 		state_switch("awaitPick");
 	}
-
-	_round_start_delay -= 1;
-
-
 }

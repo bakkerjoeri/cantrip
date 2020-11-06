@@ -1,6 +1,6 @@
 function scr_draft_handle_pick() {
 	if (state_new) {
-		_handle_delay = 2 * room_speed;
+		_handle_delay = 1 * room_speed;
 	
 		for (var c = 0; c <= ds_list_size(draft_list) - 1; c += 1) {
 			var card = ds_list_find_value(draft_list, c);
