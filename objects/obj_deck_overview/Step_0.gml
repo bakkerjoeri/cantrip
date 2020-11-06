@@ -11,7 +11,7 @@ if (previous_deck_size != current_deck_size) {
 		}
 		
 		ds_grid_destroy(deck_overview_grid);
-		deck_overview_grid = ds_grid_create(5, 0);
+		deck_overview_grid = ds_grid_create(6, 0);
 	}
 	
 	// Create a new grid
@@ -25,18 +25,24 @@ if (previous_deck_size != current_deck_size) {
 			var card_instance = scr_create_card(card_name);
 			card_instance.visible = false;
 			
-			ds_grid_resize(deck_overview_grid, ds_grid_width(deck_overview_grid), ds_grid_height(deck_overview_grid) + 1);
-			ds_grid_set(deck_overview_grid, 0, ds_grid_height(deck_overview_grid) - 1, 1);
+			var card_cost = -1;
 			
 			if (variable_instance_exists(card_instance, "cost")) {
-				ds_grid_set(deck_overview_grid, 1, ds_grid_height(deck_overview_grid) - 1, card_instance.cost);
-			} else {
-				ds_grid_set(deck_overview_grid, 1, ds_grid_height(deck_overview_grid) - 1, -1);
+				card_cost = card_instance.cost;
 			}
 			
+			var first_character_weight = ord(string_char_at(card_instance.title, 1)) - ord("a") + 1;
+			var second_character_weight = ord(string_char_at(card_instance.title, 2)) - ord("a") + 1;
+			var sort_weight = (card_cost * 100000) + (first_character_weight * 100) + (second_character_weight);
+			
+			ds_grid_resize(deck_overview_grid, ds_grid_width(deck_overview_grid), ds_grid_height(deck_overview_grid) + 1);
+			
+			ds_grid_set(deck_overview_grid, 0, ds_grid_height(deck_overview_grid) - 1, 1);
+			ds_grid_set(deck_overview_grid, 1, ds_grid_height(deck_overview_grid) - 1, card_cost);
 			ds_grid_set(deck_overview_grid, 2, ds_grid_height(deck_overview_grid) - 1, card_name);
 			ds_grid_set(deck_overview_grid, 3, ds_grid_height(deck_overview_grid) - 1, card_instance.title);
 			ds_grid_set(deck_overview_grid, 4, ds_grid_height(deck_overview_grid) - 1, card_instance);
+			ds_grid_set(deck_overview_grid, 5, ds_grid_height(deck_overview_grid) - 1, sort_weight);
 		} else {
 			for (var r = 0; r <= ds_grid_height(deck_overview_grid) - 1; r += 1) {
 				var card_in_row = ds_grid_get(deck_overview_grid, 2, r);
@@ -49,8 +55,7 @@ if (previous_deck_size != current_deck_size) {
 		}
 	}
 	
-	ds_grid_sort(deck_overview_grid, 3, true);
-	ds_grid_sort(deck_overview_grid, 1, true);
+	ds_grid_sort(deck_overview_grid, 5, true);
 }
 
 ds_list_destroy(previous_deck_list);

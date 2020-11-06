@@ -40,7 +40,7 @@ function end_lunar_surge(target, source) {
 	
 	scr_make_list_empty(source.lunar_surged_cards);
 	
-	scr_add_event_log("The brilliance surrounding " + source.name + " fades. The lunar surge wears off.");
+	scr_add_event_log("The brilliance surrounding " + source.name + " fades. The lunar surge wears off.", 2);
 }
 
 function check_priority_for_lunar_surge(target, source, playable_cards, unplayable_cards, card) {

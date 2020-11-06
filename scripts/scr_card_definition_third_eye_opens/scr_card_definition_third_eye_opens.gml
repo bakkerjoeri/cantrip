@@ -27,10 +27,10 @@ function do_third_eye_opens_turn_effect(target, source, turnsLeft) {
 	}
 	
 	if (turnsLeft == 0) {
-		scr_add_event_log(source.name + "'s third eye shuts once more.");
+		scr_add_event_log(source.name + "'s third eye shuts once more.", 2);
 	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turn left.");
+		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turn left.", 2);
 	} else {
-		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turns left.");
+		scr_add_event_log(source.name + "'s third eye opens has " + string(turnsLeft) + " turns left.", 2);
 	}
 }

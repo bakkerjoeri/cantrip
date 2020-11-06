@@ -24,11 +24,11 @@ function venomous_bite_start_of_turn_effect(target, source, turnsLeft) {
 	scr_take_damage(source, 1, source);
 	
 	if (turnsLeft == 0) {
-		scr_add_event_log("The effect of the venomous bite wears off.");
+		scr_add_event_log("The effect of the venomous bite wears off.", 2);
 	} else if (turnsLeft == 1) {
-		scr_add_event_log("Venom courses through " + source.name + "! It has " + string(turnsLeft) + " turn left.");
+		scr_add_event_log("Venom courses through " + source.name + "! It has " + string(turnsLeft) + " turn left.", 2);
 	} else {
-		scr_add_event_log("Venom courses through " + source.name + "! It has " + string(turnsLeft) + " turns left.");
+		scr_add_event_log("Venom courses through " + source.name + "! It has " + string(turnsLeft) + " turns left.", 2);
 	}
 }
 

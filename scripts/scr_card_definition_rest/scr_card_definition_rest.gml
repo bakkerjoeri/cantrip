@@ -16,7 +16,12 @@ function do_rest_effect(target, source) {
 		state_switch("drawingCards");
 	}
 
-	if (obj_battle_manager.turn_of_character == source) {
+	if (
+		obj_battle_manager.turn_of_character == source
+		&& obj_battle_manager.state_name != "lost"
+		&& obj_battle_manager.state_name != "won"
+		&& obj_battle_manager.state_name != "end"
+	) {
 		with (obj_battle_manager) {
 			state_switch("turnEnd");
 		}

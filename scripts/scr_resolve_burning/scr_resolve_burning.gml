@@ -12,7 +12,7 @@ function resolve_burning(target, source, card) {
 		card_to_left.is_burning = true;
 		
 		if (card_to_left.is_face_up) {
-			scr_add_event_log("Ignited by " + card.title + ", " + card_to_left.title + " starts burning.");
+			scr_add_event_log("Ignited by " + card.title + ", " + card_to_left.title + " starts burning.", 2);
 		}
 	}
 	
@@ -20,7 +20,7 @@ function resolve_burning(target, source, card) {
 		card_to_right.is_burning = true;
 		
 		if (card_to_right.is_face_up) {
-			scr_add_event_log("Ignited by " + card.title + ", " + card_to_right.title + " starts burning.");
+			scr_add_event_log("Ignited by " + card.title + ", " + card_to_right.title + " starts burning.", 2);
 		}
 	}
 }

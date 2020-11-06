@@ -32,7 +32,7 @@ function do_mindswap_effect(target, source) {
 function end_mind_swap(target, source) {
 	swap_hands(target, source);
 	
-	scr_add_event_log(target.name + " and " + source.name + " return to their own minds. They think.");
+	scr_add_event_log(target.name + " and " + source.name + " return to their own minds. They think.", 2);
 }
 
 function swap_hands(target, source) {
