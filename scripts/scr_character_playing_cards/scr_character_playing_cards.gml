@@ -21,7 +21,10 @@ function scr_character_playing_cards() {
 		
 		scr_add_event_log(name + " plays " + card_being_played.title + ".", 1);
 		
-		if (scr_does_list_contain_item(active_effects, "catalyst")) {
+		if (
+			scr_does_list_contain_item(active_effects, "catalyst")
+			|| obj_game_manager.perks.forbidden_alchemy
+		) {
 			amount_of_cards_to_draw += 1;
 		}
 	
