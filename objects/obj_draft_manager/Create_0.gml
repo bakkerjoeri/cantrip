@@ -17,3 +17,7 @@ draft_list = ds_list_create();
 draft_list_y = (room_height / 2) - (96 / 2);
 deck_x = (room_width / 2) - (64 / 2);
 deck_y = room_height - 40;
+
+if (debug_mode) {
+	instance_create_layer(432, 164, "Instances", obj_button_end_draft);
+}

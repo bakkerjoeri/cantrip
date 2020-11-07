@@ -24,17 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_button_go_to_next_battle","path":"objects/obj_button_go_to_next_battle/obj_button_go_to_next_battle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_button_go_to_next_battle","path":"objects/obj_button_go_to_next_battle/obj_button_go_to_next_battle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_button_end_draft","path":"objects/obj_button_end_draft/obj_button_end_draft.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_button_end_draft","path":"objects/obj_button_end_draft/obj_button_end_draft.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Travel",
-    "path": "folders/Objects/Travel.yy",
+    "name": "Draft",
+    "path": "folders/Objects/Draft.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button_go_to_next_battle",
+  "name": "obj_button_end_draft",
   "tags": [],
   "resourceType": "GMObject",
 }

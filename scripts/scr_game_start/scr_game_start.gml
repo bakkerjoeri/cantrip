@@ -7,6 +7,4 @@ function scr_game_start() {
 	
 		scr_load_game();
 	}
-
-
 }

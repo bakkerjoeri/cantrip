@@ -13,8 +13,15 @@ function scr_battle_won() {
 				state_switch("victory");
 				exit;
 			}
-		
-			state_switch("gotoDraft");
+			
+			if (obj_game_manager.game_mode == "loot") {
+				state_switch("gotoDraft");
+			}
+			
+			if (obj_game_manager.game_mode == "draft") {
+				state_switch("gotoTravel");
+			}
+
 			exit;
 		}
 	}

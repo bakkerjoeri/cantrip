@@ -6,6 +6,4 @@ function scr_save_game() {
 		data_to_save[? "max_run_streak"] = max_run_streak;
 		scr_save_map_to_file(data_to_save, "cantrip.sav");
 	}
-
-
 }

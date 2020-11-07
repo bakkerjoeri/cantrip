@@ -1,6 +1,7 @@
 function scr_draft_end() {
 	if (state_new) {
-		instance_create_layer((room_width / 2) - 32, 152, "Instances", obj_button_go_to_next_battle);
-		instance_destroy(obj_button_skip_round, true);
+		with (obj_game_manager) {
+			state_switch("gotoTravel");
+		}
 	}
 }
