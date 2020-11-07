@@ -6,5 +6,12 @@ function scr_game_start() {
 		}
 	
 		scr_load_game();
+
+		perks = {
+			forbidden_alchemy: false,
+			supermoon: false,
+			clairvoyant: false,
+			vampires_curse: false,
+		};
 	}
 }

@@ -1,6 +1,8 @@
 state_machine_init();
 state_create("start", scr_game_start);
 state_create("startRun", scr_game_start_run);
+state_create("gotoSetupCustomGame", scr_game_goto_setup_custom_game);
+state_create("setupCustomGame", scr_game_setup_custom_game);
 state_create("gotoBattle", scr_game_goto_battle);
 state_create("battle", scr_game_battle);
 state_create("gotoDraft", scr_game_goto_draft);
