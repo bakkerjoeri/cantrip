@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Draft",
-    "path": "folders/Objects/Draft.yy",
+    "name": "Travel",
+    "path": "folders/Objects/Travel.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_button_go_to_next_battle",

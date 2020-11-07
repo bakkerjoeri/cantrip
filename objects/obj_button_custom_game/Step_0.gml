@@ -1,0 +1,1 @@
+is_active = obj_game_manager.is_custom_game_unlocked;

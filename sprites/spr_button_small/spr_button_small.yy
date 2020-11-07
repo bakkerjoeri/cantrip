@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_button_small","path":"sprites/spr_button_small/spr_button_small.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_button_small",
     "tags": [],
     "resourceType": "GMSequence",
   },

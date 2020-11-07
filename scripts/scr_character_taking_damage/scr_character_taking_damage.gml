@@ -95,6 +95,7 @@ function scr_character_taking_damage() {
 			var is_damaged_deflected = deflected_by_shields && damaged_card.name == "shield";
 			
 			if (is_damaged_deflected) {
+				// Damage prevented
 				do_deflect_effect();
 				
 				with (damaged_card) {
@@ -103,6 +104,7 @@ function scr_character_taking_damage() {
 				
 				scr_add_event_log(_current_damage_event[? "target"].name + " deflects the hit!");
 			} else {
+				// Damage is gonna happen!
 				do_damage_effect();
 				scr_move_item_between_lists(damaged_card, hand, graveyard);
 	
@@ -128,6 +130,17 @@ function scr_character_taking_damage() {
 						_current_damage_event[? "target"],
 						damaged_card
 					);
+				}
+				
+				// Resolve vampirism
+				if (
+					obj_game_manager.perks.vampires_curse
+					&& _current_damage_event[? "source"] == obj_battle_manager.player
+					&& _current_damage_event[? "target"] == obj_battle_manager.opponent
+				) {
+					with (_current_damage_event[? "source"]) {
+						amount_of_cards_to_draw += 1;
+					}
 				}
 			}
 			
