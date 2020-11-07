@@ -14,7 +14,11 @@ function scr_get_cards_of_tier(tier) {
 		}
 
 		ds_list_add(cards, "radiant_burst");
-		ds_list_add(cards, "rest");
+		
+		if (!obj_game_manager.perks.supermoon) {
+			ds_list_add(cards, "rest");
+		}
+
 		ds_list_add(cards, "revenge_from_beyond");
 		ds_list_add(cards, "riposte");
 		ds_list_add(cards, "shield");
