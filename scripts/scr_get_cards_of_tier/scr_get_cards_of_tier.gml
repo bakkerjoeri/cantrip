@@ -8,14 +8,22 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "combust");
 		ds_list_add(cards, "corrupted_aether");
 		ds_list_add(cards, "desecrate");
-		ds_list_add(cards, "meditate");
+		
+		if (!obj_game_manager.perks.supermoon) {
+			ds_list_add(cards, "meditate");
+		}
+
 		ds_list_add(cards, "radiant_burst");
 		ds_list_add(cards, "rest");
 		ds_list_add(cards, "revenge_from_beyond");
 		ds_list_add(cards, "riposte");
 		ds_list_add(cards, "shield");
 		ds_list_add(cards, "stamina_potion");
-		ds_list_add(cards, "third_eye_opens");
+		
+		if (!obj_game_manager.perks.clairvoyant) {
+			ds_list_add(cards, "third_eye_opens");
+		}
+
 		ds_list_add(cards, "transmute");
 	}
 
@@ -39,7 +47,11 @@ function scr_get_cards_of_tier(tier) {
 
 	if (tier == 2) {
 		ds_list_add(cards, "call_of_the_void");
-		ds_list_add(cards, "catalyst");
+		
+		if (!obj_game_manager.perks.forbidden_alchemy) {
+			ds_list_add(cards, "catalyst");
+		}
+
 		ds_list_add(cards, "dark_pact");
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "full_moon");

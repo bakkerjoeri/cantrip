@@ -1,8 +1,5 @@
 /// scr_get_unique_cards_of_tier(amount_of_cards, tier);
-function scr_get_unique_cards_of_tier() {
-	var amount_of_cards = argument[0];
-	var tier = argument[1];
-
+function scr_get_unique_cards_of_tier(amount_of_cards, tier) {
 	var cards_of_tier = scr_get_cards_of_tier(tier);
 	var cards_of_tier_left = ds_list_create();
 	var selected_cards = ds_list_create();
