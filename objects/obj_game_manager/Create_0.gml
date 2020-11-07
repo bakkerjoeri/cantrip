@@ -34,5 +34,6 @@ battles_won = 0;
 runs_won = 0;
 current_run_streak = 0;
 max_run_streak = 0;
+is_custom_game_unlocked = false;
 
 shake = 0;

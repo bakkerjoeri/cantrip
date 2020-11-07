@@ -3,6 +3,7 @@ function scr_load_game() {
 		runs_won = 0;
 		current_run_streak = 0;
 		max_run_streak = 0;
+		is_custom_game_unlocked = false;
 			
 		if (file_exists("cantrip.sav")) {
 			saved_data = scr_load_map_from_file("cantrip.sav");
@@ -17,6 +18,10 @@ function scr_load_game() {
 			
 			if (ds_map_exists(saved_data, "max_run_streak")) {
 				max_run_streak = saved_data[? "max_run_streak"];
+			}
+			
+			if (ds_map_exists(saved_data, "is_custom_game_unlocked")) {
+				is_custom_game_unlocked = saved_data[? "is_custom_game_unlocked"];
 			}
 		}
 	}
