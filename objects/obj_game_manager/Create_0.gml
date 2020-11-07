@@ -21,6 +21,13 @@ current_floor_number = 0;
 
 game_mode = "loot";
 
+perks = {
+	forbidden_alchemy: false,
+	supermoon: false,
+	clairvoyant: false,
+	vampires_curse: false,
+};
+
 battles_won = 0;
 runs_won = 0;
 current_run_streak = 0;
