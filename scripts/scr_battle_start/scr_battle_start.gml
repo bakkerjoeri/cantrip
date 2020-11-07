@@ -10,6 +10,11 @@ function scr_battle_start() {
 		opponent.max_hand_size = enemy[? "max_hand_size"];
 		opponent.max_ability_points = enemy[? "max_ability_points"];
 		opponent.draw_pile = scr_init_cards_from_deck_list(enemy[? "deck_list"], opponent);
+		
+		if (obj_game_manager.perks.clairvoyant) {
+			opponent.base_is_hand_visible = true;
+			opponent.is_hand_visible = true;
+		}
 	
 		ds_list_shuffle(opponent.draw_pile);
 	
