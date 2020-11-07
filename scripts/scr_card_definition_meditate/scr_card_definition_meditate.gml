@@ -20,7 +20,7 @@ function do_meditate_effect(target, source) {
 }
 
 function meditate_start_of_turn_effect(target, source) {
-	source.ability_points = source.max_ability_points;
+	scr_character_gains_ap(source, source.max_ability_points - source.ability_points);
 	
 	scr_add_event_log("In their focus, " + source.name + " finds renewed energy, and now has " + string(source.max_ability_points) + " AP.", 2);
 }
