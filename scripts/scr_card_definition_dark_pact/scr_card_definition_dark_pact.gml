@@ -26,7 +26,7 @@ function do_dark_pact_effect(target, source, card) {
 	} else if (r == 1) {
 		scr_add_event_log(source.name + " mumbles a dark prayer. A red mist appears.");
 	} else {
-		scr_add_event_log(source.name + " makes an unspeakable deal. A feeling of dread fills the space.");
+		scr_add_event_log(source.name + " makes an unspeakable deal. A feeling of dread creeps in.");
 	}
 	
 }

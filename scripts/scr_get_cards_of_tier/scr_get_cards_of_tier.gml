@@ -56,7 +56,10 @@ function scr_get_cards_of_tier(tier) {
 			ds_list_add(cards, "catalyst");
 		}
 
-		ds_list_add(cards, "dark_pact");
+		if (!obj_game_manager.perks.vampires_curse) {
+			ds_list_add(cards, "dark_pact");
+		}
+		
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "full_moon");
 		ds_list_add(cards, "lightning_bolt");
