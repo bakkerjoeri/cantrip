@@ -7,7 +7,7 @@ function scr_load_game() {
 		if (file_exists("cantrip.sav")) {
 			saved_data = scr_load_map_from_file("cantrip.sav");
 			
-			if (ds_map_exists(saved_data, "data_won")) {
+			if (ds_map_exists(saved_data, "runs_won")) {
 				runs_won = saved_data[? "runs_won"];
 			}
 			
