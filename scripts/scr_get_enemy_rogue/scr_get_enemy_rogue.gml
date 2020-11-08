@@ -1,6 +1,7 @@
 function scr_get_enemy_rogue() {
 	var enemy = ds_map_create();
-
+	
+	enemy[? "id"] = "rogue";
 	enemy[? "name"] = "Rogue";
 	enemy[? "deck_list"] = get_deck_list_for_rogue();
 	enemy[? "max_ability_points"] = 3;

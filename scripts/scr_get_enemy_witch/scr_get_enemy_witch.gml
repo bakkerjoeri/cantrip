@@ -1,6 +1,7 @@
 function scr_get_enemy_witch() {
 	var enemy = ds_map_create();
 
+	enemy[? "id"] = "witch";
 	enemy[? "name"] = "Yaga";
 	enemy[? "deck_list"] = get_deck_list_for_witch();
 	enemy[? "max_ability_points"] = 3;

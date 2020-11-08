@@ -1,8 +1,4 @@
-function scr_get_next_floor() {
-	var floors = argument[0];
-	var previous_floor = argument[1];
-	var previous_room = argument[2];
-
+function scr_get_next_floor(floors, previous_floor, previous_room) {
 	if (is_undefined(previous_floor)) {
 		return ds_list_find_value(floors, 0);
 	}

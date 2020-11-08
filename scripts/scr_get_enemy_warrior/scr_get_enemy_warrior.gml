@@ -1,6 +1,7 @@
 function scr_get_enemy_warrior() {
 	var enemy = ds_map_create();
 
+	enemy[? "id"] = "warrior";
 	enemy[? "name"] = "Spear Knight";
 	enemy[? "deck_list"] = scr_get_deck_list_warrior();
 	enemy[? "max_ability_points"] = 3;

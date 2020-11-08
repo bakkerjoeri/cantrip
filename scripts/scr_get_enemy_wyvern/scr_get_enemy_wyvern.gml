@@ -1,6 +1,7 @@
 function scr_get_enemy_wyvern() {
 	var enemy = ds_map_create();
 
+	enemy[? "id"] = "wyvern";
 	enemy[? "name"] = "Wyvern";
 	enemy[? "deck_list"] = scr_get_deck_list_wyvern();
 	enemy[? "max_ability_points"] = 2;
