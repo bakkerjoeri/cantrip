@@ -10,7 +10,7 @@ function scr_card_definition_third_eye_opens(card) {
 function do_third_eye_opens_effect(target, source, card) {
 	target.is_hand_visible = true;
 
-	scr_add_end_of_turn_effect(
+	scr_add_start_of_turn_effect(
 		source,
 		"third_eye_opens",
 		do_third_eye_opens_turn_effect,

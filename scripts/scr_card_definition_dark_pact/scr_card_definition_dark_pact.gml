@@ -39,10 +39,6 @@ function remove_dark_pact_effect(target, source, turnsLeft) {
 	
 	if (turnsLeft == 0) {
 		scr_add_event_log(source.name + "'s dark pact dissipates.", 2);
-	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "'s dark pact has " + string(turnsLeft) + " turn left.", 2);
-	} else {
-		scr_add_event_log(source.name + "'s dark pact has " + string(turnsLeft) + " turns left.", 2);
 	}
 }
 
