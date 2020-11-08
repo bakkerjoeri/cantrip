@@ -122,6 +122,7 @@
     {"id":{"name":"scr_draft_skip_round","path":"scripts/scr_draft_skip_round/scr_draft_skip_round.yy",},"order":6,},
     {"id":{"name":"scr_draft_handle_pick","path":"scripts/scr_draft_handle_pick/scr_draft_handle_pick.yy",},"order":4,},
     {"id":{"name":"scr_draft_end","path":"scripts/scr_draft_end/scr_draft_end.yy",},"order":5,},
+    {"id":{"name":"obj_travel_controller","path":"objects/obj_travel_controller/obj_travel_controller.yy",},"order":1,},
     {"id":{"name":"scr_card_definition_full_moon","path":"scripts/scr_card_definition_full_moon/scr_card_definition_full_moon.yy",},"order":42,},
     {"id":{"name":"scr_get_enemies_of_tier","path":"scripts/scr_get_enemies_of_tier/scr_get_enemies_of_tier.yy",},"order":0,},
     {"id":{"name":"scr_move_item_between_lists","path":"scripts/scr_move_item_between_lists/scr_move_item_between_lists.yy",},"order":9,},
@@ -330,6 +331,7 @@
     {"folderPath":"folders/Objects/Custom game.yy","order":7,"resourceVersion":"1.0","name":"Custom game","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Travel.yy","order":8,"resourceVersion":"1.0","name":"Travel","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Settings.yy","order":10,"resourceVersion":"1.0","name":"Settings","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Travel.yy","order":9,"resourceVersion":"1.0","name":"Travel","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
