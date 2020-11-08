@@ -42,8 +42,10 @@ function scr_character_playing_cards() {
 				|| card_to_check.state_name == "beingPlayed"
 				|| card_to_check.state_name == "isResolved"
 				|| card_to_check.state_name == "damaged"
-				|| card_to_check.state_name == "beingDiscarded"
 				|| card_to_check.state_name == "hasDeflected"
+				|| card_to_check.state_name == "beingDiscarded"
+				|| card_to_check.state_name == "beingDrawn"
+				|| card_to_check.state_name == "beingReshuffled"
 			) {
 				are_all_cards_resolved = false;
 				break;
