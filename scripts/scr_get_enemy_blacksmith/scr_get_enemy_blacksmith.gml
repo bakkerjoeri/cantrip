@@ -1,6 +1,7 @@
 function scr_get_enemy_blacksmith() {
 	var boss = ds_map_create();
-
+	
+	boss[? "id"] = "blacksmith";
 	boss[? "name"] = "Shieldbearer";
 	boss[? "deck_list"] = scr_get_deck_list_blacksmith();
 	boss[? "max_ability_points"] = 3;

@@ -1,6 +1,7 @@
 function scr_get_enemy_adventurer() {
 	var enemy = ds_map_create();
 
+	enemy[? "id"] = "adventurer";
 	enemy[? "name"] = "Adventurer";
 	enemy[? "deck_list"] = scr_get_deck_list_adventurer();
 	enemy[? "max_ability_points"] = 3;

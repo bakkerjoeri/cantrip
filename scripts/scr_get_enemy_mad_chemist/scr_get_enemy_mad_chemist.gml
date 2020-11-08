@@ -1,6 +1,7 @@
 function scr_get_enemy_mad_chemist() {
 	var enemy = ds_map_create();
 
+	enemy[? "id"] = "mad_chemist";
 	enemy[? "name"] = "Mad Chemist";
 	enemy[? "deck_list"] = get_deck_list_for_mad_chemist();
 	enemy[? "max_hand_size"] = 8;

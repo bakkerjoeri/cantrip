@@ -1,7 +1,8 @@
 function scr_get_enemy_void_cardinal() {
 	var boss = ds_map_create();
 
-	boss[? "name"] = "Void Cardinal";
+	boss[? "id"] = "void_cardinal";
+	boss[? "name"] = "Void Priest";
 	boss[? "deck_list"] = scr_get_deck_list_void_cardinal();
 	boss[? "max_ability_points"] = 2;
 	boss[? "max_hand_size"] = 7;

@@ -1,6 +1,7 @@
 function scr_get_enemy_ancient_wizard() {
 	var boss = ds_map_create();
 
+	boss[? "id"] = "ancient_wizard";
 	boss[? "name"] = "Lord of Lightning";
 	boss[? "deck_list"] = scr_get_deck_list_ancient_wizard();
 	boss[? "max_ability_points"] = 4;

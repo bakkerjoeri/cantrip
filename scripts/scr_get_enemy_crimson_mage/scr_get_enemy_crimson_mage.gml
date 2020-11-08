@@ -1,6 +1,7 @@
 function scr_get_enemy_crimson_mage() {
 	var boss = ds_map_create();
 
+	boss[? "id"] = "crimson_mage";
 	boss[? "name"] = "Crimson Mage";
 	boss[? "deck_list"] = scr_get_deck_list_crimson_mage();
 	boss[? "max_ability_points"] = 3;
