@@ -6,7 +6,7 @@ function scr_get_deck_list_starter() {
 	
 	if (obj_game_manager.perks.supermoon) {
 		deck_map[? "attack"] += 1;
-		deck_map[? "transmute"] = 1;
+		deck_map[? "shield"] += 1;
 	} else {
 		deck_map[? "rest"] = 2;
 	}
