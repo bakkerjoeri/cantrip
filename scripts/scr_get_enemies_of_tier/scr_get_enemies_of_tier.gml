@@ -32,7 +32,8 @@ function scr_get_enemies_of_tier(tier, type) {
 	
 	if (tier == 2 && type == "boss") {
 		ds_list_add(enemies, scr_get_enemy_ancient_wizard());
-		ds_list_add(enemies, scr_get_enemy_enigma());
+		ds_list_add(enemies, scr_get_enemy_void_cardinal());
+		ds_list_add(enemies, scr_get_enemy_crimson_mage());
 	}
 
 	return enemies;

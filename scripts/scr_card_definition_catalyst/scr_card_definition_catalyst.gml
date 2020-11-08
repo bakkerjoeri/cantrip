@@ -27,5 +27,9 @@ function remove_catalyst_effect(target, source) {
 }
 
 function check_priority_for_catalyst() {
+	if (scr_does_list_contain_item(source.active_effects, "catalyst")) {
+		return false;
+	}
+	
 	return true;
 }

@@ -44,7 +44,7 @@ function get_the_hunger_text(damage) {
 }
 
 function check_priority_for_the_hunger(target, source, playable_cards, unplayable_cards, card) {
-	if (card.damage >= 4) {
+	if (card.damage >= 3) {
 		return true;
 	}
 	

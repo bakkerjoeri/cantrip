@@ -2,7 +2,7 @@ function scr_card_definition_lunar_surge(card) {
 	card.name = "lunar_surge";
 	card.title = "lunar surge";
 	card.cost = 1;
-	card.text = "Until next turn, your cards cost 1 less."
+	card.text = "Until next turn, your cards cost 1 less.";
 	card.effect = do_lunar_surge_effect;
 	card.rarity = 2;
 	card.has_priority = check_priority_for_lunar_surge;

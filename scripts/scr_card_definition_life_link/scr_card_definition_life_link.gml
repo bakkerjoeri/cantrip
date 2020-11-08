@@ -37,5 +37,9 @@ function remove_life_link_effect(target, source, turnsLeft) {
 }
 
 function check_priority_for_life_link() {
+	if (scr_does_list_contain_item(source.active_effects, "life_link")) {
+		return false;
+	}
+	
 	return true;
 }

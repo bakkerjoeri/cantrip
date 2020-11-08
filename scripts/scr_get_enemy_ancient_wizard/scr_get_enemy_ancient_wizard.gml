@@ -19,7 +19,7 @@ function scr_get_deck_list_ancient_wizard() {
 	deck_map[? "radiant_burst"] = 1;
 	deck_map[? "rest"] = 1;
 	deck_map[? "stamina_potion"] = 2;
-	deck_map[? "meditate"] = 2;
+	deck_map[? "meditate"] = 1;
 
 	return scr_create_deck_list_from_deck(deck_map);
 }
