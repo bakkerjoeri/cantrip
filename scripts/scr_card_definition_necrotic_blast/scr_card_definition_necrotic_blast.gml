@@ -22,7 +22,7 @@ function do_necrotic_blast_effect(target, source) {
 		scr_take_damage(target, card.cost + 1, source);
 	}
 	
-	scr_add_event_log("Somewhere behind " + source.name + " a ghoulish blast bursts forth and hits them in the back.");
+	scr_add_event_log("A ghoulish blast bursts forth and hits " + target.name);
 }
 
 function can_play_necrotic_blast(target, source) {
