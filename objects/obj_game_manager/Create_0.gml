@@ -11,6 +11,8 @@ state_create("gotoTravel", scr_game_goto_travel);
 state_create("travel", scr_game_travel);
 state_create("victory", scr_game_victory);
 state_create("gameOver", scr_game_over);
+state_create("gotoSettings", scr_game_goto_settings);
+state_create("settings", scr_game_settings);
 state_create("quit", scr_game_quit);
 state_init("start");
 
@@ -34,6 +36,9 @@ battles_won = 0;
 runs_won = 0;
 current_run_streak = 0;
 max_run_streak = 0;
+
+prefers_screen_shake = true;
+prefers_screen_flashes = true;
 is_custom_game_unlocked = false;
 
 shake = 0;

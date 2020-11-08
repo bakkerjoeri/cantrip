@@ -24,17 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_button_fullscreen","path":"objects/obj_button_fullscreen/obj_button_fullscreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_button_fullscreen","path":"objects/obj_button_fullscreen/obj_button_fullscreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_button_start_game","path":"objects/obj_button_start_game/obj_button_start_game.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_button_start_game","path":"objects/obj_button_start_game/obj_button_start_game.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game",
-    "path": "folders/Objects/Game.yy",
+    "name": "Start",
+    "path": "folders/Objects/Start.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_button_fullscreen",
+  "name": "obj_button_start_game",
   "tags": [],
   "resourceType": "GMObject",
 }
