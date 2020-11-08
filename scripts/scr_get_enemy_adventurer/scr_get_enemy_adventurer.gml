@@ -5,6 +5,7 @@ function scr_get_enemy_adventurer() {
 	enemy[? "deck_list"] = scr_get_deck_list_adventurer();
 	enemy[? "max_ability_points"] = 3;
 	enemy[? "max_hand_size"] = 7;
+	enemy[? "loot"] = "healing_potion";
 
 	return enemy;
 }

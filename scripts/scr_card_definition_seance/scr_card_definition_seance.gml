@@ -5,7 +5,7 @@ function scr_card_definition_seance(card) {
 	card.text = "Play the top card from your graveyard.";
 	card.effect = do_seance_effect;
 	card.condition = can_play_seance;
-	card.rarity = 3;
+	card.rarity = 2;
 	card.has_priority = check_priority_for_seance;
 }
 

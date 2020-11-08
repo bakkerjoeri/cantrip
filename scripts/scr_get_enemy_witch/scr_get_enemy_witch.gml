@@ -14,7 +14,7 @@ function get_deck_list_for_witch() {
 	var deck_map = ds_map_create();
 	
 	deck_map[? "attack"] = 3;
-	deck_map[? "eldritch_blast"] = 1;
+	deck_map[? "wellspring"] = 1;
 	deck_map[? "corrupted_aether"] = 1;
 	deck_map[? "full_moon"] = 1;
 	deck_map[? "barter_for_power"] = 2;

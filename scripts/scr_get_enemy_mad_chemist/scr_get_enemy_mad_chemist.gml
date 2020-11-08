@@ -17,8 +17,8 @@ function get_deck_list_for_mad_chemist() {
 	deck_map[? "corrupted_aether"] = 2;
 	deck_map[? "volatile_mixture"] = 3;
 	deck_map[? "plague_bomb"] = 1;
-	deck_map[? "siphon"] = 2;
 	deck_map[? "healing_potion"] = 1;
+	deck_map[? "stamina_potion"] = 1;
 
 	return scr_create_deck_list_from_deck(deck_map);
 }

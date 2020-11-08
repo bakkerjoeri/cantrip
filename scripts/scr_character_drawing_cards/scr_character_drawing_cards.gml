@@ -50,6 +50,11 @@ function scr_character_drawing_cards() {
 		) {
 			scr_draw_cards(scr_get_opponent_of_character(self.id), 1);
 		}
+		
+		// Apply wellspring effect
+		if (scr_does_list_contain_item(active_effects, "wellspring")) {
+			scr_character_gains_ap(self.id, 1);
+		}
 	
 		_card_draw_delay = 0.25 * room_speed;
 		exit;

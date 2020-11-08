@@ -15,8 +15,7 @@ function scr_get_deck_list_ancient_wizard() {
 
 	deck_map[? "attack"] = 2;
 	deck_map[? "lightning_bolt"] = 2;
-	deck_map[? "mana_burst"] = 1;
-	deck_map[? "radiant_burst"] = 1;
+	deck_map[? "corrupted_aether"] = 1;
 	deck_map[? "rest"] = 1;
 	deck_map[? "stamina_potion"] = 2;
 	deck_map[? "meditate"] = 1;

@@ -13,12 +13,11 @@ function scr_get_enemy_warlock() {
 function scr_get_deck_list_warlock() {
 	var deck_map = ds_map_create();
 
-	deck_map[? "attack"] = 2;
+	deck_map[? "attack"] = 3;
 	deck_map[? "eldritch_blast"] = 3;
-	deck_map[? "leech"] = 1;
+	deck_map[? "lichen_curse"] = 1;
 	deck_map[? "siphon"] = 2;
-	deck_map[? "barter_for_power"] = 1;
-	deck_map[? "stamina_potion"] = 1;
+	deck_map[? "leech"] = 1;
 
 	return scr_create_deck_list_from_deck(deck_map);
 }

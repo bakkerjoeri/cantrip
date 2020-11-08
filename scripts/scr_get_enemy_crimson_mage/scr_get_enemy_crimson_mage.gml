@@ -16,7 +16,7 @@ function scr_get_deck_list_crimson_mage() {
 	deck_map[? "dark_pact"] = 2;
 	deck_map[? "life_link"] = 1;
 	deck_map[? "rest"] = 1;
-	deck_map[? "healing_potion"] = 1;
+	deck_map[? "healing_rain"] = 1;
 	deck_map[? "siphon"] = 2;
 	deck_map[? "eldritch_blast"] = 2;
 	deck_map[? "attack"] = 2;

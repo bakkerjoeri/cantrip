@@ -1,7 +1,7 @@
 function scr_card_definition_call_of_the_void(card) {
 	card.name = "call_of_the_void";
 	card.title = "call of the void";
-	card.cost = 6;
+	card.cost = 5;
 	card.text = "Destroy your foe's graveyard and draw pile. Each turn this costs 1 less.";
 	card.effect = do_call_of_the_void_effect;
 	card.on_turn_start = call_of_the_void_on_start_of_turn;

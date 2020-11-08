@@ -20,7 +20,14 @@ function scr_battle_turn_start() {
 		exit;
 	}
 
-	if (_effect_delay <= 0 && !ds_queue_empty(start_of_turn_effects_to_execute)) {
+	if (
+		_effect_delay <= 0
+		&& !ds_queue_empty(start_of_turn_effects_to_execute)
+		&& (
+			(turn_of_character == opponent && turn_start_announcement.announcement_seen)
+			|| turn_of_character == player
+		)
+	) {
 		var effect_to_execute = ds_queue_dequeue(start_of_turn_effects_to_execute);
 		execute_phase_effect(effect_to_execute);
 		

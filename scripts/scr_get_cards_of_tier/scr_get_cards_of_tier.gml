@@ -62,11 +62,14 @@ function scr_get_cards_of_tier(tier) {
 		
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "full_moon");
+		ds_list_add(cards, "lichen_curse");
 		ds_list_add(cards, "lightning_bolt");
 		ds_list_add(cards, "lunar_surge");
 		ds_list_add(cards, "mana_burst");
 		ds_list_add(cards, "mindswap");
+		ds_list_add(cards, "seance");
 		ds_list_add(cards, "the_hunger");
+		ds_list_add(cards, "wellspring");
 	}
 	
 	if (tier == 3) {
@@ -76,7 +79,6 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "plague_bomb");
 		ds_list_add(cards, "possess");
 		ds_list_add(cards, "rage");
-		ds_list_add(cards, "seance");
 		ds_list_add(cards, "sneak_attack");
 		ds_list_add(cards, "venomous_bite");
 		ds_list_add(cards, "volley");

@@ -36,6 +36,10 @@ function do_poison_the_well_turn_effect(target, source, turnsLeft) {
 	}
 }
 
-function check_priority_for_poison_the_well() {
+function check_priority_for_poison_the_well(target, source) {
+	if (scr_does_list_contain_item(target.active_effects, "poison_the_well")) {
+		return false;
+	}
+	
 	return true;
 }

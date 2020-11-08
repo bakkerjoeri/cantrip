@@ -142,6 +142,14 @@ function scr_character_taking_damage() {
 						amount_of_cards_to_draw += 1;
 					}
 				}
+				
+				// Resolve lichen curse
+				if (
+					scr_does_list_contain_item(active_effects, "lichen_curse")
+					&& _current_damage_event[? "source"] != _current_damage_event[? "target"]
+				) {
+					scr_character_gains_ap(_current_damage_event[? "source"], 1);
+				}
 			}
 			
 			_amount_left_for_event -= 1;
