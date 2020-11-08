@@ -42,6 +42,10 @@ function can_play_revenge_from_beyond(target, source) {
 }
 
 function check_priority_for_revenge_from_beyond(target, source, playable_cards, unplayable_cards, card) {
+	if (ds_list_size(target.graveyard) == 0) {
+		return false;
+	}
+
 	var card_to_play = ds_list_find_value(target.graveyard, ds_list_size(target.graveyard) - 1);
 	
 	if (card_to_play.name == "revenge_from_beyond" || card_to_play.name == "seance") {
