@@ -30,15 +30,29 @@ function scr_character_playing_cards() {
 	
 		exit;
 	}
-
-	if (
-		card_being_played &&
-		card_being_played.state_name != "startPlay" &&
-		card_being_played.state_name != "beingPlayed" &&
-		card_being_played.state_name != "isResolved" &&
-		card_being_played.state_name != "beingDiscarded"
-	) {
-		card_being_played = noone;
-		exit;
+	
+	if (card_being_played) {
+		var are_all_cards_resolved = true;
+	
+		for (var c = 0; c < instance_number(obj_card_base); c += 1) {
+			var card_to_check = instance_find(obj_card_base, c);
+			
+			if (
+				card_to_check.state_name == "startPlay"
+				|| card_to_check.state_name == "beingPlayed"
+				|| card_to_check.state_name == "isResolved"
+				|| card_to_check.state_name == "damaged"
+				|| card_to_check.state_name == "beingDiscarded"
+				|| card_to_check.state_name == "hasDeflected"
+			) {
+				are_all_cards_resolved = false;
+				break;
+			}
+		}
+		
+		if (are_all_cards_resolved) {
+			card_being_played = noone;
+			exit;
+		}
 	}
 }
