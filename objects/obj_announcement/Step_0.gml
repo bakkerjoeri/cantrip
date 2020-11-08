@@ -36,3 +36,7 @@ if (announcement_started && !announcement_seen && animation_is_finished) {
 }
 
 animation_execute();
+
+if (animation_is_finished && announcement_seen && is_leaving) {
+	instance_destroy(self);
+}
