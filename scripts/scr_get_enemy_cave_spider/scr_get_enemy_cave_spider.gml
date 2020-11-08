@@ -1,7 +1,7 @@
 function scr_get_enemy_cave_spider() {
 	var enemy = ds_map_create();
 
-	enemy[? "name"] = "Cave Spider";
+	enemy[? "name"] = "Ravenous Spider";
 	enemy[? "deck_list"] = get_deck_list_for_cave_spider();
 	enemy[? "max_hand_size"] = 5;
 	enemy[? "max_ability_points"] = 2;
