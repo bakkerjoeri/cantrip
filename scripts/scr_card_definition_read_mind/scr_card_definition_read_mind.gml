@@ -17,7 +17,11 @@ function do_read_mind_effect(target, source) {
 	var cards_to_copy = ds_list_create();
 	var hand_clone = scr_clone_list(target.hand);
 	
-	while (ds_list_size(hand_clone) > 0 && ds_list_size(cards_to_copy) < 2) {
+	while (
+		ds_list_size(hand_clone) > 0
+		&& ds_list_size(cards_to_copy) < 2
+		&& (ds_list_size(source.hand) + ds_list_size(cards_to_copy)) < source.max_hand_size
+	) {
 		var card_to_copy = scr_choose_from_list(hand_clone);
 		scr_move_item_between_lists(card_to_copy, hand_clone, cards_to_copy);
 	}
