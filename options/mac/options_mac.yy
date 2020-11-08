@@ -1,11 +1,11 @@
 {
   "option_mac_display_name": "Cantrip",
   "option_mac_app_id": "com.bakkerjoeri.cantrip",
-  "option_mac_version": "2.0.3",
+  "option_mac_version": "2.1.0",
   "option_mac_output_dir": "~/GameMakerStudio2/Mac",
   "option_mac_team_id": "",
   "option_mac_signing_identity": "Developer ID Application:",
-  "option_mac_copyright": "(c) 2018 CompanyName",
+  "option_mac_copyright": "",
   "option_mac_splash_png": "${options_dir}/mac/splash/splash.png",
   "option_mac_icon_png": "${options_dir}/mac/icons/1024.png",
   "option_mac_menu_dock": false,
