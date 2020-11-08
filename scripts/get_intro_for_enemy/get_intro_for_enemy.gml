@@ -91,7 +91,7 @@ function get_intro_for_enemy(enemy, floors) {
 	
 	if (enemy == "warlock") {
 		return scr_choose_from_array([
-			"You push open the door of the town hall.\n\n\"Oh how fun,\" a figure dressed in a purple robe lilts, lit by what must be a thousand candles lining inner walls, \"a witness to my summoning!\"\n\nBehind them a summoning circle is drawn in mauve chalk. A crimson mass lies in the middle.\n\n\"Or... ah yes, I could use in... other ways.\" The door shuts suddenly behind you.\n\n\"Come forth, now. You shall be part of something grand!\"",
+			"You push open the door of the town hall.\n\n\"Oh how fun,\" a figure dressed in a purple robe lilts, lit by what must be a thousand candles lining inner walls, \"a witness to my summoning!\"\n\nBehind them a summoning circle is drawn in mauve chalk. A crimson mass lies in the middle.\n\n\"Or... ah, yes, I could use you in... other ways.\" The door shuts suddenly behind you.\n\n\"Come forth, now. You shall be part of something grand!\"",
 		]);
 	}
 	
