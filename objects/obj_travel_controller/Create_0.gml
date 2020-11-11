@@ -15,7 +15,7 @@ var current_floor_number = ds_list_find_index(floors, current_floor) + 1;
 var current_room_number = ds_list_find_index(current_floor[? "rooms"], current_room) + 1;
 
 var intro_for_floor = get_intro_for_floor(current_floor_number, floors);
-var intro_for_enemy = get_intro_for_enemy(current_room[? "enemy"][? "id"], floors);
+var intro_for_enemy = get_intro_for_enemy(current_room[? "enemy"][? "id"], floors, current_room_number, obj_game_manager.player_deck_list);
 var is_first_room_of_floor = current_room_number == 1;
 
 if (is_first_room_of_floor) {
