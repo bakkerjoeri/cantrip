@@ -21,7 +21,5 @@ function scr_card_being_played() {
 		
 			script_execute(effect, target, source, self.id);
 		}
-	
-		played_by = noone;
 	}
 }

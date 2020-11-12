@@ -50,6 +50,7 @@ function scr_get_cards_of_tier(tier) {
 	}
 
 	if (tier == 2) {
+		ds_list_add(cards, "blood_rites");
 		ds_list_add(cards, "call_of_the_void");
 		
 		if (!obj_game_manager.perks.forbidden_alchemy) {
@@ -68,6 +69,8 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "mana_burst");
 		ds_list_add(cards, "mindswap");
 		ds_list_add(cards, "seance");
+		ds_list_add(cards, "shadow_twin");
+		ds_list_add(cards, "shared_suffering");
 		ds_list_add(cards, "the_hunger");
 		ds_list_add(cards, "wellspring");
 	}
