@@ -47,12 +47,12 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 			intro += "As you move towards the entrance of the village ruins, something narrowly misses your face. ";
 		}
 		
-		intro += "You look for its source and find a hunter on a nearby hill, a grin on their face.\n\n";
+		intro += "You look for its source and find a hunter on a nearby hill, a grin on her face.\n\n";
 		
 		if (run_has_enemy(floors, "kobold")) {
 			intro += "\"That kobold you bested was my mark, traveler. But no matter. A clever prey such as yourself will make for a much more interesting hunt! Prepare yourself!\"";
 		} else {
-			intro += "This one likes to toy with its mark. You draw your weapon as they pull their bowstring taught once more.";
+			intro += "This one likes to toy with its mark. You draw your weapon as she pulls her bowstring taught once more.";
 		}
 		
 		return intro;
@@ -71,17 +71,17 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 	
 	if (enemy == "rogue") {
 		var intro =  scr_choose_from_array([
-			"You are suddenly aware of a presence behind you. You turn to see a figure in a dark, hooded cloak. How did they get so close without you noticing earlier?\n\n",
+			"You are suddenly aware of a presence behind you. You turn to see a figure in a dark, hooded cloak. How did she get so close without you noticing earlier?\n\n",
 			"In the darkness between two tall houses, a hooded figure drops down from the roof.\n\n",
 			"You have the feeling you're being followed. Shadows flit. Suddenly, out of a dark corner, a cloaked figure emerges.\n\n",
 		]);
 		
 		if (obj_game_manager.runs_won >= 4) {
-			intro += "Their eyes are filled with hate. \"This village... this was where I lived.\"\n\nYou reply: \"I'm so sorry. We share a fate then. I am looking for the one who did this.\"\n\n\"I know you are. It's why I'm here. The contract on your head... I need to start again.\"\n\nYou eye them with pity. \"Won't you help me bring them down instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? I'm sorry, this has to happen.\"\n\n";
+			intro += "Her eyes are filled with hate. \"This village... this was where I lived.\"\n\nYou reply: \"I'm so sorry. We share a fate then. I am looking for the one who did this.\"\n\n\"I know you are. It's why I'm here. The contract on your head... I need to start again.\"\n\nYou eye her with pity. \"Wouldn't you rather help me instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? I'm sorry, this has to happen.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 2) {
-			intro += "Their eyes are full of sorrow. \"I truly am sorry for this, but it's my only way out.\"\n\n";
+			intro += "Her eyes are full of sorrow. \"I truly am sorry for this, but it's my only way out.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 0) {
-			intro += "Their eyes meet yours. They are determined. \"This has to be done.\"\n\n";
+			intro += "Her eyes meet yours. They are determined. \"This has to be done.\"\n\n";
 		}
 		
 		intro += "The rogue draws their dagger.";
@@ -182,7 +182,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 	
 	if (enemy == "wyvern") {
 		return scr_choose_from_array([
-			"Your footsteps echo as you enter a cavernous chamber.\n\nYou hear a low growl above you. Atop a massive gargoyle is perched a winged beast.\n\nThey snarl fire and snap their jaw before they drop into flight, soaring in your direction.",
+			"Your footsteps echo as you enter a cavernous chamber.\n\nYou hear a low growl above you. Atop a massive gargoyle is perched a winged beast.\n\nIt snarls fire and snap its jaw before dropping into flight, soaring in your direction.",
 			"You enter something that looks more like a high cave than a chamber.\n\nGemstones and bits of gold surround an immense mass of fused metals, pieces of armour and jewellery sticking out of its molten shape. An equally immense wyvern lays on top, eyes trained on you.\n\nThe beast suddenly takes flight, soaring low over the floor as it heads straight for you.",
 			"You find a balcony. It looks so inviting.\n\nA breeze soothes your tired body as you walk out. You can see for miles from here. Your peaceful moment is interrupted by the sharp flapping of wings. You turn to see a wyvern hovering, eyeing you, its mouth full of fire.\n\nWith a snarl, it soars your way.",
 		]);
