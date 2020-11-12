@@ -7,7 +7,7 @@ function scr_draft_await_pick() {
 		}
 	}
 
-	var card_under_mouse =  scr_get_top_object_under_mouse(obj_card_base);
+	var card_under_mouse =  scr_get_top_object_under_mouse(obj_card_base, 20, 0, 20, 0);
 
 	if (card_under_mouse) {
 		card_with_focus = card_under_mouse;
