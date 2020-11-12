@@ -2,7 +2,7 @@ function scr_card_definition_lichen_curse(card) {
 	card.name = "lichen_curse";
 	card.title = "lichen curse";
 	card.cost = 1;
-	card.text = "For 3 turns, when you do damage, gain that much AP.";
+	card.text = "Until the end of next turn, when you do damage, gain that much AP.";
 	card.effect = do_lichen_curse_effect;
 	card.rarity = 2;
 	card.has_priority = check_priority_for_lichen_curse;
@@ -15,7 +15,7 @@ function do_lichen_curse_effect(target, source) {
 		target,
 		"lichen_curse",
 		do_lichen_curse_turn_effect,
-		3,
+		2,
 		true,
 	);
 }
@@ -23,14 +23,7 @@ function do_lichen_curse_effect(target, source) {
 function do_lichen_curse_turn_effect(target, source, turnsLeft) {
 	if (turnsLeft == 0) {
 		scr_remove_item_from_list(source.active_effects, "lichen_curse");
-	}
-	
-	if (turnsLeft == 0) {
-		scr_add_event_log("The lichen curse affecting " + target.name + " has been lifted.", 2);
-	} else if (turnsLeft == 1) {
-		scr_add_event_log("The lichen curse has " + string(turnsLeft) + " turn left.", 2);
-	} else {
-		scr_add_event_log("The lichen curse has " + string(turnsLeft) + " turns left.", 2);
+		scr_add_event_log("The lichen curse has been lifted.", 2);
 	}
 }
 
