@@ -1,7 +1,7 @@
 function scr_character_opponent_deciding() {
 	if (obj_battle_manager.state_name == "turnPlayPhase") {
 		if (state_new) {
-			var playable_cards = get_playable_cards(self);
+			var playable_cards = get_playable_cards(self.id);
 			
 			if (ds_list_size(playable_cards) <= 0) {
 				show_debug_message("No cards to play, ending turn.");
@@ -21,8 +21,8 @@ function scr_character_opponent_deciding() {
 		if (_action_delay <= 0) {
 			show_debug_message("Looking for playable cards...");
 			// Find all playable cards.
-			var playable_cards = get_playable_cards(self);
-			var unplayable_cards = get_unplayable_cards(self);
+			var playable_cards = get_playable_cards(self.id);
+			var unplayable_cards = get_unplayable_cards(self.id);
 
 			show_debug_message("Amount of playable cards: " + string(ds_list_size(playable_cards)));
 		
