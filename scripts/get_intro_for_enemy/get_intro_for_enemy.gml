@@ -28,7 +28,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		var will_face_mind_flayer = run_has_enemy(floors, "mind_flayer");
 		
 		if (will_face_mind_flayer) {
-			intro += "\"Hello, brave one,\" their voice floats over to you in an odd whisper. \"I have been watching you. I watch you now, from this one's eyes.\" The spear knight points at themself. \"Let's find out what you can do!\"\n\n";
+			intro += "\"Hello, brave one,\" their voice floats over to you in an odd whisper. \"I have been watching you. I watch you now, from this one's eyes.\" The knight points at themself. \"Let's find out what you can do!\"\n\n";
 		} else {
 			intro += "\"You have gone far enough, peasant. You can either turn back, or face me. Either way, you will not reach the tower beyond.\"\n\n";
 		}
