@@ -26,7 +26,7 @@ function remove_catalyst_effect(target, source) {
 	scr_add_event_log(source.name + " feels effect of the catalyst fade.", 2);
 }
 
-function check_priority_for_catalyst() {
+function check_priority_for_catalyst(target, source) {
 	if (scr_does_list_contain_item(source.active_effects, "catalyst")) {
 		return false;
 	}
