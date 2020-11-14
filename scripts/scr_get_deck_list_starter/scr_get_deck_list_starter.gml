@@ -3,7 +3,8 @@ function scr_get_deck_list_starter() {
 
 	deck_map[? "attack"] = 2;
 	deck_map[? "shield"] = 2;
-	
+	deck_map[? "third_eye_opens"] = 2;
+
 	if (obj_game_manager.perks.supermoon) {
 		deck_map[? "attack"] += 1;
 		deck_map[? "shield"] += 1;

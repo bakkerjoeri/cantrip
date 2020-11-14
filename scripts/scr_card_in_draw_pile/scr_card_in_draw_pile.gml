@@ -5,8 +5,9 @@ function scr_card_in_draw_pile() {
 	
 		x = owner.draw_pile_x;
 		y = owner.draw_pile_y;
-		is_face_up = false;
 	}
+	
+	is_face_up = owner.is_draw_pile_visible;
 
 	var current_draw_pile_size = ds_list_size(owner.draw_pile);
 	var current_draw_pile_position = ds_list_find_index(owner.draw_pile, self.id);
