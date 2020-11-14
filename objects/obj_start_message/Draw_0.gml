@@ -1,3 +1,3 @@
 draw_set_halign(fa_center);
 draw_set_colour(global.palette_1);
-draw_text(room_width / 2, 288, "version 3.0.0\nby @bakkerjoeri\noriginally created for 7drl 2019");
+draw_text(room_width / 2, 288, "version 3.0.1\nby @bakkerjoeri\noriginally created for 7drl 2019");
