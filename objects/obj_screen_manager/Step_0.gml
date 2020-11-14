@@ -10,4 +10,8 @@ if (shake > 0) {
 	);
 
 	shake -= 1;
+	is_shaking = true;
+} else if (is_shaking) {
+	camera_set_view_pos(view_camera[0], 0, 0);
+	is_shaking = false;
 }
