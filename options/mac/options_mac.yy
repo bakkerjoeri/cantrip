@@ -3,7 +3,7 @@
   "option_mac_app_id": "com.bakkerjoeri.cantrip",
   "option_mac_version": "3.0.1",
   "option_mac_output_dir": "~/GameMakerStudio2/Mac",
-  "option_mac_team_id": "",
+  "option_mac_team_id": "72CNNR2ZM8",
   "option_mac_signing_identity": "Developer ID Application:",
   "option_mac_copyright": "",
   "option_mac_splash_png": "${options_dir}/mac/splash/splash.png",
