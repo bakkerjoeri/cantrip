@@ -25,7 +25,7 @@ function do_radiant_burst_effect(target, source) {
 	if (zero_cost_cards_in_hand <= 1) {
 		scr_add_event_log(source.name + " shoots a burst of multi-colored light toward " + target.name + ".");
 	} else if (zero_cost_cards_in_hand <= 3) {
-		scr_add_event_log("Blinding, multi-colored prisms of light soar from " + source.name + " and through " + target.name + ".");
+		scr_add_event_log("Blinding, multi-colored prisms of light soar and pierce through " + target.name + ".");
 	} else {
 		scr_add_event_log("In awe, " + target.name + " notices they are surrounded by rainbow glimmers. Then, in a flash, the light collapses in on them!");
 	}

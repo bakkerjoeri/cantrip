@@ -16,7 +16,7 @@ function do_eldritch_blast_effect(target, source) {
 	scr_character_loses_ap(target, stolen_ap);
 	scr_character_gains_ap(source, stolen_ap);
 	
-	scr_add_event_log(source.name + " releases a burst of dark energy at " + target.name + "!");
+	scr_add_event_log(source.name + " fires a burst of dark energy at " + target.name + "!");
 }
 
 function check_priority_for_eldritch_blast() {
