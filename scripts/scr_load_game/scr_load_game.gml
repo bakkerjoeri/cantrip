@@ -22,6 +22,13 @@ function scr_load_game() {
 				max_run_streak = saved_data[? "max_run_streak"];
 			}
 			
+			if (ds_map_exists(saved_data, "prefers_full_screen")) {
+				show_debug_message(saved_data[? "prefers_full_screen"]);
+				window_set_fullscreen(saved_data[? "prefers_full_screen"]);
+			} else {
+				window_set_fullscreen(true);
+			}
+			
 			if (ds_map_exists(saved_data, "prefers_screen_shake")) {
 				prefers_screen_shake = saved_data[? "prefers_screen_shake"];
 			}
