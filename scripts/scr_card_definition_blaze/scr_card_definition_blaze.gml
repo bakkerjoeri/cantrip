@@ -9,11 +9,11 @@ function scr_card_definition_blaze(card) {
 }
 
 function do_blaze_effect(target, source) {
-	var possible_cards = ds_list_create();
-	
 	if (ds_list_size(target.hand) == 0) {
 		return;
 	}
+	
+	var possible_cards = ds_list_create();
 
 	for (var c = 0; c <= ds_list_size(target.hand) - 1; c += 1) {
 		var card_to_check = ds_list_find_value(target.hand, c);
@@ -32,7 +32,7 @@ function do_blaze_effect(target, source) {
 	chosen_card.is_burning = true;
 	
 	if (chosen_card.is_face_up) {
-		scr_add_event_log("Flames burst forth. " + chosen_card.owner.name + "'s " + chosen_card + " starts burning!");
+		scr_add_event_log("Flames burst forth. " + chosen_card.owner.name + "'s " + chosen_card.title + " starts burning!");
 	} else {
 		scr_add_event_log("Flames burst forth. One of " + chosen_card.owner.name + "'s cards starts burning!");
 	}
