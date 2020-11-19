@@ -4,7 +4,6 @@ function scr_save_game() {
 		data_to_save[? "runs_won"] = runs_won;
 		data_to_save[? "current_run_streak"] = current_run_streak;
 		data_to_save[? "max_run_streak"] = max_run_streak;
-		data_to_save[? "prefers_full_screen"] = window_get_fullscreen();
 		data_to_save[? "prefers_screen_shake"] = prefers_screen_shake;
 		data_to_save[? "prefers_screen_flashes"] = prefers_screen_flashes;
 		data_to_save[? "is_custom_game_unlocked"] = is_custom_game_unlocked;

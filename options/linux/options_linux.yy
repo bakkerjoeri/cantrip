@@ -8,7 +8,7 @@
   "option_linux_splash_screen": "${project_dir}/options/linux/splash/splash.png",
   "option_linux_display_splash": true,
   "option_linux_icon": "${options_dir}/linux/icons/64.png",
-  "option_linux_start_fullscreen": false,
+  "option_linux_start_fullscreen": true,
   "option_linux_allow_fullscreen": true,
   "option_linux_interpolate_pixels": false,
   "option_linux_display_cursor": true,
