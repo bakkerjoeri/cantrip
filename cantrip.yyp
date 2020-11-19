@@ -170,6 +170,7 @@
     {"id":{"name":"scr_game_draft","path":"scripts/scr_game_draft/scr_game_draft.yy",},"order":5,},
     {"id":{"name":"scr_game_victory","path":"scripts/scr_game_victory/scr_game_victory.yy",},"order":6,},
     {"id":{"name":"scr_game_over","path":"scripts/scr_game_over/scr_game_over.yy",},"order":7,},
+    {"id":{"name":"scr_card_definition_pickpocket","path":"scripts/scr_card_definition_pickpocket/scr_card_definition_pickpocket.yy",},"order":0,},
     {"id":{"name":"scr_game_quit","path":"scripts/scr_game_quit/scr_game_quit.yy",},"order":8,},
     {"id":{"name":"scr_choose_from_list","path":"scripts/scr_choose_from_list/scr_choose_from_list.yy",},"order":0,},
     {"id":{"name":"scr_get_top_object_under_mouse","path":"scripts/scr_get_top_object_under_mouse/scr_get_top_object_under_mouse.yy",},"order":1,},
