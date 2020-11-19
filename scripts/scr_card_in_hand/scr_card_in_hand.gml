@@ -3,10 +3,16 @@ function scr_card_in_hand() {
 		previous_hand_size = 0;
 		previous_hand_position = -1;
 	}
+	
+	if (owner.state_name == "takingDamage") {
+		exit;
+	}
 
 	var current_hand_size = ds_list_size(owner.hand);
 	var current_hand_position = ds_list_find_index(owner.hand, self.id);
 	is_face_up = owner.is_hand_visible;
+	
+	
 
 	// Animate to new position if hand composition has changed
 	if (
