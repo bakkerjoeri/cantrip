@@ -2,7 +2,7 @@ function scr_card_definition_radiant_burst(card) {
 		card.name = "radiant_burst";
 		card.title = "radiant burst";
 		card.cost = 2;
-		card.text = "Do damage equal to the amount of 0 cost cards in your hand.";
+		card.text = "Do damage equal to the amount of 0 cost cards in your hand plus 1.";
 		card.effect = do_radiant_burst_effect;
 		card.condition = can_play_radiant_burst;
 		card.rarity = 0;
@@ -19,12 +19,14 @@ function do_radiant_burst_effect(target, source) {
 			zero_cost_cards_in_hand += 1;
 		}
 	}
-
-	scr_take_damage(target, zero_cost_cards_in_hand, source);
 	
-	if (zero_cost_cards_in_hand <= 1) {
+	var damage = zero_cost_cards_in_hand + 1;
+
+	scr_take_damage(target, damage, source);
+	
+	if (damage <= 2) {
 		scr_add_event_log(source.name + " shoots a burst of multi-colored light toward " + target.name + ".");
-	} else if (zero_cost_cards_in_hand <= 3) {
+	} else if (damage <= 3) {
 		scr_add_event_log("Blinding, multi-colored prisms of light soar and pierce through " + target.name + ".");
 	} else {
 		scr_add_event_log("In awe, " + target.name + " notices they are surrounded by rainbow glimmers. Then, in a flash, the light collapses in on them!");
