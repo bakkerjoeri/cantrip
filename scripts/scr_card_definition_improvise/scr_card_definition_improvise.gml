@@ -3,7 +3,7 @@ function scr_card_definition_improvise(card) {
 	card.title = "improvise";
 	card.cost = 1;
 	card.text = "Play the top card of your draw pile.";
-	card.counter = do_improvise_effect;
+	card.effect = do_improvise_effect;
 	card.rarity = 1;
 	card.condition = can_play_improvise;
 }

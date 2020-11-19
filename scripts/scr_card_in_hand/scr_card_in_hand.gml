@@ -12,8 +12,6 @@ function scr_card_in_hand() {
 	var current_hand_position = ds_list_find_index(owner.hand, self.id);
 	is_face_up = owner.is_hand_visible;
 	
-	
-
 	// Animate to new position if hand composition has changed
 	if (
 		current_hand_position != -1 && (
