@@ -2,7 +2,7 @@ function scr_card_definition_barter_for_power(card) {
 	card.name = "barter_for_power";
 	card.title = "barter for power";
 	card.cost = 0;
-	card.text = "Give away as much AP as possible. Draw as many cards plus 1.";
+	card.text = "Give your foe all of your AP. Draw that many cards plus 1.";
 	card.effect = do_barter_for_power_effect;
 	card.condition = can_play_barter_for_power;
 	card.rarity = 0;
@@ -10,7 +10,7 @@ function scr_card_definition_barter_for_power(card) {
 }
 
 function do_barter_for_power_effect(target, source) {
-	var lost_ap = min(target.max_ability_points - target.ability_points, source.ability_points);
+	var lost_ap = source.ability_points;
 	
 	scr_character_loses_ap(source, lost_ap);
 	scr_character_gains_ap(target, lost_ap);
