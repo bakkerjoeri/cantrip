@@ -8,11 +8,13 @@ function scr_card_definition_third_eye_opens(card) {
 }
 
 function do_third_eye_opens_effect(target, source, card) {
-	source.is_draw_pile_visible = true;
-	source.is_hand_visible = true;
-	target.is_draw_pile_visible = true;
-	target.is_hand_visible = true;
-
+	if (source.is_controlled_by_player) {
+		target.is_draw_pile_visible = true;
+		target.is_hand_visible = true;
+		source.is_draw_pile_visible = true;
+		source.is_hand_visible = true;
+	}
+	
 	scr_add_start_of_turn_effect(
 		source,
 		"third_eye_opens",
