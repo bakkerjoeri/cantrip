@@ -55,6 +55,20 @@ function scr_character_drawing_cards() {
 		if (scr_does_list_contain_item(active_effects, "wellspring")) {
 			scr_character_gains_ap(self.id, 1);
 		}
+		
+		if (scr_does_list_contain_item(active_effects, "cruel_divination")) {
+			var damage = 0;
+			
+			if (variable_instance_exists(card_to_draw, "cost")) {
+				damage = card_to_draw.cost;
+			}
+			
+			if (damage > 0) {
+				scr_take_damage(scr_get_opponent_of_character(self.id), damage, self.id);
+			}
+
+			scr_remove_item_from_list(active_effects, "cruel_divination");
+		}
 	
 		_card_draw_delay = 0.25 * room_speed;
 		exit;

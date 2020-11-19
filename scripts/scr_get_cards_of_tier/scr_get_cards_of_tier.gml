@@ -12,7 +12,8 @@ function scr_get_cards_of_tier(tier) {
 		if (!obj_game_manager.perks.supermoon) {
 			ds_list_add(cards, "meditate");
 		}
-
+		
+		ds_list_add(cards, "pickpocket");
 		ds_list_add(cards, "radiant_burst");
 		
 		if (!obj_game_manager.perks.supermoon) {
@@ -32,9 +33,11 @@ function scr_get_cards_of_tier(tier) {
 	}
 
 	if (tier == 1) {
+		ds_list_add(cards, "cruel_divination");
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "healing_potion");
+		ds_list_add(cards, "improvise");
 		ds_list_add(cards, "leech");
 		ds_list_add(cards, "life_link");
 		ds_list_add(cards, "necrotic_blast");
@@ -61,6 +64,7 @@ function scr_get_cards_of_tier(tier) {
 			ds_list_add(cards, "dark_pact");
 		}
 		
+		ds_list_add(cards, "expand_mind");
 		ds_list_add(cards, "fireblast");
 		ds_list_add(cards, "full_moon");
 		ds_list_add(cards, "lichen_curse");

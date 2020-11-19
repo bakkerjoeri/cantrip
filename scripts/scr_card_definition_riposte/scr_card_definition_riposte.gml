@@ -7,7 +7,7 @@ function scr_card_definition_riposte(card) {
 	card.rarity = 0;
 }
 
-function do_riposte(target, source) {
+function do_riposte(target, source, card) {
 	if (ds_list_empty(source.draw_pile)) {
 		return;
 	}
@@ -19,8 +19,8 @@ function do_riposte(target, source) {
 	with (card_to_play) {
 		played_by = source;
 		state_switch("startPlay");
-		play_depth = -10;
+		play_depth = card.depth - 1;
 	}
 	
-	scr_add_event_log("Riposte! " + source.name + " counters by playing " + card_to_play.title);
+	scr_add_event_log("Riposte! " + source.name + " counters by playing " + card_to_play.title + ".");
 }
