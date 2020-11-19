@@ -37,6 +37,7 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "healing_potion");
+		ds_list_add(cards, "healing_rain");
 		ds_list_add(cards, "improvise");
 		ds_list_add(cards, "leech");
 		ds_list_add(cards, "life_link");
