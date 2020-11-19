@@ -2,7 +2,7 @@ function scr_card_definition_shared_suffering(card) {
 	card.name = "shared_suffering";
 	card.title = "shared suffering";
 	card.cost = 2;
-	card.text = "Do damage to your foe until they have as many cards as you.";
+	card.text = "Do damage until your foe has as many cards as you.";
 	card.effect = do_vile_bond_effect;
 	card.rarity = 2;
 	card.has_priority = check_priority_for_shared_suffering;

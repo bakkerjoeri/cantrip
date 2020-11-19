@@ -2,7 +2,7 @@ function scr_card_definition_necrotic_blast(card) {
 	card.name = "necrotic_blast";
 	card.title = "necrotic blast";
 	card.cost = 1;
-	card.text = "Do 1 damage plus the cost of your graveyard's top card.";
+	card.text = "Do damage equal to the cost of your graveyard's top card plus 1."
 	card.effect = do_necrotic_blast_effect;
 	card.condition = can_play_necrotic_blast;
 	card.rarity = 1;
