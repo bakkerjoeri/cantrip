@@ -14,7 +14,7 @@ function scr_get_deck_list_kobold() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "attack"] = 3;
-	deck_map[? "leech"] = 1;
+	deck_map[? "pickpocket"] = 1;
 	deck_map[? "volatile_mixture"] = 1;
 	deck_map[? "fishy_chest"] = 1;
 	deck_map[? "shield"] = 2;
