@@ -12,8 +12,14 @@ function scr_battle_start() {
 		opponent.draw_pile = scr_init_cards_from_deck_list(enemy[? "deck_list"], opponent);
 		
 		if (obj_game_manager.perks.clairvoyant) {
+			player.base_is_hand_visible = true;
+			player.is_hand_visible = true;
+			player.base_is_draw_pile_visible = true;
+			player.is_draw_pile_visible = true;
 			opponent.base_is_hand_visible = true;
 			opponent.is_hand_visible = true;
+			opponent.base_is_draw_pile_visible = true;
+			opponent.is_draw_pile_visible = true;
 		}
 	
 		ds_list_shuffle(opponent.draw_pile);
