@@ -6,7 +6,7 @@ function scr_get_enemy_wyvern() {
 	enemy[? "deck_list"] = scr_get_deck_list_wyvern();
 	enemy[? "max_ability_points"] = 2;
 	enemy[? "max_hand_size"] = 9;
-	enemy[? "loot"] = "blaze";
+	enemy[? "loot"] = ["blaze", "fireblast"];
 
 	return enemy;
 }
