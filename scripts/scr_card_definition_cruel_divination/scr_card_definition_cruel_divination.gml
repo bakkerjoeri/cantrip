@@ -4,7 +4,7 @@ function scr_card_definition_cruel_divination(card) {
 	card.cost = 1;
 	card.text = "Draw a card. Do damage equal to its cost.";
 	card.effect = do_cruel_divination_effect;
-	card.rarity = 1;
+	card.rarity = 0;
 	card.condition = can_play_cruel_divination;
 }
 

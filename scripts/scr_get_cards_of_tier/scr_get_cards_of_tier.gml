@@ -7,6 +7,7 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "barter_for_power");
 		ds_list_add(cards, "combust");
 		ds_list_add(cards, "corrupted_aether");
+		ds_list_add(cards, "cruel_divination");
 		ds_list_add(cards, "desecrate");
 		
 		if (!obj_game_manager.perks.supermoon) {
@@ -33,7 +34,6 @@ function scr_get_cards_of_tier(tier) {
 	}
 
 	if (tier == 1) {
-		ds_list_add(cards, "cruel_divination");
 		ds_list_add(cards, "embed_spikes");
 		ds_list_add(cards, "forge");
 		ds_list_add(cards, "healing_potion");
