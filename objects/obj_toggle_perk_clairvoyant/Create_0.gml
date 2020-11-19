@@ -1,7 +1,7 @@
 event_inherited();
 
 label = "Clairvoyant";
-explanation = "Your opponent's hand is always visible. Third eye opens is removed from the game.";
+explanation = "All cards are always visible. Third eye opens is removed from the game.";
 is_on = obj_game_manager.perks.clairvoyant;
 on_toggle = function(value) {
 	if (value) {
