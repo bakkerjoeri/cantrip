@@ -2,7 +2,7 @@ function scr_card_definition_raise_the_dead(card) {
 	card.name = "raise_the_dead";
 	card.title = "raise the dead";
 	card.cost = 0;
-	card.text = "Draw the top card from your graveyard.";
+	card.text = "Retrieve the top card from your graveyard.";
 	card.effect = do_raise_the_dead_effect;
 	card.condition = can_play_raise_the_dead;
 	card.rarity = 1;
