@@ -3,7 +3,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		return scr_choose_from_array([
 			"A gerblin has been following you for a few minutes now, hurrying from bush to bush, clearly still thinking you have not spotted it.\n\nJust as you wonder again if it will ever attack, it jumps out at you with a yelp.",
 			"You sit down on a tree stump and take out your rations.\n\nAs soon as you take your first bite, you notice a gerblin. It eyes your food, then looks up at you, slowly brandishing its weapon.",
-			"Distractedly, you walk into a gerblin munching on a rodent. Its eyes grow wide as it looks up at you. It licks its lips, throws the remains to the ground and approach you, weapon drawn.\n\nThe main course has arrived.",
+			"Distracted, you walk into a gerblin munching on a rodent. Its eyes grow wide as it looks up at you. It licks its lips, throws the remains to the ground and approach you, weapon drawn.\n\nThe main course has arrived.",
 		]);
 	}
 	
