@@ -6,7 +6,7 @@ function scr_get_enemy_kobold() {
 	enemy[? "deck_list"] = scr_get_deck_list_kobold();
 	enemy[? "max_hand_size"] = 5;
 	enemy[? "max_ability_points"] = 3;
-	enemy[? "loot"] = "fire trap";
+	enemy[? "loot"] = "fire_trap";
 
 	return enemy;
 }
