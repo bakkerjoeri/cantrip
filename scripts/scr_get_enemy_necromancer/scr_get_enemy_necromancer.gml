@@ -15,7 +15,7 @@ function scr_get_deck_list_necromancer() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "attack"] = 2;
-	deck_map[? "leech"] = 2;
+	deck_map[? "leech"] = 1;
 	deck_map[? "necrotic_blast"] = 2;
 	deck_map[? "seance"] = 1;
 	deck_map[? "desecrate"] = 1;

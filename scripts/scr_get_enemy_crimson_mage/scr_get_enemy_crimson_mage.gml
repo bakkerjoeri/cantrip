@@ -18,9 +18,10 @@ function scr_get_deck_list_crimson_mage() {
 	deck_map[? "life_link"] = 1;
 	deck_map[? "rest"] = 1;
 	deck_map[? "healing_rain"] = 1;
+	deck_map[? "cruel_divination"] = 2;
 	deck_map[? "siphon"] = 2;
 	deck_map[? "eldritch_blast"] = 2;
-	deck_map[? "attack"] = 2;
+	
 
 	return scr_create_deck_list_from_deck(deck_map);
 }
