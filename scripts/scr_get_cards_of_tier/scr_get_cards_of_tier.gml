@@ -49,6 +49,7 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "shield_bash");
 		ds_list_add(cards, "shields_up");
 		ds_list_add(cards, "siphon");
+		ds_list_add(cards, "soul_trap");
 		ds_list_add(cards, "volatile_mixture");
 		ds_list_add(cards, "waning");
 	}
@@ -83,6 +84,7 @@ function scr_get_cards_of_tier(tier) {
 	if (tier == 3) {
 		ds_list_add(cards, "blaze");
 		ds_list_add(cards, "eldritch_blast");
+		ds_list_add(cards, "fire_trap");
 		ds_list_add(cards, "piercing_strike");
 		ds_list_add(cards, "plague_bomb");
 		ds_list_add(cards, "possess");
