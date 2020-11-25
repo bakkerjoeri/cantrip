@@ -17,7 +17,7 @@ function do_healing_rain_effect(target, source) {
 		false,
 	);
 	
-	scr_add_event_log("Shimmering droplets start raining down on " + source.name + ".");
+	scr_add_event_log("Shimmering droplets start to rain down on " + source.name + ".");
 }
 
 function healing_rain_start_of_turn_effect(target, source, turnsLeft) {
