@@ -28,7 +28,7 @@ function scr_card_in_hand() {
 				owner.hand_width
 			),
 			owner.hand_y,
-			.25 * room_speed,
+			.2 * room_speed,
 			ease_out_quint,
 		);
 		
