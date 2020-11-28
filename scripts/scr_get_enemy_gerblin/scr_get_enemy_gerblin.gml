@@ -14,8 +14,8 @@ function scr_get_enemy_gerblin() {
 function scr_get_deck_list_gerblin() {
 	var deck_map = ds_map_create();
 
-	deck_map[? "attack"] = 1;
-	deck_map[? "rage"] = 3;
+	deck_map[? "attack"] = 2;
+	deck_map[? "rage"] = 2;
 	deck_map[? "shield"] = 1;
 	deck_map[? "rest"] = 2;
 	
