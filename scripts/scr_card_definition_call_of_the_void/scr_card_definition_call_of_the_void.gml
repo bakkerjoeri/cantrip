@@ -4,7 +4,7 @@ function scr_card_definition_call_of_the_void(card) {
 	card.cost = 5;
 	card.text = "Destroy your foe's graveyard and draw pile. Each turn this costs 1 less.";
 	card.effect = do_call_of_the_void_effect;
-	card.on_turn_start = call_of_the_void_on_start_of_turn;
+	card.on_turn_end = call_of_the_void_reduce;
 	card.on_discard = call_of_the_void_on_discard;
 	card.rarity = 2;
 }
@@ -34,10 +34,10 @@ function do_call_of_the_void_effect(target, source, card) {
 	ds_list_destroy(cards_to_destroy);
 }
 
-function call_of_the_void_on_start_of_turn(target, source, card) {
+function call_of_the_void_reduce(target, source, card) {
 	card.cost = max(0, card.cost - 1);
 }
 
 function call_of_the_void_on_discard(target, source, card) {
-	card.cost = 6;
+	card.cost = 5;
 }
