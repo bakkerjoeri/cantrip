@@ -25,7 +25,11 @@ function do_pickpocket_effect(target, source, card) {
 		state_switch("beingDrawn");
 	}
 	
-	scr_add_event_log(source.name + " manages to pilfer " + target.name + "'s pockets and steals " + card_to_steal.title + ".");
+	if (card_to_steal.is_face_up || source.is_hand_visible) {
+		scr_add_event_log(source.name + " manages to pilfer " + target.name + "'s pockets and steals " + card_to_steal.title + ".");
+	} else {
+		scr_add_event_log(source.name + " manages to pilfer " + target.name + "'s pockets and steals a card.");
+	}
 }
 
 function can_play_pickpocket(target, source) {

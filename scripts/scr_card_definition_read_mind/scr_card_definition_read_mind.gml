@@ -37,8 +37,10 @@ function do_read_mind_effect(target, source) {
 			owner = source;
 			state_switch("beingDrawn");
 		}
-
-		scr_add_event_log(source.name + " learns about " + card_to_copy.title + ".");
+		
+		if (source.is_hand_visible) {
+			scr_add_event_log(source.name + " learns about " + card_to_copy.title + ".");
+		}
 	}
 }
 
