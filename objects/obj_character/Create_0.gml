@@ -25,3 +25,5 @@ damage_events = ds_queue_create();
 start_of_turn_effects = ds_list_create();
 end_of_turn_effects = ds_list_create();
 active_effects = ds_list_create();
+
+does_opponent_have_shields = false;

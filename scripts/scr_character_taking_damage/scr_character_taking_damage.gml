@@ -55,6 +55,10 @@ function scr_character_taking_damage() {
 			var deflected_by_shields;
 			if (variable_struct_exists(_current_damage_event[? "damage_options"], "deflected_by_shields")) {
 				deflected_by_shields = _current_damage_event[? "damage_options"].deflected_by_shields;
+				
+				if (_current_damage_event[? "source"] != _current_damage_event[? "target"]) {
+					_current_damage_event[? "source"].does_opponent_have_shields = true;
+				}
 			} else {
 				deflected_by_shields = false;
 			}

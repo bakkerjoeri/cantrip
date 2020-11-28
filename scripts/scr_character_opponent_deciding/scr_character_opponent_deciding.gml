@@ -141,6 +141,10 @@ function get_playable_cards(character) {
 		
 	for (var c = 0; c <= ds_list_size(character.hand) - 1; c += 1) {
 		var card_to_check = ds_list_find_value(character.hand, c);
+		
+		if (card_to_check.name == "quickshot" && character.does_opponent_have_shields) {
+			continue;
+		}
 
 		if (scr_can_character_play_card(character, card_to_check)) {
 			ds_list_add(playable_cards, card_to_check);

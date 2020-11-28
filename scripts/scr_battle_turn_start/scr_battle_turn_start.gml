@@ -15,6 +15,7 @@ function scr_battle_turn_start() {
 			turn_start_announcement.text = "Foe's turn";
 		}
 		
+		turn_of_character.does_opponent_have_shields = false;
 		scr_add_event_log(" - " + turn_of_character.name + "'s turn -");
 	
 		exit;
