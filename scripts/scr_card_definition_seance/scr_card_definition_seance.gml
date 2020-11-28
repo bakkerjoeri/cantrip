@@ -45,6 +45,10 @@ function can_play_seance(target, source) {
 }
 
 function check_priority_for_seance(target, source, playable_cards, unplayable_cards, card) {
+	if (ds_list_size(target.graveyard) == 0) {
+		return false;
+	}
+
 	var card_to_play = ds_list_find_value(source.graveyard, ds_list_size(source.graveyard) - 1);
 	
 	if (card_to_play.name == "revenge_from_beyond" || card_to_play.name == "seance") {

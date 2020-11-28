@@ -34,6 +34,10 @@ function can_play_necrotic_blast(target, source) {
 }
 
 function check_priority_for_necrotic_blast(target, source, playable_cards, unplayable_cards, card) {
+	if (ds_list_size(source.graveyard) == 0) {
+		return false;
+	}
+
 	var card_to_check = ds_list_find_value(source.graveyard, ds_list_size(source.graveyard) - 1);
 	
 	if (
