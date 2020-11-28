@@ -37,7 +37,10 @@ function scr_generate_draft_rounds_of_tier(tier) {
 		);
 	}
 	
-	if (loot != noone) {
+	if (
+		loot != noone
+		&& !scr_does_list_contain_item(cards_to_draft, loot)
+	) {
 		ds_list_replace(cards_to_draft, 0, loot);
 	}
 	
