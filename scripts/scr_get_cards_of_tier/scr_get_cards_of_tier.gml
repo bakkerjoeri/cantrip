@@ -15,7 +15,6 @@ function scr_get_cards_of_tier(tier) {
 		}
 		
 		ds_list_add(cards, "pickpocket");
-		ds_list_add(cards, "radiant_burst");
 		
 		if (!obj_game_manager.perks.supermoon) {
 			ds_list_add(cards, "rest");
@@ -45,6 +44,7 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "poison_the_well");
 		ds_list_add(cards, "quickshot");
 		ds_list_add(cards, "raise_the_dead");
+		ds_list_add(cards, "radiant_burst");
 		ds_list_add(cards, "read_mind");
 		ds_list_add(cards, "shield_bash");
 		ds_list_add(cards, "shields_up");

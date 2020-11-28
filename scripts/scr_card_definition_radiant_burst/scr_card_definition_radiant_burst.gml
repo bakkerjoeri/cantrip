@@ -5,7 +5,7 @@ function scr_card_definition_radiant_burst(card) {
 		card.text = "Do damage equal to the amount of 0 cost cards in your hand plus 1.";
 		card.effect = do_radiant_burst_effect;
 		card.condition = can_play_radiant_burst;
-		card.rarity = 0;
+		card.rarity = 1;
 		card.has_priority = check_priority_for_radiant_burst;
 }
 
