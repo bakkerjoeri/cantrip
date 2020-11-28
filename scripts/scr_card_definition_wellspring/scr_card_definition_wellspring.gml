@@ -20,7 +20,7 @@ function do_wellspring_effect(target, source, card) {
 	);
 	
 	scr_draw_cards(source, 1);
-	scr_add_event_log(source.name + " drinks from the fresh waters, a vibrant energy spreading through them.");
+	scr_add_event_log(source.name + " drinks the fresh water. They are filled with a vibrant energy.");
 }
 
 function remove_wellspring_effect(target, source, turnsLeft) {

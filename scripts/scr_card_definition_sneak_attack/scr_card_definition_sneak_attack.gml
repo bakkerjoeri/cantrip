@@ -2,7 +2,7 @@ function scr_card_definition_sneak_attack(card) {
 	card.name = "sneak_attack";
 	card.title = "backstab";
 	card.cost = 2;
-	card.text = "Do 2 damage, bypassing \"shield\" cards.";
+	card.text = "Do 2 damage, ignoring \"shield\" priority.";
 	card.effect = do_sneak_attack_effect;
 	card.damage = 2;
 	card.rarity = 3;

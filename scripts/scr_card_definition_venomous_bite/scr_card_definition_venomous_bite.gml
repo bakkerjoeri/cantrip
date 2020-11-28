@@ -24,7 +24,7 @@ function venomous_bite_start_of_turn_effect(target, source, turnsLeft) {
 	scr_take_damage(source, 1, source);
 	
 	if (turnsLeft == 0) {
-		scr_add_event_log("Venom courses through " + source.name + ", though some relief, they feel the bite wear off.", 2);
+		scr_add_event_log("Venom courses through " + source.name + ", though they feel the bite's effect wear off.", 2);
 	} else if (turnsLeft == 1) {
 		scr_add_event_log("Venom courses through " + source.name + "! It has " + string(turnsLeft) + " turn left.", 2);
 	} else {
