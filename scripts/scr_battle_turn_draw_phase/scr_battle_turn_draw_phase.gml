@@ -12,7 +12,7 @@ function scr_battle_turn_draw_phase() {
 				ds_queue_enqueue(cards_to_discard, ds_list_find_value(hand, 0));
 			}
 		
-			amount_of_cards_to_draw += 1;
+			scr_draw_cards(self.id, 1);
 		}
 	
 		exit;

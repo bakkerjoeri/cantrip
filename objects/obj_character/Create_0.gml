@@ -3,7 +3,6 @@ state_create("waiting", scr_character_waiting);
 state_create("deciding", scr_character_deciding);
 state_create("drawingCards", scr_character_drawing_cards);
 state_create("playingCards", scr_character_playing_cards);
-state_create("reshufflingCards", scr_character_reshuffling_cards);
 state_create("discardingCards", scr_character_discarding_cards);
 state_create("takingDamage", scr_character_taking_damage);
 state_init("waiting");

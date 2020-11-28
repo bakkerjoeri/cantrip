@@ -10,11 +10,7 @@ function scr_card_definition_healing_potion(card) {
 }
 
 function do_healing_potion_effect(target, source) {
-	with (source) {
-		amount_of_cards_to_draw += 3;
-		state_switch("drawingCards");
-	}
-	
+	scr_draw_cards(source, 3);
 	scr_add_event_log(source.name + " takes a swig of a verdant, swirling potion. They feel revitalized.");
 }
 
@@ -28,4 +24,6 @@ function check_priority_for_healing_potion(target, source, playable_cards, unpla
 	if (space_in_hand >= 2) {
 		return true;
 	}
+	
+	return false;
 }

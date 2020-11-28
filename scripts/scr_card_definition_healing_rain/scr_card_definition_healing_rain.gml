@@ -17,18 +17,18 @@ function do_healing_rain_effect(target, source) {
 		false,
 	);
 	
-	scr_add_event_log("Shimmering droplets rain down on " + target.name + ".");
+	scr_add_event_log("Shimmering droplets start to rain down on " + source.name + ".");
 }
 
 function healing_rain_start_of_turn_effect(target, source, turnsLeft) {
 	scr_draw_cards(source, 1);
 	
 	if (turnsLeft == 0) {
-		scr_add_event_log(source.name + "feels refreshed. The skies clear and the healing rain dissipates.", 2);
+		scr_add_event_log(source.name + " feels refreshed. The sky clears and the healing rain lets up.", 2);
 	} else if (turnsLeft == 1) {
-		scr_add_event_log(source.name + "feels refreshed. The healing rain has " + string(turnsLeft) + " turn left.", 2);
+		scr_add_event_log(source.name + " feels refreshed. The healing rain has " + string(turnsLeft) + " turn left.", 2);
 	} else {
-		scr_add_event_log(source.name + "feels refreshed. The healing rain has " + string(turnsLeft) + " turns left.", 2);
+		scr_add_event_log(source.name + " feels refreshed. The healing rain has " + string(turnsLeft) + " turns left.", 2);
 	}
 }
 

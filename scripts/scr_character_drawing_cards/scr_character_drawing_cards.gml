@@ -18,7 +18,16 @@ function scr_character_drawing_cards() {
 	
 		// Reshuffle cards if there aren't enough in the draw pile.
 		if (ds_list_size(draw_pile) == 0 && ds_list_size(graveyard) > 0) {
-			state_switch("reshufflingCards");
+			for (var c = 0; c <= ds_list_size(graveyard) - 1; c += 1) {
+				var card_to_reshuffle = ds_list_find_value(graveyard, c);
+
+				with (card_to_reshuffle) {
+					state_switch("beingReshuffled");
+				}
+			}
+		
+			scr_move_all_items_between_lists(graveyard, draw_pile);
+			ds_list_shuffle(draw_pile);
 			exit;
 		}
 	
