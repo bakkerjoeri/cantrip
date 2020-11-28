@@ -2,15 +2,15 @@ function scr_card_definition_lightning_bolt(card) {
 	card.name = "lightning_bolt";
 	card.title = "lightning bolt";
 	card.cost = 2;
-	card.text = "Damage a random card and all cards with the same cost in your foe's hand.";
+	card.text = "Do 1 damage, then damage all cards with the same cost as the card that was hit.";
 	card.effect = do_lightning_bolt_effect;
 	card.rarity = 2;
-	card.condition = can_play_lightning_bolt;
 	card.has_priority = check_priority_for_lightning_bolt;
 }
 
 function do_lightning_bolt_effect(target, source, card) {
 	if (ds_list_size(target.hand) == 0) {
+		scr_take_damage(target, 1, source);
 		return;
 	}
 
@@ -44,10 +44,6 @@ function do_lightning_bolt_effect(target, source, card) {
 	}
 	
 	ds_list_destroy(damaged_cards);
-}
-
-function can_play_lightning_bolt(target, source) {
-	return ds_list_size(target.hand) > 0;
 }
 
 function check_priority_for_lightning_bolt() {
