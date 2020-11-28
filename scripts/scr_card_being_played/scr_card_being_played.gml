@@ -1,7 +1,17 @@
 function scr_card_being_played() {
 	if (state_new) {
+		should_play_again = false;
+
 		if (played_by == noone) {
 			played_by = owner;
+		}
+		
+		if (
+			scr_does_list_contain_item(played_by.active_effects, "shadow_twin")
+			&& self.name != "shadow_twin"
+		) {
+			scr_remove_item_from_list(played_by.active_effects, "shadow_twin");
+			should_play_again = true;
 		}
 		
 		if (!owner.is_controlled_by_player) {

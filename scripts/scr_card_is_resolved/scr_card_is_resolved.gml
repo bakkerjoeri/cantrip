@@ -4,11 +4,7 @@ function scr_card_is_resolved() {
 	}
 
 	if (animation_is_finished) {
-		if (
-			scr_does_list_contain_item(played_by.active_effects, "shadow_twin")
-			&& self.name != "shadow_twin"
-		) {
-			scr_remove_item_from_list(played_by.active_effects, "shadow_twin");
+		if (should_play_again) {
 			state_switch("beingPlayed");
 			scr_add_event_log(played_by.name + "'s shadow takes shape, and repeats " + self.name);
 		} else {
