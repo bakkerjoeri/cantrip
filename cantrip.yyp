@@ -95,7 +95,6 @@
     {"id":{"name":"room_setup_custom_game","path":"rooms/room_setup_custom_game/room_setup_custom_game.yy",},"order":5,},
     {"id":{"name":"obj_button_settings","path":"objects/obj_button_settings/obj_button_settings.yy",},"order":4,},
     {"id":{"name":"scr_choose_from_array","path":"scripts/scr_choose_from_array/scr_choose_from_array.yy",},"order":12,},
-    {"id":{"name":"scr_character_reshuffling_cards","path":"scripts/scr_character_reshuffling_cards/scr_character_reshuffling_cards.yy",},"order":4,},
     {"id":{"name":"scr_character_discarding_cards","path":"scripts/scr_character_discarding_cards/scr_character_discarding_cards.yy",},"order":5,},
     {"id":{"name":"scr_character_taking_damage","path":"scripts/scr_character_taking_damage/scr_character_taking_damage.yy",},"order":6,},
     {"id":{"name":"scr_get_enemy_witch","path":"scripts/scr_get_enemy_witch/scr_get_enemy_witch.yy",},"order":14,},
