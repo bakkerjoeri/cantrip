@@ -24,6 +24,10 @@ function do_embed_spikes_effect(target, source) {
 }
 
 function spiked_shield_counter(target, source, card) {
+	if (target == source) {
+		return;
+	}
+
 	scr_take_damage(target, card.damage, source);
 }
 

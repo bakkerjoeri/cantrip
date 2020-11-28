@@ -8,6 +8,10 @@ function scr_card_definition_fire_trap(card) {
 }
 
 function do_fire_trap_counter(target, source, card) {
+	if (target == source) {
+		return;
+	}
+
 	if (ds_list_size(target.hand) == 0) {
 		return;
 	}

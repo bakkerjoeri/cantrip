@@ -8,12 +8,14 @@ function scr_card_definition_fishy_chest(card) {
 }
 
 function do_fishy_chest_counter(target, source, card) {
-	var card_to_burn = scr_choose_from_list(target.hand);
+	if (target != source) {
+		var card_to_burn = scr_choose_from_list(target.hand);
 	
-	if (card_to_burn) {
-		card_to_burn.is_burning = true;
+		if (card_to_burn) {
+			card_to_burn.is_burning = true;
+		}
 	}
-	
+
 	var recipient = scr_get_opponent_of_character(card.owner);
 	
 	var random_card_list = scr_get_cards_of_tier(irandom(3));

@@ -8,6 +8,10 @@ function scr_card_definition_soul_trap(card) {
 }
 
 function do_soul_trap(target, source, card) {
+	if (target == source) {
+		return;
+	}
+
 	var stolen_ap = target.ability_points;
 	scr_character_loses_ap(target, stolen_ap);
 	scr_character_gains_ap(source, stolen_ap + 1);

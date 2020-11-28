@@ -3,8 +3,8 @@ function scr_get_enemies_of_tier(tier, type) {
 
 	if (tier == 0 && type == "enemy") {
 		ds_list_add(enemies, scr_get_enemy_gerblin());
-		ds_list_add(enemies, scr_get_enemy_kobold());
-		ds_list_add(enemies, scr_get_enemy_cave_spider());
+		//ds_list_add(enemies, scr_get_enemy_kobold());
+		//ds_list_add(enemies, scr_get_enemy_cave_spider());
 	}
 
 	if (tier == 0 && type == "boss") {
