@@ -1,3 +1,9 @@
+with (obj_announcement) {
+	if (id != other.id) {
+		instance_destroy();
+	}
+}
+
 animation_init();
 should_leave = true;
 is_leaving = false;
