@@ -9,13 +9,15 @@ function scr_card_definition_transmute(card) {
 }
 
 function do_transmute_effect(target, source) {
+	var cards_to_draw = 1;
+
 	for (var c = 0; c <= ds_list_size(source.hand) - 1; c += 1) {
 		var card = ds_list_find_value(source.hand, c);
 		ds_queue_enqueue(source.cards_to_discard, card);	
-		source.amount_of_cards_to_draw += 1;
+		cards_to_draw += 1;
 	}
 	
-	source.amount_of_cards_to_draw += 1;
+	source.amount_of_cards_to_draw = cards_to_draw;
 	
 	with (source) {
 		state_switch("discardingCards");

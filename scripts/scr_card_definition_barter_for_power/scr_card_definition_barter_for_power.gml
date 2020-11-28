@@ -14,8 +14,7 @@ function do_barter_for_power_effect(target, source) {
 	
 	scr_character_loses_ap(source, lost_ap);
 	scr_character_gains_ap(target, lost_ap);
-	
-	source.amount_of_cards_to_draw += lost_ap + 1;
+	scr_draw_cards(source, lost_ap + 1);
 }
 
 function can_play_barter_for_power(target, source) {

@@ -10,11 +10,7 @@ function scr_card_definition_rest(card) {
 
 function do_rest_effect(target, source) {
 	scr_character_gains_ap(source, 1);
-
-	with (source) {
-		amount_of_cards_to_draw += 1;
-		state_switch("drawingCards");
-	}
+	scr_draw_cards(source, 1);
 
 	if (
 		obj_battle_manager.turn_of_character == source
