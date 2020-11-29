@@ -9,24 +9,23 @@ function scr_card_definition_lunar_surge(card) {
 }
 
 function do_lunar_surge_effect(target, source, card) {
-	var cards = scr_concat_lists(source.hand, source.graveyard, source.draw_pile);
-	
 	if (!variable_instance_exists(source, "lunar_surged_cards")) {
 		source.lunar_surged_cards = ds_list_create();
 	}
-	
-	for (var c = 0; c <= ds_list_size(cards) - 1; c += 1) {
-		var affected_card = ds_list_find_value(cards, c);
+
+	with (obj_card_base) {
+		var affected_card = self.id;
 
 		if (
-			variable_instance_exists(affected_card, "cost")
+			owner == source
+			&& variable_instance_exists(affected_card, "cost")
 			&& affected_card.cost >= 1
 		) {
 			affected_card.cost -= 1;
 			ds_list_add(source.lunar_surged_cards, affected_card);
 		}
 	}
-	
+
 	scr_add_start_of_turn_effect(source, "lunar_surge", end_lunar_surge, 1, true);
 	
 	scr_add_event_log(source.name + " calls upon the power of the moon. A brilliant shimmer surrounds them, and start to feel light.");
