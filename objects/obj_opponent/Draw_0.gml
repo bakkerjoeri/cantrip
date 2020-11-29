@@ -23,9 +23,13 @@ draw_set_halign(fa_right);
 draw_set_color(global.palette_5);
 draw_text(52, 16, string(ds_list_size(hand)) + "/" + string(max_hand_size));
 
+draw_health_tokens(56, 15, ds_list_size(hand), max_hand_size);
+
 draw_set_halign(fa_left);
 draw_set_color(global.palette_1);
 draw_text(4, 8, "AP");
 draw_set_halign(fa_right);
 draw_set_color(global.palette_3);
 draw_text(52, 8, string(ability_points) + "/" + string(max_ability_points));
+
+draw_ap_tokens(56, 7, ability_points, max_ability_points);

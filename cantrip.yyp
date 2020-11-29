@@ -1,8 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"spr_ability_point_board","path":"sprites/spr_ability_point_board/spr_ability_point_board.yy",},"order":0,},
     {"id":{"name":"scr_card_definition_meditate","path":"scripts/scr_card_definition_meditate/scr_card_definition_meditate.yy",},"order":8,},
-    {"id":{"name":"spr_ability_point_card","path":"sprites/spr_ability_point_card/spr_ability_point_card.yy",},"order":1,},
     {"id":{"name":"scr_get_deck_list_test_forge","path":"scripts/scr_get_deck_list_test_forge/scr_get_deck_list_test_forge.yy",},"order":2,},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":2,},
     {"id":{"name":"scr_card_definition_combust","path":"scripts/scr_card_definition_combust/scr_card_definition_combust.yy",},"order":2,},
@@ -47,6 +45,7 @@
     {"id":{"name":"scr_card_definition_waning","path":"scripts/scr_card_definition_waning/scr_card_definition_waning.yy",},"order":33,},
     {"id":{"name":"scr_find_card_to_discard","path":"scripts/scr_find_card_to_discard/scr_find_card_to_discard.yy",},"order":1,},
     {"id":{"name":"scr_find_cards_with_discard_priority","path":"scripts/scr_find_cards_with_discard_priority/scr_find_cards_with_discard_priority.yy",},"order":2,},
+    {"id":{"name":"spr_ap_token","path":"sprites/spr_ap_token/spr_ap_token.yy",},"order":0,},
     {"id":{"name":"scr_get_cards_of_tier","path":"scripts/scr_get_cards_of_tier/scr_get_cards_of_tier.yy",},"order":3,},
     {"id":{"name":"scr_get_unique_cards_of_tier","path":"scripts/scr_get_unique_cards_of_tier/scr_get_unique_cards_of_tier.yy",},"order":4,},
     {"id":{"name":"scr_game_setup_custom_game","path":"scripts/scr_game_setup_custom_game/scr_game_setup_custom_game.yy",},"order":12,},
@@ -87,6 +86,7 @@
     {"id":{"name":"scr_character_loses_ap","path":"scripts/scr_character_loses_ap/scr_character_loses_ap.yy",},"order":3,},
     {"id":{"name":"scr_get_opponent_of_character","path":"scripts/scr_get_opponent_of_character/scr_get_opponent_of_character.yy",},"order":4,},
     {"id":{"name":"scr_character_waiting","path":"scripts/scr_character_waiting/scr_character_waiting.yy",},"order":0,},
+    {"id":{"name":"spr_health_token","path":"sprites/spr_health_token/spr_health_token.yy",},"order":0,},
     {"id":{"name":"scr_get_deck_list_test_mana","path":"scripts/scr_get_deck_list_test_mana/scr_get_deck_list_test_mana.yy",},"order":5,},
     {"id":{"name":"scr_character_deciding","path":"scripts/scr_character_deciding/scr_character_deciding.yy",},"order":1,},
     {"id":{"name":"scr_character_drawing_cards","path":"scripts/scr_character_drawing_cards/scr_character_drawing_cards.yy",},"order":2,},

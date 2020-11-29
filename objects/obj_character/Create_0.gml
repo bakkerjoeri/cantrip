@@ -28,3 +28,27 @@ active_effects = ds_list_create();
 
 cards_to_highlight = undefined;
 does_opponent_have_shields = false;
+
+function draw_health_tokens(health_bar_x, health_bar_y, current_health, max_health) {
+	for (var h = max_health; h > 0; h -= 1) {
+		var token_position_x = health_bar_x + ((h - 1) * 5);
+	
+		if (h <= current_health) {
+			draw_sprite(spr_health_token, 0, token_position_x, health_bar_y);
+		} else {
+			draw_sprite(spr_health_token, 1, token_position_x, health_bar_y);
+		}
+	}
+}
+
+function draw_ap_tokens(ap_bar_x, ap_bar_y, current_ap, max_ap) {
+	for (var h = max_ap; h > 0; h -= 1) {
+		var token_position_x = ap_bar_x + ((h - 1) * 5);
+	
+		if (h <= current_ap) {
+			draw_sprite(spr_ap_token, 0, token_position_x, ap_bar_y);
+		} else {
+			draw_sprite(spr_ap_token, 1, token_position_x, ap_bar_y);
+		}
+	}
+}
