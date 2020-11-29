@@ -9,16 +9,18 @@ function scr_card_definition_waning(card) {
 }
 
 function do_waning_effect(target, source, card) {
-	var cards = scr_concat_lists(target.hand, target.graveyard, target.draw_pile);
-	
 	if (!variable_instance_exists(target, "waned_cards")) {
 		target.waned_cards = ds_list_create();
 	}
 	
-	for (var c = 0; c <= ds_list_size(cards) - 1; c += 1) {
-		var affected_card = ds_list_find_value(cards, c);
+	with (obj_card_base) {
+		var affected_card = self.id;
 
-		if (variable_instance_exists(affected_card, "cost")) {
+		if (
+			affected_card.owner == target
+			&& variable_instance_exists(affected_card, "cost")
+			&& affected_card.cost >= 1
+		) {
 			affected_card.cost += 1;
 			ds_list_add(target.waned_cards, affected_card);
 		}
