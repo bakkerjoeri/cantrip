@@ -4,13 +4,15 @@ function scr_card_in_hand() {
 		previous_hand_position = -1;
 	}
 	
+	is_face_up = owner.is_hand_visible;
+	border = undefined;
+	
 	if (owner.state_name == "takingDamage") {
 		exit;
 	}
 
 	var current_hand_size = ds_list_size(owner.hand);
 	var current_hand_position = ds_list_find_index(owner.hand, self.id);
-	is_face_up = owner.is_hand_visible;
 	
 	// Animate to new position if hand composition has changed
 	if (
@@ -88,6 +90,29 @@ function scr_card_in_hand() {
 		}
 	}
 
+	// Change border when playable
+	if (
+		owner.state_name == "deciding"
+		&& owner.is_controlled_by_player
+		&& obj_battle_manager.state_name == "turnPlayPhase"
+		&& obj_battle_manager.turn_of_character == owner
+		&& scr_can_character_play_card(owner, self.id)
+	) {
+		border = global.palette_4;
+	}
+	
+	// Change border when playable
+	if (
+		owner.state_name == "deciding"
+		&& owner.is_controlled_by_player
+		&& obj_battle_manager.state_name == "turnPlayPhase"
+		&& obj_battle_manager.turn_of_character == owner
+		&& scr_can_character_play_card(owner, self.id)
+	) {
+		border = global.palette_4;
+	}
+
+	// Check if the card is played
 	if (
 		obj_battle_manager.state_name == "turnPlayPhase"
 		&& obj_battle_manager.turn_of_character == owner

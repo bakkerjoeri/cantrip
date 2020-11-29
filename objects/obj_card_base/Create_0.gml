@@ -39,3 +39,4 @@ has_focus = false;
 // look
 alpha = 1;
 visible = false;
+border = undefined;

@@ -7,6 +7,9 @@ global.palette_5 = make_color_rgb(172, 50, 50);
 global.palette_6 = make_color_rgb(143, 86, 59);
 global.palette_7 = make_color_rgb(69, 40, 60);
 global.palette_8 = make_color_rgb(34, 32, 52);
+global.palette_9 = make_color_rgb(118, 66, 138);
+global.palette_10 = make_color_rgb(223, 113, 38);
+
 
 draw_set_color(global.palette_1);
 draw_set_font(font_04b03);

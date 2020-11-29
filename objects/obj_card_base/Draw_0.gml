@@ -97,33 +97,38 @@ if (is_face_up) {
 		sprite_width - text_padding_left - text_padding_right
 	);
 	
-	// Render playability
-	if (
-		state_name == "inHand"
-		&& owner.state_name == "deciding"
-		&& owner.is_controlled_by_player
-		&& obj_battle_manager.state_name == "turnPlayPhase"
-		&& obj_battle_manager.turn_of_character == owner
-		&& scr_can_character_play_card(owner, self.id)
-	) {
-		draw_set_color(global.palette_4);
+	// Render border
+	if (border) {
+		draw_set_color(border);
 		draw_rectangle(x - 1, y - 1, x + sprite_width, y + sprite_height, true);
 		draw_set_alpha(0.6);
 		draw_rectangle(x - 2, y - 2, x + sprite_width + 1, y + sprite_height + 1, true);
 		draw_set_alpha(1);
 	}
 	
-	// Render pickability
 	if (
 		state_name == "draftable"
 		&& obj_draft_manager.state_name == "awaitPick"
 		&& obj_draft_manager.card_with_focus == self.id
 	) {
-		draw_set_color(global.palette_4);
-		draw_rectangle(x - 1, y - 1, x + sprite_width, y + sprite_height, true);
-		draw_set_alpha(0.6);
-		draw_rectangle(x - 2, y - 2, x + sprite_width + 1, y + sprite_height + 1, true);
-		draw_set_alpha(1);
+		var rarity_text = "";
+		draw_set_halign(fa_center);
+		
+		if (rarity == 0) {
+			draw_set_color(global.palette_4);
+			rarity_text = "common";
+		} else if (rarity == 1) {
+			draw_set_color(global.palette_3);
+			rarity_text = "uncommon";
+		} else if (rarity == 2) {
+			draw_set_color(global.palette_10);
+			rarity_text = "rare";
+		} else if (rarity == 3) {
+			draw_set_color(global.palette_9);
+			rarity_text = "loot";
+		}
+		
+		draw_text(x + (sprite_width / 2), y + sprite_height + 4, rarity_text);
 	}
 }
 draw_set_alpha(1);
