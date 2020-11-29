@@ -26,4 +26,5 @@ start_of_turn_effects = ds_list_create();
 end_of_turn_effects = ds_list_create();
 active_effects = ds_list_create();
 
+cards_to_highlight = undefined;
 does_opponent_have_shields = false;

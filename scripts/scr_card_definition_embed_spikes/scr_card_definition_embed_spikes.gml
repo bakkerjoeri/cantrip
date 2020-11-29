@@ -7,6 +7,7 @@ function scr_card_definition_embed_spikes(card) {
 	card.condition = can_play_embed_spikes;
 	card.rarity = 1;
 	card.has_priority = check_priority_for_embed_spikes;
+	card.highlight = embed_spikes_highlight;
 }
 
 function do_embed_spikes_effect(target, source) {
@@ -59,4 +60,18 @@ function check_priority_for_embed_spikes(target, source) {
 	}
 
 	return false;
+}
+
+function embed_spikes_highlight(target, source) {
+	var highlighted_cards = ds_list_create();
+
+	for (var c = 0; c <= ds_list_size(source.hand) - 1; c += 1) {
+		var card_to_check = ds_list_find_value(source.hand, c);
+	
+		if (card_to_check.name == "shield") {
+			ds_list_add(highlighted_cards, card_to_check);
+		}
+	}
+	
+	return highlighted_cards;
 }

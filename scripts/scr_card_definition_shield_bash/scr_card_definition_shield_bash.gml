@@ -7,6 +7,7 @@ function scr_card_definition_shield_bash(card) {
 		card.condition = can_play_shield_bash;
 		card.rarity = 1;
 		card.has_priority = check_priority_for_shield_bash;
+		card.highlight = shield_bash_highlight;
 }
 
 function do_shield_bash_effect(target, source) {
@@ -54,4 +55,18 @@ function check_priority_for_shield_bash(target, source) {
 	}
 
 	return false;
+}
+
+function shield_bash_highlight(target, source) {
+	var highlighted_cards = ds_list_create();
+	
+	for (var c = 0; c <= ds_list_size(source.hand) - 1; c += 1) {
+		var card_to_check = ds_list_find_value(source.hand, c);
+	
+		if (card_to_check.name == "shield") {
+			ds_list_add(highlighted_cards, card_to_check);
+		}
+	}
+	
+	return highlighted_cards;
 }

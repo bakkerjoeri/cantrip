@@ -1,12 +1,13 @@
 function scr_card_definition_radiant_burst(card) {
-		card.name = "radiant_burst";
-		card.title = "radiant burst";
-		card.cost = 2;
-		card.text = "Do damage equal to the amount of 0 cost cards in your hand plus 1.";
-		card.effect = do_radiant_burst_effect;
-		card.condition = can_play_radiant_burst;
-		card.rarity = 1;
-		card.has_priority = check_priority_for_radiant_burst;
+	card.name = "radiant_burst";
+	card.title = "radiant burst";
+	card.cost = 2;
+	card.text = "Do damage equal to the amount of 0 cost cards in your hand plus 1.";
+	card.effect = do_radiant_burst_effect;
+	card.condition = can_play_radiant_burst;
+	card.rarity = 1;
+	card.has_priority = check_priority_for_radiant_burst;
+	card.highlight = radiant_burst_highlight;
 }
 
 function do_radiant_burst_effect(target, source) {
@@ -61,4 +62,18 @@ function check_priority_for_radiant_burst(target, source) {
 	}
 	
 	return false;
+}
+
+function radiant_burst_highlight(target, source) {
+	var highlighted_cards = ds_list_create();
+	
+	for (var c = 0; c <= ds_list_size(source.hand) - 1; c += 1) {
+		var card = ds_list_find_value(source.hand, c);
+	
+		if (variable_instance_exists(card, "cost") && card.cost == 0) {
+			ds_list_add(highlighted_cards, card);
+		}
+	}
+	
+	return highlighted_cards;
 }

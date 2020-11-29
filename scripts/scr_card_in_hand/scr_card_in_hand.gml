@@ -111,6 +111,18 @@ function scr_card_in_hand() {
 	) {
 		border = global.palette_4;
 	}
+	
+	// Change border if for highlights
+	if (
+		owner.state_name == "deciding"
+		&& owner.is_controlled_by_player
+		&& obj_battle_manager.state_name == "turnPlayPhase"
+		&& obj_battle_manager.turn_of_character == owner
+		&& owner.cards_to_highlight
+		&& scr_does_list_contain_item(owner.cards_to_highlight, self.id)
+	) {
+		border = global.palette_5;
+	}
 
 	// Check if the card is played
 	if (
