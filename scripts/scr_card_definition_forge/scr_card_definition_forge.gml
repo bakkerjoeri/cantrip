@@ -10,12 +10,13 @@ function scr_card_definition_forge(card) {
 }
 
 function do_forge_effect(target, source) {
-	var cards = scr_concat_lists(source.hand, source.graveyard, source.draw_pile);
-	
-	for (var c = 0; c <= ds_list_size(cards) - 1; c += 1) {
-		var card = ds_list_find_value(cards, c);
-	
-		if (card.name == "attack") {
+	with (obj_card_base) {
+		var card = self.id;
+		
+		if (
+			card.owner == source
+			&& card.name == "attack"
+		) {
 			card.damage += 1;
 			card.text = "Do " + string(card.damage) + " damage.";
 		}
