@@ -40,3 +40,4 @@ has_focus = false;
 alpha = 1;
 visible = false;
 border = undefined;
+should_highlight = false;

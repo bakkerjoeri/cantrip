@@ -6,6 +6,7 @@ function scr_card_in_hand() {
 	
 	is_face_up = owner.is_hand_visible;
 	border = undefined;
+	should_highlight = false;
 	
 	if (owner.state_name == "takingDamage") {
 		exit;
@@ -121,7 +122,7 @@ function scr_card_in_hand() {
 		&& owner.cards_to_highlight
 		&& scr_does_list_contain_item(owner.cards_to_highlight, self.id)
 	) {
-		border = global.palette_5;
+		should_highlight = true;
 	}
 
 	// Check if the card is played

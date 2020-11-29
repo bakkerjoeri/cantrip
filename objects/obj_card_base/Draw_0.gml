@@ -106,6 +106,12 @@ if (is_face_up) {
 		draw_set_alpha(1);
 	}
 	
+	// Render highlighting
+	if (should_highlight) {
+		draw_sprite(spr_highlight_pointer, 0, x + ((sprite_width / 2) - (sprite_get_width(spr_highlight_pointer) / 2)), y - 18);
+	}
+	
+	// Render rarity
 	if (
 		state_name == "draftable"
 		&& obj_draft_manager.state_name == "awaitPick"

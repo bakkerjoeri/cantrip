@@ -77,6 +77,7 @@
     {"id":{"name":"scr_get_enemy_hunter","path":"scripts/scr_get_enemy_hunter/scr_get_enemy_hunter.yy",},"order":8,},
     {"id":{"name":"scr_card_draft_picked","path":"scripts/scr_card_draft_picked/scr_card_draft_picked.yy",},"order":13,},
     {"id":{"name":"scr_card_definition_eldritch_blast","path":"scripts/scr_card_definition_eldritch_blast/scr_card_definition_eldritch_blast.yy",},"order":44,},
+    {"id":{"name":"spr_highlight_pointer","path":"sprites/spr_highlight_pointer/spr_highlight_pointer.yy",},"order":0,},
     {"id":{"name":"scr_card_draft_not_picked","path":"scripts/scr_card_draft_not_picked/scr_card_draft_not_picked.yy",},"order":14,},
     {"id":{"name":"scr_card_definition_attack","path":"scripts/scr_card_definition_attack/scr_card_definition_attack.yy",},"order":0,},
     {"id":{"name":"scr_is_character_hand_unplayable","path":"scripts/scr_is_character_hand_unplayable/scr_is_character_hand_unplayable.yy",},"order":0,},
