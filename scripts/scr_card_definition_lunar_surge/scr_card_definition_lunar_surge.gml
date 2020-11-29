@@ -17,7 +17,7 @@ function do_lunar_surge_effect(target, source, card) {
 		var affected_card = self.id;
 
 		if (
-			owner == source
+			affected_card.owner == source
 			&& variable_instance_exists(affected_card, "cost")
 			&& affected_card.cost >= 1
 		) {
