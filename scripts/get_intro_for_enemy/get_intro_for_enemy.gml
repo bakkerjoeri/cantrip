@@ -101,16 +101,16 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		var confusion = "You don't look like they said you would..."
 		
 		if (final_boss == "crimson_mage") {
-			botched_name = "the Crimson King";
+			botched_name = "the Crimson Juggler";
 			confusion = "Although your outfit doesn't look all that red to me. What happened? Forgot your costume?";
 		}
 		
-		if (final_boss == "void_cardinal") {
+		if (final_boss == "void_priest") {
 			botched_name = "Mister Void";
 			confusion = "I figured you'd have some demons with you, but I guess I got lucky.";
 		}
 		
-		if (final_boss == "ancient_wizard") {
+		if (final_boss == "lord_of_lightning") {
 			botched_name = "Thunderman";
 			confusion = scr_choose_from_array([
 				"Huh, they told me your eyes were yellow, but... Wait, did I catch you without your contacts in?",
@@ -138,7 +138,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 	}
 	
 	if (enemy == "warlock") {
-		var run_has_void_cardinal = run_has_enemy(floors, "void_cardinal");
+		var run_has_void_priest = run_has_enemy(floors, "void_priest");
 		var ghoul_name = scr_choose_from_array([
 			"Gregory",
 			"Jaques",
@@ -149,7 +149,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 			"Dickie",
 		])
 		
-		if (run_has_void_cardinal) {
+		if (run_has_void_priest) {
 			return "Candlelight envelops you as you enter the town hall.\n\n\"By the void, the whispers were right! You have finally come.\" A tall, purple robed figure muses. \"So then you must be on your way to meet the the priest. Or rather, on your way to try and stop the priest. Oh, but I'm afraid you fail to see the grandeur of the work.\"\n\n\"A pity, really, that you will never see it come to fruition.\"";
 		}
 		
@@ -210,18 +210,18 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 			logo = "an intricate rose, constructed of rubies and emeralds. The thorns are embossed bronze spikes, smeared with a crimson liquid";
 		}
 		
-		if (run_has_enemy(floors, "void_cardinal")) {
+		if (run_has_enemy(floors, "void_priest")) {
 			logo = "rows and rows of teeth that... are they moving? The teeth surround a center so black no light seems to reflect off it";
 		}
 		
-		if (run_has_enemy(floors, "ancient_wizard")) {
+		if (run_has_enemy(floors, "lord_of_lightning")) {
 			logo = "a giant, leering eye, with yellow gemstones surrounding a black onyx iris. The yellow of the eye seems to flicker";
 		}
 		
 		return "A knight carrying a shield almost as tall as they are steps slowly into your path.\n\nThe shield displays " + logo + ".\n\nIt connects to the floor with a heavy thud as they set it down to block further passage.";
 	}
 	
-	if (enemy == "ancient_wizard") {
+	if (enemy == "lord_of_lightning") {
 		var intro = "";
 		var has_supermoon_perk = obj_game_manager.perks.supermoon;
 		var has_lightning_bolt_card = scr_does_list_contain_item(deck_list, "lightning_bolt");
@@ -245,7 +245,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		return intro;
 	}
 	
-	if (enemy == "void_cardinal") {
+	if (enemy == "void_priest") {
 		var has_defeated_warlock = run_has_enemy(floors, "warlock");
 		var has_call_of_the_void_card = scr_does_list_contain_item(deck_list, "call_of_the_void");
 		var intro = "A sickly green glow casts around the room. Whispers of unknown origin fill your head as you enter. The Void Priest turns to you.\n\n";

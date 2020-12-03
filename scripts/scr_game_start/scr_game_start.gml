@@ -13,5 +13,7 @@ function scr_game_start() {
 			clairvoyant: false,
 			vampires_curse: false,
 		};
+		
+		obj_music_controller.add_tracks(obj_music_controller.music_for_title_screen);
 	}
 }

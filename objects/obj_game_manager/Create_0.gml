@@ -39,6 +39,7 @@ max_run_streak = 0;
 
 prefers_screen_shake = true;
 prefers_screen_flashes = true;
+prefers_music = true;
 is_custom_game_unlocked = false;
 
 shake = 0;

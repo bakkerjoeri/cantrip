@@ -1,9 +1,9 @@
-function scr_get_enemy_ancient_wizard() {
+function scr_get_enemy_lord_of_lightning() {
 	var boss = ds_map_create();
 
-	boss[? "id"] = "ancient_wizard";
+	boss[? "id"] = "lord_of_lightning";
 	boss[? "name"] = "Lord of Lightning";
-	boss[? "deck_list"] = scr_get_deck_list_ancient_wizard();
+	boss[? "deck_list"] = scr_get_deck_list_lord_of_lightning();
 	boss[? "max_ability_points"] = 4;
 	boss[? "max_hand_size"] = 7;
 	boss[? "loot"] = "lightning_bolt";
@@ -11,7 +11,7 @@ function scr_get_enemy_ancient_wizard() {
 	return boss;
 }
 
-function scr_get_deck_list_ancient_wizard() {
+function scr_get_deck_list_lord_of_lightning() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "attack"] = 2;

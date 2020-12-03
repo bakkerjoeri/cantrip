@@ -26,11 +26,11 @@ function get_intro_for_floor(floor_number, floors) {
 			tower_description = "Bright red windows adorn the chamber at the top.";
 		}
 		
-		if (final_boss == "ancient_wizard") {
+		if (final_boss == "lord_of_lightning") {
 			tower_description = "A cloud looms over the open top floor, rumbling, flashing.";
 		}
 		
-		if (final_boss == "void_cardinal") {
+		if (final_boss == "void_priest") {
 			tower_description = "A shimmering green gloom falls from its windows.";
 		}
 

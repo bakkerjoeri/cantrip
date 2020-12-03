@@ -1,9 +1,9 @@
-function scr_get_enemy_void_cardinal() {
+function scr_get_enemy_void_priest() {
 	var boss = ds_map_create();
 
-	boss[? "id"] = "void_cardinal";
+	boss[? "id"] = "void_priest";
 	boss[? "name"] = "Void Priest";
-	boss[? "deck_list"] = scr_get_deck_list_void_cardinal();
+	boss[? "deck_list"] = scr_get_deck_list_void_priest();
 	boss[? "max_ability_points"] = 2;
 	boss[? "max_hand_size"] = 7;
 	boss[? "loot"] = "call_of_the_void";
@@ -11,7 +11,7 @@ function scr_get_enemy_void_cardinal() {
 	return boss;
 }
 
-function scr_get_deck_list_void_cardinal() {
+function scr_get_deck_list_void_priest() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "call_of_the_void"] = 1;

@@ -3,6 +3,7 @@ function scr_load_game() {
 		runs_won = 0;
 		current_run_streak = 0;
 		max_run_streak = 0;
+		prefers_music = true;
 		prefers_screen_shake = true;
 		prefers_screen_shake = true;
 		is_custom_game_unlocked = false;
@@ -20,6 +21,10 @@ function scr_load_game() {
 			
 			if (ds_map_exists(saved_data, "max_run_streak")) {
 				max_run_streak = saved_data[? "max_run_streak"];
+			}
+			
+			if (ds_map_exists(saved_data, "prefers_music")) {
+				prefers_music = saved_data[? "prefers_music"];
 			}
 			
 			if (ds_map_exists(saved_data, "prefers_screen_shake")) {
