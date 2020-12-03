@@ -19,7 +19,6 @@ function do_waning_effect(target, source, card) {
 		if (
 			affected_card.owner == target
 			&& variable_instance_exists(affected_card, "cost")
-			&& affected_card.cost >= 1
 		) {
 			affected_card.cost += 1;
 			ds_list_add(target.waned_cards, affected_card);
