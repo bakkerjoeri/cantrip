@@ -15,7 +15,7 @@ function scr_get_deck_list_lord_of_lightning() {
 	var deck_map = ds_map_create();
 
 	deck_map[? "attack"] = 2;
-	deck_map[? "lightning_bolt"] = 2;
+	deck_map[? "lightning_bolt"] = 3;
 	deck_map[? "corrupted_aether"] = 1;
 	deck_map[? "rest"] = 1;
 	deck_map[? "stamina_potion"] = 2;
