@@ -1,8 +1,6 @@
 function scr_card_being_discarded() {
 	if (state_new) {
-		if (ds_list_find_index(owner.graveyard, self.id) == -1) {
-			ds_list_add(owner.graveyard, self.id);
-		}
+		move_card_to_list(self.id, owner.graveyard);
 	
 		depth = ds_list_size(owner.graveyard) - 1 - ds_list_find_index(owner.graveyard, self.id);
 		is_face_up = true;

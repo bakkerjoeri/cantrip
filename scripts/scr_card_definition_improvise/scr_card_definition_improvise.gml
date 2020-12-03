@@ -20,7 +20,6 @@ function do_improvise_effect(target, source, card) {
 	with (card_to_play) {
 		played_by = source;
 		state_switch("startPlay");
-		play_depth = card.depth - 1;
 	}
 	
 	scr_add_event_log(source.name + " comes up with " + card_to_play.title + ".");

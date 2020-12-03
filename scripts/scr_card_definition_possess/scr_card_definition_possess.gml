@@ -19,7 +19,6 @@ function do_possess_effect(target, source, card) {
 	with (card_to_play) {
 		played_by = source;
 		state_switch("startPlay");
-		play_depth = card.depth - 1;
 	}
 		
 	scr_add_event_log(source.name + " possesses " + target.name + " and plays their " + card_to_play.title + ".");

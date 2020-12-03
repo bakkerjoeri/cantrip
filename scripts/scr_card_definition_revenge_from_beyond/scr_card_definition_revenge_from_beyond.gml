@@ -21,7 +21,6 @@ function do_revenge_from_beyond_effect(target, source, card) {
 	with (card_to_play) {
 		played_by = source;
 		state_switch("startPlay");
-		play_depth = card.depth - 1;
 	}
 	
 	scr_add_event_log(source.name + " conspires with the spirits against " + target.name + " and plays " + card_to_play.title + " from beyond the veil.");

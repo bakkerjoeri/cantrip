@@ -35,6 +35,7 @@ rarity = 0;
 owner = noone;
 is_face_up = true;
 has_focus = false;
+current_list = undefined;
 
 // look
 alpha = 1;

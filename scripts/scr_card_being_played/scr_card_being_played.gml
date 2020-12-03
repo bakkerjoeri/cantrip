@@ -1,5 +1,8 @@
 function scr_card_being_played() {
 	if (state_new) {
+		previous_playing_field_position = -1;
+		previous_playing_field_size = 0;
+		_delay = 0;
 		should_play_again = false;
 
 		if (played_by == noone) {
@@ -15,13 +18,13 @@ function scr_card_being_played() {
 		}
 		
 		if (!owner.is_controlled_by_player) {
-			animation_add_wait(.5 * room_speed);
+			_delay = 0.5 * room_speed;
 		}
 
 		exit;
 	}
 
-	if (animation_is_finished) {
+	if (_delay <= 0) {
 		// Switch states before running the effect, so the effect might be able to affect state as well.
 		state_switch("isResolved");
 		
@@ -31,5 +34,11 @@ function scr_card_being_played() {
 		
 			script_execute(effect, target, source, self.id);
 		}
+		
+		exit;
 	}
+	
+	scr_update_position_on_playing_field();
+	
+	_delay -= 1;
 }

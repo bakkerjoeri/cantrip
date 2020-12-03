@@ -5,7 +5,7 @@ image_alpha = alpha;
 if (debug_mode) {
 	draw_set_halign(fa_left);
 	draw_set_color(global.palette_1);
-	var offset = -12;
+	var offset = -8;
 	var debug_text = state_name;
 	
 	if (instance_exists(obj_battle_manager)) {

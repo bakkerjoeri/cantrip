@@ -8,6 +8,11 @@ if (instance_exists(obj_player)) {
 	draw_set_halign(fa_right);
 	draw_text(obj_player.draw_pile_x + 60, obj_player.draw_pile_y - 14, string(ds_list_size(obj_player.draw_pile)));
 	draw_text(obj_player.graveyard_x + 60, obj_player.graveyard_y - 14, string(ds_list_size(obj_player.graveyard)));
+	
+	if (debug_mode) {
+		draw_set_halign(fa_left);
+		draw_text(obj_player.draw_pile_x, (room_height / 2) - 4, "playing field " + string(ds_list_size(obj_battle_manager.playing_field)));
+	}
 }
 
 if (instance_exists(obj_opponent)) {

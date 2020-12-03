@@ -1,8 +1,10 @@
 function scr_get_deck_list_starter() {
 	var deck_map = ds_map_create();
 
-	deck_map[? "attack"] = 2;
+	deck_map[? "attack"] = 3;
 	deck_map[? "shield"] = 2;
+	deck_map[? "improvise"] = 5;
+
 
 	if (obj_game_manager.perks.supermoon) {
 		deck_map[? "attack"] += 1;
