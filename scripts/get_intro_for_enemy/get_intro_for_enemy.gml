@@ -77,14 +77,14 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		]);
 		
 		if (obj_game_manager.runs_won >= 4) {
-			intro += "Her eyes are filled with hate. \"This village... this was where I lived.\"\n\nYou reply: \"I'm so sorry. We share a fate then. I am looking for the one who did this.\"\n\n\"I know you are. It's why I'm here. The contract on your head... I needed a way to start again.\"\n\nYou eye her with pity. \"Wouldn't you rather help me instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? No. I'm sorry. This has to happen.\"\n\n";
+			intro += "Her eyes are filled with hate. \"This village... this was where I lived.\"\n\n\"I'm so sorry,\" you reply. \"Though we share a fate then. I am looking for the one who did this.\"\n\n\"I know you are. That's why I'm here. The contract on your head... I needed a way to start again.\"\n\nYou eye her with pity. \"Wouldn't you rather help me instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? No. I'm sorry. This has to happen.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 2) {
 			intro += "Her eyes are full of sorrow. \"I truly am sorry for this, but it's my only way out.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 0) {
 			intro += "Her eyes meet yours. They are determined. \"This has to be done.\"\n\n";
 		}
 		
-		intro += "The rogue draws their dagger.";
+		intro += "The rogue draws her dagger.";
 		
 		return intro;
 	}
