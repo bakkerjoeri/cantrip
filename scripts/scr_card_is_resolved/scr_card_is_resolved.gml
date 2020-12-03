@@ -6,7 +6,7 @@ function scr_card_is_resolved() {
 	if (animation_is_finished) {
 		if (should_play_again) {
 			state_switch("beingPlayed");
-			scr_add_event_log(played_by.name + "'s shadow takes shape, and repeats " + self.name);
+			scr_add_event_log(played_by.name + "'s shadow takes shape, and repeats " + self.title);
 		} else {
 			played_by = noone;
 			state_switch("beingDiscarded");
