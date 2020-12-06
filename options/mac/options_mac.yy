@@ -1,7 +1,7 @@
 {
   "option_mac_display_name": "Cantrip",
   "option_mac_app_id": "com.bakkerjoeri.cantrip",
-  "option_mac_version": "3.1.1",
+  "option_mac_version": "3.2.0",
   "option_mac_output_dir": "~/GameMakerStudio2/Mac",
   "option_mac_team_id": "72CNNR2ZM8",
   "option_mac_signing_identity": "Developer ID Application:",
