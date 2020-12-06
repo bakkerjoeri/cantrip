@@ -11,8 +11,7 @@ function scr_card_draft_picked() {
 	}
 
 	if (animation_is_finished) {
+		audio_play_sound(card, 1, false);
 		instance_destroy();
 	}
-
-
 }

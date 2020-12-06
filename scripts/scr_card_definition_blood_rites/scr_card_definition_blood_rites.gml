@@ -29,6 +29,7 @@ function do_blood_rites_effect(target, source) {
 
 	source.max_hand_size = max(0, source.max_hand_size - 1);
 	scr_draw_cards(source, source.max_hand_size - ds_list_size(source.hand));
+	audio_play_sound(heartbeat, 1, false);
 	scr_add_event_log("Red mist gathers around " + source.name + ". They feel rejuvenated, but a hollowness remains.");
 }
 

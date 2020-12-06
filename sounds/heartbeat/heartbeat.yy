@@ -1,5 +1,5 @@
 {
-  "compression": 3,
+  "compression": 0,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "_02_II.ogg",
-  "duration": 183.13,
+  "soundFile": "heartbeat.wav",
+  "duration": 1.744705,
   "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "_02_II",
+  "name": "heartbeat",
   "tags": [],
   "resourceType": "GMSound",
 }

@@ -1,6 +1,6 @@
 {
-  "compression": 3,
-  "volume": 1.0,
+  "compression": 0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "_02_II.ogg",
-  "duration": 183.13,
+  "soundFile": "card.wav",
+  "duration": 0.013844,
   "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "_02_II",
+  "name": "card",
   "tags": [],
   "resourceType": "GMSound",
 }
