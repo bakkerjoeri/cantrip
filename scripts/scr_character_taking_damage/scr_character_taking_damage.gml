@@ -170,7 +170,7 @@ function scr_character_taking_damage() {
 
 function do_damage_effect() {
 	instance_create_layer(0, 0, "Overlays", obj_damage_flash);
-	audio_play_sound(scr_choose_from_array([damage_1, damage_2, damage_3]), 1, false);
+	audio_play_sound(scr_choose_from_array([sound_damage_1, sound_damage_2, sound_damage_3]), 1, false);
 
 	with (obj_screen_manager) {
 		shake = 8;
@@ -187,7 +187,7 @@ function do_deflect_effect() {
 
 function do_death_effect() {
 	instance_create_layer(0, 0, "Overlays", obj_damage_flash);
-	audio_play_sound(death, 1, false);
+	audio_play_sound(sound_death, 1, false);
 
 	with (obj_screen_manager) {
 		shake += 16;

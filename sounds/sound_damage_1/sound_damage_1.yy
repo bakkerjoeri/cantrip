@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.8,
+  "volume": 0.7,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "damage_3.wav",
-  "duration": 0.134819,
+  "soundFile": "sound_damage_1.wav",
+  "duration": 0.119286,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "damage_3",
+  "name": "sound_damage_1",
   "tags": [],
   "resourceType": "GMSound",
 }

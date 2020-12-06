@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "damage_1.wav",
-  "duration": 0.119286,
+  "soundFile": "sound_defeat.wav",
+  "duration": 1.119558,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "damage_1",
+  "name": "sound_defeat",
   "tags": [],
   "resourceType": "GMSound",
 }

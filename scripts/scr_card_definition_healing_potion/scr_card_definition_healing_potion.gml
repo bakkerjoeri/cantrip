@@ -11,7 +11,6 @@ function scr_card_definition_healing_potion(card) {
 
 function do_healing_potion_effect(target, source) {
 	scr_draw_cards(source, 3);
-	audio_play_sound(heartbeat, 1, false);
 	scr_add_event_log(source.name + " takes a swig of a verdant, swirling potion. They feel revitalized.");
 }
 

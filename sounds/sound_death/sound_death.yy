@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "heartbeat.wav",
-  "duration": 1.744705,
+  "soundFile": "sound_death.wav",
+  "duration": 0.314161,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "heartbeat",
+  "name": "sound_death",
   "tags": [],
   "resourceType": "GMSound",
 }

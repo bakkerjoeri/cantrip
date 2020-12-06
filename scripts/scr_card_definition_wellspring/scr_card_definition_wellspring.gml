@@ -21,7 +21,6 @@ function do_wellspring_effect(target, source, card) {
 	
 	scr_draw_cards(source, 1);
 
-	audio_play_sound(heartbeat, 1, false);
 	scr_add_event_log(source.name + " drinks the fresh water. They are filled with a vibrant energy.");
 }
 

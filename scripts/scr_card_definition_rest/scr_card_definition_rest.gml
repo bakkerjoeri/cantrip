@@ -22,8 +22,6 @@ function do_rest_effect(target, source) {
 			state_switch("turnEnd");
 		}
 	}
-	
-	audio_play_sound(heartbeat, 1, false);
 }
 
 function check_priority_for_rest(target, source, playable_cards) {

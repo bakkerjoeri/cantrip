@@ -22,8 +22,6 @@ function do_healing_rain_effect(target, source) {
 
 function healing_rain_start_of_turn_effect(target, source, turnsLeft) {
 	scr_draw_cards(source, 1);
-	
-	audio_play_sound(heartbeat, 1, false);
 
 	if (turnsLeft == 0) {
 		scr_add_event_log(source.name + " feels refreshed. The sky clears and the healing rain lets up.", 2);
