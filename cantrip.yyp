@@ -157,6 +157,7 @@
     {"id":{"name":"scr_get_enemy_wyvern","path":"scripts/scr_get_enemy_wyvern/scr_get_enemy_wyvern.yy",},"order":6,},
     {"id":{"name":"scr_get_enemy_mind_flayer","path":"scripts/scr_get_enemy_mind_flayer/scr_get_enemy_mind_flayer.yy",},"order":12,},
     {"id":{"name":"scr_get_enemy_blacksmith","path":"scripts/scr_get_enemy_blacksmith/scr_get_enemy_blacksmith.yy",},"order":10,},
+    {"id":{"name":"scr_play_sound_effect","path":"scripts/scr_play_sound_effect/scr_play_sound_effect.yy",},"order":0,},
     {"id":{"name":"obj_toggle_perk_clairvoyant","path":"objects/obj_toggle_perk_clairvoyant/obj_toggle_perk_clairvoyant.yy",},"order":2,},
     {"id":{"name":"obj_stats","path":"objects/obj_stats/obj_stats.yy",},"order":12,},
     {"id":{"name":"scr_get_enemy_necromancer","path":"scripts/scr_get_enemy_necromancer/scr_get_enemy_necromancer.yy",},"order":13,},
@@ -305,6 +306,7 @@
     {"id":{"name":"obj_screen_manager","path":"objects/obj_screen_manager/obj_screen_manager.yy",},"order":11,},
     {"id":{"name":"scr_card_definition_rage","path":"scripts/scr_card_definition_rage/scr_card_definition_rage.yy",},"order":37,},
     {"id":{"name":"scr_card_definition_mana_burst","path":"scripts/scr_card_definition_mana_burst/scr_card_definition_mana_burst.yy",},"order":7,},
+    {"id":{"name":"obj_toggle_preference_sounds","path":"objects/obj_toggle_preference_sounds/obj_toggle_preference_sounds.yy",},"order":0,},
     {"id":{"name":"room_victory","path":"rooms/room_victory/room_victory.yy",},"order":4,},
   ],
   "Options": [

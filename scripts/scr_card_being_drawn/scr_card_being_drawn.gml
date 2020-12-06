@@ -1,4 +1,4 @@
 function scr_card_being_drawn() {
-	audio_play_sound(sound_card, 1, false);
+	scr_play_sound_effect(sound_card);
 	state_switch("inHand");
 }

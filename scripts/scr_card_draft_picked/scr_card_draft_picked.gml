@@ -14,7 +14,7 @@ function scr_card_draft_picked() {
 	}
 	
 	if (_delay <= 0 && !_card_sound_played) {
-		audio_play_sound(sound_card, 1, false);
+		scr_play_sound_effect(sound_card);
 		_card_sound_played = true;
 	}
 
