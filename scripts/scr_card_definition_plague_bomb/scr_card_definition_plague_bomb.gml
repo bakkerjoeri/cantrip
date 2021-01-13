@@ -14,7 +14,7 @@ function scr_card_definition_plague_bomb(card) {
 
 function do_plague_bomb_effect(target, source, card) {
 	with (card) {
-		scr_move_item_between_lists(card, source.hand, target.hand);
+		move_card_to_list(self.id, target.hand);
 		owner = target;
 		state_switch("beingDrawn");
 	}
