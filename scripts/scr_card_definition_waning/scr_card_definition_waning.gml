@@ -33,7 +33,10 @@ function do_waning_effect(target, source, card) {
 function end_waning(target, source) {
 	for (var c = 0; c <= ds_list_size(target.waned_cards) - 1; c += 1) {
 		var card = ds_list_find_value(target.waned_cards, c);
-		card.cost -= 1;
+		
+		if (instance_exists(card) && variable_instance_exists(card, "cost")) {
+			card.cost -= 1;
+		}
 	}
 	
 	scr_make_list_empty(target.waned_cards);

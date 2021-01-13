@@ -34,7 +34,10 @@ function do_lunar_surge_effect(target, source, card) {
 function end_lunar_surge(target, source) {
 	for (var c = 0; c <= ds_list_size(source.lunar_surged_cards) - 1; c += 1) {
 		var card = ds_list_find_value(source.lunar_surged_cards, c);
-		card.cost += 1;
+		
+		if (instance_exists(card) && variable_instance_exists(card, "cost")) {
+			card.cost += 1;
+		}
 	}
 	
 	scr_make_list_empty(source.lunar_surged_cards);
