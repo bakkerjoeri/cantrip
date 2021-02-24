@@ -2,14 +2,16 @@ function scr_card_definition_fishy_chest(card) {
 	card.name = "fishy_chest";
 	card.title = "fishy chest";
 	card.is_unplayable = true;
-	card.text = "When hit, burn one of your foe's card. Your foe earns a random card.";
+	card.text = "When hit by your foe, burn one of their cards. Your foe earns a random card.";
 	card.counter = do_fishy_chest_counter;
 	card.rarity = 3;
 }
 
 function do_fishy_chest_counter(target, source, card) {
+	var card_to_burn = undefined;
+	
 	if (target != source) {
-		var card_to_burn = scr_choose_from_list(target.hand);
+		card_to_burn = scr_choose_from_list(target.hand);
 	
 		if (card_to_burn) {
 			card_to_burn.is_burning = true;
@@ -19,7 +21,7 @@ function do_fishy_chest_counter(target, source, card) {
 	var recipient = scr_get_opponent_of_character(card.owner);
 	
 	var random_card_list = scr_get_cards_of_tier(irandom(3));
-	var random_card_name = scr_choose_from_list(random_card_list);
+	var random_card_name = "blood_rites";
 	var random_card = scr_create_card(random_card_name);
 	
 	if (recipient == obj_battle_manager.player) {
@@ -44,7 +46,7 @@ function do_fishy_chest_counter(target, source, card) {
 		}
 	}
 	
-	if (card_to_burn && card_to_burn.is_face_up) {
+	if (card_to_burn != undefined && card_to_burn.is_face_up) {
 		scr_add_event_log(recipient.name + " opens the chest and finds " + random_card.title + "! Suddenly a burst of flame shoots out and " + target.name + "'s " + card_to_burn.title + " starts burning.");
 	} else if (card_to_burn) {
 		scr_add_event_log(recipient.name + " opens the chest and finds " + random_card.title + "! Suddenly a burst of flame shoots out and one of " + target.name + "'s cards starts burning.");

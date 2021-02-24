@@ -2,7 +2,7 @@ function scr_card_definition_embed_spikes(card) {
 	card.name = "embed_spikes";
 	card.title = "embed spikes";
 	card.cost = 1;
-	card.text = "\"shield\" cards in your hand do 1 (more) damage when hit.";
+	card.text = "\"shield\" cards in your hand do 1 (more) damage when hit by your foe.";
 	card.effect = do_embed_spikes_effect;
 	card.condition = can_play_embed_spikes;
 	card.rarity = 1;

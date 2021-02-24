@@ -2,7 +2,7 @@ function scr_card_definition_fire_trap(card) {
 	card.name = "fire_trap";
 	card.title = "fire trap";
 	card.is_unplayable = true;
-	card.text = "When hit, burn one of the cards in your foe's hand.";
+	card.text = "When hit by your foe, burn one of the cards in their hand.";
 	card.counter = do_fire_trap_counter;
 	card.rarity = 3;
 }

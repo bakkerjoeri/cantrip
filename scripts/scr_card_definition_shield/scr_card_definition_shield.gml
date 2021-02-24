@@ -10,7 +10,7 @@ function scr_card_definition_shield(card) {
 
 function get_shield_card_text(card) {
 	if (card.damage > 0) {
-		return "This always gets hit first. When hit, do " + string(card.damage) + " damage.";
+		return "This always gets hit first. When hit by your foe, do " + string(card.damage) + " damage.";
 	}
 	
 	return "This always gets hit first.";

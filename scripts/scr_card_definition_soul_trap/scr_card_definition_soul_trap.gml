@@ -1,7 +1,7 @@
 function scr_card_definition_soul_trap(card) {
 	card.name = "soul_trap";
 	card.title = "soul trap";
-	card.text = "When hit, steal all your foe's AP and gain 1 more.";
+	card.text = "When hit by your foe, steal all their AP and gain 1 more.";
 	card.is_unplayable = true;
 	card.counter = do_soul_trap;
 	card.rarity = 1;
