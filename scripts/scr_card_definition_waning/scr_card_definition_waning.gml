@@ -41,7 +41,7 @@ function end_waning(target, source) {
 	
 	scr_make_list_empty(target.waned_cards);
 	
-	scr_add_event_log(source.name + " no longer feels sluggish. The waning fades.", 2);
+	scr_add_event_log(target.name + " no longer feels sluggish. The waning fades.", 2);
 }
 
 function check_priority_for_waning() {

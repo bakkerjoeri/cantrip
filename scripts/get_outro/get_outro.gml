@@ -7,7 +7,7 @@ function get_outro(boss) {
 	
 	if (boss == "lord_of_lightning") {
 		return scr_choose_from_array([
-			 "The lightning raging from his hands flickers out. The Lord of Lightning slumps to his knees, his eyes filled with hate, the yellow still pulsing, but his body too exhausted to act.\n\n\"You?!\" he asks, incredulous. \"How dare y-\" lightning strikes him once, twice, thrice over. He remains motionless. A rising sun disippates the dark clouds overhead.\n\nYou can see clear, blue skies for miles around.",
+			 "The lightning raging from his hands flickers out. The Lord of Lightning slumps to his knees, his eyes filled with hate, the yellow still pulsing, but his body too exhausted to act.\n\n\"You?!\" he asks, incredulous. \"How dare y-\" lightning strikes him once, twice, thrice over. He remains motionless. A rising sun dissipates the dark clouds overhead.\n\nYou can see clear, blue skies for miles around.",
 		]);
 	}
 	
