@@ -119,7 +119,7 @@ function scr_character_taking_damage() {
 				if (from_burning) {
 					scr_add_event_log(_current_damage_event[? "source"].name + "'s " + damaged_card.title + " goes up in flames!");
 				} else if (_current_damage_event[? "source"] == _current_damage_event[? "target"]) {
-					scr_add_event_log(_current_damage_event[? "source"].name + " hits their own " + damaged_card.title + "!");
+					scr_add_event_log(_current_damage_event[? "target"].name + "'s " + damaged_card.title + " is hit!");
 				} else {
 					scr_add_event_log(_current_damage_event[? "source"].name + " hits " + _current_damage_event[? "target"].name + "'s " + damaged_card.title + "!");
 				}
