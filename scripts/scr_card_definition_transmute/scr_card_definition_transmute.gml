@@ -4,7 +4,7 @@ function scr_card_definition_transmute(card) {
 	card.cost = 0;
 	card.text = "Discard all your cards, draw that many cards plus 1.";
 	card.effect = do_transmute_effect;
-	card.rarity = 0;
+	card.rarity = 1;
 	card.has_priority = check_priority_for_transmute;
 }
 

@@ -29,7 +29,6 @@ function scr_get_cards_of_tier(tier) {
 			ds_list_add(cards, "third_eye_opens");
 		}
 
-		ds_list_add(cards, "transmute");
 	}
 
 	if (tier == 1) {
@@ -50,6 +49,7 @@ function scr_get_cards_of_tier(tier) {
 		ds_list_add(cards, "shields_up");
 		ds_list_add(cards, "siphon");
 		ds_list_add(cards, "soul_trap");
+		ds_list_add(cards, "transmute");
 		ds_list_add(cards, "volatile_mixture");
 		ds_list_add(cards, "waning");
 	}
