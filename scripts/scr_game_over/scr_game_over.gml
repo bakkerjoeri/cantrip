@@ -5,6 +5,9 @@ function scr_game_over() {
 		}
 	}
 
-	current_run_streak = 0;
+	if (!scr_is_custom_game()) {
+		current_run_streak = 0;
+	}
+
 	scr_save_game();
 }

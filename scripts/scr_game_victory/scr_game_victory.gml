@@ -4,10 +4,13 @@ function scr_game_victory() {
 			room_goto(room_victory);
 			exit;
 		}
-	
-		runs_won = runs_won + 1;
-		current_run_streak = current_run_streak + 1;
-		max_run_streak = max(max_run_streak, current_run_streak);
+
+		if (!scr_is_custom_game()) {
+			runs_won = runs_won + 1;
+			current_run_streak = current_run_streak + 1;
+			max_run_streak = max(max_run_streak, current_run_streak);
+		}
+		
 		is_custom_game_unlocked = true;
 		
 		scr_save_game();
