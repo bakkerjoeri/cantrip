@@ -77,7 +77,7 @@ function get_intro_for_enemy(enemy, floors, current_room_number, deck_list) {
 		]);
 		
 		if (obj_game_manager.runs_won >= 4) {
-			intro += "Her eyes are filled with hate. \"This village... this was where I lived.\"\n\n\"I'm so sorry,\" you reply. \"Though we share a fate then. I am looking for the one who did this.\"\n\n\"I know you are. That's why I'm here. The contract on your head... I needed a way to start again.\"\n\nYou eye her with pity. \"Wouldn't you rather help me instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? No. I'm sorry. This has to happen.\"\n\n";
+			intro += "Her eyes are filled with hate. \"This village... this was where I lived.\"\n\n\"I'm so sorry,\" you reply. \"We have that in common then. I am looking for the one who did this.\"\n\n\"I know you are. That's why I'm here. The contract on your head... I need a way to start again.\"\n\nYou eye her with pity. \"Wouldn't you rather help me instead?\"\n\n\"Are you serious? Have you seen what's left of this village? What do you think they'll do to us? No. I'm sorry. This has to happen.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 2) {
 			intro += "Her eyes are full of sorrow. \"I truly am sorry for this, but it's my only way out.\"\n\n";
 		} else if (obj_game_manager.runs_won >= 0) {
