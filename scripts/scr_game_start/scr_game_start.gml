@@ -7,6 +7,8 @@ function scr_game_start() {
 	
 		scr_load_game();
 
+		game_mode = "loot";
+
 		perks = {
 			forbidden_alchemy: false,
 			supermoon: false,

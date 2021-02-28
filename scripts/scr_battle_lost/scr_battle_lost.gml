@@ -8,6 +8,4 @@ function scr_battle_lost() {
 			state_switch("gameOver");
 		}
 	}
-
-
 }

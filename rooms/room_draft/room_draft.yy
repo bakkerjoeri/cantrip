@@ -22,6 +22,7 @@
       ],"visible":true,"depth":-100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Controllers","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_deck_overview","path":"objects/obj_deck_overview/obj_deck_overview.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":16.0,"resourceVersion":"1.0","name":"inst_5AC1C906","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_run_details","path":"objects/obj_run_details/obj_run_details.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":408.0,"y":16.0,"resourceVersion":"1.0","name":"inst_57512410","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_button_skip_round","path":"objects/obj_button_skip_round/obj_button_skip_round.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":224.0,"resourceVersion":"1.0","name":"inst_71F54772","tags":[],"resourceType":"GMRInstance",},
@@ -37,6 +38,7 @@
     {"name":"inst_71F54772","path":"rooms/room_draft/room_draft.yy",},
     {"name":"inst_5AC1C906","path":"rooms/room_draft/room_draft.yy",},
     {"name":"inst_5BBFFCB9","path":"rooms/room_draft/room_draft.yy",},
+    {"name":"inst_57512410","path":"rooms/room_draft/room_draft.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -16,13 +16,7 @@ state_create("settings", scr_game_settings);
 state_create("quit", scr_game_quit);
 state_init("start");
 
-floors = ds_list_create();
-
-current_floor = undefined;
-current_room = undefined;
-current_room_number = 0;
-current_floor_number = 0;
-
+// Run setup
 game_mode = "loot";
 
 perks = {
@@ -32,11 +26,25 @@ perks = {
 	vampires_curse: false,
 };
 
+// Run state
+floors = ds_list_create();
+current_floor = undefined;
+current_room = undefined;
+current_room_number = 0;
+current_floor_number = 0;
+
+// Run timing
+run_duration = 0;
+is_run_timer_running = false;
+
+// Records
 battles_won = 0;
 runs_won = 0;
 current_run_streak = 0;
 max_run_streak = 0;
+min_run_duration = undefined;
 
+// Settings
 prefers_screen_shake = true;
 prefers_screen_flashes = true;
 prefers_music = true;

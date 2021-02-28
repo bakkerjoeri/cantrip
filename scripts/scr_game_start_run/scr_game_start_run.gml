@@ -15,6 +15,9 @@ function scr_game_start_run() {
 		battles_won = 0;
 		current_room = undefined;
 		current_floor = undefined;
+		
+		run_duration = 0;
+		is_run_timer_running = true;
 	
 		with (obj_pause_controller) {
 			state_switch("unpaused");
