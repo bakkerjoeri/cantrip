@@ -52,7 +52,7 @@ if (obj_game_manager.min_run_duration != undefined) {
 	draw_set_colour(global.palette_4);
 	draw_text(room_width / 2, 272, min_run_duration_message);
 	
-	if (room == room_victory && obj_game_manager.runs_won_change > 0) {
+	if (room == room_victory && obj_game_manager.min_run_duration_change > 0) {
 		var message_width = string_width(min_run_duration_message);
 		
 		draw_set_halign(fa_left);

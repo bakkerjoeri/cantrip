@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "Cantrip",
   "option_windows_executable_name": "${project_name}",
-  "option_windows_version": "3.3.0.0",
+  "option_windows_version": "3.3.1.0",
   "option_windows_company_info": "",
   "option_windows_product_info": "Cantrip",
   "option_windows_copyright_info": "",
