@@ -17,5 +17,5 @@ if (obj_game_manager.runs_won > 0) {
 
 if (obj_game_manager.min_run_duration != undefined) {
 	draw_set_colour(global.palette_4);
-	draw_text(room_width / 2, 272, "fastest run: " + scr_create_timestamp(obj_game_manager.min_run_duration));	
+	draw_text(room_width / 2, 272, "fastest run: " + scr_create_timestamp(obj_game_manager.min_run_duration, true));	
 }

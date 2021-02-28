@@ -7,7 +7,12 @@ if (
 ) {
 	draw_set_halign(fa_left);
 	draw_set_color(global.palette_1);
-	draw_text(x + 96 - string_width("000:00"), draw_top_offset, scr_create_timestamp(obj_game_manager.run_duration));
+	
+	if (room == room_victory || room == room_game_over) {
+		draw_text(x + 96 - string_width("000:00.00"), draw_top_offset, scr_create_timestamp(obj_game_manager.run_duration, true));
+	} else {
+		draw_text(x + 96 - string_width("000:00"), draw_top_offset, scr_create_timestamp(obj_game_manager.run_duration, false));
+	}
 	
 	draw_top_offset += 16;
 }
