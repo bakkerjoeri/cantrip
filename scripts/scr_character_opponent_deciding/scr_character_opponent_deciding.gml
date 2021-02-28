@@ -35,7 +35,7 @@ function scr_character_opponent_deciding() {
 
 		show_debug_message("Opponent is deciding what to do next...");
 			
-		_action_delay = (0.5 + random(1)) * room_speed;
+		_action_delay = (0.75) * room_speed;
 	}
 
 	if (_action_delay <= 0) {
