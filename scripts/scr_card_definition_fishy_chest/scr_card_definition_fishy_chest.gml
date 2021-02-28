@@ -21,7 +21,7 @@ function do_fishy_chest_counter(target, source, card) {
 	var recipient = scr_get_opponent_of_character(card.owner);
 	
 	var random_card_list = scr_get_cards_of_tier(irandom(3));
-	var random_card_name = "blood_rites";
+	var random_card_name = scr_choose_from_list(random_card_list);
 	var random_card = scr_create_card(random_card_name);
 	
 	if (recipient == obj_battle_manager.player) {
