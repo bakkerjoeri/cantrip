@@ -7,6 +7,6 @@ function scr_character_gains_ap(character, amount) {
 		&& scr_does_list_contain_item(character.active_effects, "poison_the_well")
 	) {
 		scr_take_damage(character, amount_gained, character);
-		scr_add_event_log(character.name + "gains AP, but suddenly feels sick.");
+		scr_add_event_log(character.name + " gains AP, but suddenly feels sick.");
 	}
 }
