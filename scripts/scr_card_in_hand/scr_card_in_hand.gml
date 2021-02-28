@@ -35,6 +35,7 @@ function scr_card_in_hand() {
 			ease_out_quint,
 		);
 		
+		has_focus = false;
 		previous_hand_position = current_hand_position;
 		previous_hand_size = current_hand_size;
 	}
