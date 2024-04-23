@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/5ae64b99-7b4f-4cd1-9129-6c780c73dcf9.png-9e7f0c57d4a33a8592461d83e4032188.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://old/sprites/spr_card_background/layers/a5ad3a07-e579-48d4-acd7-c9ab1055ac8c/5ae64b99-7b4f-4cd1-9129-6c780c73dcf9.png"
+dest_files=[ "res://.import/5ae64b99-7b4f-4cd1-9129-6c780c73dcf9.png-9e7f0c57d4a33a8592461d83e4032188.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
